@@ -19,8 +19,22 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "a4b83a97202a1f7d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "D-草稿/SpirngMVC进阶知识.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -158,11 +172,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "2e6886b3461627b5",
+  "active": "a4b83a97202a1f7d",
   "lastOpenFiles": [
+    "D-草稿/git学习笔记.md",
+    "D-草稿/SpirngMVC进阶知识.md",
     "新建 Markdown.md",
     "D-草稿/未命名.md",
-    "D-草稿/SpirngMVC进阶知识.md",
     "D-草稿/SpringMVC配置.md",
     "附件/SpringMVC配置_image_1.png",
     "C-学习笔记/C++学习/模板.md",
@@ -191,7 +206,6 @@
     "D-草稿/内核态和用户态.md",
     "D-草稿/中断、异常和系统调用.md",
     "Z-卡片/Java类/org.springframework.web.context.ContextLoaderListener.md",
-    "D-草稿/Obsidian配置和插件.md",
-    "C-学习笔记/Java拾遗迹/零碎记录.md"
+    "D-草稿/Obsidian配置和插件.md"
   ]
 }
