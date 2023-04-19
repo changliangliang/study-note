@@ -187,7 +187,7 @@ http://localhost:8080/appDemo/toHome.action
 
 ### welcome-file-list
 
-​web.xml​ 中有如下设置，用于配置欢迎页面，当用户在 url​ 中输入工程名称或者输入 web​ 容器 url​ 如 http://localhost:8080/​ 时直接跳转到 welcome-file-list​ 设置的路径。
+​web.xml​ 中有如下设置，用于配置欢迎页面，当用户在 url​ 中输入工程名称或者输入 web​ 容器 url​ 如 `http://localhost:8080/`​ 时直接跳转到 welcome-file-list​ 设置的路径。
 
 ```xml
 <welcome-file-list>

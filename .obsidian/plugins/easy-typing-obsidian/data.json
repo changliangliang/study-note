@@ -11,7 +11,7 @@
   "EnglishNumberSpace": true,
   "ChineseNoSpace": true,
   "PunctuationSpace": true,
-  "AutoCapital": true,
+  "AutoCapital": false,
   "AutoCapitalMode": "typing",
   "PunctuationSpaceMode": "typing",
   "InlineCodeSpaceMode": 1,
@@ -51,6 +51,6 @@
   "userDelRuleSettingsOpen": true,
   "userCvtRuleSettingsOpen": true,
   "EnterTwice": false,
-  "TryFixChineseIM": false,
+  "TryFixChineseIM": true,
   "PuncRectify": false
 }

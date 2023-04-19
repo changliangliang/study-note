@@ -4,37 +4,36 @@
     "type": "split",
     "children": [
       {
-        "id": "51b80dcdaacb12eb",
+        "id": "9bf117b77ac041af",
         "type": "tabs",
         "children": [
           {
-            "id": "58c6011929745c3b",
+            "id": "378c11f754f02a2a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "D-草稿/SpirngMVC进阶知识.md",
-                "mode": "preview",
+                "file": "学习笔记/docker 常用操作.md",
+                "mode": "source",
                 "backlinks": true,
-                "source": true
+                "source": false
               }
             }
           },
           {
-            "id": "a4b83a97202a1f7d",
+            "id": "632dcb061a03f03f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "D-草稿/SpirngMVC进阶知识.md",
+                "file": "学习笔记/socket连接不安全的原因.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -63,7 +62,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#cplusplus",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,6 +76,14 @@
             "type": "leaf",
             "state": {
               "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "e4aa2c41c50dd854",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
               "state": {}
             }
           }
@@ -100,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "D-草稿/SpirngMVC进阶知识.md",
+                "file": "学习笔记/docker 常用操作.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "D-草稿/SpirngMVC进阶知识.md",
+                "file": "学习笔记/docker 常用操作.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -130,7 +137,7 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": false
               }
             }
           },
@@ -140,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "D-草稿/SpirngMVC进阶知识.md"
+                "file": "学习笔记/docker 常用操作.md"
               }
             }
           },
@@ -153,12 +160,11 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 323.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -169,43 +175,55 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "obsidian-attachment-name-formatting:Export Unused Attachments": false,
+      "dbfolder:创建一个新数据库表": false
     }
   },
-  "active": "a4b83a97202a1f7d",
+  "active": "378c11f754f02a2a",
   "lastOpenFiles": [
-    "D-草稿/git学习笔记.md",
+    "学习笔记/socket连接不安全的原因.md",
+    "学习笔记/Linux.md",
+    "学习笔记/docker 常用操作.md",
+    "常用/博客列表.md",
+    "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md",
+    "模板/blog-frontmatter.md",
+    "学习笔记/Spring/零碎知识.md",
+    "学习笔记/Spring/java编程思想学习心得.md",
+    "常用/笔记目录.md",
+    "模板/笔记模板.md",
+    "模板/每日记录.md",
+    "模板/未命名.md",
+    "模板/t-today.md",
+    "模板/笔记草稿.md",
+    "学习笔记/Spring/Spring的一些高级配置.md",
+    "学习笔记/Spring/Spring源码阅读.md",
+    "D-草稿/Git 学习笔记.md",
     "D-草稿/SpirngMVC进阶知识.md",
-    "新建 Markdown.md",
-    "D-草稿/未命名.md",
+    "D-草稿/Obsidian配置和插件.md",
     "D-草稿/SpringMVC配置.md",
-    "附件/SpringMVC配置_image_1.png",
-    "C-学习笔记/C++学习/模板.md",
-    "附件/模板_image_3.png",
-    "附件/模板_image_2.png",
-    "附件/模板_image_1.png",
-    "D-草稿/2023-03-20.md",
-    "C-学习笔记/Java拾遗迹/Java泛型.md",
-    "C-学习笔记/Java拾遗迹/Java接口.md",
-    "C-学习笔记/Java拾遗迹/Java并发.md",
-    "常用/列表.md",
-    "A-日记/2023-03-17.md",
-    "C-学习笔记/C++学习/基础语法.md",
-    "C-学习笔记/C++学习/C++环境搭建.md",
-    "C-学习笔记/Spring/SpringMVC.md",
-    "C-学习笔记/Spring/Spring中的AOP配置.md",
-    "C-学习笔记/Spring/Spring基于XML的配置.md",
-    "附件/SpirngMVC进阶知识_image_2.png",
-    "D-草稿/SpringMVC容器结构.md",
-    "B-博客/socket连接不安全的原因.md",
-    "找工作/简历投递.md",
-    "找工作",
-    "C-学习笔记/Java拾遗迹/Java多态.md",
-    "附件/SpirngMVC进阶知识_image_1.png",
-    "C-学习笔记/Java拾遗迹/Java容器.md",
-    "D-草稿/内核态和用户态.md",
-    "D-草稿/中断、异常和系统调用.md",
-    "Z-卡片/Java类/org.springframework.web.context.ContextLoaderListener.md",
-    "D-草稿/Obsidian配置和插件.md"
+    "A-日记/2023-04-19.md",
+    "常用/软件列表.md",
+    "常用/未命名.md",
+    "常用/卡片目录.md",
+    "学习笔记/docker镜像创建.md",
+    "学习笔记/计算机的启动.md",
+    "学习笔记/ucore操作系统实验",
+    "附件/ucore操作系统实验：lab1_image_3.png",
+    "附件/ucore操作系统实验：lab1_image_4.png",
+    "附件/ucore操作系统实验：lab1_image_2.png",
+    "附件/ucore操作系统实验：lab1_image_1.png",
+    "附件/tmp1681871045287_ucore实验：lab1_image_2.png",
+    "附件/docker 常用操作_image_21.png",
+    "附件/docker 常用操作_image_22.png",
+    "附件/docker 常用操作_image_20.png",
+    "附件/tmp1681808139862_docker 学习笔记_image_20.png",
+    "附件/docker 常用操作_image_19.png",
+    "A-日记/未命名.txt",
+    "A-日记/test1.cpp",
+    "未命名.canvas",
+    "Unused_Attachments.zip",
+    "����",
+    "找工作"
   ]
 }

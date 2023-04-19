@@ -1,8 +1,8 @@
 ## 处理流程
 
-`DispatcherServlet` 是 SpringMVC 的入口，当 Tomcat 将请求交给 `DispatcherServlet` 处理后，将会经历以下流程：
+DispatcherServlet 是 SpringMVC 的入口，当 Tomcat 将请求交给 DispatcherServlet 处理后，将会经历以下流程：
 
-![](附件/SpirngMVC进阶知识_image_1.png)
+![](../附件/SpirngMVC进阶知识_image_1.png)
 
 1. 请求被 SpringMVC​ 前端控制器 DispatherServlet​ 捕获；
 2. 前端控制器对请求调用 HandlerMapping​；
@@ -77,9 +77,6 @@ public interface View {
 
 我们可以实现自己的视图，只要实现这个接口就可以了。
 
-![](附件/SpirngMVC进阶知识_image_2.png)
-
-
 ## 其他细节
 
 ​DispatcherServlet​ 中有一个属性 throwExceptionIfNoHandlerFound​，默认情况下它被设置为 false​，在这种情况下 DispatcherServlet​ 如果找不到相关请求的处理程序，会将响应状态设置为 404​ 而不会引发异常。如果还配置了默认 servlet​ 处理，则始终将未解决的请求转发到默认 servlet​。
@@ -112,3 +109,12 @@ DispatcherServlte 会根据 handlerMapping 传过来的 controller 与已经注�
 2.  HttpRequestHandlerAdapter 主要是适配静态资源处理器，静态资源处理器就是实现了 HttpRequestHandler 接口的处理器，这类处理器的作用是处理通过 SpringMVC 来访问的静态资源的请求
 3.  SimpleControllerHandlerAdapter 是 Controller 处理适配器，适配实现了 Controller 接口或 Controller 接口子类的处理器，比如我们经常自己写的 Controller 来继承 MultiActionController.
 4.  SimpleServletHandlerAdapter 是 Servlet 处理适配器, 适配实现了 Servlet 接口或 Servlet 的子类的处理器，我们不仅可以在 web. Xml 里面配置 Servlet，其实也可以用 SpringMVC 来配置 Servlet，不过这个适配器很少用到，而且 SpringMVC 默认的适配器没有他，默认的是前面的三种。
+
+## 父子容器
+
+
+![](../附件/SpirngMVC进阶知识_image_2.png)
+
+Spring Web 应用在启动的时候会将两个容器，一个容器由 `ContextLoaderListener` 创建，一个由 `DispatcherServlet` 创建。
+
+`DispatcherServlet` 是整个 SpringMVC 的入口，它创建的容器主要用来存放与 SpringMVC 相关的类，如映射器、视图解析器和控制器等，`ContextLoaderListener` 创建的容器用来存放应用中其他的 Bean，主要是我们自己编写的，如 Dao 层和 Service 层的 Bean。`DispatcherServlet` 开始创建容器的时候会把 `ContextLoaderListener` 设置为自己的父容器，所以 `ContextLoaderListener` 容器对 `DispatcherServlet` 容器是可见的。

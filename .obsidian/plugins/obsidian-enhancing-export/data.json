@@ -1,7 +1,8 @@
 {
   "items": [
     {
-      "name": "Markdown"
+      "name": "Markdown",
+      "customArguments": "--resource-path=\"${vaultDir}\\${attachmentFolderPath}\" "
     },
     {
       "name": "Markdown (Hugo)"
@@ -43,12 +44,14 @@
       "name": "OPML"
     }
   ],
+  "pandocPath": {
+    "win32": "D:\\scoop\\apps\\pandoc\\current\\pandoc"
+  },
   "defaultExportDirectoryMode": "Auto",
   "openExportedFile": true,
-  "openExportedFileLocation": true,
-  "lastEditName": "Markdown (Hugo)",
   "lastExportDirectory": {
-    "win32": "C:\\Users\\chang\\Desktop"
+    "win32": "C:\\Users\\chang\\Desktop\\新建文件夹"
   },
-  "lastExportType": "Markdown (Hugo)"
+  "lastEditName": "Markdown",
+  "lastExportType": "Markdown"
 }
