@@ -2,7 +2,7 @@
 
 DispatcherServlet 是 SpringMVC 的入口，当 Tomcat 将请求交给 DispatcherServlet 处理后，将会经历以下流程：
 
-![](../附件/SpirngMVC进阶知识_image_1.png)
+![](/附件/SpirngMVC进阶知识_image_1.png)
 
 1. 请求被 SpringMVC​ 前端控制器 DispatherServlet​ 捕获；
 2. 前端控制器对请求调用 HandlerMapping​；
@@ -113,7 +113,7 @@ DispatcherServlte 会根据 handlerMapping 传过来的 controller 与已经注�
 ## 父子容器
 
 
-![](../附件/SpirngMVC进阶知识_image_2.png)
+![](/附件/SpirngMVC进阶知识_image_2.png)
 
 Spring Web 应用在启动的时候会将两个容器，一个容器由 `ContextLoaderListener` 创建，一个由 `DispatcherServlet` 创建。
 

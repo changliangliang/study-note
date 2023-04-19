@@ -1,3 +1,13 @@
+
+---
+type: blog
+status: 未发布
+created: 2023-03-15 12:14:32
+updated: 2023-03-15 12:19:56
+tags: Spring
+categories: Spring学习笔记
+---
+
 ## 设置Profile
 
 在实际的开发过程中，可能区分为开发环境、测试环境和生产环境，不同的环境中使用的 `Bean` 可能不同，Spring 中提供了 `@Profile` 注解来实现这一需求，该注解可用于类和方法。

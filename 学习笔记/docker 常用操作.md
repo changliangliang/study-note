@@ -3,8 +3,8 @@ type: blog
 status: 未发布
 created: 2023-04-18 16:45:41
 updated: 2023-04-18 16:45:41
-tags:
-categories: 
+tags: docker
+categories: docker学习笔记 
 ---
 
 ## 镜像操作
@@ -384,5 +384,5 @@ docker update --restart always 容器名
 
 ## 参考资料
 
-- [Docker从入门到实践](https://yeasy.gitbook.io/docker_practice/)
+- [Docker从入门到实践](https://yeasy.gitbook.io/docker_practice/) 
 -  [打不死的小强，让Docker的容器自动重启 - 南瓜慢说官网](https://www.pkslow.com/archives/docker-container-auto-restart)

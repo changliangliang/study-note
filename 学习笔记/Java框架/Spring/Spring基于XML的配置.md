@@ -1,3 +1,14 @@
+
+
+---
+type: blog
+status: 未发布
+created: 2023-03-11 21:13:41
+updated: 2023-03-11 21:16:41
+tags: Spring
+categories: Spring学习笔记
+---
+
 ## 创建容器
 
 `ClassPathXmlApplicationContext`是`ApplicationContext`类的一个实现，用来加载`xml`配置文件生成容器。
@@ -168,7 +179,7 @@ public class CarFactory {
 }
 ```
 
-既然是实例工厂方法，那么首先需要创建出对应的实例，也就是下面第一行中的定义。之后再正真定义`bean`的时候，不在需要`class`属性了，而是需要使用`factory-bean`属性来指定工厂实例，同时使用`factory-method`指定定的工厂方法。如果工厂方法有参数或者需要在创建`bean`之后注入属性，也可以使用`constructor-arg`和`property`两个标签。
+既然是实例工厂方法，那么首先需要创建出对应的实例，也就是下面第一行中的定义。之后再正真定义 `b
 
 ```xml
 <bean id="carfactory" class="com.liang.CarFactory"></bean>
@@ -2161,5 +2172,3 @@ public class MyBeanPostProcessor implements BeanPostProcessor {
 ### 使用 FactoryBean 自定义实例化逻辑
 
 对于一些初始化比较复杂的类，可以使用前面提到的`FactoryBean`注入到容器中，在调用`ApplicationContext`的`getBean()`方法时，如果想要获得`FactoryBean`本省，需要在`bean`的`id`前面加上一个符号`&`，如`getBean("&myBean")`。
-
-‍

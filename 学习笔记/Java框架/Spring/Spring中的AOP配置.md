@@ -1,3 +1,12 @@
+---
+type: blog
+status: 未发布
+created: 2023-03-14 21:19:41
+updated: 2023-03-14 21:19:41
+tags: Spring
+categories: Spring学习笔记
+---
+
 
 ## 基于注解的配置
 
