@@ -1,6 +1,82 @@
 {
   "recentFiles": [
     {
+      "basename": "对 Spring 的认识",
+      "path": "学习笔记/Spring/对 Spring 的认识.md"
+    },
+    {
+      "basename": "对 Spring 的认识_image_1",
+      "path": "附件/对 Spring 的认识_image_1.png"
+    },
+    {
+      "basename": "Java类型信息",
+      "path": "学习笔记/Java拾遗迹/Java类型信息.md"
+    },
+    {
+      "basename": "Java类型信息_image_1",
+      "path": "附件/Java类型信息_image_1.png"
+    },
+    {
+      "basename": "零碎记录",
+      "path": "学习笔记/Java拾遗迹/零碎记录.md"
+    },
+    {
+      "basename": "零碎记录_image_1",
+      "path": "附件/零碎记录_image_1.png"
+    },
+    {
+      "basename": "Java容器",
+      "path": "学习笔记/Java拾遗迹/Java容器.md"
+    },
+    {
+      "basename": "Java容器_image_1",
+      "path": "附件/Java容器_image_1.png"
+    },
+    {
+      "basename": "Java继承",
+      "path": "学习笔记/Java拾遗迹/Java继承.md"
+    },
+    {
+      "basename": "Java继承_image_1",
+      "path": "附件/Java继承_image_1.png"
+    },
+    {
+      "basename": "Java泛型",
+      "path": "学习笔记/Java拾遗迹/Java泛型.md"
+    },
+    {
+      "basename": "Java泛型_image_1",
+      "path": "附件/Java泛型_image_1.png"
+    },
+    {
+      "basename": "JavaIO",
+      "path": "学习笔记/Java拾遗迹/JavaIO.md"
+    },
+    {
+      "basename": "JavaIO_image_2",
+      "path": "附件/JavaIO_image_2.png"
+    },
+    {
+      "basename": "Java内部类",
+      "path": "学习笔记/Java拾遗迹/Java内部类.md"
+    },
+    {
+      "basename": "Java容器_image_2",
+      "path": "附件/Java容器_image_2.png"
+    },
+    {
+      "basename": "截图笔记",
+      "path": "常用/截图笔记.md"
+    },
+    {
+      "basename": "截图笔记_image_8",
+      "path": "附件/截图笔记_image_8.png"
+    },
+    {
+      "basename": "模板_image_1",
+      "path": "附件/模板_image_1.png"
+    },
+    {
       "basename": "ucore操作系统实验：lab1",
       "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md"
     },
@@ -123,82 +199,6 @@
     {
       "basename": "MySQL学习笔记",
       "path": "D-草稿/MySQL学习笔记.md"
-    },
-    {
-      "basename": "Obsidian配置和插件",
-      "path": "D-草稿/Obsidian配置和插件.md"
-    },
-    {
-      "basename": "SpirngMVC进阶知识",
-      "path": "学习笔记/Java框架/SpringMVC/SpirngMVC进阶知识.md"
-    },
-    {
-      "basename": "Spring基于XML的配置",
-      "path": "学习笔记/Java框架/Spring/Spring基于XML的配置.md"
-    },
-    {
-      "basename": "Spirng基于Java和注解的配置",
-      "path": "学习笔记/Java框架/Spring/Spirng基于Java和注解的配置.md"
-    },
-    {
-      "basename": "Spring的一些高级配置",
-      "path": "学习笔记/Java框架/Spring/Spring的一些高级配置.md"
-    },
-    {
-      "basename": "Spring中的AOP配置",
-      "path": "学习笔记/Java框架/Spring/Spring中的AOP配置.md"
-    },
-    {
-      "basename": "对 Spring 的认识",
-      "path": "学习笔记/Spring/对 Spring 的认识.md"
-    },
-    {
-      "basename": "SpringMVC配置",
-      "path": "学习笔记/Java框架/SpringMVC/SpringMVC配置.md"
-    },
-    {
-      "basename": "2023-04-19",
-      "path": "A-日记/2023-04-19.md"
-    },
-    {
-      "basename": "软件列表",
-      "path": "常用/软件列表.md"
-    },
-    {
-      "basename": "Linux",
-      "path": "学习笔记/Linux.md"
-    },
-    {
-      "basename": "blog-frontmatter",
-      "path": "模板/blog-frontmatter.md"
-    },
-    {
-      "basename": "零碎知识",
-      "path": "学习笔记/Spring/零碎知识.md"
-    },
-    {
-      "basename": "java编程思想学习心得",
-      "path": "学习笔记/Spring/java编程思想学习心得.md"
-    },
-    {
-      "basename": "笔记目录",
-      "path": "常用/笔记目录.md"
-    },
-    {
-      "basename": "笔记模板",
-      "path": "模板/笔记模板.md"
-    },
-    {
-      "basename": "每日记录",
-      "path": "模板/每日记录.md"
-    },
-    {
-      "basename": "未命名",
-      "path": "模板/未命名.md"
-    },
-    {
-      "basename": "t-today",
-      "path": "模板/t-today.md"
     }
   ],
   "omittedPaths": [],

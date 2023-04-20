@@ -39,15 +39,16 @@ fileOutputStream.write("sdsd".getBytes());
 
 因为流这样一个概念是由方向的，所有只能从输入流中读取数据，向输出流写入数据。针对不同的数据源，Java 中提供了不同类型的输入输出流：
 
-![](附件/Pasted%20image%2020230121210103.png)
+![](附件/JavaIO_image_1.png)
 
-![](附件/Pasted%20image%2020230121210155.png)
+
+![](附件/JavaIO_image_2.png)
 
 ## 装饰器
 
 原始的输入输出流功能比较简单，比如没有缓冲功能，每次都是直接从数据源中读取，又比如读到的数据全是字节，需要我们手动转换为需要的类型。针对这种情况，Java 提供了各种功能的装饰器：
 
-![](附件/Pasted%20image%2020230121210852.png)
+![](附件/JavaIO_image_3.png)
 
 `DataInputStream` 这个装饰器使得我们能够从流中直接读取基本数据类型，它的使用方法如下，其他的装饰器也大致如此。
 
@@ -59,7 +60,7 @@ dataInputStream.readInt();
 
 同样的也有针对输出流的装饰器：
 
-![](附件/Pasted%20image%2020230121211039.png)
+![](附件/JavaIO_image_4.png)
 
 在流的设计上 Java 采用了装饰器模式，这样做的好处是可以自由的组合需要的功能，如想要一个带缓冲区并且能读取基本数据类型的输入流：
 
@@ -71,9 +72,9 @@ DataInputStream dataInputStream = new DataInputStream(new BufferedInputStream(fi
 
 在编程过程中通常要处理大量的文件内容，直接使用字节流来操作比较复杂，要处理编解码等问题，所有 Java 中直接提供了针对文本的相关输入输出流。
 
-![](附件/Pasted%20image%2020230121212923.png)
+![](附件/JavaIO_image_5.png)
 
-![](附件/Pasted%20image%2020230121213008.png)
+![](附件/JavaIO_image_6.png)
 
 使用方法与普通的输入输出流类似，只不读取出的都是字符而已。
 

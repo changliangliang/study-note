@@ -194,7 +194,8 @@ DataHolder.java:29: 错误: 不兼容的类型: int无法转换为String
 
 在一些现代的 IDE 中，甚至不用等到编译代码，当我们向容器中加入不正确的数据类型后 IDE 立马就会提示我们出现了错误。
 
-![](附件/Pasted%20image%2020230105004401.png)
+![](附件/Java泛型_image_1.png)
+
 
 像 `DataHolder` 这样在定义的时候使用了泛型通配符的类，就叫做泛型类。在 Java 中存在大量的类似的泛型类，如 `ArrayList` 和 `HashMap` 这样的容器，查看它们的源码可以看到使用到了泛型。
 
@@ -585,11 +586,11 @@ T[] datas = new T[10];
 
 或者学习 `ArrayList` 中的处理方式，使用 `Object` 数组来存储元素，在需要取出元素的时候做类型转换。
 
-![](附件/Pasted%20image%2020230120111242.png)
+![](附件/Java泛型_image_2.png)
 
-![](附件/Pasted%20image%2020230120111320.png)
+![](附件/Java泛型_image_3.png)
 
-![](附件/Pasted%20image%2020230120111337.png)
+![](附件/Java泛型_image_4.png)
 
 
 ## 通配符

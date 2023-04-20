@@ -78,7 +78,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md",
+                "file": "学习笔记/Spring/对 Spring 的认识.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -173,7 +173,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md",
+                "file": "学习笔记/Spring/对 Spring 的认识.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -190,7 +190,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md",
+                "file": "学习笔记/Spring/对 Spring 的认识.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -213,7 +213,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md"
+                "file": "学习笔记/Spring/对 Spring 的认识.md"
               }
             }
           },
@@ -225,8 +225,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -243,22 +242,33 @@
       "command-palette:打开命令面板": false,
       "templater-obsidian:Templater": false,
       "obsidian-attachment-name-formatting:Export Unused Attachments": false,
-      "dbfolder:创建一个新数据库表": false
+      "dbfolder:创建一个新数据库表": false,
+      "oz-clear-unused-images:Clear Unused Images": false
     }
   },
   "active": "3f80a72ad62b08ca",
   "lastOpenFiles": [
+    "附件/对 Spring 的认识_image_1.png",
+    "学习笔记/Java拾遗迹/Java类型信息.md",
+    "附件/Java类型信息_image_1.png",
+    "学习笔记/Java拾遗迹/零碎记录.md",
+    "附件/零碎记录_image_1.png",
+    "学习笔记/Java拾遗迹/Java容器.md",
+    "附件/Java容器_image_1.png",
+    "学习笔记/Java拾遗迹/Java继承.md",
+    "附件/Java继承_image_1.png",
+    "学习笔记/Java拾遗迹/Java泛型.md",
+    "附件/Java泛型_image_1.png",
+    "学习笔记/Java拾遗迹/JavaIO.md",
+    "附件/JavaIO_image_2.png",
+    "学习笔记/Java拾遗迹/Java内部类.md",
+    "附件/Java容器_image_2.png",
+    "常用/截图笔记.md",
+    "附件/截图笔记_image_8.png",
+    "附件/模板_image_1.png",
+    "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md",
+    "Unused_Attachments.zip",
     "附件/ucore操作系统实验：lab1_image_15.png",
-    "附件/ucore操作系统实验：lab1_image_14.png",
-    "附件/ucore操作系统实验：lab1_image_13.png",
-    "附件/ucore操作系统实验：lab1_image_12.png",
-    "附件/ucore操作系统实验：lab1_image_11.png",
-    "附件/ucore操作系统实验：lab1_image_10.png",
-    "附件/ucore操作系统实验：lab1_image_9.png",
-    "附件/ucore操作系统实验：lab1_image_8.png",
-    "附件/tmp1681987361851_ucore操作系统实验：lab1_image_8.png",
-    "附件/ucore操作系统实验：lab1_image_7.png",
-    "附件/ucore操作系统实验：lab1_image_6.png",
     "学习笔记/ucore操作系统实验/ucore操作系统实验：lab2.md",
     "学习笔记/VScode中的task.json和launch.json.md",
     "D-草稿/内核态和用户态.md",
@@ -269,22 +279,13 @@
     "学习笔记/this指向的问题.md",
     "A-日记/2023-04-20.md",
     "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md",
-    "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md",
     "学习笔记/长连接的若干问题.md",
     "学习笔记/npm源管理.md",
     "学习笔记/计算机中的路由表.md",
     "学习笔记/计算机的启动.md",
     "学习笔记/socket连接不安全的原因.md",
     "常用/列表.md",
-    "常用/博客列表.md",
-    "学习笔记/Java 中的 char 类型能否存储中文.md",
-    "assets/image-20210518213145-4133ash.png.md",
-    "学习笔记/docker镜像创建.md",
-    "assets/image-20221111155241-f5nxkle.png.md",
     "assets",
-    "学习笔记/docker常用容器创建.md",
-    "学习笔记/docker 常用操作.md",
-    "学习笔记/数据库学习笔记/SQL基础.md",
     "学习笔记/Java框架/SpringMVC",
     "学习笔记/Java框架/Spring",
     "学习笔记/Java框架",
@@ -293,7 +294,6 @@
     "学习笔记/ucore操作系统实验",
     "A-日记/未命名.txt",
     "A-日记/test1.cpp",
-    "未命名.canvas",
-    "Unused_Attachments.zip"
+    "未命名.canvas"
   ]
 }
