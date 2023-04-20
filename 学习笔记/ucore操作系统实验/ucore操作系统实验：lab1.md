@@ -2,7 +2,7 @@
 type: blog
 status: 未发布
 created: 2023-4-19 11:30:13
-updated: 2023-4-19 11:30:13
+updated: 2023-4-20 19:07:58
 tags: 操作系统 
 categories: ucore操作系统实验
 ---
@@ -197,8 +197,84 @@ buf[511] = 0xAA;
 
 ## 练习 2
 
+> 为了熟悉使用 qemu 和 gdb 进行的调试工作，我们进行如下的小练习：
+> 
+> - 从 CPU 加电后执行的第一条指令开始，单步跟踪 BIOS 的执行。
+> - 在初始化位置 0 x 7 c 00 设置实地址断点, 测试断点正常。
+> - 从 0 x 7 c 00 开始跟踪代码运行, 将单步跟踪反汇编得到的代码与 bootasm. S 和 bootblock. asm 进行比较。
+> - 自己找一个 bootloader 或内核中的代码位置，设置断点并进行测试。
+> 
+> 提示：参考附录“启动后第一条执行的指令”，可了解更详细的解释，以及如何单步调试和查看 BIOS 代码。
+> 
+> 提示：查看 labcodes_answer/lab 1_result/tools/lab 1 init 文件，用如下命令试试如何调试 bootloader 第一条指令：
+> 
+>  $ cd labcodes_answer/lab 1_result/
+>  $ make lab 1-mon
+
+### 问题 1：从 CPU 加电后执行的第一条指令开始，单步跟踪 BIOS 的执行
+
+在项目目录下执行 `make gdb` 命令，可以看到启动了一个 `QEMU` 虚拟机，此时它正等待着 `gdb` 远程连接。
+
+![](附件/ucore操作系统实验：lab1_image_5.png)
+
+接下来使用 `gdb` 命令进行调试，输入 `set architecture i8086` 设置当前调试的机器为 `i8086`，输入 `target remote : 1234` 连接到 `QEMU`。
+
+![](附件/ucore操作系统实验：lab1_image_6.png)
+
+此时输入 `si` 则会开始执行一条命令。
+
+![](附件/ucore操作系统实验：lab1_image_7.png)
+
+### 问题 2：在初始化位置 0x7c00 设置实地址断点, 测试断点正常
+
+每次进行调试时都进行连接是比较麻烦的，可以将一些前置命令放在一个文件里，如下面的文件 `gdbinit`，每次使用 `gdb -x gdbinit` 命令启动 `gdb`，那么文件 `gdbinit` 中所用的命令都会被执行，之后都通过这种方式来执行。
+
+![](附件/ucore操作系统实验：lab1_image_8.png)
+
+![](附件/ucore操作系统实验：lab1_image_9.png)
+
+在 `gdbinit` 文件中输入如下内容，再次进行调试：
+```int
+set architecture i8086
+target remote:1234
+b *0x7c00 #设置点
+c     
+x/10i $pc #显示汇编指令
+```
+
+![](附件/ucore操作系统实验：lab1_image_10.png)
+
+### 问题三：从0x7c00开始跟踪代码运行，将单步跟踪反汇编得到的代码与 bootasm.S 和 bootblock.asm 进行比较。
+
+`bootasm.S` 和 `bootblock.asm` 中的内容如下，比较可知两者与 `0x7c00` 处的指令基本一致。 
+
+![](附件/ucore操作系统实验：lab1_image_11.png)
+
+![](附件/ucore操作系统实验：lab1_image_12.png)
 
 
+这里选择使用 `kern/init/init.c` 中的 `kern_init` 函数作为断点，
+
+![](附件/ucore操作系统实验：lab1_image_13.png)
+
+将 `gdbinit` 文件修改为：
+
+```init
+set architecture i8086
+file bin/kernel
+target remote:1234
+b kern_init #设置点
+c     
+x/10i $pc #显示汇编指令
+```
+
+获得断点处的指令如下：
+
+![](附件/ucore操作系统实验：lab1_image_14.png)
+
+如果执行命令的时候使用 `gdb -x gdbinit -tui`，甚至可以打开一个 `gdb` 的命令行界面，直接现实断点处的源码文件。
+
+![](附件/ucore操作系统实验：lab1_image_15.png)
 ## 参考资料
 
 - [Lab\_1：练习1——理解通过make生成执行文件的过程 - chuyaoxin - 博客园](https://www.cnblogs.com/cyx-b/p/11750020.html)
