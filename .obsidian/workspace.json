@@ -167,7 +167,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 358.5
+    "width": 495.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -185,7 +185,7 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "fa24531ca14edd0c",
+  "active": "79ac3872e7e2e082",
   "lastOpenFiles": [
     "学习笔记/计算机知识/MBR 主引导记录.md",
     "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md",
