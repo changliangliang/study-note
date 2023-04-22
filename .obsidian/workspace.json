@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "fa24531ca14edd0c",
+            "id": "efd8c075c184fce6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "学习笔记/docker 常用操作.md",
+                "file": "未命名.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 517.5
   },
   "right": {
     "id": "471dd9cab433cd9a",
@@ -87,36 +87,8 @@
       {
         "id": "0174626a1befb30d",
         "type": "tabs",
+        "dimension": 45.837231057062674,
         "children": [
-          {
-            "id": "c3497e550662e817",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "学习笔记/docker 常用操作.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "bb4b5168a9c73f1f",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "学习笔记/docker 常用操作.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
           {
             "id": "8346761aae7cfd22",
             "type": "leaf",
@@ -134,16 +106,8 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习笔记/docker 常用操作.md"
+                "file": "未命名.md"
               }
-            }
-          },
-          {
-            "id": "0422fa356abc823e",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
             }
           },
           {
@@ -155,7 +119,52 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 2
+      },
+      {
+        "id": "e7beb231688408fa",
+        "type": "tabs",
+        "dimension": 54.162768942937326,
+        "children": [
+          {
+            "id": "0422fa356abc823e",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "bb4b5168a9c73f1f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "未命名.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c3497e550662e817",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "未命名.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -164,7 +173,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": true,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -175,13 +184,27 @@
       "obsidian-attachment-name-formatting:Export Unused Attachments": false,
       "dbfolder:创建一个新数据库表": false,
       "oz-clear-unused-images:Clear Unused Images": false,
-      "obsidian42-brat:BRAT": false
+      "obsidian42-brat:BRAT": false,
+      "cmdr:Obsidian Git: Create backup": false,
+      "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false
     }
   },
-  "active": "fa24531ca14edd0c",
+  "active": "efd8c075c184fce6",
   "lastOpenFiles": [
-    "学习笔记/docker常用容器创建.md",
+    "Excalidraw/Drawing 2023-04-23 00.41.52.excalidraw.md",
+    "未命名.md",
+    "Excalidraw/testsfsdf.md",
+    "Excalidraw/Drawing 2023-04-23 00.41.52.excalidraw.svg",
+    "Excalidraw/Drawing 2023-04-23 00.41.52.excalidraw.png",
+    "草稿/Git 学习笔记.md",
+    "草稿/C++学习笔记.md",
     "学习笔记/docker 常用操作.md",
+    "Excalidraw/testsfsdf.png",
+    "Excalidraw/未命名_image_1.png",
+    "Excalidraw/testsfsdf.svg",
+    "草稿/操作系统.md",
+    "Excalidraw",
+    "学习笔记/docker常用容器创建.md",
     "附件/docker 常用操作_image_24.png",
     "附件/docker 常用操作_image_23.png",
     "学习笔记/计算机知识/MBR 主引导记录.md",
@@ -196,26 +219,15 @@
     "学习笔记/计算机的启动.md",
     "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md",
     "学习笔记/ucore操作系统实验/ucore操作系统实验：lab2.md",
-    "附件/tmp1682144758625_MBR 主引导记录_image_1.png",
     "学习笔记/计算机知识",
     "日记/2023-04-21.md",
     "日记/2023-04-20.md",
     "模板/每日记录.md",
     "模板/笔记模板.md",
     "学习笔记/linux学习/ubuntu中的网络配置.md",
-    "附件/ucore操作系统实验：环境搭建_image_9.png",
-    "附件/ucore操作系统实验：环境搭建_image_8.png",
     "模板/笔记草稿.md",
     "模板/blog-frontmatter.md",
     "模板/未命名.md",
-    "日记/2023-02-27 发送到发.md",
-    "日记/2023-04-21 1.md",
-    "的说法撒旦法师打发.md",
-    "2023-04-21 日记文件.md",
-    "学习笔记/C++学习/2023-04-21 三大法师打发点.md",
-    "2023-04-21.md",
-    "附件/2023-04-21_image_1.png",
-    "附件/0033969A.png",
     "Unused_Attachments.zip",
     "assets",
     "学习笔记/Java框架/SpringMVC",
@@ -224,7 +236,6 @@
     "学习笔记/问题",
     "学习笔记/linux学习",
     "学习笔记/ucore操作系统实验",
-    "A-日记/未命名.txt",
     "未命名.canvas"
   ]
 }
