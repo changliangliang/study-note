@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "080dbc31ad3e6d14",
+        "id": "628151079e1283c2",
         "type": "tabs",
         "children": [
           {
-            "id": "1cf88efbb2c32cb3",
+            "id": "fa24531ca14edd0c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -153,13 +153,29 @@
               "type": "oz-calendar",
               "state": {}
             }
+          },
+          {
+            "id": "79ac3872e7e2e082",
+            "type": "leaf",
+            "state": {
+              "type": "git-history-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "2c7e8caf071faa86",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 358.5
+    "width": 495.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -177,9 +193,10 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "1cf88efbb2c32cb3",
+  "active": "79ac3872e7e2e082",
   "lastOpenFiles": [
     "学习笔记/计算机知识/MBR 主引导记录.md",
+    "学习笔记/卡片/Java类/org.springframework.web.context.ContextLoaderListener.md",
     "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md",
     "日记/2023-04-22.md",
     "附件/MBR 主引导记录_image_1.png",
