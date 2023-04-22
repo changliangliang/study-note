@@ -381,6 +381,22 @@ sudo systemctl enable docker.service
 docker update --restart always 容器名 
 ```
 
+### 权限设置
+
+![](附件/docker%20常用操作_image_23.png)
+
+刚安装好的 `docker` 在使用时会提示没有权限，必须使用 `sudo` 来执行，解决方法为：
+
+- 添加 `docker` 用户组：`sudo groupadd docker`
+- 将当前用户添加进 `docker` 用户组：`sudo gpasswd -a ${USER} docker`
+- 重启 `docekr`：`sudo systemctl restart docker`
+- 修改 `docker.sock` 文件权限：`sudo chmod a+rw /var/run/docker.sock`
+
+之后再执行命令就不需要添加 `sudo` 了：
+
+![](附件/docker%20常用操作_image_24.png)
+
+
 
 ## 参考资料
 

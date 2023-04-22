@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "docker 常用操作",
+      "path": "学习笔记/docker 常用操作.md"
+    },
+    {
+      "basename": "docker常用容器创建",
+      "path": "学习笔记/docker常用容器创建.md"
+    },
+    {
       "basename": "MBR 主引导记录",
       "path": "学习笔记/计算机知识/MBR 主引导记录.md"
     },
@@ -71,10 +79,6 @@
     {
       "basename": "长连接的若干问题",
       "path": "学习笔记/长连接的若干问题.md"
-    },
-    {
-      "basename": "docker 常用操作",
-      "path": "学习笔记/docker 常用操作.md"
     },
     {
       "basename": "VScode中的task.json和launch.json",

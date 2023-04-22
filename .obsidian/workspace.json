@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "学习笔记/计算机知识/MBR 主引导记录.md",
+                "file": "学习笔记/docker 常用操作.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#cplusplus",
+                "query": "docker",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "学习笔记/计算机知识/MBR 主引导记录.md",
+                "file": "学习笔记/docker 常用操作.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "学习笔记/计算机知识/MBR 主引导记录.md",
+                "file": "学习笔记/docker 常用操作.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习笔记/计算机知识/MBR 主引导记录.md"
+                "file": "学习笔记/docker 常用操作.md"
               }
             }
           },
@@ -180,10 +180,14 @@
   },
   "active": "fa24531ca14edd0c",
   "lastOpenFiles": [
+    "学习笔记/docker常用容器创建.md",
+    "学习笔记/docker 常用操作.md",
+    "附件/docker 常用操作_image_24.png",
+    "附件/docker 常用操作_image_23.png",
+    "学习笔记/计算机知识/MBR 主引导记录.md",
     "草稿/未命名 1.md",
     "附件/JavaIO_image_1.png",
     "学习笔记/Java拾遗迹/JavaIO.md",
-    "学习笔记/计算机知识/MBR 主引导记录.md",
     "学习笔记/卡片/Java类/org.springframework.web.context.ContextLoaderListener.md",
     "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md",
     "日记/2023-04-22.md",
@@ -210,12 +214,8 @@
     "2023-04-21 日记文件.md",
     "学习笔记/C++学习/2023-04-21 三大法师打发点.md",
     "2023-04-21.md",
-    "常用/笔记目录.md",
     "附件/2023-04-21_image_1.png",
     "附件/0033969A.png",
-    "附件/2023-04-20_image_1.png",
-    "学习笔记/长连接的若干问题.md",
-    "附件/ucore操作系统实验：环境搭建_image_6.png",
     "Unused_Attachments.zip",
     "assets",
     "学习笔记/Java框架/SpringMVC",
