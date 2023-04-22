@@ -5,6 +5,10 @@
       "path": "学习笔记/计算机知识/MBR 主引导记录.md"
     },
     {
+      "basename": "org.springframework.web.context.ContextLoaderListener",
+      "path": "学习笔记/卡片/Java类/org.springframework.web.context.ContextLoaderListener.md"
+    },
+    {
       "basename": "ucore操作系统实验：lab1",
       "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "docker常用容器创建",
       "path": "学习笔记/docker常用容器创建.md"
-    },
-    {
-      "basename": "SQL基础",
-      "path": "学习笔记/数据库学习笔记/SQL基础.md"
     }
   ],
   "omittedPaths": [],
