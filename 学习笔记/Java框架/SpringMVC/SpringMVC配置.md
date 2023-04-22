@@ -41,7 +41,7 @@ SpringMVC 是以 `DispatcherServlet` 类为入口的，该类本质上也是一�
 </web-app>
 ```
 
-* 监听器 [`org.springframework.web.context.ContextLoaderListener`](Z-卡片/Java类/org.springframework.web.context.ContextLoaderListener.md) 的作用就是启动 `Web` 容器时自动装配 `ApplicationContext` ，这里指的就是 Spring 容器。因为它实现了 `ServletContextListener` 这个接口，服务器启动容器时，就会默认执行它实现的方法。`ApplicationContext ` 配置文件的默认路径是 ` /WEB-INF/applicationContext. xml `，在 ` WEB-INF ` 目录下创建的 ` xml ` 文件的名称必须是 ` applicationContext. xml `。如果是要自定义文件名可以在 ` web. xml ` 里加入 ` contextConfigLocation ` 这个参数。如果有多个 ` xml ` 文件，可以写在一起并以“,”号分隔，也可以这样 ` applicationContext-*. xml ` 采用通配符。
+* 监听器 [`org.springframework.web.context.ContextLoaderListener`](学习笔记/卡片/Java类/org.springframework.web.context.ContextLoaderListener.md) 的作用就是启动 `Web` 容器时自动装配 `ApplicationContext` ，这里指的就是 Spring 容器。因为它实现了 `ServletContextListener` 这个接口，服务器启动容器时，就会默认执行它实现的方法。`ApplicationContext ` 配置文件的默认路径是 ` /WEB-INF/applicationContext. xml `，在 ` WEB-INF ` 目录下创建的 ` xml ` 文件的名称必须是 ` applicationContext. xml `。如果是要自定义文件名可以在 ` web. xml ` 里加入 ` contextConfigLocation ` 这个参数。如果有多个 ` xml ` 文件，可以写在一起并以“,”号分隔，也可以这样 ` applicationContext-*. xml ` 采用通配符。
 * 使用 `Spring MVC`，配置 `DispatcherServlet` 是第一步。`DispatcherServlet` 是一个 `Servlet`，所以可以配置多个 `DispatcherServlet`。这个 `Servlet` 用于拦击请求，使请求进入到 `SpringMVC` 中的逻辑中，它还会引入一个 `SpringMVC` 容器，该容器配置文件的默认路径为 `/WEB-INF/<servlet-name>-servlet.xml`，如果自定义配置文件位置的话，和 `Spring` 容器是一样的。
 
 ### Java 配置引入

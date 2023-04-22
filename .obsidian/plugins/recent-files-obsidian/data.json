@@ -1,12 +1,88 @@
 {
   "recentFiles": [
     {
-      "basename": "对 Spring 的认识",
-      "path": "学习笔记/Spring/对 Spring 的认识.md"
+      "basename": "2023-04-22",
+      "path": "日记/2023-04-22.md"
     },
     {
-      "basename": "对 Spring 的认识_image_1",
-      "path": "附件/对 Spring 的认识_image_1.png"
+      "basename": "MBR 主引导记录",
+      "path": "学习笔记/计算机知识/MBR 主引导记录.md"
+    },
+    {
+      "basename": "计算机的启动",
+      "path": "学习笔记/计算机的启动.md"
+    },
+    {
+      "basename": "ucore操作系统实验：环境搭建",
+      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md"
+    },
+    {
+      "basename": "ucore操作系统实验：lab1",
+      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md"
+    },
+    {
+      "basename": "ucore操作系统实验：lab2",
+      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab2.md"
+    },
+    {
+      "basename": "2023-04-20",
+      "path": "日记/2023-04-20.md"
+    },
+    {
+      "basename": "每日记录",
+      "path": "模板/每日记录.md"
+    },
+    {
+      "basename": "笔记模板",
+      "path": "模板/笔记模板.md"
+    },
+    {
+      "basename": "ubuntu中的网络配置",
+      "path": "学习笔记/linux学习/ubuntu中的网络配置.md"
+    },
+    {
+      "basename": "未命名 1",
+      "path": "草稿/未命名 1.md"
+    },
+    {
+      "basename": "blog-frontmatter",
+      "path": "模板/blog-frontmatter.md"
+    },
+    {
+      "basename": "未命名",
+      "path": "模板/未命名.md"
+    },
+    {
+      "basename": "2023-04-21 三大法师打发点",
+      "path": "学习笔记/C++学习/2023-04-21 三大法师打发点.md"
+    },
+    {
+      "basename": "笔记目录",
+      "path": "常用/笔记目录.md"
+    },
+    {
+      "basename": "长连接的若干问题",
+      "path": "学习笔记/长连接的若干问题.md"
+    },
+    {
+      "basename": "docker 常用操作",
+      "path": "学习笔记/docker 常用操作.md"
+    },
+    {
+      "basename": "VScode中的task.json和launch.json",
+      "path": "学习笔记/VScode中的task.json和launch.json.md"
+    },
+    {
+      "basename": "Java 中的 char 类型能否存储中文",
+      "path": "学习笔记/Java 中的 char 类型能否存储中文.md"
+    },
+    {
+      "basename": "计算机的启动_image_1",
+      "path": "附件/计算机的启动_image_1.png"
+    },
+    {
+      "basename": "对 Spring 的认识",
+      "path": "学习笔记/Spring/对 Spring 的认识.md"
     },
     {
       "basename": "Java类型信息",
@@ -77,28 +153,12 @@
       "path": "附件/模板_image_1.png"
     },
     {
-      "basename": "ucore操作系统实验：lab1",
-      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md"
-    },
-    {
-      "basename": "ucore操作系统实验：lab2",
-      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab2.md"
-    },
-    {
-      "basename": "VScode中的task.json和launch.json",
-      "path": "学习笔记/VScode中的task.json和launch.json.md"
-    },
-    {
       "basename": "内核态和用户态",
-      "path": "D-草稿/内核态和用户态.md"
+      "path": "草稿/内核态和用户态.md"
     },
     {
       "basename": "计算机补完计划——2023年",
       "path": "学习笔记/计算机补完计划——2023年.md"
-    },
-    {
-      "basename": "ubuntu中的网络配置",
-      "path": "学习笔记/linux学习/ubuntu中的网络配置.md"
     },
     {
       "basename": "linux常用命令",
@@ -109,28 +169,12 @@
       "path": "学习笔记/this指向的问题.md"
     },
     {
-      "basename": "2023-04-20",
-      "path": "A-日记/2023-04-20.md"
-    },
-    {
-      "basename": "ucore操作系统实验：环境搭建",
-      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md"
-    },
-    {
-      "basename": "长连接的若干问题",
-      "path": "学习笔记/长连接的若干问题.md"
-    },
-    {
       "basename": "npm源管理",
       "path": "学习笔记/npm源管理.md"
     },
     {
       "basename": "计算机中的路由表",
       "path": "学习笔记/计算机中的路由表.md"
-    },
-    {
-      "basename": "计算机的启动",
-      "path": "学习笔记/计算机的启动.md"
     },
     {
       "basename": "socket连接不安全的原因",
@@ -145,10 +189,6 @@
       "path": "常用/博客列表.md"
     },
     {
-      "basename": "Java 中的 char 类型能否存储中文",
-      "path": "学习笔记/Java 中的 char 类型能否存储中文.md"
-    },
-    {
       "basename": "docker镜像创建",
       "path": "学习笔记/docker镜像创建.md"
     },
@@ -157,48 +197,8 @@
       "path": "学习笔记/docker常用容器创建.md"
     },
     {
-      "basename": "docker 常用操作",
-      "path": "学习笔记/docker 常用操作.md"
-    },
-    {
       "basename": "SQL基础",
       "path": "学习笔记/数据库学习笔记/SQL基础.md"
-    },
-    {
-      "basename": "操作系统",
-      "path": "D-草稿/操作系统.md"
-    },
-    {
-      "basename": "常用软件配置",
-      "path": "D-草稿/常用软件配置.md"
-    },
-    {
-      "basename": "未命名",
-      "path": "D-草稿/未命名.md"
-    },
-    {
-      "basename": "中断、异常和系统调用",
-      "path": "D-草稿/中断、异常和系统调用.md"
-    },
-    {
-      "basename": "C++学习笔记",
-      "path": "D-草稿/C++学习笔记.md"
-    },
-    {
-      "basename": "CS自学指南",
-      "path": "D-草稿/CS自学指南.md"
-    },
-    {
-      "basename": "Git 学习笔记",
-      "path": "D-草稿/Git 学习笔记.md"
-    },
-    {
-      "basename": "git学习笔记",
-      "path": "D-草稿/git学习笔记.md"
-    },
-    {
-      "basename": "MySQL学习笔记",
-      "path": "D-草稿/MySQL学习笔记.md"
     }
   ],
   "omittedPaths": [],

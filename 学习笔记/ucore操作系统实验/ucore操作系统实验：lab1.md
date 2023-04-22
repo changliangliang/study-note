@@ -7,7 +7,6 @@ tags: 操作系统
 categories: ucore操作系统实验
 ---
 
-
 ## 练习 1
 
 > 练习 1：理解通过 make 生成执行文件的过程。（要求在报告中写出对下述问题的回答）
@@ -244,7 +243,7 @@ x/10i $pc #显示汇编指令
 
 ![](附件/ucore操作系统实验：lab1_image_10.png)
 
-### 问题三：从0x7c00开始跟踪代码运行，将单步跟踪反汇编得到的代码与 bootasm.S 和 bootblock.asm 进行比较。
+### 问题 3：从0x7c00开始跟踪代码运行，将单步跟踪反汇编得到的代码与 bootasm.S 和 bootblock.asm 进行比较
 
 `bootasm.S` 和 `bootblock.asm` 中的内容如下，比较可知两者与 `0x7c00` 处的指令基本一致。 
 
@@ -252,8 +251,9 @@ x/10i $pc #显示汇编指令
 
 ![](附件/ucore操作系统实验：lab1_image_12.png)
 
+### 问题 4：自己找一个 bootloader 或内核中的代码位置，设置断点并进行测试
 
-这里选择使用 `kern/init/init.c` 中的 `kern_init` 函数作为断点，
+这里选择使用 `kern/init/init.c` 中的 `kern_init` 函数作为断点：
 
 ![](附件/ucore操作系统实验：lab1_image_13.png)
 
