@@ -4,29 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "fcf944bc0940f481",
+        "id": "080dbc31ad3e6d14",
         "type": "tabs",
         "children": [
           {
-            "id": "ef4d7f2156e91910",
+            "id": "1cf88efbb2c32cb3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "日记/2023-04-22.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "55cfe9e0e385e645",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md",
+                "file": "学习笔记/计算机知识/MBR 主引导记录.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -107,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "日记/2023-04-22.md",
+                "file": "学习笔记/计算机知识/MBR 主引导记录.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "日记/2023-04-22.md",
+                "file": "学习笔记/计算机知识/MBR 主引导记录.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "日记/2023-04-22.md"
+                "file": "学习笔记/计算机知识/MBR 主引导记录.md"
               }
             }
           },
@@ -190,19 +177,19 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "ef4d7f2156e91910",
+  "active": "1cf88efbb2c32cb3",
   "lastOpenFiles": [
     "学习笔记/计算机知识/MBR 主引导记录.md",
+    "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md",
+    "日记/2023-04-22.md",
     "附件/MBR 主引导记录_image_1.png",
     "附件/tmp1682145144760_MBR 主引导记录_image_1.png",
     "学习笔记/计算机的启动.md",
     "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md",
-    "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md",
     "学习笔记/ucore操作系统实验/ucore操作系统实验：lab2.md",
     "附件/tmp1682144758625_MBR 主引导记录_image_1.png",
     "学习笔记/计算机知识",
     "日记/2023-04-21.md",
-    "日记/2023-04-22.md",
     "日记/2023-04-20.md",
     "模板/每日记录.md",
     "模板/笔记模板.md",
