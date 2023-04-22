@@ -161,9 +161,17 @@
               "type": "git-history-view",
               "state": {}
             }
+          },
+          {
+            "id": "2c7e8caf071faa86",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
