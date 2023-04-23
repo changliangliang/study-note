@@ -189,8 +189,8 @@
       "obsidian-projects:Open projects": false,
       "notion-like-tables:Create Notion-Like table": false,
       "dbfolder:创建一个新数据库表": false,
-      "obsidian-memos:Memos": false,
-      "meld-encrypt:Create new encrypted note": false
+      "meld-encrypt:Create new encrypted note": false,
+      "obsidian-memos:Memos": false
     }
   },
   "active": "67e836c1405970ce",
