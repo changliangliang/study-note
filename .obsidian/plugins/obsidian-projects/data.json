@@ -2,15 +2,114 @@
   "version": 2,
   "projects": [
     {
+      "fieldConfig": {
+        "File": {
+          "richText": true
+        }
+      },
+      "defaultName": "",
+      "templates": [],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "dataview",
+        "config": {
+          "query": "table \nwithout id\nfila.path as \"sdf\",\nfile.link as \"博客\",\nfile.tags as \"标签\",\nfile.cday as \"创建日期\",\nfile.mday as \"修改日期\",\nstatus as 状态\nfrom \"学习笔记\" \nwhere \ncontains(type, \"blog\")"
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {
+            "fieldConfig": {
+              "File": {
+                "hide": true
+              }
+            }
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "id": "b948962b-a1f6-4491-b5c8-6cc2a33d49bb",
+          "name": "Table",
+          "type": "table"
+        },
+        {
+          "config": {
+            "groupByField": "状态"
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "id": "4a889976-93c7-4e51-96cd-3070464ac0c7",
+          "name": "Board",
+          "type": "board"
+        },
+        {
+          "config": {
+            "dateField": "创建日期",
+            "interval": "month"
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "id": "b38b6c50-1fbc-41b1-9c48-fa6ded3c425e",
+          "name": "Calendar",
+          "type": "calendar"
+        },
+        {
+          "config": {
+            "fitStyle": "contain",
+            "coverField": "博客"
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "id": "4e91649b-3355-4180-b71c-d280c3909f4d",
+          "name": "Gallery",
+          "type": "gallery"
+        },
+        {
+          "config": {
+            "filepath": "/e1e63d48-e40f-4de5-95e1-a17b27b7fb94_db.md"
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "id": "e1e63d48-e40f-4de5-95e1-a17b27b7fb94",
+          "name": "Database Folder",
+          "type": "dbfolder-view"
+        }
+      ],
+      "id": "9b3d02d2-3c72-46cd-9a70-b47859f44e19",
+      "name": "Untitled project"
+    },
+    {
       "fieldConfig": {},
       "defaultName": "",
       "templates": [],
       "excludedNotes": [],
       "isDefault": true,
       "dataSource": {
-        "kind": "dataview",
+        "kind": "folder",
         "config": {
-          "query": "TABLE type as \"type\" FROM \"日记\""
+          "path": "日记",
+          "recursive": false
         }
       },
       "newNotesFolder": "",
@@ -23,7 +122,7 @@
           "colors": {
             "conditions": []
           },
-          "id": "b948962b-a1f6-4491-b5c8-6cc2a33d49bb",
+          "id": "eb89d4c6-4c44-400d-ac78-39919c0c0e13",
           "name": "Table",
           "type": "table"
         },
@@ -35,13 +134,27 @@
           "colors": {
             "conditions": []
           },
-          "id": "4a889976-93c7-4e51-96cd-3070464ac0c7",
-          "name": "Board",
-          "type": "board"
+          "id": "309a443e-b566-4774-8df8-ecba8b114187",
+          "name": "Calendar",
+          "type": "calendar"
+        },
+        {
+          "config": {
+            "filepath": "日记/91e67ba9-58d0-45b8-ab2e-7f1ec11a1b6e_db.md"
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "id": "91e67ba9-58d0-45b8-ab2e-7f1ec11a1b6e",
+          "name": "Database Folder",
+          "type": "dbfolder-view"
         }
       ],
-      "id": "9b3d02d2-3c72-46cd-9a70-b47859f44e19",
-      "name": "Untitled project"
+      "id": "65cdad76-2c72-43a8-8f29-0dc29cf57f91",
+      "name": "cessdfas"
     }
   ],
   "preferences": {

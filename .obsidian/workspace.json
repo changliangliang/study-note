@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "48b97798ad23677f",
+        "id": "a281e2d5473ed889",
         "type": "tabs",
         "children": [
           {
-            "id": "eea53458cb09eee1",
+            "id": "f856d24c6f5987b3",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -16,12 +16,12 @@
             }
           },
           {
-            "id": "2ef3e81f8c59830a",
+            "id": "626327091968f79b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "未命名.md",
+                "file": "日记/2023-04-22.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -29,12 +29,12 @@
             }
           },
           {
-            "id": "9b97fce1e5bf5bef",
+            "id": "03c58d9f9cb9ce5b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "常用/博客列表.md",
+                "file": "日记/2023-04-22.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -42,51 +42,20 @@
             }
           },
           {
-            "id": "ef544faf36aaf6f0",
+            "id": "6f7b8efe5207c578",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "未命名.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "obsidian-projects",
+              "state": {}
             }
           },
           {
-            "id": "58d3ca9a3d922205",
+            "id": "638f400d19805457",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "未命名.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5d15fb32f5f53d4d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "未命名.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e4743c3de08b5440",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "日记/2023-04-23.md",
+                "file": "日记/2023-04-22.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -94,7 +63,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -152,7 +121,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 477.5
+    "width": 259.5
   },
   "right": {
     "id": "471dd9cab433cd9a",
@@ -179,9 +148,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "未命名.md"
-              }
+              "state": {}
             }
           },
           {
@@ -221,7 +188,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "未命名.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -233,7 +199,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "未命名.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -268,18 +233,28 @@
       "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
       "obsidian-projects:Open projects": false,
       "notion-like-tables:Create Notion-Like table": false,
-      "obsidian-memos:Memos": false,
-      "dbfolder:创建一个新数据库表": false
+      "dbfolder:创建一个新数据库表": false,
+      "obsidian-memos:Memos": false
     }
   },
-  "active": "2ef3e81f8c59830a",
+  "active": "6f7b8efe5207c578",
   "lastOpenFiles": [
-    "常用/博客列表.md",
-    "Untitled.table",
-    "日记/2023-04-23.md",
-    "日记/2023-04-20.md",
+    "日记/91e67ba9-58d0-45b8-ab2e-7f1ec11a1b6e_db.md",
+    "日记/77fc4df5-9d20-4a88-9b70-2fc65bd5b92c_db.md",
     "日记/2023-04-22.md",
+    "日记/2023-04-20.md",
+    "日记/2023-04-23.md",
+    "大法师打发斯蒂芬.md",
+    "学习笔记/C++学习/C++知识.md",
+    "Untitled 1.table",
+    "Untitled.table",
+    "e1e63d48-e40f-4de5-95e1-a17b27b7fb94_db.md",
+    "2a3875e1-5468-4a2a-bd20-6613aab26bf3_db.md",
+    "常用/博客列表.md",
     "未命名.md",
+    "学习笔记/docker 常用操作.md",
+    "学习笔记/Java框架/Spring/Spring中的AOP配置.md",
+    "学习笔记/Java框架/Spring/Spirng基于Java和注解的配置.md",
     "dasfasdf.md",
     "日记/dac2beff-5cbd-45ed-95b8-1aac0d04406f_db.md",
     "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md",
@@ -292,10 +267,6 @@
     "学习笔记/linux学习/ubuntu中的网络配置.md",
     "学习笔记/linux学习/linux常用命令.md",
     "学习笔记/数据库学习笔记/SQL基础.md",
-    "学习笔记/ucore操作系统实验/88bc0a9d-e991-443f-8f06-0e1bba4e0b21_db.md",
-    "学习笔记/obsidian插件记录.md",
-    "附件/SpirngMVC进阶知识_image_2.png.md",
-    "学习笔记/Spring/对 Spring 的认识.md",
     "附件/image/对 Spring 的认识_image_1.png",
     "附件/image",
     "附件/image/未命名_image_1.png",
@@ -303,12 +274,8 @@
     "附件/未命名_img_1.png",
     "附件/未命名_image_1.png",
     "Excalidraw/未命名_image_1.png",
-    "Excalidraw/Drawing 2023-04-23 00.41.52.excalidraw.md",
-    "Excalidraw/testsfsdf.md",
     "Excalidraw/Drawing 2023-04-23 00.41.52.excalidraw.svg",
     "Excalidraw/Drawing 2023-04-23 00.41.52.excalidraw.png",
-    "草稿/Git 学习笔记.md",
-    "草稿/C++学习笔记.md",
     "Excalidraw/testsfsdf.png",
     "Excalidraw/未命名_image_2.svg",
     "Excalidraw",
@@ -318,7 +285,6 @@
     "学习笔记/Java框架/SpringMVC",
     "学习笔记/Java框架/Spring",
     "学习笔记/Java框架",
-    "学习笔记/问题",
     "未命名.canvas"
   ]
 }
