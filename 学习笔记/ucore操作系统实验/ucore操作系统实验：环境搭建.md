@@ -1,10 +1,12 @@
 
+
 ---
 type: blog
 status: 未发布
-created: 2023-4-20 23:56:13
-updated: 2023-4-20 23:56:58
-tags: 操作系统 
+date: 2023-04-20 23:56:13
+created: 2023-04-20 23:56:13
+updated: 2023-04-20 23:56:58
+tags: 操作系统
 categories: ucore操作系统实验
 ---
 

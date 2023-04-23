@@ -1,16 +1,40 @@
 {
   "recentFiles": [
     {
-      "basename": "88bc0a9d-e991-443f-8f06-0e1bba4e0b21_db",
-      "path": "学习笔记/ucore操作系统实验/88bc0a9d-e991-443f-8f06-0e1bba4e0b21_db.md"
+      "basename": "2023-04-20",
+      "path": "日记/2023-04-20.md"
     },
     {
-      "basename": "未命名",
-      "path": "未命名.md"
+      "basename": "ucore操作系统实验：lab1",
+      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md"
+    },
+    {
+      "basename": "ucore操作系统实验：环境搭建",
+      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md"
     },
     {
       "basename": "ucore操作系统实验：lab2",
       "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab2.md"
+    },
+    {
+      "basename": "ubuntu中的网络配置",
+      "path": "学习笔记/linux学习/ubuntu中的网络配置.md"
+    },
+    {
+      "basename": "linux常用命令",
+      "path": "学习笔记/linux学习/linux常用命令.md"
+    },
+    {
+      "basename": "SQL基础",
+      "path": "学习笔记/数据库学习笔记/SQL基础.md"
+    },
+    {
+      "basename": "dasfasdf",
+      "path": "dasfasdf.md"
+    },
+    {
+      "basename": "未命名",
+      "path": "未命名.md"
     },
     {
       "basename": "obsidian插件记录",
@@ -77,10 +101,6 @@
       "path": "学习笔记/卡片/Java类/org.springframework.web.context.ContextLoaderListener.md"
     },
     {
-      "basename": "ucore操作系统实验：lab1",
-      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md"
-    },
-    {
       "basename": "2023-04-22",
       "path": "日记/2023-04-22.md"
     },
@@ -89,24 +109,12 @@
       "path": "学习笔记/计算机的启动.md"
     },
     {
-      "basename": "ucore操作系统实验：环境搭建",
-      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md"
-    },
-    {
-      "basename": "2023-04-20",
-      "path": "日记/2023-04-20.md"
-    },
-    {
       "basename": "每日记录",
       "path": "模板/每日记录.md"
     },
     {
       "basename": "笔记模板",
       "path": "模板/笔记模板.md"
-    },
-    {
-      "basename": "ubuntu中的网络配置",
-      "path": "学习笔记/linux学习/ubuntu中的网络配置.md"
     },
     {
       "basename": "blog-frontmatter",
@@ -187,18 +195,6 @@
     {
       "basename": "Java内部类",
       "path": "学习笔记/Java拾遗迹/Java内部类.md"
-    },
-    {
-      "basename": "Java内部类_image_1",
-      "path": "附件/image/Java内部类_image_1.png"
-    },
-    {
-      "basename": "截图笔记",
-      "path": "常用/截图笔记.md"
-    },
-    {
-      "basename": "截图笔记_image_8",
-      "path": "附件/image/截图笔记_image_8.png"
     }
   ],
   "omittedPaths": [],

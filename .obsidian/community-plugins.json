@@ -9,10 +9,8 @@
   "tag-wrangler",
   "obsidian-tasks-plugin",
   "dataview",
-  "dbfolder",
   "obsidian-plaintext",
   "obsidian-front-matter-title-plugin",
-  "obsidian-kanban",
   "obsidian-auto-link-title",
   "editing-toolbar",
   "recent-files-obsidian",
@@ -28,5 +26,7 @@
   "obsidian-projects",
   "notion-like-tables",
   "obsidian-memos",
-  "obsidian-attachment-name-formatting"
+  "obsidian-attachment-name-formatting",
+  "calendar",
+  "dbfolder"
 ]
