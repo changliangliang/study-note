@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "MBR 主引导记录",
+      "path": "学习笔记/计算机知识/MBR 主引导记录.md"
+    },
+    {
       "basename": "列表",
       "path": "常用/列表.md"
     },
@@ -187,10 +191,6 @@
     {
       "basename": "docker常用容器创建",
       "path": "学习笔记/docker常用容器创建.md"
-    },
-    {
-      "basename": "MBR 主引导记录",
-      "path": "学习笔记/计算机知识/MBR 主引导记录.md"
     },
     {
       "basename": "JavaIO_image_1",

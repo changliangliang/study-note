@@ -4,32 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "6fbedefb802e5ef5",
+        "id": "d987b67d10a88fed",
         "type": "tabs",
         "children": [
           {
-            "id": "8186e0de461ff6e6",
+            "id": "c0eb1e2b93bcebaf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "常用/列表.md",
-                "mode": "preview",
+                "file": "学习笔记/计算机知识/MBR 主引导记录.md",
+                "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
-          },
-          {
-            "id": "2ec5ebeeb6fa2712",
-            "type": "leaf",
-            "state": {
-              "type": "obsidian-projects",
-              "state": {}
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -115,7 +106,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "常用/列表.md"
+                "file": "学习笔记/计算机知识/MBR 主引导记录.md"
               }
             }
           },
@@ -156,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "常用/列表.md",
+                "file": "学习笔记/计算机知识/MBR 主引导记录.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +159,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "常用/列表.md",
+                "file": "学习笔记/计算机知识/MBR 主引导记录.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +202,7 @@
       "workspaces-plus:Manage workspaces": false
     }
   },
-  "active": "8186e0de461ff6e6",
+  "active": "c0eb1e2b93bcebaf",
   "lastOpenFiles": [
     "未命名看板.md",
     "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md",
