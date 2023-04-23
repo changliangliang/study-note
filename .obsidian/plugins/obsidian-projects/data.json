@@ -2,225 +2,52 @@
   "version": 2,
   "projects": [
     {
-      "fieldConfig": {
-        "status": {
-          "options": [
-            "未发布",
-            "已发布"
-          ]
-        }
-      },
+      "fieldConfig": {},
       "defaultName": "",
       "templates": [],
       "excludedNotes": [],
-      "isDefault": false,
+      "isDefault": true,
       "dataSource": {
-        "kind": "folder",
+        "kind": "dataview",
         "config": {
-          "path": "学习笔记/ucore操作系统实验",
-          "recursive": false
+          "query": "TABLE type as \"type\" FROM \"日记\""
         }
       },
       "newNotesFolder": "",
       "views": [
         {
-          "config": {
-            "fieldConfig": {
-              "created": {
-                "width": 185
-              },
-              "categories": {
-                "width": 158
-              },
-              "path": {
-                "width": 122
-              },
-              "name": {
-                "width": 285
-              }
-            }
-          },
+          "config": {},
           "filter": {
-            "conditions": [
-              {
-                "field": "name",
-                "operator": "is-not-empty",
-                "enabled": true
-              }
-            ]
+            "conditions": []
           },
           "colors": {
             "conditions": []
           },
-          "id": "50855e47-228e-4422-831b-19e6c1c60af8",
+          "id": "b948962b-a1f6-4491-b5c8-6cc2a33d49bb",
           "name": "Table",
           "type": "table"
         },
         {
-          "config": {
-            "groupByField": "categories"
-          },
+          "config": {},
           "filter": {
             "conditions": []
           },
           "colors": {
             "conditions": []
           },
-          "id": "016aeb8a-bb72-47ae-9ea2-34c691b9ca33",
+          "id": "4a889976-93c7-4e51-96cd-3070464ac0c7",
           "name": "Board",
           "type": "board"
-        },
-        {
-          "config": {
-            "fitStyle": "contain"
-          },
-          "filter": {
-            "conditions": []
-          },
-          "colors": {
-            "conditions": []
-          },
-          "id": "de411082-e48c-4c59-957f-efb35adc5cd6",
-          "name": "Gallery",
-          "type": "gallery"
-        },
-        {
-          "config": {},
-          "filter": {
-            "conditions": []
-          },
-          "colors": {
-            "conditions": []
-          },
-          "id": "984b25a3-9054-4b08-9581-4817e2a6b695",
-          "name": "Gallery 1",
-          "type": "gallery"
-        },
-        {
-          "config": {
-            "interval": "month"
-          },
-          "filter": {
-            "conditions": []
-          },
-          "colors": {
-            "conditions": []
-          },
-          "id": "e9150788-fd11-44c9-a1c7-e6646a19866a",
-          "name": "Calendar",
-          "type": "calendar"
-        },
-        {
-          "config": {
-            "filepath": "学习笔记/ucore操作系统实验/fe29ba42-67e7-40a3-858f-aad2ba1140ee_db.md"
-          },
-          "filter": {
-            "conditions": []
-          },
-          "colors": {
-            "conditions": []
-          },
-          "id": "fe29ba42-67e7-40a3-858f-aad2ba1140ee",
-          "name": "dsfsdf",
-          "type": "dbfolder-view"
         }
       ],
-      "id": "ac7a992a-3f89-48d2-b76d-8dc88dbc99cb",
-      "name": "ucore操作系统实验"
-    },
-    {
-      "fieldConfig": {},
-      "defaultName": "",
-      "templates": [],
-      "excludedNotes": [],
-      "isDefault": false,
-      "dataSource": {
-        "kind": "folder",
-        "config": {
-          "path": "学习笔记",
-          "recursive": false
-        }
-      },
-      "newNotesFolder": "",
-      "views": [
-        {
-          "config": {},
-          "filter": {
-            "conditions": []
-          },
-          "colors": {
-            "conditions": []
-          },
-          "id": "6917a233-9df1-47e2-b607-b399b1da23a0",
-          "name": "Table",
-          "type": "table"
-        }
-      ],
-      "id": "11b0a6f2-b6f3-4b9b-90c4-94aebe6742d3",
-      "name": "Untitled project 1"
-    },
-    {
-      "fieldConfig": {},
-      "defaultName": "",
-      "templates": [],
-      "excludedNotes": [],
-      "isDefault": false,
-      "dataSource": {
-        "kind": "folder",
-        "config": {
-          "path": "日记",
-          "recursive": false
-        }
-      },
-      "newNotesFolder": "",
-      "views": [
-        {
-          "config": {},
-          "filter": {
-            "conditions": []
-          },
-          "colors": {
-            "conditions": []
-          },
-          "id": "b72b547a-9ea5-428d-a40b-eb765302e340",
-          "name": "Table",
-          "type": "table"
-        },
-        {
-          "config": {},
-          "filter": {
-            "conditions": []
-          },
-          "colors": {
-            "conditions": []
-          },
-          "id": "acecba5f-09e2-4eef-b20d-eb29553daaa5",
-          "name": "Calendar",
-          "type": "calendar"
-        },
-        {
-          "config": {
-            "filepath": "日记/dac2beff-5cbd-45ed-95b8-1aac0d04406f_db.md"
-          },
-          "filter": {
-            "conditions": []
-          },
-          "colors": {
-            "conditions": []
-          },
-          "id": "dac2beff-5cbd-45ed-95b8-1aac0d04406f",
-          "name": "Database Folder",
-          "type": "dbfolder-view"
-        }
-      ],
-      "id": "77a5e675-9a11-440b-bd42-b0fa717179b5",
-      "name": "日记"
+      "id": "9b3d02d2-3c72-46cd-9a70-b47859f44e19",
+      "name": "Untitled project"
     }
   ],
   "preferences": {
     "projectSizeLimit": 1000,
     "frontmatter": {
-      "quoteStrings": "QUOTE_DOUBLE"
+      "quoteStrings": "PLAIN"
     },
     "commands": []
   }

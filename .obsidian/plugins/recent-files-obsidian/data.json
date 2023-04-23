@@ -1,8 +1,32 @@
 {
   "recentFiles": [
     {
+      "basename": "未命名",
+      "path": "未命名.md"
+    },
+    {
+      "basename": "博客列表",
+      "path": "常用/博客列表.md"
+    },
+    {
+      "basename": "Untitled",
+      "path": "Untitled.table"
+    },
+    {
+      "basename": "2023-04-23",
+      "path": "日记/2023-04-23.md"
+    },
+    {
       "basename": "2023-04-20",
       "path": "日记/2023-04-20.md"
+    },
+    {
+      "basename": "2023-04-22",
+      "path": "日记/2023-04-22.md"
+    },
+    {
+      "basename": "dasfasdf",
+      "path": "dasfasdf.md"
     },
     {
       "basename": "ucore操作系统实验：lab1",
@@ -29,14 +53,6 @@
       "path": "学习笔记/数据库学习笔记/SQL基础.md"
     },
     {
-      "basename": "dasfasdf",
-      "path": "dasfasdf.md"
-    },
-    {
-      "basename": "未命名",
-      "path": "未命名.md"
-    },
-    {
       "basename": "obsidian插件记录",
       "path": "学习笔记/obsidian插件记录.md"
     },
@@ -51,10 +67,6 @@
     {
       "basename": "对 Spring 的认识_image_1",
       "path": "附件/image/对 Spring 的认识_image_1.png"
-    },
-    {
-      "basename": "2023-04-23",
-      "path": "日记/2023-04-23.md"
     },
     {
       "basename": "Drawing 2023-04-23 00.41.52.excalidraw",
@@ -99,10 +111,6 @@
     {
       "basename": "org.springframework.web.context.ContextLoaderListener",
       "path": "学习笔记/卡片/Java类/org.springframework.web.context.ContextLoaderListener.md"
-    },
-    {
-      "basename": "2023-04-22",
-      "path": "日记/2023-04-22.md"
     },
     {
       "basename": "计算机的启动",
@@ -187,14 +195,6 @@
     {
       "basename": "Java泛型_image_1",
       "path": "附件/image/Java泛型_image_1.png"
-    },
-    {
-      "basename": "JavaIO_image_2",
-      "path": "附件/image/JavaIO_image_2.png"
-    },
-    {
-      "basename": "Java内部类",
-      "path": "学习笔记/Java拾遗迹/Java内部类.md"
     }
   ],
   "omittedPaths": [],
