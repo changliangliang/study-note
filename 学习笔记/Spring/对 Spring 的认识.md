@@ -168,7 +168,9 @@ public static void main( String[] args )
 
 Spring 中通过 AOP 来解决这一问题，以日志模块为例，原先它单独的在各个模块中调用，进引入 AOP 的理念后，就是将分散在各个业务逻辑代码中相同的代码通过横向切割的方式抽取到一个独立的模块中！​在 Spring 中主要通过代理的方式实现这一功能，即 Spring 会自动生成 `UserService` 类的一个代理类，在代理类中会进行日志的记录工作。
 
-![](附件/对%20Spring%20的认识_image_1.png)
+![](附件/image/对%20Spring%20的认识_image_1.png)
+
+
 
 ### 提供模板
 

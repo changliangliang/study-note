@@ -299,7 +299,7 @@ public class WebConfig implements WebMvcConfigurer {
 
 下图展示了消息转换器的作用，主要是把 http 请求中的信息转化为 Java 对象，或者把 Java 对象转化为相应数据如 Json 之类的。
 
-![](附件/SpringMVC配置_image_1.png)
+![](附件/image/SpringMVC配置_image_1.png)
 
 ```java
 @Configuration

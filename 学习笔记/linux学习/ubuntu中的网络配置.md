@@ -12,7 +12,7 @@ categories:
 
 从 Ubuntu 18 开始，Ubuntu 开始用 Netplan 作为网络配置的程序，于是乎想要更改网络配置，就需要编辑文件夹 `/etc/netplan` 里的文件，其中 `01-network-manager-all.yaml` 就是配置文件。
 
-![](附件/ubuntu中的网络配置_image_1.png)
+![](附件/image/ubuntu中的网络配置_image_1.png)
 
 编辑完配置文件后，执行如下命令使配置文件生效：
 
@@ -28,7 +28,7 @@ systemctl restart NetworkManager.service
 
 使用 `ip a` 命令常看网卡状态，判断是否配置成功。
 
-![](附件/ubuntu中的网络配置_image_2.png)
+![](附件/image/ubuntu中的网络配置_image_2.png)
 
 ## 常用配置
 

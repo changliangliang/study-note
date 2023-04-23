@@ -32,7 +32,7 @@ public class Main {
 }
 ```
 
-![](附件/Java异常_image_1.png)
+![](附件/image/Java异常_image_1.png)
 
 默认情况下错误堆栈信息会被打应到 `err` 输出，不过该方法还提供了其他重载方法，可以修改输出的地点，比如 `printStackTrace(System.out)` 会把堆栈信息打印到标准输出。
 
@@ -105,7 +105,7 @@ public class Main {
 }
 ```
 
-![](附件/Java异常_image_2.png)
+![](附件/image/Java异常_image_2.png)
 
 还有一种解决方法, 使用 `fillInStackTrace()` 方法重置堆栈信息。
 
@@ -177,7 +177,7 @@ public class Main {
 }
 ```
 
-![](附件/Java异常_image_3.png)
+![](附件/image/Java异常_image_3.png)
 
 
 ## 异常分类
@@ -186,7 +186,7 @@ public class Main {
 
 `Execption` 又可以分为两部分，`RuntimeException` 为运行时异常，如空指针异常，只有程序真正运行时才会发现这些异常，这些异常不用程序员来捕获，Java 虚拟机会自动抛出它们；剩下的异常则需要程序员显示的进行捕获处理，可以使用 `try` 语句，或者在方法中抛出。
 
-![](附件/Java异常_image_4.png)
+![](附件/image/Java异常_image_4.png)
 
 ## `finally` 和 `return`
 

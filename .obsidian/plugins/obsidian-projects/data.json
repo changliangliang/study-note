@@ -1,6 +1,78 @@
 {
   "version": 2,
-  "projects": [],
+  "projects": [
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "",
+          "recursive": false
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {},
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": [
+              {
+                "color": "#a882ff",
+                "condition": {
+                  "field": "name",
+                  "operator": "is-not-empty",
+                  "enabled": true
+                }
+              }
+            ]
+          },
+          "id": "50855e47-228e-4422-831b-19e6c1c60af8",
+          "name": "Table",
+          "type": "table"
+        }
+      ],
+      "id": "ac7a992a-3f89-48d2-b76d-8dc88dbc99cb",
+      "name": "Untitled project"
+    },
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "学习笔记",
+          "recursive": false
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {},
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "id": "6917a233-9df1-47e2-b607-b399b1da23a0",
+          "name": "Table",
+          "type": "table"
+        }
+      ],
+      "id": "11b0a6f2-b6f3-4b9b-90c4-94aebe6742d3",
+      "name": "Untitled project 1"
+    }
+  ],
   "preferences": {
     "projectSizeLimit": 1000,
     "frontmatter": {

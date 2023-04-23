@@ -24,7 +24,7 @@ docker pull [选项] [Docker Registry 地址[:端口号]/]仓库名[:标签]
 docker image ls
 ```
 
-![](附件/docker%20常用操作_image_1.png)
+![](附件/image/docker%20常用操作_image_1.png)
 
 该命令会列出所有镜像的信息，包含了 `仓库名`、`标签`、`镜像 ID`、`创建时间` 以及 `所占用的空间`。
 
@@ -36,7 +36,7 @@ docker image ls
 docker system df
 ```
 
-![](附件/docker%20常用操作_image_2.png)
+![](附件/image/docker%20常用操作_image_2.png)
 
 ### 悬浮镜像
 
@@ -169,15 +169,15 @@ docker container start
 
 ### 后台运行
 
-![](附件/docker%20常用操作_image_3.png)
+![](附件/image/docker%20常用操作_image_3.png)
 
 默认情况下容器的输出会直接在前台现实，`-d` 参数用来让容器在后台输出。
 
-![](附件/docker%20常用操作_image_4.png)
+![](附件/image/docker%20常用操作_image_4.png)
 
 此时会返回一个 `容器ID`，如果想要查看容器的输出内容，可以使用 `docker container logs` 命令。
 
-![](附件/docker%20常用操作_image_5.png)
+![](附件/image/docker%20常用操作_image_5.png)
 
 输出内容使用 `docker logs` 来查看。
 
@@ -192,7 +192,7 @@ $ docker run -d ubuntu:18.04 /bin/sh -c "while true; do echo hello world; sleep 
 docker container stop 容器ID
 ```
 
-![](附件/docker%20常用操作_image_6.png)
+![](附件/image/docker%20常用操作_image_6.png)
 
 终止后返回容器对应的 ID。
 
@@ -208,7 +208,7 @@ docker container ls
 docker container ls -a
 ```
 
-![](附件/docker%20常用操作_image_7.png)
+![](附件/image/docker%20常用操作_image_7.png)
 
 ### 重启容器
 
@@ -224,7 +224,7 @@ docker container restart 容器ID
 
 首先创建一个后台运行的 `ubuntu` 容器。
 
-![](附件/docker%20常用操作_image_8.png)
+![](附件/image/docker%20常用操作_image_8.png)
 
 通过如下命令可以进入到该容器中进行一些操作：
 
@@ -232,7 +232,7 @@ docker container restart 容器ID
 docker exec -it d63a bash
 ```
 
-![](附件/docker%20常用操作_image_9.png)
+![](附件/image/docker%20常用操作_image_9.png)
 
 `-t` 和 `-i` 参数的含义和 `docker run` 中的参数含义是一样的。
 
@@ -242,7 +242,7 @@ docker exec -it d63a bash
 docker container rm 容器ID
 ```
 
-![](附件/docker%20常用操作_image_10.png)
+![](附件/image/docker%20常用操作_image_10.png)
 
 类似于镜像操作，使用 `docker container prune` 可以清理掉所有处于终止状态的容器。
 
@@ -252,7 +252,7 @@ docker container rm 容器ID
 docker container inspect 容器ID
 ```
 
-![](附件/docker%20常用操作_image_11.png)
+![](附件/image/docker%20常用操作_image_11.png)
 
 ## 数据操作
 
@@ -266,15 +266,15 @@ docker container inspect 容器ID
 docker volume create 数据卷名称
 ```
 
-![](附件/docker%20常用操作_image_12.png)
+![](附件/image/docker%20常用操作_image_12.png)
 
 #### 查看数据卷
 
 `docker volume ls` 可以查看目前存在的所有数据卷，如果想要查看数据卷的详细信息，可以使用 `docker volume inspect 数据卷名称`。
 
-![](附件/docker%20常用操作_image_13.png)
+![](附件/image/docker%20常用操作_image_13.png)
 
-![](附件/docker%20常用操作_image_14.png)
+![](附件/image/docker%20常用操作_image_14.png)
 
 可以看到数据卷本质上就是 `/var/lib/docker/volumes/` 目录下的一个文件夹。
 
@@ -282,17 +282,17 @@ docker volume create 数据卷名称
 
 在创建容器的时候使用 `--mount` 参数可以用来挂载数据卷，
 
-![](附件/docker%20常用操作_image_15.png)
+![](附件/image/docker%20常用操作_image_15.png)
 
 在挂在目录 `/testdata` 中创建一个文件，然后在主机目录下的 `/var/lib/docker/volumes/mydata/_data` 目录中可以看到文件 `test.txt` ，即在容器中创建的那个文件。
 
-![](附件/docker%20常用操作_image_16.png)
+![](附件/image/docker%20常用操作_image_16.png)
 
-![](附件/docker%20常用操作_image_17.png)
+![](附件/image/docker%20常用操作_image_17.png)
 
 使用 `docker container inspect` 命令查看容器信息，可以在 `Mounts` 项中看到容器挂载的所有数据卷。
 
-![](附件/docker%20常用操作_image_18.png)
+![](附件/image/docker%20常用操作_image_18.png)
 
 #### 删除数据卷
 
@@ -336,7 +336,7 @@ ip:hostPort:containerPort | ip::containerPort | hostPort:containerPort
 
 命令 `docker port` 可以查看映射的端口。
 
-![](附件/docker%20常用操作_image_19.png)
+![](附件/image/docker%20常用操作_image_19.png)
 
 ### 连接容器
 
@@ -348,13 +348,13 @@ docker network create -d bridge my-net
 
 之后创建容器的时候可以使用 `--network` 参数指定容器使用的网络：
 
-![](附件/docker%20常用操作_image_20.png)
+![](附件/image/docker%20常用操作_image_20.png)
 
 下面使用实例展示两者之间的通信：
 
-![](附件/docker%20常用操作_image_21.png)
+![](附件/image/docker%20常用操作_image_21.png)
 
-![](附件/docker%20常用操作_image_22.png)
+![](附件/image/docker%20常用操作_image_22.png)
 
 ## 其他操作
 
@@ -383,7 +383,7 @@ docker update --restart always 容器名
 
 ### 权限设置
 
-![](附件/docker%20常用操作_image_23.png)
+![](附件/image/docker%20常用操作_image_23.png)
 
 刚安装好的 `docker` 在使用时会提示没有权限，必须使用 `sudo` 来执行，解决方法为：
 
@@ -394,7 +394,7 @@ docker update --restart always 容器名
 
 之后再执行命令就不需要添加 `sudo` 了：
 
-![](附件/docker%20常用操作_image_24.png)
+![](附件/image/docker%20常用操作_image_24.png)
 
 
 

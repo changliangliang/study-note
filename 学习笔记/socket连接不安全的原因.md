@@ -11,7 +11,7 @@ categories:
 
 多个线程操作 socket 的时候是可能出现线程安全问题，如下面图示中的展示的那样，当线程 1 通过 socket 连接向服务器发送信息，这时候线程 2 恰好通过 socket 连接在读取服务端的数据，那么本该由线程 1 接收并处理的信息就被线程 2 读取到了。
 
-![](附件/socket连接不安全的原因_image_1.png)
+![](附件/image/socket连接不安全的原因_image_1.png)
 
 下面使用代码模拟这个过程：​
 
@@ -71,10 +71,10 @@ System.out.println("线程2收到的信息："+new String(bytes, 0 , len));
 
 服务端的运行结果为：​
 
-![](附件/socket连接不安全的原因_image_2.png)
+![](附件/image/socket连接不安全的原因_image_2.png)
 
 客户端运行结果为：​
 
-![](附件/socket连接不安全的原因_image_3.png)
+![](附件/image/socket连接不安全的原因_image_3.png)
 
 从运行结果中也可以看到，本该由线程 1 接收的信息被线程 2 收到了。​

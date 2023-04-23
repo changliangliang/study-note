@@ -34,11 +34,17 @@
     true
   ],
   "pdf": "pdf",
+  "subfolders": [
+    "image",
+    "audio",
+    "video",
+    "pdf"
+  ],
   "connector": "_",
   "exportCurrentRiboon": false,
-  "exportUnusedRiboon": true,
+  "exportUnusedRiboon": false,
   "exportCurrentDeletion": false,
-  "exportUnusedDeletion": true,
+  "exportUnusedDeletion": false,
   "copyPath": false,
   "copyPathMode": "Relative",
   "usingLog": false,

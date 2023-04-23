@@ -4,7 +4,6 @@
   "quickadd",
   "easy-typing-obsidian",
   "table-editor-obsidian",
-  "obsidian-attachment-name-formatting",
   "obsidian-enhancing-export",
   "obsidian-git",
   "tag-wrangler",
@@ -25,11 +24,9 @@
   "cmdr",
   "obsidian-excalidraw-plugin",
   "obsidian-hover-editor",
-  "obsidian-image-auto-upload-plugin",
   "obsidian-outliner",
   "obsidian-projects",
-  "obsidian-local-images-plus",
-  "nl-fast-image-cleaner",
   "notion-like-tables",
-  "obsidian-memos"
+  "obsidian-memos",
+  "obsidian-attachment-name-formatting"
 ]
