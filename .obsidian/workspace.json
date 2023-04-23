@@ -8,77 +8,16 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d47e0ff7b3075d09",
+            "id": "67e836c1405970ce",
             "type": "leaf",
+            "pinned": true,
             "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "8e0d309ef49da242",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DB测试/c++.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e631ae8ed45ba9d1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DB测试/java.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3e0081c60d2fa97e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DB测试/c++.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "493ec223440ebec9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DB测试/c++.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7ccbec5655248fa5",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2023-04-23 00.41.52.excalidraw.md"
-              }
+              "type": "obsidian-projects",
+              "state": {},
+              "pinned": true
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -163,9 +102,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "DB测试/c++.md"
-              }
+              "state": {}
             }
           },
           {
@@ -205,7 +142,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DB测试/c++.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -217,7 +153,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DB测试/c++.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -257,38 +192,39 @@
       "meld-encrypt:Create new encrypted note": false
     }
   },
-  "active": "493ec223440ebec9",
+  "active": "67e836c1405970ce",
   "lastOpenFiles": [
+    "学习笔记/docker 常用操作.md",
+    "学习笔记/Java框架/Spring/Spirng基于Java和注解的配置.md",
+    "学习笔记/Java 中的 char 类型能否存储中文.md",
+    "常用/博客列表.md",
+    "常用/笔记目录.md",
+    "草稿/CS自学指南.md",
+    "草稿/内核态和用户态.md",
+    "草稿/常用软件配置.md",
+    "草稿/操作系统实验.md",
+    "草稿/操作系统.md",
+    "dbtest.md",
+    "DB测试/js.md",
+    "DB测试/fdf.md",
+    "DB测试/java.md",
+    "DB测试/c++.md",
+    "sdfasdfasdfsdfasd.md",
+    "未命名看板.md",
+    "DB测试/python.md",
+    "Excalidraw/Drawing 2023-04-23 00.41.52.excalidraw.md",
     "附件/image/c++_image_2.png",
     "Untitled 20230423 032600.encrypted",
     "DB测试/rust.md",
-    "DB测试/c++.md",
     "附件/image/c++_image_1.png",
-    "dbtest.md",
     "DB测试/发斯蒂芬斯蒂芬.md",
     "DB测试/啥打法是的.md",
     "模板/笔记模板.md",
     "学习笔记/C++学习/模板.md",
-    "Excalidraw/Drawing 2023-04-23 00.41.52.excalidraw.md",
     "DB测试/Untitled database.md",
     "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md",
-    "学习笔记/ucore操作系统实验/ucore操作系统实验：lab2.md",
-    "学习笔记/linux学习/ubuntu中的网络配置.md",
-    "学习笔记/docker 常用操作.md",
-    "DB测试/python.md",
-    "DB测试/js.md",
-    "DB测试/java.md",
-    "日记/2023-04-22.md",
-    "未命名.md",
     "Untitled 1.table",
     "DB测试",
-    "日记/2023-04-20.md",
-    "日记/2023-04-23.md",
-    "日记/91e67ba9-58d0-45b8-ab2e-7f1ec11a1b6e_db.md",
-    "日记/611f28cc-b985-48a0-86ee-b3fae94e0488_db.md",
-    "日记/Untitled note.md",
-    "日记/77fc4df5-9d20-4a88-9b70-2fc65bd5b92c_db.md",
-    "大法师打发斯蒂芬.md",
     "Untitled.table",
     "附件/image/对 Spring 的认识_image_1.png",
     "附件/image",
@@ -299,7 +235,6 @@
     "Excalidraw/未命名_image_1.png",
     "Excalidraw/Drawing 2023-04-23 00.41.52.excalidraw.svg",
     "Excalidraw/Drawing 2023-04-23 00.41.52.excalidraw.png",
-    "Excalidraw/testsfsdf.png",
     "Excalidraw",
     "学习笔记/计算机知识",
     "Unused_Attachments.zip",

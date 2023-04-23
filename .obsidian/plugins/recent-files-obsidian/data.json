@@ -1,24 +1,60 @@
 {
   "recentFiles": [
     {
-      "basename": "c++",
-      "path": "DB测试/c++.md"
+      "basename": "docker 常用操作",
+      "path": "学习笔记/docker 常用操作.md"
     },
     {
-      "basename": "rust",
-      "path": "DB测试/rust.md"
+      "basename": "Spirng基于Java和注解的配置",
+      "path": "学习笔记/Java框架/Spring/Spirng基于Java和注解的配置.md"
+    },
+    {
+      "basename": "Java 中的 char 类型能否存储中文",
+      "path": "学习笔记/Java 中的 char 类型能否存储中文.md"
+    },
+    {
+      "basename": "博客列表",
+      "path": "常用/博客列表.md"
+    },
+    {
+      "basename": "笔记目录",
+      "path": "常用/笔记目录.md"
+    },
+    {
+      "basename": "CS自学指南",
+      "path": "草稿/CS自学指南.md"
+    },
+    {
+      "basename": "内核态和用户态",
+      "path": "草稿/内核态和用户态.md"
+    },
+    {
+      "basename": "常用软件配置",
+      "path": "草稿/常用软件配置.md"
+    },
+    {
+      "basename": "操作系统实验",
+      "path": "草稿/操作系统实验.md"
+    },
+    {
+      "basename": "操作系统",
+      "path": "草稿/操作系统.md"
     },
     {
       "basename": "dbtest",
       "path": "dbtest.md"
     },
     {
-      "basename": "发斯蒂芬斯蒂芬",
-      "path": "DB测试/发斯蒂芬斯蒂芬.md"
+      "basename": "sdfasdfasdfsdfasd",
+      "path": "sdfasdfasdfsdfasd.md"
     },
     {
-      "basename": "啥打法是的",
-      "path": "DB测试/啥打法是的.md"
+      "basename": "未命名看板",
+      "path": "未命名看板.md"
+    },
+    {
+      "basename": "Drawing 2023-04-23 00.41.52.excalidraw",
+      "path": "Excalidraw/Drawing 2023-04-23 00.41.52.excalidraw.md"
     },
     {
       "basename": "笔记模板",
@@ -27,10 +63,6 @@
     {
       "basename": "模板",
       "path": "学习笔记/C++学习/模板.md"
-    },
-    {
-      "basename": "Drawing 2023-04-23 00.41.52.excalidraw",
-      "path": "Excalidraw/Drawing 2023-04-23 00.41.52.excalidraw.md"
     },
     {
       "basename": "ucore操作系统实验：lab1",
@@ -43,22 +75,6 @@
     {
       "basename": "ubuntu中的网络配置",
       "path": "学习笔记/linux学习/ubuntu中的网络配置.md"
-    },
-    {
-      "basename": "docker 常用操作",
-      "path": "学习笔记/docker 常用操作.md"
-    },
-    {
-      "basename": "python",
-      "path": "DB测试/python.md"
-    },
-    {
-      "basename": "js",
-      "path": "DB测试/js.md"
-    },
-    {
-      "basename": "java",
-      "path": "DB测试/java.md"
     },
     {
       "basename": "2023-04-22",
@@ -79,10 +95,6 @@
     {
       "basename": "C++知识",
       "path": "学习笔记/C++学习/C++知识.md"
-    },
-    {
-      "basename": "博客列表",
-      "path": "常用/博客列表.md"
     },
     {
       "basename": "Spring中的AOP配置",
@@ -129,10 +141,6 @@
       "path": "草稿/C++学习笔记.md"
     },
     {
-      "basename": "操作系统",
-      "path": "草稿/操作系统.md"
-    },
-    {
       "basename": "docker常用容器创建",
       "path": "学习笔记/docker常用容器创建.md"
     },
@@ -173,10 +181,6 @@
       "path": "学习笔记/C++学习/2023-04-21 三大法师打发点.md"
     },
     {
-      "basename": "笔记目录",
-      "path": "常用/笔记目录.md"
-    },
-    {
       "basename": "长连接的若干问题",
       "path": "学习笔记/长连接的若干问题.md"
     },
@@ -185,16 +189,8 @@
       "path": "学习笔记/VScode中的task.json和launch.json.md"
     },
     {
-      "basename": "Java 中的 char 类型能否存储中文",
-      "path": "学习笔记/Java 中的 char 类型能否存储中文.md"
-    },
-    {
       "basename": "计算机的启动_image_1",
       "path": "附件/image/计算机的启动_image_1.png"
-    },
-    {
-      "basename": "Java类型信息",
-      "path": "学习笔记/Java拾遗迹/Java类型信息.md"
     }
   ],
   "omittedPaths": [],

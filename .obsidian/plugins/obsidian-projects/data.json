@@ -6,95 +6,11 @@
       "defaultName": "",
       "templates": [],
       "excludedNotes": [],
-      "isDefault": false,
-      "dataSource": {
-        "kind": "folder",
-        "config": {
-          "path": "DB测试",
-          "recursive": false
-        }
-      },
-      "newNotesFolder": "",
-      "views": [
-        {
-          "config": {
-            "fieldConfig": {
-              "path": {
-                "hide": true
-              }
-            }
-          },
-          "filter": {
-            "conditions": []
-          },
-          "colors": {
-            "conditions": []
-          },
-          "id": "d1ad9bb1-9f7b-4a7a-bd79-4d2c9cbf600a",
-          "name": "Table",
-          "type": "table"
-        },
-        {
-          "config": {
-            "includeFields": [],
-            "fitStyle": "contain",
-            "coverField": "cover"
-          },
-          "filter": {
-            "conditions": []
-          },
-          "colors": {
-            "conditions": []
-          },
-          "id": "10fce611-cf1f-4fea-9a64-2572eac0b80f",
-          "name": "Gallery",
-          "type": "gallery"
-        },
-        {
-          "config": {
-            "groupByField": "",
-            "includeFields": [],
-            "priorityField": "priority"
-          },
-          "filter": {
-            "conditions": []
-          },
-          "colors": {
-            "conditions": []
-          },
-          "id": "cb1785a5-af07-4dff-b5a3-13107d31837c",
-          "name": "Board",
-          "type": "board"
-        },
-        {
-          "config": {
-            "dateField": "check",
-            "interval": "month"
-          },
-          "filter": {
-            "conditions": []
-          },
-          "colors": {
-            "conditions": []
-          },
-          "id": "beab128b-bbe7-4194-a667-5ca08d5d68b2",
-          "name": "Calendar",
-          "type": "calendar"
-        }
-      ],
-      "id": "acf10332-170f-4e3f-9b57-eddd05b69366",
-      "name": "DB测试"
-    },
-    {
-      "fieldConfig": {},
-      "defaultName": "",
-      "templates": [],
-      "excludedNotes": [],
-      "isDefault": false,
+      "isDefault": true,
       "dataSource": {
         "kind": "dataview",
         "config": {
-          "query": "table\nfrom \"DB测试\""
+          "query": "table \nWITHOUT ID\nfile.link as \"博客\",\nfile.tags as \"标签\",\nfile.cday as \"创建日期\",\nfile.mday as \"修改日期\",\nstatus as 状态\nfrom \"\" \nwhere \ncontains(type, \"blog\")\n"
         }
       },
       "newNotesFolder": "",
@@ -107,13 +23,13 @@
           "colors": {
             "conditions": []
           },
-          "id": "d534e3ae-f194-4c73-973e-f6eea8c7396c",
+          "id": "8d63f42a-bf82-4ae4-9ea8-98085bc0c9a0",
           "name": "Table",
           "type": "table"
         }
       ],
-      "id": "55f9d289-c6d0-4651-978a-97ada587f155",
-      "name": "DB测试_dataview"
+      "id": "45a0451c-3a7b-4c87-91d7-5f00a7e11c75",
+      "name": "博客管理"
     }
   ],
   "preferences": {

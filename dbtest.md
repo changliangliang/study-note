@@ -48,6 +48,47 @@ columns:
       task_hide_completed: true
       footer_type: none
       persist_changes: false
+      wrap_content: false
+      content_vertical_alignment: align-top
+      content_alignment: text-align-left
+  cover:
+    input: rollup
+    accessorKey: cover
+    key: cover
+    id: cover
+    label: cover
+    position: 100
+    skipPersist: false
+    isHidden: false
+    sortIndex: -1
+    config:
+      enable_media_view: true
+      link_alias_enabled: true
+      media_width: 100
+      media_height: 100
+      isInline: false
+      task_hide_completed: true
+      footer_type: none
+      persist_changes: false
+  newColumn3:
+    input: checkbox
+    accessorKey: newColumn3
+    key: newColumn3
+    id: newColumn3
+    label: New Column 3
+    position: 100
+    skipPersist: false
+    isHidden: false
+    sortIndex: -1
+    config:
+      enable_media_view: true
+      link_alias_enabled: true
+      media_width: 100
+      media_height: 100
+      isInline: false
+      task_hide_completed: true
+      footer_type: none
+      persist_changes: false
 config:
   remove_field_when_delete_column: true
   cell_size: normal
