@@ -68,29 +68,6 @@
             }
           },
           {
-            "id": "cd7292dd46e2c883",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DB测试/rust.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f790d4c33ce53d0e",
-            "type": "leaf",
-            "state": {
-              "type": "database-plugin",
-              "state": {
-                "file": "dbtest.md"
-              }
-            }
-          },
-          {
             "id": "7ccbec5655248fa5",
             "type": "leaf",
             "state": {
@@ -101,7 +78,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -187,7 +164,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "dbtest.md"
+                "file": "DB测试/c++.md"
               }
             }
           },
@@ -228,7 +205,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "dbtest.md",
+                "file": "DB测试/c++.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -240,7 +217,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "dbtest.md",
+                "file": "DB测试/c++.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -276,16 +253,21 @@
       "obsidian-projects:Open projects": false,
       "notion-like-tables:Create Notion-Like table": false,
       "dbfolder:创建一个新数据库表": false,
-      "obsidian-memos:Memos": false
+      "obsidian-memos:Memos": false,
+      "meld-encrypt:Create new encrypted note": false
     }
   },
-  "active": "f790d4c33ce53d0e",
+  "active": "493ec223440ebec9",
   "lastOpenFiles": [
+    "附件/image/c++_image_2.png",
+    "Untitled 20230423 032600.encrypted",
+    "DB测试/rust.md",
+    "DB测试/c++.md",
+    "附件/image/c++_image_1.png",
+    "dbtest.md",
     "DB测试/发斯蒂芬斯蒂芬.md",
     "DB测试/啥打法是的.md",
-    "dbtest.md",
     "模板/笔记模板.md",
-    "DB测试/c++.md",
     "学习笔记/C++学习/模板.md",
     "Excalidraw/Drawing 2023-04-23 00.41.52.excalidraw.md",
     "DB测试/Untitled database.md",
@@ -293,7 +275,6 @@
     "学习笔记/ucore操作系统实验/ucore操作系统实验：lab2.md",
     "学习笔记/linux学习/ubuntu中的网络配置.md",
     "学习笔记/docker 常用操作.md",
-    "DB测试/rust.md",
     "DB测试/python.md",
     "DB测试/js.md",
     "DB测试/java.md",
@@ -308,7 +289,6 @@
     "日记/Untitled note.md",
     "日记/77fc4df5-9d20-4a88-9b70-2fc65bd5b92c_db.md",
     "大法师打发斯蒂芬.md",
-    "学习笔记/C++学习/C++知识.md",
     "Untitled.table",
     "附件/image/对 Spring 的认识_image_1.png",
     "附件/image",
@@ -320,13 +300,11 @@
     "Excalidraw/Drawing 2023-04-23 00.41.52.excalidraw.svg",
     "Excalidraw/Drawing 2023-04-23 00.41.52.excalidraw.png",
     "Excalidraw/testsfsdf.png",
-    "Excalidraw/未命名_image_2.svg",
     "Excalidraw",
     "学习笔记/计算机知识",
     "Unused_Attachments.zip",
     "assets",
     "学习笔记/Java框架/SpringMVC",
-    "学习笔记/Java框架/Spring",
     "未命名.canvas"
   ]
 }

@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "c++",
+      "path": "DB测试/c++.md"
+    },
+    {
+      "basename": "rust",
+      "path": "DB测试/rust.md"
+    },
+    {
       "basename": "dbtest",
       "path": "dbtest.md"
     },
@@ -15,10 +23,6 @@
     {
       "basename": "笔记模板",
       "path": "模板/笔记模板.md"
-    },
-    {
-      "basename": "c++",
-      "path": "DB测试/c++.md"
     },
     {
       "basename": "模板",
@@ -43,10 +47,6 @@
     {
       "basename": "docker 常用操作",
       "path": "学习笔记/docker 常用操作.md"
-    },
-    {
-      "basename": "rust",
-      "path": "DB测试/rust.md"
     },
     {
       "basename": "python",
@@ -195,10 +195,6 @@
     {
       "basename": "Java类型信息",
       "path": "学习笔记/Java拾遗迹/Java类型信息.md"
-    },
-    {
-      "basename": "Java类型信息_image_1",
-      "path": "附件/image/Java类型信息_image_1.png"
     }
   ],
   "omittedPaths": [],

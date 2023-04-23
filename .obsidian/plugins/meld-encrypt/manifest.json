@@ -1,0 +1,10 @@
+{
+	"id": "meld-encrypt",
+	"name": "Meld Encrypt",
+	"version": "2.1.3",
+	"minAppVersion": "1.0.3",
+	"description": "Hide secrets in your vault",
+	"author": "meld-cp",
+	"authorUrl": "https://github.com/meld-cp/obsidian-encrypt",
+	"isDesktopOnly": false
+}
