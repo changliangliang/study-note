@@ -1,36 +1,64 @@
 {
   "recentFiles": [
     {
-      "basename": "SpringMVC配置",
-      "path": "学习笔记/Java框架/SpringMVC/SpringMVC配置.md"
+      "basename": "列表",
+      "path": "常用/列表.md"
     },
     {
-      "basename": "Java 中的 char 类型能否存储中文",
-      "path": "学习笔记/Java 中的 char 类型能否存储中文.md"
+      "basename": "未命名看板",
+      "path": "未命名看板.md"
+    },
+    {
+      "basename": "ucore操作系统实验：环境搭建",
+      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md"
+    },
+    {
+      "basename": "socket连接不安全的原因",
+      "path": "学习笔记/socket连接不安全的原因.md"
     },
     {
       "basename": "计算机中的路由表",
       "path": "学习笔记/计算机中的路由表.md"
     },
     {
-      "basename": "长连接的若干问题",
-      "path": "学习笔记/长连接的若干问题.md"
-    },
-    {
-      "basename": "docker 常用操作",
-      "path": "学习笔记/docker 常用操作.md"
-    },
-    {
       "basename": "Spirng基于Java和注解的配置",
       "path": "学习笔记/Java框架/Spring/Spirng基于Java和注解的配置.md"
+    },
+    {
+      "basename": "Spring的一些高级配置",
+      "path": "学习笔记/Java框架/Spring/Spring的一些高级配置.md"
     },
     {
       "basename": "Spring中的AOP配置",
       "path": "学习笔记/Java框架/Spring/Spring中的AOP配置.md"
     },
     {
-      "basename": "Spring的一些高级配置",
-      "path": "学习笔记/Java框架/Spring/Spring的一些高级配置.md"
+      "basename": "SpringMVC配置",
+      "path": "学习笔记/Java框架/SpringMVC/SpringMVC配置.md"
+    },
+    {
+      "basename": "docker 常用操作",
+      "path": "学习笔记/docker 常用操作.md"
+    },
+    {
+      "basename": "ucore操作系统实验：lab1",
+      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md"
+    },
+    {
+      "basename": "VScode中的task.json和launch.json",
+      "path": "学习笔记/VScode中的task.json和launch.json.md"
+    },
+    {
+      "basename": "this指向的问题",
+      "path": "学习笔记/this指向的问题.md"
+    },
+    {
+      "basename": "长连接的若干问题",
+      "path": "学习笔记/长连接的若干问题.md"
+    },
+    {
+      "basename": "Java 中的 char 类型能否存储中文",
+      "path": "学习笔记/Java 中的 char 类型能否存储中文.md"
     },
     {
       "basename": "Spring基于XML的配置",
@@ -43,26 +71,6 @@
     {
       "basename": "npm源管理",
       "path": "学习笔记/npm源管理.md"
-    },
-    {
-      "basename": "socket连接不安全的原因",
-      "path": "学习笔记/socket连接不安全的原因.md"
-    },
-    {
-      "basename": "this指向的问题",
-      "path": "学习笔记/this指向的问题.md"
-    },
-    {
-      "basename": "ucore操作系统实验：lab1",
-      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md"
-    },
-    {
-      "basename": "ucore操作系统实验：环境搭建",
-      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md"
-    },
-    {
-      "basename": "VScode中的task.json和launch.json",
-      "path": "学习笔记/VScode中的task.json和launch.json.md"
     },
     {
       "basename": "blog-frontmatter",
@@ -129,10 +137,6 @@
       "path": "草稿/操作系统.md"
     },
     {
-      "basename": "未命名看板",
-      "path": "未命名看板.md"
-    },
-    {
       "basename": "Drawing 2023-04-23 00.41.52.excalidraw",
       "path": "Excalidraw/Drawing 2023-04-23 00.41.52.excalidraw.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "JavaIO",
       "path": "学习笔记/Java拾遗迹/JavaIO.md"
-    },
-    {
-      "basename": "计算机的启动",
-      "path": "学习笔记/计算机的启动.md"
     }
   ],
   "omittedPaths": [],

@@ -4,17 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "b3886d6d9c7e0220",
+        "id": "6fbedefb802e5ef5",
         "type": "tabs",
         "children": [
           {
-            "id": "67e836c1405970ce",
+            "id": "8186e0de461ff6e6",
             "type": "leaf",
-            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "常用/列表.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2ec5ebeeb6fa2712",
+            "type": "leaf",
             "state": {
               "type": "obsidian-projects",
-              "state": {},
-              "pinned": true
+              "state": {}
             }
           }
         ]
@@ -71,8 +82,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -103,7 +113,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "常用/列表.md"
+              }
             }
           },
           {
@@ -143,6 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "常用/列表.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,6 +167,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "常用/列表.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -190,27 +204,31 @@
       "notion-like-tables:Create Notion-Like table": false,
       "dbfolder:创建一个新数据库表": false,
       "meld-encrypt:Create new encrypted note": false,
-      "obsidian-memos:Memos": false
+      "obsidian-memos:Memos": false,
+      "homepage:Open homepage": false,
+      "workspaces:管理工作区布局": false,
+      "workspaces-plus:Manage workspaces": false
     }
   },
-  "active": "67e836c1405970ce",
+  "active": "8186e0de461ff6e6",
   "lastOpenFiles": [
-    "学习笔记/Java框架/SpringMVC/SpringMVC配置.md",
-    "学习笔记/Java 中的 char 类型能否存储中文.md",
+    "未命名看板.md",
+    "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md",
+    "学习笔记/socket连接不安全的原因.md",
     "学习笔记/计算机中的路由表.md",
-    "学习笔记/长连接的若干问题.md",
-    "学习笔记/docker 常用操作.md",
-    "学习笔记/Java框架/Spring/Spring基于XML的配置.md",
     "学习笔记/Java框架/Spring/Spirng基于Java和注解的配置.md",
-    "学习笔记/Java框架/Spring/Spring中的AOP配置.md",
     "学习笔记/Java框架/Spring/Spring的一些高级配置.md",
+    "学习笔记/Java框架/Spring/Spring中的AOP配置.md",
+    "学习笔记/Java框架/SpringMVC/SpringMVC配置.md",
+    "学习笔记/docker 常用操作.md",
+    "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md",
+    "学习笔记/VScode中的task.json和launch.json.md",
+    "学习笔记/this指向的问题.md",
+    "学习笔记/长连接的若干问题.md",
+    "学习笔记/Java 中的 char 类型能否存储中文.md",
+    "学习笔记/Java框架/Spring/Spring基于XML的配置.md",
     "学习笔记/linux学习/ubuntu中的网络配置.md",
     "学习笔记/npm源管理.md",
-    "学习笔记/socket连接不安全的原因.md",
-    "学习笔记/this指向的问题.md",
-    "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md",
-    "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md",
-    "学习笔记/VScode中的task.json和launch.json.md",
     "模板/blog-frontmatter.md",
     "日记/2023-04-20.md",
     "日记/2023-04-23.md",
@@ -220,7 +238,6 @@
     "学习笔记/C++学习/2023-04-21 三大法师打发点.md",
     "学习笔记/C++学习/模板.md",
     "日记/Untitled note.md",
-    "dbtest.md",
     "附件/image/c++_image_2.png",
     "Untitled 20230423 032600.encrypted",
     "附件/image/c++_image_1.png",

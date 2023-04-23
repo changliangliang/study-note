@@ -15,15 +15,21 @@
       "excludedNotes": [],
       "isDefault": true,
       "dataSource": {
-        "kind": "tag",
+        "kind": "dataview",
         "config": {
-          "tag": "#blog"
+          "query": "table \nWITHOUT ID\nfile.link as \"博客\",\nfile.tags as \"标签\",\ncreated as \"创建日期\",\nupdated as \"修改日期\",\nstatus as 状态\nfrom \"学习笔记\" \nwhere \ncontains(type, \"blog\")\nsort created desc\n"
         }
       },
       "newNotesFolder": "",
       "views": [
         {
-          "config": {},
+          "config": {
+            "fieldConfig": {
+              "标签": {
+                "width": 236
+              }
+            }
+          },
           "filter": {
             "conditions": []
           },
@@ -33,6 +39,18 @@
           "id": "8d63f42a-bf82-4ae4-9ea8-98085bc0c9a0",
           "name": "Table",
           "type": "table"
+        },
+        {
+          "config": {},
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "id": "a21ecb48-2a56-4834-aee0-d8590f649086",
+          "name": "Calendar",
+          "type": "calendar"
         }
       ],
       "id": "45a0451c-3a7b-4c87-91d7-5f00a7e11c75",

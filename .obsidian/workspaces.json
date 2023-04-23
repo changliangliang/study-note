@@ -1,0 +1,216 @@
+{
+  "workspaces": {
+    "主页": {
+      "main": {
+        "id": "2982240f9bf1a17a",
+        "type": "split",
+        "children": [
+          {
+            "id": "1b31eb4da9f0d17a",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "986b7bb68c931b6b",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "obsidian-projects",
+                  "state": {},
+                  "pinned": true
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "9e01617994f91927",
+        "type": "split",
+        "children": [
+          {
+            "id": "50882398d788acf3",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "2e6886b3461627b5",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "be9ca6d9588b3fbc",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "tag:#blog",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "5e0405f367c38d06",
+                "type": "leaf",
+                "state": {
+                  "type": "starred",
+                  "state": {}
+                }
+              },
+              {
+                "id": "e4aa2c41c50dd854",
+                "type": "leaf",
+                "state": {
+                  "type": "recent-files",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 259.5
+      },
+      "right": {
+        "id": "471dd9cab433cd9a",
+        "type": "split",
+        "children": [
+          {
+            "id": "0174626a1befb30d",
+            "type": "tabs",
+            "dimension": 45.837231057062674,
+            "children": [
+              {
+                "id": "8346761aae7cfd22",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": false
+                  }
+                }
+              },
+              {
+                "id": "663697a7bf64fcf7",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {}
+                }
+              },
+              {
+                "id": "de59aad5d5e2a54e",
+                "type": "leaf",
+                "state": {
+                  "type": "oz-calendar",
+                  "state": {}
+                }
+              },
+              {
+                "id": "c739953dfe34a710",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {}
+                }
+              }
+            ]
+          },
+          {
+            "id": "e7beb231688408fa",
+            "type": "tabs",
+            "dimension": 54.162768942937326,
+            "children": [
+              {
+                "id": "0422fa356abc823e",
+                "type": "leaf",
+                "state": {
+                  "type": "advanced-tables-toolbar",
+                  "state": {}
+                }
+              },
+              {
+                "id": "bb4b5168a9c73f1f",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "c3497e550662e817",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              }
+            ],
+            "currentTab": 2
+          }
+        ],
+        "direction": "horizontal",
+        "width": 495.5,
+        "collapsed": true
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "table-editor-obsidian:Advanced Tables Toolbar": true,
+          "switcher:打开快速切换": false,
+          "graph:查看关系图谱": false,
+          "canvas:新建白板": false,
+          "daily-notes:打开/创建今天的日记": false,
+          "templates:插入模板": false,
+          "command-palette:打开命令面板": false,
+          "templater-obsidian:Templater": false,
+          "oz-clear-unused-images:Clear Unused Images": false,
+          "obsidian42-brat:BRAT": false,
+          "cmdr:Obsidian Git: Create backup": false,
+          "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
+          "obsidian-projects:Open projects": false,
+          "notion-like-tables:Create Notion-Like table": false,
+          "dbfolder:创建一个新数据库表": false,
+          "meld-encrypt:Create new encrypted note": false,
+          "obsidian-memos:Memos": false,
+          "homepage:Open homepage": false,
+          "workspaces:管理工作区布局": false,
+          "workspaces-plus:Manage workspaces": false
+        }
+      },
+      "active": "986b7bb68c931b6b",
+      "workspaces-plus:settings-v1": {
+        "explorerFoldState": [
+          "/",
+          "学习笔记/C++学习",
+          "学习笔记/linux学习",
+          "学习笔记/ucore操作系统实验",
+          "学习笔记/数据库学习笔记",
+          "学习笔记/计算机知识",
+          "附件/image",
+          "学习笔记/卡片/Java类"
+        ]
+      }
+    }
+  },
+  "active": "主页"
+}
