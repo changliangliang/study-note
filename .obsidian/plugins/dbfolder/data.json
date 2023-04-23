@@ -31,7 +31,7 @@
     "source_data": "query",
     "source_form_result": "",
     "source_destination_path": "/DB测试",
-    "row_templates_folder": "/模板",
+    "row_templates_folder": "",
     "current_row_template": "",
     "pagination_size": 80,
     "font_size": 16,

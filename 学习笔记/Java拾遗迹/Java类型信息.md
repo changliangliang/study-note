@@ -1,3 +1,7 @@
+---
+{}
+---
+
 ## RTTI
 
 ![](附件/image/Java类型信息_image_1.png)

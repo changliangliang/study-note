@@ -1,9 +1,8 @@
 ---
 type: blog
-status: 未发布
 created: 2023-04-19 11:30:13
 updated: 2023-04-20 19:07:58
-tags: 操作系统
+tags: blog 操作系统
 categories: ucore操作系统实验
 ---
 

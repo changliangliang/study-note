@@ -1,10 +1,4 @@
 
----
-type: card
-tags: java-class
-short: ContextLoaderListener
----
-
 
 ```java
 public class ContextLoaderListener extends ContextLoader implements ServletContextListener {

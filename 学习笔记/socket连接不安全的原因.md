@@ -1,10 +1,9 @@
 ---
 type: blog
-status: 未发布
 created: 2022-12-19 13:30:52
 updated: 2022-12-21 16:23:52
-tags: 计算机网络
-categories:  
+tags: blog 计算机网络
+categories:
 ---
 
 

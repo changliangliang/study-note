@@ -1,11 +1,10 @@
 
 ---
 type: blog
-status: 未发布
 created: 2022-01-13 9:34:37
 updated: 2023-01-13 9:34:37
-tags: vscode 工具
-categories: vscode配置 
+tags: blog vscode 工具
+categories: vscode配置
 ---
 
 

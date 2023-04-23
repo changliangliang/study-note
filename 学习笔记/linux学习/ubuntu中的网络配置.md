@@ -1,11 +1,10 @@
 
 ---
 type: blog
-status: 未发布
 created: 2022-04-19 20:38:27
 updated: 2022-04-19 20:38:27
-tags: linux
-categories: 
+tags: blog linux
+categories:
 ---
 
 ## 配置流程

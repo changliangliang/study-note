@@ -2,15 +2,22 @@
   "version": 2,
   "projects": [
     {
-      "fieldConfig": {},
+      "fieldConfig": {
+        "状态": {
+          "options": [
+            "已发布",
+            "未发布"
+          ]
+        }
+      },
       "defaultName": "",
       "templates": [],
       "excludedNotes": [],
       "isDefault": true,
       "dataSource": {
-        "kind": "dataview",
+        "kind": "tag",
         "config": {
-          "query": "table \nWITHOUT ID\nfile.link as \"博客\",\nfile.tags as \"标签\",\nfile.cday as \"创建日期\",\nfile.mday as \"修改日期\",\nstatus as 状态\nfrom \"\" \nwhere \ncontains(type, \"blog\")\n"
+          "tag": "#blog"
         }
       },
       "newNotesFolder": "",
@@ -30,6 +37,69 @@
       ],
       "id": "45a0451c-3a7b-4c87-91d7-5f00a7e11c75",
       "name": "博客管理"
+    },
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "学习笔记",
+          "recursive": true
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {},
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "id": "2b269f18-2a1f-4157-a605-90b994fb6932",
+          "name": "Table",
+          "type": "table"
+        }
+      ],
+      "id": "1821f895-223f-460f-9727-a676e9a72b0c",
+      "name": "笔记管理"
+    },
+    {
+      "fieldConfig": {
+        "类型": {}
+      },
+      "defaultName": "",
+      "templates": [],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "tag",
+        "config": {
+          "tag": ""
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {},
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "id": "1c71f80f-4b58-4fd0-b9e7-5ed72383cea5",
+          "name": "Table",
+          "type": "table"
+        }
+      ],
+      "id": "c732dcb5-7845-4d47-8ef7-3304b6c3472f",
+      "name": "日记"
     }
   ],
   "preferences": {

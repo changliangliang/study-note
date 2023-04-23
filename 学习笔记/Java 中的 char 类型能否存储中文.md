@@ -1,11 +1,10 @@
-
 ---
 type: blog
-status: 未发布
 created: 2022-02-11 21:34:07
 updated: 2022-02-12 21:34:07
-tags: java
-categories: 
+tags:
+  - java
+categories:
 ---
 
 

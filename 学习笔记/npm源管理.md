@@ -1,10 +1,9 @@
 ---
 type: blog
-status: 未发布
 created: 2022-06-19 09:36:12
 updated: 2022-06-19 09:36:18
-tags: javascript npm
-categories: 
+tags: blog javascript npm
+categories:
 ---
 
 

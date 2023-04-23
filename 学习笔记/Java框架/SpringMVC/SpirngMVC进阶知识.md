@@ -1,3 +1,7 @@
+---
+{}
+---
+
 ## 处理流程
 
 DispatcherServlet 是 SpringMVC 的入口，当 Tomcat 将请求交给 DispatcherServlet 处理后，将会经历以下流程：

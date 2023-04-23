@@ -1,10 +1,10 @@
 ---
 type: blog
-status: 未发布
+status: 已发布
 created: 2023-04-18 16:45:41
 updated: 2023-04-18 16:45:41
-tags: docker
-categories: docker学习笔记 
+tags: blog docker
+categories: docker学习笔记
 ---
 
 ## 镜像操作
