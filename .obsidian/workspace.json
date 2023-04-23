@@ -13,11 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "未命名.md",
+                "file": "日记/2023-04-23.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
+            }
+          },
+          {
+            "id": "1a072f6427f0fd1e",
+            "type": "leaf",
+            "state": {
+              "type": "memos_view",
+              "state": {}
             }
           }
         ]
@@ -78,7 +86,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 517.5
+    "width": 250.5
   },
   "right": {
     "id": "471dd9cab433cd9a",
@@ -106,7 +114,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "未命名.md"
+                "file": "日记/2023-04-23.md"
               }
             }
           },
@@ -140,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "未命名.md",
+                "file": "日记/2023-04-23.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +160,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "未命名.md",
+                "file": "日记/2023-04-23.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,7 +172,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -186,13 +194,19 @@
       "oz-clear-unused-images:Clear Unused Images": false,
       "obsidian42-brat:BRAT": false,
       "cmdr:Obsidian Git: Create backup": false,
-      "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false
+      "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
+      "obsidian-projects:Open projects": false,
+      "notion-like-tables:Create Notion-Like table": false,
+      "obsidian-memos:Memos": false
     }
   },
   "active": "efd8c075c184fce6",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2023-04-23 00.41.52.excalidraw.md",
+    "Untitled.table",
+    "日记/2023-04-23.md",
     "未命名.md",
+    "Excalidraw/未命名_image_1.png",
+    "Excalidraw/Drawing 2023-04-23 00.41.52.excalidraw.md",
     "Excalidraw/testsfsdf.md",
     "Excalidraw/Drawing 2023-04-23 00.41.52.excalidraw.svg",
     "Excalidraw/Drawing 2023-04-23 00.41.52.excalidraw.png",
@@ -200,7 +214,6 @@
     "草稿/C++学习笔记.md",
     "学习笔记/docker 常用操作.md",
     "Excalidraw/testsfsdf.png",
-    "Excalidraw/未命名_image_1.png",
     "Excalidraw/testsfsdf.svg",
     "草稿/操作系统.md",
     "Excalidraw",
@@ -227,7 +240,6 @@
     "学习笔记/linux学习/ubuntu中的网络配置.md",
     "模板/笔记草稿.md",
     "模板/blog-frontmatter.md",
-    "模板/未命名.md",
     "Unused_Attachments.zip",
     "assets",
     "学习笔记/Java框架/SpringMVC",
@@ -235,7 +247,6 @@
     "学习笔记/Java框架",
     "学习笔记/问题",
     "学习笔记/linux学习",
-    "学习笔记/ucore操作系统实验",
     "未命名.canvas"
   ]
 }

@@ -1,0 +1,85 @@
+{
+  "model": {
+    "columns": [
+      {
+        "id": "4b24e9c4-3fdd-42c3-8a66-f7ce9a72f2f0",
+        "sortDir": "default",
+        "isVisible": true,
+        "width": "140px",
+        "type": "text",
+        "currencyType": "USD",
+        "dateFormat": "mm/dd/yyyy",
+        "shouldWrapOverflow": false
+      }
+    ],
+    "headerRows": [
+      {
+        "id": "7c319ae8-9a52-42eb-86ff-d2e4b120ca63"
+      }
+    ],
+    "bodyRows": [
+      {
+        "id": "1ee34ee0-357a-47c2-b594-6b17734831b0",
+        "index": 0,
+        "menuCellId": "8ea93e68-7b84-4d08-969f-896175c9dd54",
+        "creationTime": 1682183905394,
+        "lastEditedTime": 1682183911870
+      },
+      {
+        "id": "1fcd3aab-6220-49c3-8870-97ab704deafc",
+        "index": 1,
+        "menuCellId": "689f1b66-a42e-4b66-99de-0300d4943eaa",
+        "creationTime": 1682183917409,
+        "lastEditedTime": 1682183920073
+      }
+    ],
+    "footerRows": [
+      {
+        "id": "aa02c83b-61ca-4365-9bcc-21a40ec7b330"
+      },
+      {
+        "id": "6e6c6dcd-3728-4046-b8ca-b3ed883fa1f1"
+      }
+    ],
+    "headerCells": [
+      {
+        "id": "ed1b325a-1e99-4cf3-b7be-cfd44ba547bd",
+        "columnId": "4b24e9c4-3fdd-42c3-8a66-f7ce9a72f2f0",
+        "rowId": "7c319ae8-9a52-42eb-86ff-d2e4b120ca63",
+        "markdown": "New Column"
+      }
+    ],
+    "bodyCells": [
+      {
+        "id": "4f4a1f6a-e7d9-45ed-87b2-86591c4ff4fa",
+        "columnId": "4b24e9c4-3fdd-42c3-8a66-f7ce9a72f2f0",
+        "rowId": "1ee34ee0-357a-47c2-b594-6b17734831b0",
+        "dateTime": null,
+        "markdown": "hfghfg"
+      },
+      {
+        "id": "6184b186-76a1-4630-973c-7849677b662a",
+        "columnId": "4b24e9c4-3fdd-42c3-8a66-f7ce9a72f2f0",
+        "rowId": "1fcd3aab-6220-49c3-8870-97ab704deafc",
+        "dateTime": null,
+        "markdown": "dfhd "
+      }
+    ],
+    "footerCells": [
+      {
+        "id": "691dc21e-e4ae-4385-b844-34d505538968",
+        "columnId": "4b24e9c4-3fdd-42c3-8a66-f7ce9a72f2f0",
+        "rowId": "aa02c83b-61ca-4365-9bcc-21a40ec7b330",
+        "functionType": "none"
+      },
+      {
+        "id": "2cd84102-ce90-4615-b80d-17a3cf94179a",
+        "columnId": "4b24e9c4-3fdd-42c3-8a66-f7ce9a72f2f0",
+        "rowId": "6e6c6dcd-3728-4046-b8ca-b3ed883fa1f1",
+        "functionType": "none"
+      }
+    ],
+    "tags": []
+  },
+  "pluginVersion": 642
+}

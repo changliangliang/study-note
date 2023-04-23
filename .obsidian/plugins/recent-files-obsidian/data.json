@@ -1,8 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "2023-04-23",
+      "path": "日记/2023-04-23.md"
+    },
+    {
+      "basename": "Untitled",
+      "path": "Untitled.table"
+    },
+    {
       "basename": "未命名",
       "path": "未命名.md"
+    },
+    {
+      "basename": "未命名_image_1",
+      "path": "Excalidraw/未命名_image_1.png"
     },
     {
       "basename": "Drawing 2023-04-23 00.41.52.excalidraw",
@@ -31,10 +43,6 @@
     {
       "basename": "docker 常用操作",
       "path": "学习笔记/docker 常用操作.md"
-    },
-    {
-      "basename": "未命名_image_1",
-      "path": "Excalidraw/未命名_image_1.png"
     },
     {
       "basename": "操作系统",
@@ -191,14 +199,6 @@
     {
       "basename": "截图笔记_image_8",
       "path": "附件/截图笔记_image_8.png"
-    },
-    {
-      "basename": "模板_image_1",
-      "path": "附件/模板_image_1.png"
-    },
-    {
-      "basename": "内核态和用户态",
-      "path": "草稿/内核态和用户态.md"
     }
   ],
   "omittedPaths": [],
