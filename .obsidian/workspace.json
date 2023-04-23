@@ -16,37 +16,24 @@
             }
           },
           {
-            "id": "626327091968f79b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "日记/2023-04-22.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "03c58d9f9cb9ce5b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "日记/2023-04-22.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6f7b8efe5207c578",
+            "id": "f6920402858c7032",
             "type": "leaf",
             "state": {
               "type": "obsidian-projects",
               "state": {}
+            }
+          },
+          {
+            "id": "3392f180d97b500a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "日记/2023-04-22.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           },
           {
@@ -63,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -237,13 +224,15 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "6f7b8efe5207c578",
+  "active": "2e6886b3461627b5",
   "lastOpenFiles": [
-    "日记/91e67ba9-58d0-45b8-ab2e-7f1ec11a1b6e_db.md",
-    "日记/77fc4df5-9d20-4a88-9b70-2fc65bd5b92c_db.md",
     "日记/2023-04-22.md",
-    "日记/2023-04-20.md",
     "日记/2023-04-23.md",
+    "日记/91e67ba9-58d0-45b8-ab2e-7f1ec11a1b6e_db.md",
+    "日记/2023-04-20.md",
+    "日记/611f28cc-b985-48a0-86ee-b3fae94e0488_db.md",
+    "日记/Untitled note.md",
+    "日记/77fc4df5-9d20-4a88-9b70-2fc65bd5b92c_db.md",
     "大法师打发斯蒂芬.md",
     "学习笔记/C++学习/C++知识.md",
     "Untitled 1.table",
@@ -265,8 +254,6 @@
     "学习笔记/ucore操作系统实验/分公司的.md",
     "学习笔记/ucore操作系统实验/579f2742-1ed0-413b-acf0-72262617fdab_db.md",
     "学习笔记/linux学习/ubuntu中的网络配置.md",
-    "学习笔记/linux学习/linux常用命令.md",
-    "学习笔记/数据库学习笔记/SQL基础.md",
     "附件/image/对 Spring 的认识_image_1.png",
     "附件/image",
     "附件/image/未命名_image_1.png",
