@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c0eb1e2b93bcebaf",
+            "id": "663d8a88c05e7ede",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "学习笔记/计算机知识/MBR 主引导记录.md",
+                "file": "学习笔记/Java框架/Spring/Spirng基于Java和注解的配置.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#blog",
+                "query": "tag:#Spring",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -106,7 +107,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习笔记/计算机知识/MBR 主引导记录.md"
+                "file": "学习笔记/Java框架/Spring/Spirng基于Java和注解的配置.md"
               }
             }
           },
@@ -147,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "学习笔记/计算机知识/MBR 主引导记录.md",
+                "file": "学习笔记/Java框架/Spring/Spirng基于Java和注解的配置.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +160,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "学习笔记/计算机知识/MBR 主引导记录.md",
+                "file": "学习笔记/Java框架/Spring/Spirng基于Java和注解的配置.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,8 +176,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 495.5,
-    "collapsed": true
+    "width": 495.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -202,8 +202,10 @@
       "workspaces-plus:Manage workspaces": false
     }
   },
-  "active": "c0eb1e2b93bcebaf",
+  "active": "be9ca6d9588b3fbc",
   "lastOpenFiles": [
+    "学习笔记/C++学习/2023-04-21 三大法师打发点.md",
+    "学习笔记/计算机知识/MBR 主引导记录.md",
     "未命名看板.md",
     "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md",
     "学习笔记/socket连接不安全的原因.md",
@@ -227,9 +229,7 @@
     "日记/2023-04-22.md",
     "学习笔记/数据库学习笔记/SQL基础.md",
     "学习笔记/C++学习/const关键字.md",
-    "学习笔记/C++学习/2023-04-21 三大法师打发点.md",
     "学习笔记/C++学习/模板.md",
-    "日记/Untitled note.md",
     "附件/image/c++_image_2.png",
     "Untitled 20230423 032600.encrypted",
     "附件/image/c++_image_1.png",

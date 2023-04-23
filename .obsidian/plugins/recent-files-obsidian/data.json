@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Spirng基于Java和注解的配置",
+      "path": "学习笔记/Java框架/Spring/Spirng基于Java和注解的配置.md"
+    },
+    {
       "basename": "MBR 主引导记录",
       "path": "学习笔记/计算机知识/MBR 主引导记录.md"
     },
@@ -23,10 +27,6 @@
     {
       "basename": "计算机中的路由表",
       "path": "学习笔记/计算机中的路由表.md"
-    },
-    {
-      "basename": "Spirng基于Java和注解的配置",
-      "path": "学习笔记/Java框架/Spring/Spirng基于Java和注解的配置.md"
     },
     {
       "basename": "Spring的一些高级配置",
@@ -99,10 +99,6 @@
     {
       "basename": "const关键字",
       "path": "学习笔记/C++学习/const关键字.md"
-    },
-    {
-      "basename": "2023-04-21 三大法师打发点",
-      "path": "学习笔记/C++学习/2023-04-21 三大法师打发点.md"
     },
     {
       "basename": "模板",
