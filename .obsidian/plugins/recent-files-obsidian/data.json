@@ -1,8 +1,72 @@
 {
   "recentFiles": [
     {
+      "basename": "dbtest",
+      "path": "dbtest.md"
+    },
+    {
+      "basename": "发斯蒂芬斯蒂芬",
+      "path": "DB测试/发斯蒂芬斯蒂芬.md"
+    },
+    {
+      "basename": "啥打法是的",
+      "path": "DB测试/啥打法是的.md"
+    },
+    {
+      "basename": "笔记模板",
+      "path": "模板/笔记模板.md"
+    },
+    {
+      "basename": "c++",
+      "path": "DB测试/c++.md"
+    },
+    {
+      "basename": "模板",
+      "path": "学习笔记/C++学习/模板.md"
+    },
+    {
+      "basename": "Drawing 2023-04-23 00.41.52.excalidraw",
+      "path": "Excalidraw/Drawing 2023-04-23 00.41.52.excalidraw.md"
+    },
+    {
+      "basename": "ucore操作系统实验：lab1",
+      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md"
+    },
+    {
+      "basename": "ucore操作系统实验：lab2",
+      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab2.md"
+    },
+    {
+      "basename": "ubuntu中的网络配置",
+      "path": "学习笔记/linux学习/ubuntu中的网络配置.md"
+    },
+    {
+      "basename": "docker 常用操作",
+      "path": "学习笔记/docker 常用操作.md"
+    },
+    {
+      "basename": "rust",
+      "path": "DB测试/rust.md"
+    },
+    {
+      "basename": "python",
+      "path": "DB测试/python.md"
+    },
+    {
+      "basename": "js",
+      "path": "DB测试/js.md"
+    },
+    {
+      "basename": "java",
+      "path": "DB测试/java.md"
+    },
+    {
       "basename": "2023-04-22",
       "path": "日记/2023-04-22.md"
+    },
+    {
+      "basename": "2023-04-20",
+      "path": "日记/2023-04-20.md"
     },
     {
       "basename": "2023-04-23",
@@ -13,68 +77,20 @@
       "path": "日记/91e67ba9-58d0-45b8-ab2e-7f1ec11a1b6e_db.md"
     },
     {
-      "basename": "2023-04-20",
-      "path": "日记/2023-04-20.md"
-    },
-    {
-      "basename": "大法师打发斯蒂芬",
-      "path": "大法师打发斯蒂芬.md"
-    },
-    {
       "basename": "C++知识",
       "path": "学习笔记/C++学习/C++知识.md"
-    },
-    {
-      "basename": "Untitled 1",
-      "path": "Untitled 1.table"
-    },
-    {
-      "basename": "Untitled",
-      "path": "Untitled.table"
-    },
-    {
-      "basename": "e1e63d48-e40f-4de5-95e1-a17b27b7fb94_db",
-      "path": "e1e63d48-e40f-4de5-95e1-a17b27b7fb94_db.md"
-    },
-    {
-      "basename": "2a3875e1-5468-4a2a-bd20-6613aab26bf3_db",
-      "path": "2a3875e1-5468-4a2a-bd20-6613aab26bf3_db.md"
     },
     {
       "basename": "博客列表",
       "path": "常用/博客列表.md"
     },
     {
-      "basename": "未命名",
-      "path": "未命名.md"
-    },
-    {
-      "basename": "docker 常用操作",
-      "path": "学习笔记/docker 常用操作.md"
-    },
-    {
       "basename": "Spring中的AOP配置",
       "path": "学习笔记/Java框架/Spring/Spring中的AOP配置.md"
     },
     {
-      "basename": "dasfasdf",
-      "path": "dasfasdf.md"
-    },
-    {
-      "basename": "ucore操作系统实验：lab1",
-      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md"
-    },
-    {
       "basename": "ucore操作系统实验：环境搭建",
       "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md"
-    },
-    {
-      "basename": "ucore操作系统实验：lab2",
-      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab2.md"
-    },
-    {
-      "basename": "ubuntu中的网络配置",
-      "path": "学习笔记/linux学习/ubuntu中的网络配置.md"
     },
     {
       "basename": "linux常用命令",
@@ -99,10 +115,6 @@
     {
       "basename": "对 Spring 的认识_image_1",
       "path": "附件/image/对 Spring 的认识_image_1.png"
-    },
-    {
-      "basename": "Drawing 2023-04-23 00.41.52.excalidraw",
-      "path": "Excalidraw/Drawing 2023-04-23 00.41.52.excalidraw.md"
     },
     {
       "basename": "testsfsdf",
@@ -149,10 +161,6 @@
       "path": "模板/每日记录.md"
     },
     {
-      "basename": "笔记模板",
-      "path": "模板/笔记模板.md"
-    },
-    {
       "basename": "blog-frontmatter",
       "path": "模板/blog-frontmatter.md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "Java类型信息_image_1",
       "path": "附件/image/Java类型信息_image_1.png"
-    },
-    {
-      "basename": "零碎记录",
-      "path": "学习笔记/Java拾遗迹/零碎记录.md"
-    },
-    {
-      "basename": "零碎记录_image_1",
-      "path": "附件/image/零碎记录_image_1.png"
     }
   ],
   "omittedPaths": [],

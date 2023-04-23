@@ -21,6 +21,10 @@
     {
       "folder": "学习笔记",
       "template": "模板/笔记模板.md"
+    },
+    {
+      "folder": "DB测试",
+      "template": "模板/笔记模板.md"
     }
   ],
   "syntax_highlighting": true,

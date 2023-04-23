@@ -6,11 +6,11 @@
       "defaultName": "",
       "templates": [],
       "excludedNotes": [],
-      "isDefault": true,
+      "isDefault": false,
       "dataSource": {
         "kind": "folder",
         "config": {
-          "path": "日记",
+          "path": "DB测试",
           "recursive": false
         }
       },
@@ -19,8 +19,8 @@
         {
           "config": {
             "fieldConfig": {
-              "database-plugin": {
-                "width": 180
+              "path": {
+                "hide": true
               }
             }
           },
@@ -30,13 +30,60 @@
           "colors": {
             "conditions": []
           },
-          "id": "b07cf2c0-ebc1-4ee1-9c96-dce35484826e",
+          "id": "d1ad9bb1-9f7b-4a7a-bd79-4d2c9cbf600a",
           "name": "Table",
           "type": "table"
+        },
+        {
+          "config": {
+            "includeFields": [],
+            "fitStyle": "contain",
+            "coverField": "cover"
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "id": "10fce611-cf1f-4fea-9a64-2572eac0b80f",
+          "name": "Gallery",
+          "type": "gallery"
+        },
+        {
+          "config": {
+            "groupByField": "",
+            "includeFields": [],
+            "priorityField": "priority"
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "id": "cb1785a5-af07-4dff-b5a3-13107d31837c",
+          "name": "Board",
+          "type": "board"
+        },
+        {
+          "config": {
+            "dateField": "check",
+            "interval": "month"
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "id": "beab128b-bbe7-4194-a667-5ca08d5d68b2",
+          "name": "Calendar",
+          "type": "calendar"
         }
       ],
-      "id": "b40ec9e6-5300-4cfb-ac4d-c5dc75c10aad",
-      "name": "日记"
+      "id": "acf10332-170f-4e3f-9b57-eddd05b69366",
+      "name": "DB测试"
     },
     {
       "fieldConfig": {},
@@ -45,10 +92,9 @@
       "excludedNotes": [],
       "isDefault": false,
       "dataSource": {
-        "kind": "folder",
+        "kind": "dataview",
         "config": {
-          "path": "日记",
-          "recursive": false
+          "query": "table\nfrom \"DB测试\""
         }
       },
       "newNotesFolder": "",
@@ -61,13 +107,13 @@
           "colors": {
             "conditions": []
           },
-          "id": "9883c3fa-0135-4106-b2c2-d55a7cc22ceb",
+          "id": "d534e3ae-f194-4c73-973e-f6eea8c7396c",
           "name": "Table",
           "type": "table"
         }
       ],
-      "id": "49abc640-fb17-44a0-9f42-ab14a3e7596e",
-      "name": "日记"
+      "id": "55f9d289-c6d0-4651-978a-97ada587f155",
+      "name": "DB测试_dataview"
     }
   ],
   "preferences": {
