@@ -2,7 +2,14 @@
   "version": 2,
   "projects": [
     {
-      "fieldConfig": {},
+      "fieldConfig": {
+        "status": {
+          "options": [
+            "未发布",
+            "已发布"
+          ]
+        }
+      },
       "defaultName": "",
       "templates": [],
       "excludedNotes": [],
@@ -10,36 +17,60 @@
       "dataSource": {
         "kind": "folder",
         "config": {
-          "path": "",
+          "path": "学习笔记/ucore操作系统实验",
           "recursive": false
         }
       },
       "newNotesFolder": "",
       "views": [
         {
+          "config": {
+            "fieldConfig": {
+              "created": {
+                "width": 185
+              },
+              "categories": {
+                "width": 158
+              },
+              "path": {
+                "width": 122
+              },
+              "name": {
+                "width": 285
+              }
+            }
+          },
+          "filter": {
+            "conditions": [
+              {
+                "field": "name",
+                "operator": "is-not-empty",
+                "enabled": true
+              }
+            ]
+          },
+          "colors": {
+            "conditions": []
+          },
+          "id": "50855e47-228e-4422-831b-19e6c1c60af8",
+          "name": "Table",
+          "type": "table"
+        },
+        {
           "config": {},
           "filter": {
             "conditions": []
           },
           "colors": {
-            "conditions": [
-              {
-                "color": "#a882ff",
-                "condition": {
-                  "field": "name",
-                  "operator": "is-not-empty",
-                  "enabled": true
-                }
-              }
-            ]
+            "conditions": []
           },
-          "id": "50855e47-228e-4422-831b-19e6c1c60af8",
-          "name": "Table",
-          "type": "table"
+          "id": "016aeb8a-bb72-47ae-9ea2-34c691b9ca33",
+          "name": "Board",
+          "type": "board"
         }
       ],
       "id": "ac7a992a-3f89-48d2-b76d-8dc88dbc99cb",
-      "name": "Untitled project"
+      "name": "ucore操作系统实验"
     },
     {
       "fieldConfig": {},

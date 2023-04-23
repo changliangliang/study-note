@@ -11,9 +11,27 @@
             "id": "e5325db029b048fb",
             "type": "leaf",
             "state": {
+              "type": "database-plugin",
+              "state": {
+                "file": "学习笔记/ucore操作系统实验/88bc0a9d-e991-443f-8f06-0e1bba4e0b21_db.md"
+              }
+            }
+          },
+          {
+            "id": "99cb4951c91e6b1e",
+            "type": "leaf",
+            "state": {
+              "type": "obsidian-projects",
+              "state": {}
+            }
+          },
+          {
+            "id": "d1a56e54b13052b8",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "附件/SpirngMVC进阶知识_image_2.png.md",
+                "file": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab2.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +104,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 250.5
+    "width": 477.5
   },
   "right": {
     "id": "471dd9cab433cd9a",
@@ -114,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "附件/SpirngMVC进阶知识_image_2.png.md"
+                "file": "学习笔记/ucore操作系统实验/88bc0a9d-e991-443f-8f06-0e1bba4e0b21_db.md"
               }
             }
           },
@@ -147,7 +165,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "附件/SpirngMVC进阶知识_image_2.png.md",
+                "file": "学习笔记/ucore操作系统实验/88bc0a9d-e991-443f-8f06-0e1bba4e0b21_db.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +177,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "附件/SpirngMVC进阶知识_image_2.png.md",
+                "file": "学习笔记/ucore操作系统实验/88bc0a9d-e991-443f-8f06-0e1bba4e0b21_db.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -201,9 +219,13 @@
   },
   "active": "e5325db029b048fb",
   "lastOpenFiles": [
+    "未命名.md",
+    "学习笔记/ucore操作系统实验/88bc0a9d-e991-443f-8f06-0e1bba4e0b21_db.md",
+    "学习笔记/ucore操作系统实验/ucore操作系统实验：lab2.md",
+    "学习笔记/obsidian插件记录.md",
+    "附件/SpirngMVC进阶知识_image_2.png.md",
     "学习笔记/Spring/对 Spring 的认识.md",
     "附件/image/对 Spring 的认识_image_1.png",
-    "未命名.md",
     "附件/image",
     "附件/image/未命名_image_1.png",
     "附件/image/未命名_image_2.png",
@@ -232,15 +254,11 @@
     "日记/2023-04-22.md",
     "学习笔记/计算机的启动.md",
     "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md",
-    "学习笔记/ucore操作系统实验/ucore操作系统实验：lab2.md",
     "学习笔记/计算机知识",
     "日记/2023-04-21.md",
     "日记/2023-04-20.md",
     "模板/每日记录.md",
     "模板/笔记模板.md",
-    "学习笔记/linux学习/ubuntu中的网络配置.md",
-    "模板/笔记草稿.md",
-    "模板/blog-frontmatter.md",
     "Unused_Attachments.zip",
     "assets",
     "学习笔记/Java框架/SpringMVC",
