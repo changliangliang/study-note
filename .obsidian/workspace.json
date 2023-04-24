@@ -85,8 +85,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -211,7 +210,7 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "be9ca6d9588b3fbc",
+  "active": "2e6886b3461627b5",
   "lastOpenFiles": [
     "学习笔记/Java拾遗迹/Java接口.md",
     "学习笔记/Java拾遗迹/Java泛型.md",
