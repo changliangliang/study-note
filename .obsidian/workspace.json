@@ -4,11 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "4b6824fd8fd20acd",
+        "id": "1b31eb4da9f0d17a",
         "type": "tabs",
         "children": [
           {
-            "id": "6796ce27739837dc",
+            "id": "986b7bb68c931b6b",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "obsidian-projects",
+              "state": {},
+              "pinned": true
+            }
+          },
+          {
+            "id": "bc298caf27742f23",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,7 +30,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -125,17 +136,8 @@
               "type": "calendar",
               "state": {}
             }
-          },
-          {
-            "id": "5bd38544f6d251ec",
-            "type": "leaf",
-            "state": {
-              "type": "todo",
-              "state": {}
-            }
           }
-        ],
-        "currentTab": 4
+        ]
       },
       {
         "id": "e7beb231688408fa",
@@ -202,16 +204,14 @@
       "cmdr:Obsidian Git: Create backup": false,
       "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
       "obsidian-projects:Open projects": false,
-      "notion-like-tables:Create Notion-Like table": false,
       "dbfolder:创建一个新数据库表": false,
       "meld-encrypt:Create new encrypted note": false,
       "obsidian-memos:Memos": false,
       "homepage:Open homepage": false,
-      "workspaces:管理工作区布局": false,
-      "workspaces-plus:Manage workspaces": false
+      "workspaces:管理工作区布局": false
     }
   },
-  "active": "5bd38544f6d251ec",
+  "active": "bc298caf27742f23",
   "lastOpenFiles": [
     "未命名看板.md",
     "Excalidraw/testsfsdf.md",
