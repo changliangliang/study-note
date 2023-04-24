@@ -1,0 +1,22 @@
+{
+  "token": "eyJhcHBJZCI6MjAsImFwcEtleSI6ImF1d3Y1M2FweDdxa2c5a2RxaDN3ZyIsImFwcFNlY3JldCI6IjluQ2VzWDFMcHlNcUliajQiLCJleCI6IiJ9.9cb1ef84545f51948d1f478dff3fa463",
+  "wuCaiDir": "WuCai",
+  "frequency": "0",
+  "triggerOnLoad": true,
+  "isSyncing": false,
+  "lastSyncFailed": false,
+  "refreshNotes": false,
+  "notesToRefresh": [],
+  "reimportShowConfirmation": true,
+  "lastCursor": "eyJsYXN0SGlnaGxpZ2h0UEtJRCI6NDQyMDQ3LCJsYXQiOjAsImxwbnQiOjB9",
+  "exportConfig": {
+    "titleFormat": 2,
+    "writeStyle": 1,
+    "titleStyle": 2,
+    "highlightStyle": 1,
+    "annotationStyle": 1,
+    "tagStyle": 1,
+    "haveWuCaiTag": 1,
+    "obTemplate": ""
+  }
+}

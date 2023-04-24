@@ -1,10 +1,10 @@
 ---
-type: blog
-status: 已发布
-created: 2023-04-18 16:45:41
-updated: 2023-04-18 16:45:41
-tags: blog docker
 categories: docker学习笔记
+created: 2023-04-18 16:45:41
+status: 已发布
+tags: [blog, docker]
+type: blog
+updated: 2023-04-18 16:45:41
 ---
 
 ## 镜像操作
@@ -50,7 +50,7 @@ REPOSITORY      TAG           IMAGE ID         CREATED          SIZE
 <none>          <none>        00285df0df87     5 days ago       342 MB
 ```
 
-`docker image ls -f dangling=true `  命令可以查看悬浮镜像。一般来说悬浮惊醒已经没有任何的使用价值，可以通过 `docker image prune` 命令进行删除。
+`docker image ls -f dangling=true ` 命令可以查看悬浮镜像。一般来说悬浮惊醒已经没有任何的使用价值，可以通过 `docker image prune` 命令进行删除。
 
 ### 中间层镜像
 
@@ -60,9 +60,9 @@ REPOSITORY      TAG           IMAGE ID         CREATED          SIZE
 $ docker image ls -a
 ```
 
-### 列出指定镜像 #todo 
+### 列出指定镜像 #todo
 
-`docker image ls ubuntu` 
+`docker image ls ubuntu`
 
 ```bash
 $ 
@@ -129,7 +129,6 @@ docker image rm [选项] <镜像1> [<镜像2> ...]
 ```sh
 $ docker image rm $(docker image ls -q redis)
 ```
-
 
 ## 容器操作
 
@@ -284,7 +283,7 @@ docker volume create 数据卷名称
 
 ![](附件/image/docker%20常用操作_image_15.png)
 
-在挂在目录 `/testdata` 中创建一个文件，然后在主机目录下的 `/var/lib/docker/volumes/mydata/_data` 目录中可以看到文件 `test.txt` ，即在容器中创建的那个文件。
+在挂在目录 `/testdata` 中创建一个文件，然后在主机目录下的 `/var/lib/docker/volumes/mydata/_data` 目录中可以看到文件 `test.txt`，即在容器中创建的那个文件。
 
 ![](附件/image/docker%20常用操作_image_16.png)
 
@@ -310,7 +309,6 @@ docker volume rm 数据卷名称
 --mount type=bind,source=/src/webapp,target=/usr/share/nginx/html,readonly 
 ```
 
-
 ## 网络配置
 
 ### 端口映射
@@ -322,14 +320,13 @@ docker volume rm 数据卷名称
 - `-P` 参数随机映射主机端口到内部容器开方的端口；
 - `-p` 则可以指定要映射的端口，并且在一个指定端口上只可以绑定一个容器。
 
-
 `-p` 参数支持的格式有为：
 
 ```
 ip:hostPort:containerPort | ip::containerPort | hostPort:containerPort
 ```
 
--  `-p 80:80`：将所有接口上的 80 端口都映射的容器的 80 端口；
+- `-p 80:80`：将所有接口上的 80 端口都映射的容器的 80 端口；
 - `-p 127.0.0.1:80:80`：将所有接口 `127.0.0.1` 上的 80 端口映射的容器的 80 端口；
 - `-p 127.0.0.1::80`：将所有接口 `127.0.0.1` 上的随机一个端口映射的容器的 80 端口；
 - `-p 127.0.0.1:80:80/udp`：将所有接口 `127.0.0.1` 上的 80 端口映射的容器的 80 端口，不过使用的是 udp 端口。
@@ -370,10 +367,10 @@ sudo systemctl enable docker.service
 
 | 策略           | 描述                                                                    |
 | -------------- | ----------------------------------------------------------------------- |
-| no             | 默认值，不会自动重启。                                                  |
-| on-failure     | 因为错误退出就会重启，错误退出指非 0 退出码。                           |
-| always         | 停止就会重启。如果是手工停止，则在 Docker daemon 或容器本身重启时启动。 |
-| unless-stopped | 类似于 always，除了当容器被停止，它是不会重启的。                       |
+| no             | 默认值，不会自动重启。|
+| on-failure     | 因为错误退出就会重启，错误退出指非 0 退出码。|
+| always         | 停止就会重启。如果是手工停止，则在 Docker daemon 或容器本身重启时启动。|
+| unless-stopped | 类似于 always，除了当容器被停止，它是不会重启的。|
 
 已经创建的容器，可以使用 `docker update` 命令来更新它的重启策略：
 
@@ -396,9 +393,7 @@ docker update --restart always 容器名
 
 ![](附件/image/docker%20常用操作_image_24.png)
 
-
-
 ## 参考资料
 
-- [Docker从入门到实践](https://yeasy.gitbook.io/docker_practice/) 
--  [打不死的小强，让Docker的容器自动重启 - 南瓜慢说官网](https://www.pkslow.com/archives/docker-container-auto-restart)
+- [Docker从入门到实践](https://yeasy.gitbook.io/docker_practice/)
+- [打不死的小强，让Docker的容器自动重启 - 南瓜慢说官网](https://www.pkslow.com/archives/docker-container-auto-restart)
