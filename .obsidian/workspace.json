@@ -4,20 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "d987b67d10a88fed",
+        "id": "1b31eb4da9f0d17a",
         "type": "tabs",
         "children": [
           {
-            "id": "663d8a88c05e7ede",
+            "id": "986b7bb68c931b6b",
             "type": "leaf",
+            "pinned": true,
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "学习笔记/Java框架/Spring/Spirng基于Java和注解的配置.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "obsidian-projects",
+              "state": {},
+              "pinned": true
             }
           }
         ]
@@ -49,7 +46,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Spring",
+                "query": "tag:#blog",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,8 +71,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -106,9 +102,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "学习笔记/Java框架/Spring/Spirng基于Java和注解的配置.md"
-              }
+              "state": {}
             }
           },
           {
@@ -148,7 +142,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "学习笔记/Java框架/Spring/Spirng基于Java和注解的配置.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,7 +153,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "学习笔记/Java框架/Spring/Spirng基于Java和注解的配置.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,7 +168,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 495.5
+    "width": 495.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -202,15 +195,15 @@
       "workspaces-plus:Manage workspaces": false
     }
   },
-  "active": "be9ca6d9588b3fbc",
+  "active": "986b7bb68c931b6b",
   "lastOpenFiles": [
+    "学习笔记/socket连接不安全的原因.md",
+    "学习笔记/Java框架/Spring/Spirng基于Java和注解的配置.md",
     "学习笔记/C++学习/2023-04-21 三大法师打发点.md",
     "学习笔记/计算机知识/MBR 主引导记录.md",
     "未命名看板.md",
     "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md",
-    "学习笔记/socket连接不安全的原因.md",
     "学习笔记/计算机中的路由表.md",
-    "学习笔记/Java框架/Spring/Spirng基于Java和注解的配置.md",
     "学习笔记/Java框架/Spring/Spring的一些高级配置.md",
     "学习笔记/Java框架/Spring/Spring中的AOP配置.md",
     "学习笔记/Java框架/SpringMVC/SpringMVC配置.md",
