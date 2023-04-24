@@ -4,17 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "1b31eb4da9f0d17a",
+        "id": "4b6824fd8fd20acd",
         "type": "tabs",
         "children": [
           {
-            "id": "986b7bb68c931b6b",
+            "id": "6796ce27739837dc",
             "type": "leaf",
-            "pinned": true,
             "state": {
-              "type": "obsidian-projects",
-              "state": {},
-              "pinned": true
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -195,7 +193,7 @@
       "workspaces-plus:Manage workspaces": false
     }
   },
-  "active": "986b7bb68c931b6b",
+  "active": "6796ce27739837dc",
   "lastOpenFiles": [
     "学习笔记/socket连接不安全的原因.md",
     "学习笔记/Java框架/Spring/Spirng基于Java和注解的配置.md",
