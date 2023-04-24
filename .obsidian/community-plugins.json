@@ -10,7 +10,6 @@
   "obsidian-tasks-plugin",
   "dataview",
   "obsidian-plaintext",
-  "obsidian-front-matter-title-plugin",
   "obsidian-auto-link-title",
   "editing-toolbar",
   "recent-files-obsidian",
@@ -24,7 +23,6 @@
   "obsidian-hover-editor",
   "obsidian-outliner",
   "obsidian-projects",
-  "notion-like-tables",
   "obsidian-memos",
   "obsidian-attachment-name-formatting",
   "calendar",
@@ -32,6 +30,8 @@
   "meld-encrypt",
   "obsidian-kanban",
   "homepage",
-  "workspaces-plus",
-  "buttons"
+  "buttons",
+  "obsidian-checklist-plugin",
+  "obsidian-linter",
+  "obsidian-meta-bind-plugin"
 ]

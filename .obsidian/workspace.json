@@ -11,8 +11,13 @@
             "id": "6796ce27739837dc",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "草稿/操作系统.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
         ]
@@ -100,7 +105,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "草稿/操作系统.md"
+              }
             }
           },
           {
@@ -118,8 +125,17 @@
               "type": "calendar",
               "state": {}
             }
+          },
+          {
+            "id": "5bd38544f6d251ec",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       },
       {
         "id": "e7beb231688408fa",
@@ -140,6 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "草稿/操作系统.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,6 +168,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "草稿/操作系统.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -193,13 +211,14 @@
       "workspaces-plus:Manage workspaces": false
     }
   },
-  "active": "6796ce27739837dc",
+  "active": "5bd38544f6d251ec",
   "lastOpenFiles": [
+    "未命名看板.md",
+    "Excalidraw/testsfsdf.md",
     "学习笔记/socket连接不安全的原因.md",
     "学习笔记/Java框架/Spring/Spirng基于Java和注解的配置.md",
     "学习笔记/C++学习/2023-04-21 三大法师打发点.md",
     "学习笔记/计算机知识/MBR 主引导记录.md",
-    "未命名看板.md",
     "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md",
     "学习笔记/计算机中的路由表.md",
     "学习笔记/Java框架/Spring/Spring的一些高级配置.md",
@@ -220,7 +239,6 @@
     "日记/2023-04-22.md",
     "学习笔记/数据库学习笔记/SQL基础.md",
     "学习笔记/C++学习/const关键字.md",
-    "学习笔记/C++学习/模板.md",
     "附件/image/c++_image_2.png",
     "Untitled 20230423 032600.encrypted",
     "附件/image/c++_image_1.png",

@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "操作系统",
+      "path": "草稿/操作系统.md"
+    },
+    {
+      "basename": "未命名看板",
+      "path": "未命名看板.md"
+    },
+    {
+      "basename": "testsfsdf",
+      "path": "Excalidraw/testsfsdf.md"
+    },
+    {
       "basename": "socket连接不安全的原因",
       "path": "学习笔记/socket连接不安全的原因.md"
     },
@@ -15,10 +27,6 @@
     {
       "basename": "列表",
       "path": "常用/列表.md"
-    },
-    {
-      "basename": "未命名看板",
-      "path": "未命名看板.md"
     },
     {
       "basename": "ucore操作系统实验：环境搭建",
@@ -133,10 +141,6 @@
       "path": "草稿/操作系统实验.md"
     },
     {
-      "basename": "操作系统",
-      "path": "草稿/操作系统.md"
-    },
-    {
       "basename": "Drawing 2023-04-23 00.41.52.excalidraw",
       "path": "Excalidraw/Drawing 2023-04-23 00.41.52.excalidraw.md"
     },
@@ -171,10 +175,6 @@
     {
       "basename": "对 Spring 的认识_image_1",
       "path": "附件/image/对 Spring 的认识_image_1.png"
-    },
-    {
-      "basename": "testsfsdf",
-      "path": "Excalidraw/testsfsdf.md"
     },
     {
       "basename": "Git 学习笔记",
