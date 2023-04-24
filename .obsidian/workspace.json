@@ -60,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#blog",
+                "query": "tag:#docker",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -186,8 +187,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 495.5,
-    "collapsed": true
+    "width": 495.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -211,7 +211,7 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "67af4726c0fa9e7f",
+  "active": "be9ca6d9588b3fbc",
   "lastOpenFiles": [
     "学习笔记/Java拾遗迹/Java接口.md",
     "学习笔记/Java拾遗迹/Java泛型.md",
