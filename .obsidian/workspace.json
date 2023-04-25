@@ -16,8 +16,22 @@
               "state": {},
               "pinned": true
             }
+          },
+          {
+            "id": "4418ac147bc0f2ce",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "日记/2023-04-20.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -46,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#blog",
+                "query": "tag:#fd/d",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -71,7 +85,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -102,7 +117,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "日记/2023-04-20.md"
+              }
             }
           },
           {
@@ -142,6 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "日记/2023-04-20.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,6 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "日记/2023-04-20.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -168,8 +187,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 495.5,
-    "collapsed": true
+    "width": 495.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -193,8 +211,15 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "986b7bb68c931b6b",
+  "active": "4418ac147bc0f2ce",
   "lastOpenFiles": [
+    "日记/2023-04-20.md",
+    "草稿/中断、异常和系统调用.md",
+    "草稿/常用软件配置.md",
+    "草稿/C++学习笔记.md",
+    "草稿/Git 学习笔记.md",
+    "草稿/MySQL学习笔记.md",
+    "草稿/CS自学指南.md",
     "学习笔记/计算机中的路由表.md",
     "学习笔记/长连接的若干问题.md",
     "学习笔记/docker 常用操作.md",
@@ -219,13 +244,6 @@
     "Excalidraw/Drawing 2023-04-23 00.41.52.excalidraw.md",
     "Excalidraw/未命名_image_2.svg",
     "常用/软件列表.md",
-    "常用/列表.md",
-    "常用/卡片目录.md",
-    "常用/截图笔记.md",
-    "常用/草稿目录.md",
-    "常用/博客列表.md",
-    "常用/笔记目录.md",
-    "学习笔记/socket连接不安全的原因.md",
     "附件/image/c++_image_2.png",
     "Untitled 20230423 032600.encrypted",
     "附件/image/c++_image_1.png",
