@@ -2,7 +2,11 @@
   "recentFiles": [
     {
       "basename": "springboot 3 自动装配方式更改",
-      "path": "草稿/springboot 3 自动装配方式更改.md"
+      "path": "学习笔记/问题记录/springboot 3 自动装配方式更改.md"
+    },
+    {
+      "basename": "this指向的问题",
+      "path": "学习笔记/前端开发/this指向的问题.md"
     },
     {
       "basename": "obsidian插件记录",
@@ -11,10 +15,6 @@
     {
       "basename": "vscode中的task.json和launch.json",
       "path": "学习笔记/开发工具/vscode中的task.json和launch.json.md"
-    },
-    {
-      "basename": "this指向的问题",
-      "path": "学习笔记/前端开发/this指向的问题.md"
     },
     {
       "basename": "socket连接不安全的原因",

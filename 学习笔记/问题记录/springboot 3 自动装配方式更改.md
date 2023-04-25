@@ -7,9 +7,13 @@ tags: [springboot, 问题]
 categories: [问题记录]
 ---
 
+## 问题描述
+
 在开发过程中用到了 `mybatis-plus`，启动时爆出如下错误，因怀疑是 `springboot` 和 `mybatis-plus` 版本不兼容所致，将 `springboot` 从 `3` 版本调至了 `2` 版本，重启后发现正常启动。
 
 ![](附件/image/springboot%203%20自动装配方式更改_image_1.png)
+
+## 解决方法
 
 网上搜索之后返现原因是 `springboot` 更改了启动时的自动装配方式，在 `2.7` 版本就不推荐使用 `spring.factories` 的方式进行自动装配了，在 `springboot 3` 将彻底移除对 `/META-INF/spring.factories` 的支持。
 

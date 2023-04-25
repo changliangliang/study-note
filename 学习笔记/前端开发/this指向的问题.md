@@ -2,10 +2,9 @@
 type: blog
 created: 2021-06-11 21:56:48
 updated: 2021-06-19 21:56:48
-tags: blog javascript
-categories:
+tags: [javascript]
+categories: []
 ---
-
 
 ## this 指向不同对象的原因
 
@@ -45,7 +44,6 @@ pirnt() // 执行结果为 undefined
 ```
 
 ![](附件/image/this指向的问题_image_3.png)
-
 
 通过上面的分析可以知道同一个函数可以赋值给不同对象的属性，也就是说它可以被不同的对象调用，这个对象就成为函数的当前运行环境。当函数内部使用的运行环境中的变量时，它应该指明使用的是哪个运行环境的中的变量，所以引入了 `this` 关键字，它所代表的就是当前调用函数的对象。
 
