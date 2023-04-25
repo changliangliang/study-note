@@ -1,12 +1,10 @@
-
 ---
 type: blog
 created: 2022-01-13 09:34:37
 updated: 2023-01-13 09:34:37
-tags: blog vscode 工具
-categories: vscode配置
+tags: [vscode, 工具]
+categories: [vscode配置]
 ---
-
 
 在使用 vscode 编写项目的时候，有时候能看到一个名为 `.vscode` 的文件夹，这个文件夹中保存的就是跟 vscode 相关的配置文件，需要注意的是该配置文件仅对当前项目有效。其中 `task.json` 和 `launch.json` 是两个比较重要的文件，前者主要用于生成程序（如使用 `gcc` 命令编译源码），后者用于程序的调试。
 
@@ -101,7 +99,7 @@ categories: vscode配置
 
 ![](附件/image/VScode中的task.json和launch.json_image_5.png)
 
-使用 `c 调试` 则可以用来调试 `cdebug.c` 程序 ，`python调试` 能用来调试 `pydebug.py` 程序。
+使用 `c 调试` 则可以用来调试 `cdebug.c` 程序，`python调试` 能用来调试 `pydebug.py` 程序。
 
 ![](附件/image/VScode中的task.json和launch.json_image_6.png)
 

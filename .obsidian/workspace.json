@@ -18,12 +18,12 @@
             }
           },
           {
-            "id": "70932b7658135f93",
+            "id": "21bf43d1a234056f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "学习笔记/Java 中的 char 类型能否存储中文.md",
+                "file": "草稿/springboot 3 自动装配方式更改.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习笔记/Java 中的 char 类型能否存储中文.md"
+                "file": "草稿/springboot 3 自动装配方式更改.md"
               }
             }
           },
@@ -158,7 +158,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "学习笔记/Java 中的 char 类型能否存储中文.md",
+                "file": "草稿/springboot 3 自动装配方式更改.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "学习笔记/Java 中的 char 类型能否存储中文.md",
+                "file": "草稿/springboot 3 自动装配方式更改.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,9 +211,22 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "2e6886b3461627b5",
+  "active": "21bf43d1a234056f",
   "lastOpenFiles": [
-    "学习笔记/未命名",
+    "附件/image/springboot 3 自动装配方式更改_image_3.png",
+    "附件/image/springboot 3 自动装配方式更改_image_2.png",
+    "附件/image/springboot 3 自动装配方式更改_image_1.png",
+    "未命名看板.md",
+    "草稿/springboot 3 自动装配方式更改.md",
+    "未命名.md",
+    "草稿/obsidian插件记录.md",
+    "学习笔记/开发工具/vscode中的task.json和launch.json.md",
+    "学习笔记/前端开发/this指向的问题.md",
+    "学习笔记/前端开发",
+    "学习笔记/操作系统/socket连接不安全的原因.md",
+    "学习笔记/开发工具/npm源管理.md",
+    "学习笔记/Linux.md",
+    "学习笔记/Java相关/Java 中的 char 类型能否存储中文.md",
     "草稿/docker镜像创建.md",
     "草稿/docker常用容器创建.md",
     "学习笔记/开发工具/docker 常用操作.md",
@@ -232,16 +245,6 @@
     "草稿/Spring/零碎知识.md",
     "草稿/Spring/对 Spring 的认识.md",
     "学习笔记/linux学习/linux常用命令.md",
-    "学习笔记/linux学习/ubuntu中的网络配置.md",
-    "学习笔记/Java框架/SpringMVC/SpringMVC配置.md",
-    "学习笔记/Java框架/Spring/Spring中的AOP配置.md",
-    "学习笔记/Java框架/Spring/Spring基于XML的配置.md",
-    "学习笔记/Java框架/Spring/Spring的一些高级配置.md",
-    "学习笔记/Java框架/Spring/Spirng基于Java和注解的配置.md",
-    "草稿/Java拾遗迹/零碎记录.md",
-    "学习笔记/npm源管理.md",
-    "学习笔记/Java 中的 char 类型能否存储中文.md",
-    "草稿/SpirngMVC进阶知识.md",
     "Excalidraw/未命名_image_2.svg",
     "WuCai/2023/04",
     "WuCai/2023",
@@ -252,13 +255,10 @@
     "附件/image/c++_image_1.png",
     "Untitled 1.table",
     "DB测试",
-    "Untitled.table",
     "附件/image/对 Spring 的认识_image_1.png",
     "附件/image/未命名_image_1.png",
     "附件/image/未命名_image_2.png",
     "附件/未命名_img_1.png",
-    "附件/未命名_image_1.png",
-    "Excalidraw/未命名_image_1.png",
     "未命名.canvas"
   ]
 }

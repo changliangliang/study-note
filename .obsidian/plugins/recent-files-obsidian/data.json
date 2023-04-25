@@ -1,8 +1,32 @@
 {
   "recentFiles": [
     {
+      "basename": "springboot 3 自动装配方式更改",
+      "path": "草稿/springboot 3 自动装配方式更改.md"
+    },
+    {
+      "basename": "obsidian插件记录",
+      "path": "草稿/obsidian插件记录.md"
+    },
+    {
+      "basename": "vscode中的task.json和launch.json",
+      "path": "学习笔记/开发工具/vscode中的task.json和launch.json.md"
+    },
+    {
+      "basename": "this指向的问题",
+      "path": "学习笔记/前端开发/this指向的问题.md"
+    },
+    {
+      "basename": "socket连接不安全的原因",
+      "path": "学习笔记/操作系统/socket连接不安全的原因.md"
+    },
+    {
+      "basename": "npm源管理",
+      "path": "学习笔记/开发工具/npm源管理.md"
+    },
+    {
       "basename": "Java 中的 char 类型能否存储中文",
-      "path": "学习笔记/Java 中的 char 类型能否存储中文.md"
+      "path": "学习笔记/Java相关/Java 中的 char 类型能否存储中文.md"
     },
     {
       "basename": "docker镜像创建",
@@ -62,31 +86,27 @@
     },
     {
       "basename": "SpringMVC配置",
-      "path": "学习笔记/Java框架/SpringMVC/SpringMVC配置.md"
+      "path": "学习笔记/Java相关/SpringMVC/SpringMVC配置.md"
     },
     {
       "basename": "Spring中的AOP配置",
-      "path": "学习笔记/Java框架/Spring/Spring中的AOP配置.md"
+      "path": "学习笔记/Java相关/Spring/Spring中的AOP配置.md"
     },
     {
       "basename": "Spring基于XML的配置",
-      "path": "学习笔记/Java框架/Spring/Spring基于XML的配置.md"
+      "path": "学习笔记/Java相关/Spring/Spring基于XML的配置.md"
     },
     {
       "basename": "Spring的一些高级配置",
-      "path": "学习笔记/Java框架/Spring/Spring的一些高级配置.md"
+      "path": "学习笔记/Java相关/Spring/Spring的一些高级配置.md"
     },
     {
       "basename": "Spirng基于Java和注解的配置",
-      "path": "学习笔记/Java框架/Spring/Spirng基于Java和注解的配置.md"
+      "path": "学习笔记/Java相关/Spring/Spirng基于Java和注解的配置.md"
     },
     {
       "basename": "零碎记录",
       "path": "草稿/Java拾遗迹/零碎记录.md"
-    },
-    {
-      "basename": "npm源管理",
-      "path": "学习笔记/npm源管理.md"
     },
     {
       "basename": "SpirngMVC进阶知识",
@@ -95,22 +115,6 @@
     {
       "basename": "模板",
       "path": "草稿/C++学习/模板.md"
-    },
-    {
-      "basename": "VScode中的task.json和launch.json",
-      "path": "学习笔记/VScode中的task.json和launch.json.md"
-    },
-    {
-      "basename": "this指向的问题",
-      "path": "学习笔记/this指向的问题.md"
-    },
-    {
-      "basename": "obsidian插件记录",
-      "path": "学习笔记/obsidian插件记录.md"
-    },
-    {
-      "basename": "Linux",
-      "path": "学习笔记/Linux.md"
     },
     {
       "basename": "org.springframework.web.context.ContextLoaderListener",
@@ -169,10 +173,6 @@
       "path": "常用/未命名.md"
     },
     {
-      "basename": "未命名看板",
-      "path": "未命名看板.md"
-    },
-    {
       "basename": "软件列表",
       "path": "常用/软件列表.md"
     },
@@ -195,10 +195,6 @@
     {
       "basename": "博客列表",
       "path": "常用/博客列表.md"
-    },
-    {
-      "basename": "笔记目录",
-      "path": "常用/笔记目录.md"
     }
   ],
   "omittedPaths": [],
