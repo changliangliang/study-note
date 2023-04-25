@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "计算机中的路由表",
+      "path": "学习笔记/计算机中的路由表.md"
+    },
+    {
+      "basename": "长连接的若干问题",
+      "path": "学习笔记/长连接的若干问题.md"
+    },
+    {
+      "basename": "docker 常用操作",
+      "path": "学习笔记/docker 常用操作.md"
+    },
+    {
+      "basename": "docker常用容器创建",
+      "path": "学习笔记/docker常用容器创建.md"
+    },
+    {
       "basename": "Spring的一些高级配置",
       "path": "学习笔记/Java框架/Spring/Spring的一些高级配置.md"
     },
@@ -11,10 +27,6 @@
     {
       "basename": "this指向的问题",
       "path": "学习笔记/this指向的问题.md"
-    },
-    {
-      "basename": "docker 常用操作",
-      "path": "学习笔记/docker 常用操作.md"
     },
     {
       "basename": "Java接口",
@@ -113,10 +125,6 @@
       "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md"
     },
     {
-      "basename": "计算机中的路由表",
-      "path": "学习笔记/计算机中的路由表.md"
-    },
-    {
       "basename": "Spring中的AOP配置",
       "path": "学习笔记/Java框架/Spring/Spring中的AOP配置.md"
     },
@@ -131,10 +139,6 @@
     {
       "basename": "VScode中的task.json和launch.json",
       "path": "学习笔记/VScode中的task.json和launch.json.md"
-    },
-    {
-      "basename": "长连接的若干问题",
-      "path": "学习笔记/长连接的若干问题.md"
     },
     {
       "basename": "Java 中的 char 类型能否存储中文",
@@ -195,10 +199,6 @@
     {
       "basename": "笔记模板",
       "path": "模板/笔记模板.md"
-    },
-    {
-      "basename": "ucore操作系统实验：lab2",
-      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab2.md"
     }
   ],
   "omittedPaths": [],
