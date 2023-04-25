@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "ucore操作系统实验：环境搭建",
+      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md"
+    },
+    {
       "basename": "计算机中的路由表",
       "path": "学习笔记/计算机中的路由表.md"
     },
@@ -119,10 +123,6 @@
     {
       "basename": "MBR 主引导记录",
       "path": "学习笔记/计算机知识/MBR 主引导记录.md"
-    },
-    {
-      "basename": "ucore操作系统实验：环境搭建",
-      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md"
     },
     {
       "basename": "Spring中的AOP配置",
