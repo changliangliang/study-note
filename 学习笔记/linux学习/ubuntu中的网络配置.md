@@ -1,10 +1,9 @@
-
 ---
 type: blog
 created: 2022-04-19 20:38:27
 updated: 2022-04-19 20:38:27
-tags: blog linux
-categories:
+tags: [linux]
+categories: []
 ---
 
 ## 配置流程
@@ -31,7 +30,7 @@ systemctl restart NetworkManager.service
 
 ## 常用配置
 
-### 动态 IP 
+### 动态 IP
 
 ```yaml
 network:
@@ -87,7 +86,6 @@ network:
 ```
 
 ### 有密码 wifi
-
 
 ```yaml
 network:

@@ -7,9 +7,6 @@ tags: [docker]
 categories: []
 ---
 
-
-
-
 ## 镜像操作
 
 ### 获取镜像
@@ -63,7 +60,7 @@ REPOSITORY      TAG           IMAGE ID         CREATED          SIZE
 $ docker image ls -a
 ```
 
-### 列出指定镜像 #todo
+### 列出指定镜像 
 
 `docker image ls ubuntu`
 

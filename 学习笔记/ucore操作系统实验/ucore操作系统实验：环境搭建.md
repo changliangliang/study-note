@@ -1,12 +1,10 @@
-
-
 ---
 type: blog
-date: 2023-04-20 23:56:13
 created: 2023-04-20 23:56:13
 updated: 2023-04-20 23:56:58
-tags: blog 操作系统
-categories: ucore操作系统实验
+tags: [操作系统]
+categories: [ucore操作系统实验]
+date: 2023-04-20 23:56:13
 ---
 
 ## 源码和文档
@@ -18,8 +16,8 @@ categories: ucore操作系统实验
 下载之后可以看到目录结构如下，其中 `labcodes` 为实验所用的源码，`labcodes_answer` 为实验的参考答案，遇到不会做的题目可以进行参考。
 
 ![](附件/image/ucore操作系统实验：环境搭建_image_2.png)
- 
- 实验的官方手册为： [ucore实验操作手册](https://github.com/chyyuu/ucore_os_docs)包含了实验内容以及实验相关的一些拓展知识。
+
+ 实验的官方手册为：[ucore实验操作手册](https://github.com/chyyuu/ucore_os_docs) 包含了实验内容以及实验相关的一些拓展知识。
 
 ## GCC 安装
 
@@ -35,7 +33,6 @@ sudo apt-get install build-essential
 ![](附件/image/ucore操作系统实验：环境搭建_image_4.png)
 
 ## QEMU 安裝
-
 
 文档中安装 `QEMU` 使用的命令如下：
 
@@ -59,7 +56,7 @@ sudo apt-get install qemu-system-i386
 
 ## 出现的问题
 
-### lab1 编译时出现 `'obj/bootbloc.out' size: 600 bytes` 
+### lab1 编译时出现 `'obj/bootbloc.out' size: 600 bytes`
 
 ![](附件/image/ucore操作系统实验：环境搭建_image_8.png)
 

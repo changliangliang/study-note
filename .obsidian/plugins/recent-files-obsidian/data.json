@@ -1,6 +1,122 @@
 {
   "recentFiles": [
     {
+      "basename": "Java 中的 char 类型能否存储中文",
+      "path": "学习笔记/Java 中的 char 类型能否存储中文.md"
+    },
+    {
+      "basename": "docker镜像创建",
+      "path": "草稿/docker镜像创建.md"
+    },
+    {
+      "basename": "docker常用容器创建",
+      "path": "草稿/docker常用容器创建.md"
+    },
+    {
+      "basename": "docker 常用操作",
+      "path": "学习笔记/开发工具/docker 常用操作.md"
+    },
+    {
+      "basename": "长连接的若干问题",
+      "path": "学习笔记/计算机网络/长连接的若干问题.md"
+    },
+    {
+      "basename": "MBR 主引导记录",
+      "path": "学习笔记/计算机知识/MBR 主引导记录.md"
+    },
+    {
+      "basename": "计算机中的路由表",
+      "path": "学习笔记/计算机知识/计算机中的路由表.md"
+    },
+    {
+      "basename": "计算机的启动",
+      "path": "学习笔记/操作系统/计算机的启动.md"
+    },
+    {
+      "basename": "计算机补完计划——2023年",
+      "path": "草稿/计算机补完计划——2023年.md"
+    },
+    {
+      "basename": "ucore操作系统实验：环境搭建",
+      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md"
+    },
+    {
+      "basename": "ucore操作系统实验：lab1",
+      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md"
+    },
+    {
+      "basename": "java编程思想学习心得",
+      "path": "草稿/Spring/java编程思想学习心得.md"
+    },
+    {
+      "basename": "零碎知识",
+      "path": "草稿/Spring/零碎知识.md"
+    },
+    {
+      "basename": "对 Spring 的认识",
+      "path": "草稿/Spring/对 Spring 的认识.md"
+    },
+    {
+      "basename": "ubuntu中的网络配置",
+      "path": "学习笔记/linux学习/ubuntu中的网络配置.md"
+    },
+    {
+      "basename": "SpringMVC配置",
+      "path": "学习笔记/Java框架/SpringMVC/SpringMVC配置.md"
+    },
+    {
+      "basename": "Spring中的AOP配置",
+      "path": "学习笔记/Java框架/Spring/Spring中的AOP配置.md"
+    },
+    {
+      "basename": "Spring基于XML的配置",
+      "path": "学习笔记/Java框架/Spring/Spring基于XML的配置.md"
+    },
+    {
+      "basename": "Spring的一些高级配置",
+      "path": "学习笔记/Java框架/Spring/Spring的一些高级配置.md"
+    },
+    {
+      "basename": "Spirng基于Java和注解的配置",
+      "path": "学习笔记/Java框架/Spring/Spirng基于Java和注解的配置.md"
+    },
+    {
+      "basename": "零碎记录",
+      "path": "草稿/Java拾遗迹/零碎记录.md"
+    },
+    {
+      "basename": "npm源管理",
+      "path": "学习笔记/npm源管理.md"
+    },
+    {
+      "basename": "SpirngMVC进阶知识",
+      "path": "草稿/SpirngMVC进阶知识.md"
+    },
+    {
+      "basename": "模板",
+      "path": "草稿/C++学习/模板.md"
+    },
+    {
+      "basename": "VScode中的task.json和launch.json",
+      "path": "学习笔记/VScode中的task.json和launch.json.md"
+    },
+    {
+      "basename": "this指向的问题",
+      "path": "学习笔记/this指向的问题.md"
+    },
+    {
+      "basename": "obsidian插件记录",
+      "path": "学习笔记/obsidian插件记录.md"
+    },
+    {
+      "basename": "Linux",
+      "path": "学习笔记/Linux.md"
+    },
+    {
+      "basename": "org.springframework.web.context.ContextLoaderListener",
+      "path": "卡片/Java类/org.springframework.web.context.ContextLoaderListener.md"
+    },
+    {
       "basename": "2023-04-20",
       "path": "日记/2023-04-20.md"
     },
@@ -29,64 +145,24 @@
       "path": "草稿/CS自学指南.md"
     },
     {
-      "basename": "ucore操作系统实验：环境搭建",
-      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md"
-    },
-    {
-      "basename": "计算机中的路由表",
-      "path": "学习笔记/计算机中的路由表.md"
-    },
-    {
-      "basename": "长连接的若干问题",
-      "path": "学习笔记/长连接的若干问题.md"
-    },
-    {
-      "basename": "docker 常用操作",
-      "path": "学习笔记/docker 常用操作.md"
-    },
-    {
-      "basename": "docker常用容器创建",
-      "path": "学习笔记/docker常用容器创建.md"
-    },
-    {
-      "basename": "Spring的一些高级配置",
-      "path": "学习笔记/Java框架/Spring/Spring的一些高级配置.md"
-    },
-    {
-      "basename": "Spring基于XML的配置",
-      "path": "学习笔记/Java框架/Spring/Spring基于XML的配置.md"
-    },
-    {
-      "basename": "this指向的问题",
-      "path": "学习笔记/this指向的问题.md"
-    },
-    {
       "basename": "Java接口",
-      "path": "学习笔记/Java拾遗迹/Java接口.md"
+      "path": "草稿/Java拾遗迹/Java接口.md"
     },
     {
       "basename": "Java泛型",
-      "path": "学习笔记/Java拾遗迹/Java泛型.md"
+      "path": "草稿/Java拾遗迹/Java泛型.md"
     },
     {
       "basename": "Java多态",
-      "path": "学习笔记/Java拾遗迹/Java多态.md"
+      "path": "草稿/Java拾遗迹/Java多态.md"
     },
     {
       "basename": "Java并发",
-      "path": "学习笔记/Java拾遗迹/Java并发.md"
+      "path": "草稿/Java拾遗迹/Java并发.md"
     },
     {
       "basename": "const关键字",
-      "path": "学习笔记/C++学习/const关键字.md"
-    },
-    {
-      "basename": "计算机的启动",
-      "path": "学习笔记/计算机的启动.md"
-    },
-    {
-      "basename": "wucai-2023-04-24-H835E9H",
-      "path": "WuCai/2023/04/wucai-2023-04-24-H835E9H.md"
+      "path": "草稿/C++学习/const关键字.md"
     },
     {
       "basename": "未命名",
@@ -95,18 +171,6 @@
     {
       "basename": "未命名看板",
       "path": "未命名看板.md"
-    },
-    {
-      "basename": "testsfsdf",
-      "path": "Excalidraw/testsfsdf.md"
-    },
-    {
-      "basename": "Drawing 2023-04-23 00.41.52.excalidraw",
-      "path": "Excalidraw/Drawing 2023-04-23 00.41.52.excalidraw.md"
-    },
-    {
-      "basename": "未命名_image_2",
-      "path": "Excalidraw/未命名_image_2.svg"
     },
     {
       "basename": "软件列表",
@@ -135,70 +199,6 @@
     {
       "basename": "笔记目录",
       "path": "常用/笔记目录.md"
-    },
-    {
-      "basename": "操作系统",
-      "path": "草稿/操作系统.md"
-    },
-    {
-      "basename": "socket连接不安全的原因",
-      "path": "学习笔记/socket连接不安全的原因.md"
-    },
-    {
-      "basename": "Spirng基于Java和注解的配置",
-      "path": "学习笔记/Java框架/Spring/Spirng基于Java和注解的配置.md"
-    },
-    {
-      "basename": "MBR 主引导记录",
-      "path": "学习笔记/计算机知识/MBR 主引导记录.md"
-    },
-    {
-      "basename": "Spring中的AOP配置",
-      "path": "学习笔记/Java框架/Spring/Spring中的AOP配置.md"
-    },
-    {
-      "basename": "SpringMVC配置",
-      "path": "学习笔记/Java框架/SpringMVC/SpringMVC配置.md"
-    },
-    {
-      "basename": "ucore操作系统实验：lab1",
-      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md"
-    },
-    {
-      "basename": "VScode中的task.json和launch.json",
-      "path": "学习笔记/VScode中的task.json和launch.json.md"
-    },
-    {
-      "basename": "Java 中的 char 类型能否存储中文",
-      "path": "学习笔记/Java 中的 char 类型能否存储中文.md"
-    },
-    {
-      "basename": "ubuntu中的网络配置",
-      "path": "学习笔记/linux学习/ubuntu中的网络配置.md"
-    },
-    {
-      "basename": "npm源管理",
-      "path": "学习笔记/npm源管理.md"
-    },
-    {
-      "basename": "blog-frontmatter",
-      "path": "模板/blog-frontmatter.md"
-    },
-    {
-      "basename": "2023-04-23",
-      "path": "日记/2023-04-23.md"
-    },
-    {
-      "basename": "2023-04-22",
-      "path": "日记/2023-04-22.md"
-    },
-    {
-      "basename": "SQL基础",
-      "path": "学习笔记/数据库学习笔记/SQL基础.md"
-    },
-    {
-      "basename": "模板",
-      "path": "学习笔记/C++学习/模板.md"
     }
   ],
   "omittedPaths": [],

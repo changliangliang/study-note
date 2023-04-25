@@ -2,11 +2,9 @@
 type: blog
 created: 2022-02-11 21:34:07
 updated: 2022-02-12 21:34:07
-tags:
-  - java
-categories:
+tags: [java]
+categories: []
 ---
-
 
 ## 概念解析
 
@@ -56,7 +54,6 @@ UTF-8 最大的一个特点，就是它是一种变长的编码方式，它可�
 
 UTF-8 在存储英文字母时，使用一个字节来存储，存储中文时，使用的是三个字节。以汉字 “严” 为例，“严” 的 unicode 是 U+4 E 25（100111000100101），根据上表，可以发现 4 E 25 处在第三行的范围内（0000 0800-0000 FFFF），因此 “严” 的 UTF-8 编码需要三个字节，即格式是 “1110 xxxx 10 xxxxxx 10 xxxxxx”。然后，从“严” 的最后一个二进制位开始，依次从后向前填入格式中的 x，多出的位补 0。这样就得到了，“严”的 UTF-8 编码是“11100100 10111000 10100101”。
 
-
 #### UTF-16
 
 UTF-16 也是一种可变长的编码方式，不过它编码的最小单元是 2 字节，也就是说即使存储的英文字母，也需要两个字节的空间，下图展示了 UTF-16 的编码规则。
@@ -93,4 +90,4 @@ public static void main(String[] args) {
 2. [代码点(Code Point)和代码单元(Code Unit)_GeekLeee的博客-CSDN博客](https://blog.csdn.net/GeekLeee/article/details/84966934)
 3. [刨根究底字符编码之十——Unicode字符集的编码方式以及码点、码元 - 笨笨阿林 - 博客园 (cnblogs.com)](https://www.cnblogs.com/benbenalin/p/6921553.html)
 4. [Unicode中UTF-8与UTF-16编码详解 - 掘金 (juejin.cn)](https://juejin.cn/post/6844903590155272199)
-5. [Java中关于Char存储中文到底是2个字节还是3个还是4个？ - 知乎 (zhihu.com)](https://www.zhihu.com/question/279539793/answer/1830657398)
+5. [Java中关于Char存储中文到底是2个字节还是3个还是4个？- 知乎 (zhihu.com)](https://www.zhihu.com/question/279539793/answer/1830657398)

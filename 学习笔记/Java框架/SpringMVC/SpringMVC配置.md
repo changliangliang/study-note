@@ -1,13 +1,10 @@
-
 ---
 type: blog
 created: 2023-04-09 11:45:12
 updated: 2023-04-19 20:12:45
-tags: blog
-categories:
+tags: []
+categories: []
 ---
-
-
 
 ## 引入 SpringMVC
 
@@ -40,8 +37,8 @@ SpringMVC 是以 `DispatcherServlet` 类为入口的，该类本质上也是一�
 </web-app>
 ```
 
-* 监听器 [`org.springframework.web.context.ContextLoaderListener`](学习笔记/卡片/Java类/org.springframework.web.context.ContextLoaderListener.md) 的作用就是启动 `Web` 容器时自动装配 `ApplicationContext` ，这里指的就是 Spring 容器。因为它实现了 `ServletContextListener` 这个接口，服务器启动容器时，就会默认执行它实现的方法。`ApplicationContext ` 配置文件的默认路径是 ` /WEB-INF/applicationContext. xml `，在 ` WEB-INF ` 目录下创建的 ` xml ` 文件的名称必须是 ` applicationContext. xml `。如果是要自定义文件名可以在 ` web. xml ` 里加入 ` contextConfigLocation ` 这个参数。如果有多个 ` xml ` 文件，可以写在一起并以“,”号分隔，也可以这样 ` applicationContext-*. xml ` 采用通配符。
-* 使用 `Spring MVC`，配置 `DispatcherServlet` 是第一步。`DispatcherServlet` 是一个 `Servlet`，所以可以配置多个 `DispatcherServlet`。这个 `Servlet` 用于拦击请求，使请求进入到 `SpringMVC` 中的逻辑中，它还会引入一个 `SpringMVC` 容器，该容器配置文件的默认路径为 `/WEB-INF/<servlet-name>-servlet.xml`，如果自定义配置文件位置的话，和 `Spring` 容器是一样的。
+- 监听器 [`org.springframework.web.context.ContextLoaderListener`](卡片/Java类/org.springframework.web.context.ContextLoaderListener.md) 的作用就是启动 `Web` 容器时自动装配 `ApplicationContext`，这里指的就是 Spring 容器。因为它实现了 `ServletContextListener` 这个接口，服务器启动容器时，就会默认执行它实现的方法。`ApplicationContext ` 配置文件的默认路径是 ` /WEB-INF/applicationContext. xml `，在 ` WEB-INF ` 目录下创建的 ` xml ` 文件的名称必须是 ` applicationContext. xml `。如果是要自定义文件名可以在 ` web. xml ` 里加入 ` contextConfigLocation ` 这个参数。如果有多个 ` xml ` 文件，可以写在一起并以“,”号分隔，也可以这样 ` applicationContext-*. xml ` 采用通配符。
+- 使用 `Spring MVC`，配置 `DispatcherServlet` 是第一步。`DispatcherServlet` 是一个 `Servlet`，所以可以配置多个 `DispatcherServlet`。这个 `Servlet` 用于拦击请求，使请求进入到 `SpringMVC` 中的逻辑中，它还会引入一个 `SpringMVC` 容器，该容器配置文件的默认路径为 `/WEB-INF/<servlet-name>-servlet.xml`，如果自定义配置文件位置的话，和 `Spring` 容器是一样的。
 
 ### Java 配置引入
 
@@ -69,6 +66,7 @@ public class MyWebInitializer extends AbstractAnnotationConfigDispatcherServletI
 ```
 
 - `getRootConfigClasses()` 返回根容器的 Java 配置文件，对应到 web. xml 就是 `contextConfigLocation` 配置的 xml 文件；
+
 	```xml
 	<listener>
 	        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
@@ -82,7 +80,7 @@ public class MyWebInitializer extends AbstractAnnotationConfigDispatcherServletI
 - `getServletConfigClasses()` 返回的就是 `DispatcherServlet` 中容器的 Java 配置文件；
 - `getServletMappings​()` 返回的是 `DispatcherServlet` 要处理的路径。
 
-Javap 类配置的原理是在 Servlet 3.0 环境中，容器会在类路径中查找实现 `javax.servlet.ServletContainerInitializer` 接口的类，如果能发现的话，就会用它来配置 Servlet 容器。Spring 提供了这个接口的实现，名为 `SpringServletContainerInitializer`，这个类反过来又会查找实现 `WebApplicationInitializer` 的类并将配置的任务交给它们来完成。Spring 3.2 引入了一个便利的 WebApplicationInitializer 基础实现，也就是 `AbstractAnnotationConfigDispatcherServletInitializer`。 
+Javap 类配置的原理是在 Servlet 3.0 环境中，容器会在类路径中查找实现 `javax.servlet.ServletContainerInitializer` 接口的类，如果能发现的话，就会用它来配置 Servlet 容器。Spring 提供了这个接口的实现，名为 `SpringServletContainerInitializer`，这个类反过来又会查找实现 `WebApplicationInitializer` 的类并将配置的任务交给它们来完成。Spring 3.2 引入了一个便利的 WebApplicationInitializer 基础实现，也就是 `AbstractAnnotationConfigDispatcherServletInitializer`。
 
 如果想对 `DispatcherServlet` 进行更丰富的设置，可以通过重写 `customizeRegistration` 方法来实现，如下面设置了上传文件时的临时文件夹。
 
@@ -94,7 +92,6 @@ protected void customizeRegistration(Dynamic registration) {
     );  
 }
 ```
-
 
 ### 容器配置
 
@@ -128,7 +125,6 @@ public class WebConfig {
 ```
 http://localhost:8080/appDemo/user​ 
 ```
-
 
 ### 路径匹配
 
@@ -170,7 +166,7 @@ http://localhost:8080/appDemo/toHome.action
 
 ### `/` 和 `/*` 的区别
 
-当其他 servlet​ 无法匹配时，会匹配到 url-pattern​ 设置为 `/` 的 servlet​， `/*` 属于路径匹配，可以用来匹配任何路径。
+当其他 servlet​ 无法匹配时，会匹配到 url-pattern​ 设置为 `/` 的 servlet​，`/*` 属于路径匹配，可以用来匹配任何路径。
 
 ### tomcat 中的默认配置
 
@@ -202,10 +198,9 @@ http://localhost:8080/appDemo/toHome.action
 </welcome-file-list>
 ```
 
-
 ## SpringMVC 配置
 
-###  WebMvcConfigurer 配置
+### WebMvcConfigurer 配置
 
 在 java​ 配置中需要使用 @EnableWebMvc​ 注解来开启 MVC​ 配置，而在 XML​ 配置中需要使用 <mvc:annotation-driven/>​，它们默认会导入一些类。
 
@@ -227,7 +222,6 @@ public class WebConfig implements WebMvcConfigurer {
     // Implement configuration methods...
 }
 ```
-
 
 ### 类型转化
 
@@ -292,7 +286,6 @@ public class WebConfig implements WebMvcConfigurer {
     }
 }
 ```
-
 
 ### 消息转换器
 
@@ -382,18 +375,17 @@ public class WebConfig implements WebMvcConfigurer {
 }
 ```
 
-
 ## 请求映射
 
-### @RequestMapping​ 
+### @RequestMapping​
 
 ​@RequestMapping​ 用来将请映射到控制器方法，SpringMVC​ 中还提供了下面的注解来指定特定的 http​ 请求。
 
--   ​@GetMapping​
--   ​@PostMapping​
--   ​@PutMapping​
--   ​@DeleteMapping​
--   ​@PatchMapping​
+- ​@GetMapping​
+- ​@PostMapping​
+- ​@PutMapping​
+- ​@DeleteMapping​
+- ​@PatchMapping​
 
 ```java
 @RestController
@@ -412,9 +404,9 @@ class PersonController {
 
 ​@RequestMapping​ 中的路径可以使用以下 glob​ 模式和通配符来映射请求：
 
--   ​?​ 匹配一个字符，如 /a?b​ 可以用来匹配 /abc​ 和 /avc​
--   ​* 匹配路径段中的零个或多个字符，如 /a/ * /c​ 可以用来匹配 /a/b/c​
--   ​** ​ 匹配零个或多个路径段，如 /a/ ** /d​ 可以用来匹配 /a/b/c/d​
+- ​?​ 匹配一个字符，如 /a?b​ 可以用来匹配 /abc​ 和 /avc​
+- ​* 匹配路径段中的零个或多个字符，如 /a/ * /c​ 可以用来匹配 /a/b/c​
+- ​** ​ 匹配零个或多个路径段，如 /a/ ** /d​ 可以用来匹配 /a/b/c/d​
 
 ### Content-Type 属性
 
@@ -464,7 +456,6 @@ public void findPet(@PathVariable String petId) {
 }
 ```
 
-
 ## 参数绑定
 
 ### 简单使用
@@ -473,14 +464,14 @@ public void findPet(@PathVariable String petId) {
 
 在 Controller​ 方法形参中可以随时添加如下类型的参数，处理适配器会自动识别并进行赋值
 
--   ​HttpServletRequest​：通过 request​ 对象获取请求信息
--   ​HttpServletResponse​：通过 response​ 处理响应信息
--   ​HttpSession​：通过 session​ 对象得到 session​ 中存放的对象
--   ​InputStream​
--   ​OutputStream​
--   ​Reader​
--   ​Writer​
--   ​Model/ModelAndView​
+- ​HttpServletRequest​：通过 request​ 对象获取请求信息
+- ​HttpServletResponse​：通过 response​ 处理响应信息
+- ​HttpSession​：通过 session​ 对象得到 session​ 中存放的对象
+- ​InputStream​
+- ​OutputStream​
+- ​Reader​
+- ​Writer​
+- ​Model/ModelAndView​
 
 #### 简单数据类型
 
@@ -490,7 +481,7 @@ public void findPet(@PathVariable String petId) {
 http://localhost:8080/admin/login?username=123&password=123
 ```
 
--   如果 http​ 请求参数的 key​ 和 Controller​ 方法的形参名称一致时，所有的参数都会被 SpringMVC​ 会直接进行赋值。
+- 如果 http​ 请求参数的 key​ 和 Controller​ 方法的形参名称一致时，所有的参数都会被 SpringMVC​ 会直接进行赋值。
 
 ```java
 @PostMapping({"/admin", "/admin/login"})
@@ -499,7 +490,7 @@ public String login(String username, String password) {
 }
 ```
 
--   当请求参数的 key​ 和 Controller​ 方法的形参名称不一致时，需要使用 @RequestParam​ 注解才能将请求参数绑定成功。
+- 当请求参数的 key​ 和 Controller​ 方法的形参名称不一致时，需要使用 @RequestParam​ 注解才能将请求参数绑定成功。
 
 ```java
 @PostMapping({"/admin", "/admin/login"})
@@ -588,7 +579,7 @@ class Book {
 
 ### @PathVariable
 
-可以用来将路径中带的值绑定到控制器方法的参数中，假如下面的方法接收的请求是 /owners/1/pets/2​，那么 findPet​ 方法中的两个参数分别会被传入 1​ 和 2​。默认情况下只支持简单类型的传递(int​，long​，Date​ 等)，如果需要支持其他类型，可以配置类型转换器和数据绑定器。
+可以用来将路径中带的值绑定到控制器方法的参数中，假如下面的方法接收的请求是 /owners/1/pets/2​，那么 findPet​ 方法中的两个参数分别会被传入 1​ 和 2​。默认情况下只支持简单类型的传递 (int​，long​，Date​ 等)，如果需要支持其他类型，可以配置类型转换器和数据绑定器。
 
 ```java
 @GetMapping("/owners/{ownerId}/pets/{petId}")
@@ -608,7 +599,7 @@ public void handle(@PathVariable String version, @PathVariable String ext) {
 
 ### @RequestParam
 
-将请求参数(即查询参数或表单数据)绑定到控制器中的方法参数。
+将请求参数 (即查询参数或表单数据) 绑定到控制器中的方法参数。
 
 ```java
 @Controller
@@ -661,8 +652,8 @@ public void handle(@CookieValue("JSESSIONID") String cookie) { (1)
 
 ### @ModelAttribute
 
--   ​@ModelAttribute​ 注释 void​ 返回值的方法
-    
+- ​@ModelAttribute​ 注释 void​ 返回值的方法
+
     ```java
     @Controller
     public class HelloWorldController {
@@ -677,22 +668,22 @@ public void handle(@CookieValue("JSESSIONID") String cookie) { (1)
             }
     }
     ```
-    
+
     这个例子，在获得请求 /helloWorld​ 后，populateModel​ 方法在 helloWorld​ 方法之前先被调用，它把请求参数（例如 /helloWorld?abc=text​ 中的 abc=text​）加入到一个名为 attributeName​ 的 model​ 属性中，在它执行后 helloWorld​ 被调用，返回视图名 helloWorld​，这里 model​ 已由 @ModelAttribute​ 方法生产好了。当请求中不包含此参数时，会报错，可以将该值设置为非必要。
-    
--   ​@ModelAttribute​ 注释返回具体类的方法
-    
+
+- ​@ModelAttribute​ 注释返回具体类的方法
+
     ```java
     @ModelAttribute 
     public Account addAccount(@RequestParam String number) { 
         return accountManager.findAccount(number); 
     } 
     ```
-    
+
     这种情况 model​ 属性的名称没有指定，它由返回类型隐含表示，如这个方法返回 Account​ 类型，那么这个 model​ 属性的名称是 account​。
-    
--   ​@ModelAttribute(value="")​ 注释返回具体类的方法
-    
+
+- ​@ModelAttribute(value="")​ 注释返回具体类的方法
+
     ```java
     @Controller
     public class HelloWorldController {
@@ -707,11 +698,11 @@ public void handle(@CookieValue("JSESSIONID") String cookie) { (1)
         }
     }
     ```
-    
+
     这个例子中使用 @ModelAttribute​ 注释的 value​ 属性，来指定 model​ 属性的名称，model​ 属性对象就是方法的返回值,它无须要特定的参数。
-    
--   ​@ModelAttribute​ 和 @RequestMapping​ 同时注释一个方法
-    
+
+- ​@ModelAttribute​ 和 @RequestMapping​ 同时注释一个方法
+
     ```java
     @Controller
     public class HelloWorldController {
@@ -722,11 +713,11 @@ public void handle(@CookieValue("JSESSIONID") String cookie) { (1)
         }
     }
     ```
-    
+
     这时这个方法的返回值并不是表示一个视图名称，而是 model​ 属性的值，视图名称由 RequestToViewNameTranslator​ 根据请求 "/helloWorld.do"​ 转换为逻辑视图 helloWorld​。model​ 属性名称由 @ModelAttribute(value=””)​ 指定，相当于在 request​ 中封装了 key=attributeName​，value=hi​。
-    
--   ​@ModelAttribute​ 注释一个方法的参数
-    
+
+- ​@ModelAttribute​ 注释一个方法的参数
+
     ```java
     @Controller
     public class HelloWorldController {
@@ -742,9 +733,8 @@ public void handle(@CookieValue("JSESSIONID") String cookie) { (1)
         }
     }
     ```
-    
+
     在这个例子里，@ModelAttribute("user") ​ 注释方法参数，参数 user​ 的值来源于 addAccount()​ 方法中添加的值。
-    
 
 ### @SessionAttributes
 
@@ -769,8 +759,8 @@ public class EditPetForm {
 }
 ```
 
--   （1）处添加了注解之后，该类中的所有方法向 model​ 中添加 key​ 为 pet​ 的值使，将会在 Session 中存储一份存储在 Servlet 会话中。
--   （2）处展示清除 Session 中设置的值。
+- （1）处添加了注解之后，该类中的所有方法向 model​ 中添加 key​ 为 pet​ 的值使，将会在 Session 中存储一份存储在 Servlet 会话中。
+- （2）处展示清除 Session 中设置的值。
 
 通常不推荐使用该注解，某些情况下可能会出现错误，所以推荐使用原生 api 添加。
 
@@ -846,7 +836,7 @@ public ResponseEntity<String> handle() {
 
 ### Multipart
 
-要启用 Multipart​ 处理，需要在 DispatcherServlet​ 配置中声明名称为 multipartResolver​ 的 MultipartResolver​ 类型的 bean​。 收到 Content Type​ 为 multipart/form-data​ 的 POST​ 时，解析程序将解析内容并将当前 HttpServletRequest​ 包装为 MultipartHttpServletRequest​ 以提供对已解析部分的访问权限。
+要启用 Multipart​ 处理，需要在 DispatcherServlet​ 配置中声明名称为 multipartResolver​ 的 MultipartResolver​ 类型的 bean​。收到 Content Type​ 为 multipart/form-data​ 的 POST​ 时，解析程序将解析内容并将当前 HttpServletRequest​ 包装为 MultipartHttpServletRequest​ 以提供对已解析部分的访问权限。
 
 ​MultipartResolver​ 有两种实现，基于一种基于 Apache Commons FileUpload​，一种基于 Servlet 3.0Multipart​ 请求。
 
@@ -857,9 +847,9 @@ public ResponseEntity<String> handle() {
 #### Servlet 3.0
 
 需要通过 Servlet​ 容器配置启用 Servlet 3.0Multipart​ 解析，为此：
+
 - 在 Java​ 中，在 Servlet​ 注册上设置 MultipartConfigElement​。
 - 在 web.xml​ 中，将 `< multipart-config>` 部分添加到 Servlet​ 声明中
-
 
 ```java
 public class AppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
@@ -909,9 +899,9 @@ public class FileUploadController {
 
 该注解允许请求跨域，支持在类和方法上使用，默认情况下 @CrossOrigin​ 允许：
 
--   所有 origins​
--   所有 headers​
--   所有 http​ 方法
+- 所有 origins​
+- 所有 headers​
+- 所有 http​ 方法
 
 ```java
 @RestController
@@ -935,9 +925,9 @@ Public class AccountController {
 
 默认情况下，允许如下跨域请求：
 
--   所有 origins​
--   所有 headers​
--   ​GET​，HEAD​ 和 POST​ 方法。
+- 所有 origins​
+- 所有 headers​
+- ​GET​，HEAD​ 和 POST​ 方法。
 
 要修改全局配置可以使用如下 java​ 或 xml​ 方式。
 
@@ -998,4 +988,3 @@ Public CorsFilter corsFilter () {
     Return filter;
 }
 ```
-

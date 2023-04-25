@@ -2,10 +2,9 @@
 type: blog
 created: 2022-06-19 09:36:12
 updated: 2022-06-19 09:36:18
-tags: blog javascript npm
-categories:
+tags: [javascript, npm]
+categories: []
 ---
-
 
 ## 默认管理方式
 
@@ -35,7 +34,7 @@ npm config set registry http://127.0.0.1:4873
 npm config get registry
 ```
 
-也可以修改 `~/.npmrc` ，添加源的设置：
+也可以修改 `~/.npmrc`，添加源的设置：
 
 ```
 registry = https://registry.npm.taobao.org

@@ -2,34 +2,32 @@
 type: blog
 created: 2023-04-19 11:30:13
 updated: 2023-04-20 19:07:58
-tags: blog 操作系统
-categories: ucore操作系统实验
+tags: [操作系统]
+categories: [ucore操作系统实验]
 ---
 
 ## 练习 1
 
 > 练习 1：理解通过 make 生成执行文件的过程。（要求在报告中写出对下述问题的回答）
 > 列出本实验各练习中对应的 OS 原理的知识点，并说明本实验中的实现部分如何对应和体现了原理中的基本概念和关键知识点。
-> 
+>
 > 在此练习中，大家需要通过静态分析代码来了解：
-> 
+>
 > 1. 操作系统镜像文件 ucore. img 是如何一步一步生成的？(需要比较详细地解释 Makefile 中每一条相关命令和命令参数的含义，以及说明命令导致的结果)
 > 2. 一个被系统认为是符合规范的硬盘主引导扇区的特征是什么？
-> 
+>
 > 补充材料：
-> 
+>
 > 如何调试 Makefile
-> 
+>
 > 当执行 make 时，一般只会显示输出，不会显示 make 到底执行了哪些命令。
-> 
+>
 > 如想了解 make 执行了哪些命令，可以执行：
-> 
+>
 > $ make "V="
 > 要获取更多有关 make 的信息，可上网查询，并请执行
-> sdf 
+> sdf
 > $ man make
-
-
 
 ### 问题 1：操作系统镜像文件 ucore. img 是如何一步一步生成的？
 
@@ -105,16 +103,21 @@ dd if=bin/kernel of=bin/ucore.img seek=1 conv=notrunc
 根据上述的输出结果我么可以得知，在镜像生成的整个过程中主要分为三步：
 
 - 编译源码：`gcc` 命令的会对源码进行编译，如下面的命令将 `kern/init/init.c` 编译成目标文件 `obj/kern/init/init.o`：
+
 	```bash
 	+ cc kern/init/init.c
 	gcc -Ikern/init/ -fno-builtin -Wall -ggdb -m32 -gstabs -nostdinc  -fno-stack-protector -Ilibs/ -Ikern/debug/ -Ikern/driver/ -Ikern/trap/ -Ikern/mm/ -c kern/init/init.c -o obj/kern/init/init.o
 	```
+
 - 生成可执行文件：`ld` 命令将生成的目标文件进行链接生成执行文件，如下面的命令将 `obj/kern` 目录下的目标文件连接生成可执行文件 `bin/kernel`：
+
 	```bash
 	+ ld bin/kernel
 	ld -m    elf_i386 -nostdlib -T tools/kernel.ld -o bin/kernel  obj/kern/init/init.o obj/kern/libs/readline.o obj/kern/libs/stdio.o obj/kern/debug/kdebug.o obj/kern/debug/kmonitor.o obj/kern/debug/panic.o obj/kern/driver/clock.o obj/kern/driver/console.o obj/kern/driver/intr.o obj/kern/driver/picirq.o obj/kern/trap/trap.o obj/kern/trap/trapentry.o obj/kern/trap/vectors.o obj/kern/mm/pmm.o  obj/libs/printfmt.o obj/libs/string.o
 	```
+
 - 生成镜像文件：`dd` 命令的作用是用指定大小的块拷贝一个文件，并在拷贝的同时进行指定的转换，下面的命令会创建一个 `bin/ucore.img` 文件，并将之前生成的 `bin/bootblock` 和 `bin/kernel` 拷贝到 `bin/ucore.img` 文件中。
+
 	```bash
 	dd if=/dev/zero of=bin/ucore.img count=10000
 	10000+0 records in
@@ -192,20 +195,19 @@ buf[510] = 0x55;
 buf[511] = 0xAA;
 ```
 
-
 ## 练习 2
 
 > 为了熟悉使用 qemu 和 gdb 进行的调试工作，我们进行如下的小练习：
-> 
+>
 > - 从 CPU 加电后执行的第一条指令开始，单步跟踪 BIOS 的执行。
 > - 在初始化位置 0 x 7 c 00 设置实地址断点, 测试断点正常。
 > - 从 0 x 7 c 00 开始跟踪代码运行, 将单步跟踪反汇编得到的代码与 bootasm. S 和 bootblock. asm 进行比较。
 > - 自己找一个 bootloader 或内核中的代码位置，设置断点并进行测试。
-> 
+>
 > 提示：参考附录“启动后第一条执行的指令”，可了解更详细的解释，以及如何单步调试和查看 BIOS 代码。
-> 
+>
 > 提示：查看 labcodes_answer/lab 1_result/tools/lab 1 init 文件，用如下命令试试如何调试 bootloader 第一条指令：
-> 
+>
 >  $ cd labcodes_answer/lab 1_result/
 >  $ make lab 1-mon
 
@@ -232,6 +234,7 @@ buf[511] = 0xAA;
 ![](附件/image/ucore操作系统实验：lab1_image_9.png)
 
 在 `gdbinit` 文件中输入如下内容，再次进行调试：
+
 ```int
 set architecture i8086
 target remote:1234
@@ -242,9 +245,9 @@ x/10i $pc #显示汇编指令
 
 ![](附件/image/ucore操作系统实验：lab1_image_10.png)
 
-### 问题 3：从0x7c00开始跟踪代码运行，将单步跟踪反汇编得到的代码与 bootasm.S 和 bootblock.asm 进行比较
+### 问题 3：从 0x7c00 开始跟踪代码运行，将单步跟踪反汇编得到的代码与 bootasm.S 和 bootblock.asm 进行比较
 
-`bootasm.S` 和 `bootblock.asm` 中的内容如下，比较可知两者与 `0x7c00` 处的指令基本一致。 
+`bootasm.S` 和 `bootblock.asm` 中的内容如下，比较可知两者与 `0x7c00` 处的指令基本一致。
 
 ![](附件/image/ucore操作系统实验：lab1_image_11.png)
 
@@ -274,6 +277,7 @@ x/10i $pc #显示汇编指令
 如果执行命令的时候使用 `gdb -x gdbinit -tui`，甚至可以打开一个 `gdb` 的命令行界面，直接现实断点处的源码文件。
 
 ![](附件/image/ucore操作系统实验：lab1_image_15.png)
+
 ## 参考资料
 
 - [Lab\_1：练习1——理解通过make生成执行文件的过程 - chuyaoxin - 博客园](https://www.cnblogs.com/cyx-b/p/11750020.html)
