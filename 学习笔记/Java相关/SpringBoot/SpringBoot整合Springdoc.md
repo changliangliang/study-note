@@ -7,6 +7,25 @@ tags: []
 categories: []
 ---
 
+## 介绍
 
+`Springdoc` 的作用是把应用中的接口以文档的形式展示出来，同时可以直接在文档中对接口进行测试，方便开发的进行。
 
-![](附件/image/SpringBoot整合Springdoc-openapi_image_1.png)
+![](附件/image/SpringBoot整合Springdoc_image_1.png)
+
+![](附件/image/SpringBoot整合Springdoc_image_2.png)
+
+## 依赖
+
+根据 [Springdoc官方文档](https://springdoc.org/#getting-started)，想要在项目中使用 `Springdoc` 只需要映入如下依赖即可：
+
+```
+<dependency>
+  <groupId>org.springdoc</groupId>
+  <artifactId>springdoc-openapi-ui</artifactId>
+  <version>1.7.0</version>
+</dependency>
+```
+
+```
+```
