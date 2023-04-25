@@ -16,22 +16,8 @@
               "state": {},
               "pinned": true
             }
-          },
-          {
-            "id": "4418ac147bc0f2ce",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "日记/2023-04-20.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -60,7 +46,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#fd/d",
+                "query": "tag:#blog",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,8 +71,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -117,9 +102,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "日记/2023-04-20.md"
-              }
+              "state": {}
             }
           },
           {
@@ -159,7 +142,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "日记/2023-04-20.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,7 +153,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "日记/2023-04-20.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +168,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 495.5
+    "width": 495.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -211,7 +193,7 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "4418ac147bc0f2ce",
+  "active": "986b7bb68c931b6b",
   "lastOpenFiles": [
     "日记/2023-04-20.md",
     "草稿/中断、异常和系统调用.md",
