@@ -124,10 +124,46 @@ public class UserController {
 
 ![](附件/image/SpringBoot整合Springdoc_image_7.png)
 
+### `@Operation`
+
+`@Operation` 注解用在 `Controller` 类的方法上，表示当前方法是一个接口，之后会被展示在页面上。
+
+![](附件/image/SpringBoot整合Springdoc_image_8.png)
+
+```java
+@Operation(summary = "用户登陆")
+@GetMapping("/login")
+public void login() {
+
+}
+```
+
+### `@Parameters` 和 `@Parameter`
+
+`@Parameters` 注解用在方法上，`@Parameter` 注解用在 `@Parameters` 内部或者方法的属性上，用于
+
+```java
+@Operation(summary = "用户登陆")
+@GetMapping("/login")
+public void login(@Parameter(description = "用户名") String username) {
+
+}
+```
 
 
-@Tag (name = “接口类描述”)	Controller 类上
-@Operation (summary =“接口方法描述”)	Controller 方法上
+```java
+@Operation(summary = "用户登陆")
+@Parameters({
+		@Parameter(name = "username", description = "用户名")
+})
+@GetMapping("/login")
+public void login(String username) {
+
+}
+```
+
+![](附件/image/SpringBoot整合Springdoc_image_9.png)
+
 @Parameters	Controller 方法上
 @Parameter (description=“参数描述”)	Controller 方法上 @Parameters 里
 @Parameter (description=“参数描述”)	Controller 方法的参数上
