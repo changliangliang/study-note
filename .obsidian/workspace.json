@@ -16,35 +16,8 @@
               "state": {},
               "pinned": true
             }
-          },
-          {
-            "id": "21bf43d1a234056f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "学习笔记/问题记录/springboot 3 自动装配方式更改.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "16c448323109ab3e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringBoot整合Springdoc.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -129,9 +102,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringBoot整合Springdoc.md"
-              }
+              "state": {}
             }
           },
           {
@@ -171,7 +142,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringBoot整合Springdoc.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -183,7 +153,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringBoot整合Springdoc.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -224,7 +193,7 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "16c448323109ab3e",
+  "active": "986b7bb68c931b6b",
   "lastOpenFiles": [
     "附件/image/SpringBoot整合Springdoc_image_2.png",
     "附件/image/SpringBoot整合Springdoc_image_1.png",
