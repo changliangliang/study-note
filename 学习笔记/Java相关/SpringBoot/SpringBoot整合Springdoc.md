@@ -1,10 +1,10 @@
 ---
 type: blog
 status: 未发布
-created: 2023-04-25 23:07:47
-updated: 2023-04-25 23:07:47
-tags: []
-categories: []
+created: 2023-04-26 14:07:47
+updated: 2023-04-26 14:07:47
+tags: [SpringBoot]
+categories: [SpringBoot整合组件]
 ---
 
 ## 介绍
@@ -40,18 +40,18 @@ categories: []
 ```java
 @Bean
 public OpenAPI springShopOpenAPI() {
-	return new OpenAPI()
-			.info(new Info().title("Cfile API")
-					.description("一个在线文件解析网站")
-					.version("v0.0.1")
-					.license(new License()
-							.name("Apache 2.0")
-							.url("http://www.cfile.com"))
-					.contact(new Contact()
-							.email("changliangliang1996@foxmail.com")
-							.name("chang")
-							.url("http://changliangliang.github.io"))
-			);
+    return new OpenAPI()
+            .info(new Info().title("Cfile API")
+                    .description("一个在线文件解析网站")
+                    .version("v0.0.1")
+                    .license(new License()
+                            .name("Apache 2.0")
+                            .url("http://www.cfile.com"))
+                    .contact(new Contact()
+                            .email("changliangliang1996@foxmail.com")
+                            .name("chang")
+                            .url("http://changliangliang.github.io"))
+            );
 }
 ```
 
@@ -64,11 +64,11 @@ public OpenAPI springShopOpenAPI() {
 ```java
 @Bean
 public GroupedOpenApi userApi() {
-	return GroupedOpenApi.builder()
-			.group("user")
-			.packagesToScan("com.liang.cfile.controller")
-			.packagesToExclude("com.liang.cfile.controller.admin")
-			.build();
+    return GroupedOpenApi.builder()
+            .group("user")
+            .packagesToScan("com.liang.cfile.controller")
+            .packagesToExclude("com.liang.cfile.controller.admin")
+            .build();
 }
 ```
 
@@ -98,10 +98,10 @@ public class UserController {
 ```java
 @Bean
 public GroupedOpenApi adminApi() {
-	return GroupedOpenApi.builder()
-			.group("admin")
-			.packagesToScan("com.liang.cfile.controller.admin")
-			.build();
+    return GroupedOpenApi.builder()
+            .group("admin")
+            .packagesToScan("com.liang.cfile.controller.admin")
+            .build();
 }
 ```
 
@@ -118,7 +118,7 @@ public GroupedOpenApi adminApi() {
 @Controller
 @RequestMapping("/user")
 public class UserController {
-	// 省略接口
+    // 省略接口
 }
 ```
 
@@ -140,7 +140,7 @@ public void login() {
 
 ### `@Parameters` 和 `@Parameter`
 
-`@Parameters` 注解用在方法上，`@Parameter` 注解用在 `@Parameters` 内部或者方法的属性上，用于
+`@Parameters` 注解用在方法上，`@Parameter` 注解用在 `@Parameters` 内部或者方法的参数上，可以对参数进行解释，以下两种用法都能达到效果。
 
 ```java
 @Operation(summary = "用户登陆")
@@ -150,11 +150,10 @@ public void login(@Parameter(description = "用户名") String username) {
 }
 ```
 
-
 ```java
 @Operation(summary = "用户登陆")
 @Parameters({
-		@Parameter(name = "username", description = "用户名")
+        @Parameter(name = "username", description = "用户名")
 })
 @GetMapping("/login")
 public void login(String username) {
@@ -164,13 +163,58 @@ public void login(String username) {
 
 ![](附件/image/SpringBoot整合Springdoc_image_9.png)
 
-@Parameters	Controller 方法上
-@Parameter (description=“参数描述”)	Controller 方法上 @Parameters 里
-@Parameter (description=“参数描述”)	Controller 方法的参数上
-@Parameter (hidden = true) 或 @Operation (hidden = true) 或 @Hidden	-
-@Schema	DTO 类上
-@Schema	DTO 属性上
+### `@Schema`
+
+`@Schema` 注解用在类和属性上，不过是用在 `DTO` 类上，主要对 `DTO` 的属性进行描述，当接口方法的参数或返回值为 `DTO` 对象时，在页面上会展示这些描述信息。
+
+```java
+@Schema(name = "User对象")
+public class User implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+
+    @Schema(name = "id值")
+    @TableId(value = "id", type = IdType.AUTO)
+    private Integer id;
+
+    @Schema(name = "用户名")
+    private String username;
+
+    @Schema(name = "密码")
+    private String password;
+
+    @Schema(name = "邮箱")
+    private String email;
+
+    @Schema(name = "创建时间")
+    private LocalDateTime created;
+
+    @Schema(name = "更新时间")
+    private LocalDateTime updated;
+
+    @Schema(name = "是否删除：0-未删除，1-删除")
+    private Boolean delete;
+
+    @Schema(name = "用户角色：0-普通用户，1-管理员用户")
+    private Boolean role;
+}
+```
+
+```java
+@Operation(summary = "用户登陆")
+@GetMapping("/login")
+public User login(@Parameter(description = "用户信息") User user) {
+    return null;
+}
+```
+
+![](附件/image/SpringBoot整合Springdoc_image_10.png)
+
+![](附件/image/SpringBoot整合Springdoc_image_11.png)
 
 ## 参考资料
 
 - [OpenAPI 3 Library for spring-boot](https://springdoc.org/index.html#Introduction)
+- [SpringBoot结合SpringDoc - lixuelong - 博客园](https://www.cnblogs.com/lixuelong/p/14392770.html)
+- [Swagger3 注解使用（Open API 3）\_StarJava\_的博客-CSDN博客](https://blog.csdn.net/qq_35425070/article/details/105347336)
+- [springdoc-openapi 的基本使用 - 小二十七 - 博客园](https://www.cnblogs.com/xiao2shiqi/p/16383896.html)
