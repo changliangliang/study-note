@@ -17,7 +17,7 @@ categories: []
 
 ## 依赖
 
-根据 [Springdoc官方文档](https://springdoc.org/#getting-started)，想要在项目中使用 `Springdoc` 只需要映入如下依赖即可：
+根据 [Springdoc官方文档](https://springdoc.org/#getting-started)，想要在项目中使用 `Springdoc` 只需要引入如下依赖即可：
 
 ```
 <dependency>
