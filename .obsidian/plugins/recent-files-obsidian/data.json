@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "SpringBoot整合Springdoc",
+      "path": "学习笔记/Java相关/SpringBoot/SpringBoot整合Springdoc.md"
+    },
+    {
       "basename": "vscode中的task.json和launch.json文件",
       "path": "学习笔记/开发工具/vscode中的task.json和launch.json文件.md"
     },
@@ -19,10 +23,6 @@
     {
       "basename": "this指向的问题",
       "path": "学习笔记/前端开发/this指向的问题.md"
-    },
-    {
-      "basename": "SpringBoot整合Springdoc",
-      "path": "学习笔记/Java相关/SpringBoot/SpringBoot整合Springdoc.md"
     },
     {
       "basename": "springboot 3 自动装配方式更改",
