@@ -4,7 +4,7 @@
     "Main Homepage": {
       "value": "主页",
       "kind": "Workspace",
-      "openOnStartup": true,
+      "openOnStartup": false,
       "hasRibbonIcon": true,
       "openMode": "Replace all open notes",
       "manualOpenMode": "Keep open notes",

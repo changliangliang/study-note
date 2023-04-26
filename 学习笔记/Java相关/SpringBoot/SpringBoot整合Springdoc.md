@@ -15,7 +15,7 @@ categories: []
 
 ![](附件/image/SpringBoot整合Springdoc_image_2.png)
 
-## 依赖
+## 配置
 
 根据 [Springdoc官方文档](https://springdoc.org/#getting-started)，想要在项目中使用 `Springdoc` 只需要引入如下依赖即可：
 
@@ -27,24 +27,33 @@ categories: []
 </dependency>
 ```
 
+之后即可在 `http://server:port/context-path/swagger-ui.html` 看到如下界面：
 
-之后像容器注入 `OpenAPI`，可以用来配置
+![](附件/image/SpringBoot整合Springdoc_image_3.png)
+
+如果想要配置额外的信息，可以在容器中注入一个 `OpenAPI`，这些信息将会在页面中展示。
 
 ```java
 @Bean
 public OpenAPI springShopOpenAPI() {
-  return new OpenAPI()
-		  .info(new Info().title("SpringShop API")
-		  .description("Spring shop sample application")
-		  .version("v0.0.1")
-		  .license(new License().name("Apache 2.0").url("http://springdoc.org")))
-		  .externalDocs(new ExternalDocumentation()
-		  .description("SpringShop Wiki Documentation")
-		  .url("https://springshop.wiki.github.org/docs"));
+	return new OpenAPI()
+			.info(new Info().title("Cfile API")
+					.description("一个在线文件解析网站")
+					.version("v0.0.1")
+					.license(new License()
+							.name("Apache 2.0")
+							.url("http://www.cfile.com"))
+					.contact(new Contact()
+							.email("changliangliang1996@foxmail.com")
+							.name("chang")
+							.url("http://changliangliang.github.io"))
+			);
 }
 ```
 
+![](附件/image/SpringBoot整合Springdoc_image_4.png)
 
+## 参考资料
 
-```
-```
+- [OpenAPI 3 Library for spring-boot](https://springdoc.org/index.html#Introduction)
+- 
