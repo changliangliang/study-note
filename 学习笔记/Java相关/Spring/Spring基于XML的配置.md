@@ -441,7 +441,7 @@ public class TeacherBean {
 <beans>
     <bean id="teacher" class="con.liang.TeacherBean">
         <property name="name" value="12" />
-    	<property name="student" ref="student" />
+        <property name="student" ref="student" />
     </bean>
 
     <bean id="student" class="com.liang.StudentBean"/>
@@ -543,8 +543,8 @@ public class TeacherBean {
       <property name="name" value="小明"/>
       <property name="address">
           <bean id="addr" class="com.chang.pojo.Address">
-      		<property name="address" value="重庆"/>
-  	</bean>
+              <property name="address" value="重庆"/>
+      </bean>
       </property>
   </bean>
   ```
@@ -1530,7 +1530,7 @@ public class TeacherBean {
 <beans>
     <bean id="teacher" class="con.liang.TeacherBean">
         <property name="name" value="12" />
-    	<property name="student" ref="student" />
+        <property name="student" ref="student" />
     </bean>
 
     <bean id="student" class="com.liang.StudentBean"/>
@@ -1632,8 +1632,8 @@ public class TeacherBean {
       <property name="name" value="小明"/>
       <property name="address">
           <bean id="addr" class="com.chang.pojo.Address">
-      		<property name="address" value="重庆"/>
-  	</bean>
+              <property name="address" value="重庆"/>
+      </bean>
       </property>
   </bean>
   ```

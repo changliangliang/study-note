@@ -28,7 +28,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "学习笔记/开发工具/vscode中的task.json和launch.json.md",
+                "file": "学习笔记/开发工具/vscode中的task.json和launch.json文件.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -65,7 +65,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#blog",
+                "query": "type: blog",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -122,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习笔记/开发工具/vscode中的task.json和launch.json.md"
+                "file": "学习笔记/开发工具/vscode中的task.json和launch.json文件.md"
               }
             }
           },
@@ -150,8 +150,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 4
+        ]
       },
       {
         "id": "e7beb231688408fa",
@@ -172,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "学习笔记/开发工具/vscode中的task.json和launch.json.md",
+                "file": "学习笔记/开发工具/vscode中的task.json和launch.json文件.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -184,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "学习笔记/开发工具/vscode中的task.json和launch.json.md",
+                "file": "学习笔记/开发工具/vscode中的task.json和launch.json文件.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -225,12 +224,29 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "6ff4577eaa32dbb3",
+  "active": "2e6886b3461627b5",
   "lastOpenFiles": [
+    "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md",
+    "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md",
+    "学习笔记/Java相关/SpringMVC/SpringMVC配置.md",
+    "学习笔记/前端开发/this指向的问题.md",
     "学习笔记/Java相关/SpringBoot/SpringBoot整合Springdoc.md",
+    "学习笔记/问题记录/springboot 3 自动装配方式更改.md",
+    "学习笔记/Java相关/Spring/Spring基于XML的配置.md",
+    "学习笔记/Java相关/Spring/Spring中的AOP配置.md",
+    "学习笔记/Java相关/Spring/Spring的一些高级配置.md",
+    "学习笔记/Java相关/Spring/Spirng基于Java和注解的配置.md",
+    "学习笔记/操作系统/socket连接不安全的原因.md",
+    "学习笔记/开发工具/npm源管理.md",
+    "学习笔记/Java相关/Java 中的 char 类型能否存储中文.md",
+    "学习笔记/开发工具/docker 常用操作.md",
+    "模板/blog-frontmatter.md",
+    "学习笔记/计算机网络/长连接的若干问题.md",
+    "学习笔记/计算机知识/计算机中的路由表.md",
+    "学习笔记/操作系统/计算机的启动.md",
+    "学习笔记/开发工具/vscode中的task.json和launch.json文件.md",
     "学习笔记/实用技巧/博客中插入obsidian源文件连接.md",
     "学习笔记/实用技巧",
-    "学习笔记/操作系统/计算机的启动.md",
     "附件/image/SpringBoot整合Springdoc_image_11.png",
     "附件/image/SpringBoot整合Springdoc_image_10.png",
     "附件/image/SpringBoot整合Springdoc_image_9.png",
@@ -245,34 +261,17 @@
     "WuCai/2023/04",
     "WuCai/2023",
     "WuCai",
-    "学习笔记/问题记录/springboot 3 自动装配方式更改.md",
     "学习笔记/Java相关/SpringBoot",
-    "学习笔记/前端开发/this指向的问题.md",
     "学习笔记/问题记录",
     "未命名看板.md",
     "未命名.md",
     "草稿/obsidian插件记录.md",
-    "学习笔记/开发工具/vscode中的task.json和launch.json.md",
     "学习笔记/前端开发",
-    "学习笔记/操作系统/socket连接不安全的原因.md",
-    "学习笔记/开发工具/npm源管理.md",
     "学习笔记/Linux.md",
-    "学习笔记/Java相关/Java 中的 char 类型能否存储中文.md",
     "草稿/docker镜像创建.md",
-    "草稿/docker常用容器创建.md",
-    "学习笔记/开发工具/docker 常用操作.md",
     "学习笔记/开发工具",
-    "学习笔记/计算机网络/长连接的若干问题.md",
     "学习笔记/计算机网络",
-    "学习笔记/计算机知识/MBR 主引导记录.md",
-    "学习笔记/计算机知识/计算机中的路由表.md",
     "学习笔记/操作系统",
-    "草稿/计算机补完计划——2023年.md",
-    "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md",
-    "学习笔记/ucore操作系统实验/ucore操作系统实验：lab2.md",
-    "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md",
-    "草稿/Spring/java编程思想学习心得.md",
-    "草稿/Spring/零碎知识.md",
     "未命名.canvas"
   ]
 }

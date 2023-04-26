@@ -104,34 +104,34 @@ dd if=bin/kernel of=bin/ucore.img seek=1 conv=notrunc
 
 - 编译源码：`gcc` 命令的会对源码进行编译，如下面的命令将 `kern/init/init.c` 编译成目标文件 `obj/kern/init/init.o`：
 
-	```bash
-	+ cc kern/init/init.c
-	gcc -Ikern/init/ -fno-builtin -Wall -ggdb -m32 -gstabs -nostdinc  -fno-stack-protector -Ilibs/ -Ikern/debug/ -Ikern/driver/ -Ikern/trap/ -Ikern/mm/ -c kern/init/init.c -o obj/kern/init/init.o
-	```
+    ```bash
+    + cc kern/init/init.c
+    gcc -Ikern/init/ -fno-builtin -Wall -ggdb -m32 -gstabs -nostdinc  -fno-stack-protector -Ilibs/ -Ikern/debug/ -Ikern/driver/ -Ikern/trap/ -Ikern/mm/ -c kern/init/init.c -o obj/kern/init/init.o
+    ```
 
 - 生成可执行文件：`ld` 命令将生成的目标文件进行链接生成执行文件，如下面的命令将 `obj/kern` 目录下的目标文件连接生成可执行文件 `bin/kernel`：
 
-	```bash
-	+ ld bin/kernel
-	ld -m    elf_i386 -nostdlib -T tools/kernel.ld -o bin/kernel  obj/kern/init/init.o obj/kern/libs/readline.o obj/kern/libs/stdio.o obj/kern/debug/kdebug.o obj/kern/debug/kmonitor.o obj/kern/debug/panic.o obj/kern/driver/clock.o obj/kern/driver/console.o obj/kern/driver/intr.o obj/kern/driver/picirq.o obj/kern/trap/trap.o obj/kern/trap/trapentry.o obj/kern/trap/vectors.o obj/kern/mm/pmm.o  obj/libs/printfmt.o obj/libs/string.o
-	```
+    ```bash
+    + ld bin/kernel
+    ld -m    elf_i386 -nostdlib -T tools/kernel.ld -o bin/kernel  obj/kern/init/init.o obj/kern/libs/readline.o obj/kern/libs/stdio.o obj/kern/debug/kdebug.o obj/kern/debug/kmonitor.o obj/kern/debug/panic.o obj/kern/driver/clock.o obj/kern/driver/console.o obj/kern/driver/intr.o obj/kern/driver/picirq.o obj/kern/trap/trap.o obj/kern/trap/trapentry.o obj/kern/trap/vectors.o obj/kern/mm/pmm.o  obj/libs/printfmt.o obj/libs/string.o
+    ```
 
 - 生成镜像文件：`dd` 命令的作用是用指定大小的块拷贝一个文件，并在拷贝的同时进行指定的转换，下面的命令会创建一个 `bin/ucore.img` 文件，并将之前生成的 `bin/bootblock` 和 `bin/kernel` 拷贝到 `bin/ucore.img` 文件中。
 
-	```bash
-	dd if=/dev/zero of=bin/ucore.img count=10000
-	10000+0 records in
-	10000+0 records out
-	5120000 bytes (5.1 MB) copied, 0.0234475 s, 218 MB/s
-	dd if=bin/bootblock of=bin/ucore.img conv=notrunc
-	1+0 records in
-	1+0 records out
-	512 bytes (512 B) copied, 0.000192811 s, 2.7 MB/s
-	dd if=bin/kernel of=bin/ucore.img seek=1 conv=notrunc
-	146+1 records in
-	146+1 records out
-	74923 bytes (75 kB) copied, 0.000295907 s, 253 MB/s
-	```
+    ```bash
+    dd if=/dev/zero of=bin/ucore.img count=10000
+    10000+0 records in
+    10000+0 records out
+    5120000 bytes (5.1 MB) copied, 0.0234475 s, 218 MB/s
+    dd if=bin/bootblock of=bin/ucore.img conv=notrunc
+    1+0 records in
+    1+0 records out
+    512 bytes (512 B) copied, 0.000192811 s, 2.7 MB/s
+    dd if=bin/kernel of=bin/ucore.img seek=1 conv=notrunc
+    146+1 records in
+    146+1 records out
+    74923 bytes (75 kB) copied, 0.000295907 s, 253 MB/s
+    ```
 
 ### 问题 2：一个被系统认为是符合规范的硬盘主引导扇区的特征是什么？
 

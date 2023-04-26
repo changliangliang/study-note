@@ -67,15 +67,15 @@ public class MyWebInitializer extends AbstractAnnotationConfigDispatcherServletI
 
 - `getRootConfigClasses()` 返回根容器的 Java 配置文件，对应到 web. xml 就是 `contextConfigLocation` 配置的 xml 文件；
 
-	```xml
-	<listener>
-	        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-	</listener>
-	<context-param>
-		<param-name>contextConfigLocation</param-name>
-		<param-value>/WEB-INF/app-context.xml</param-value>
-	</context-param>
-	```
+    ```xml
+    <listener>
+            <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>/WEB-INF/app-context.xml</param-value>
+    </context-param>
+    ```
 
 - `getServletConfigClasses()` 返回的就是 `DispatcherServlet` 中容器的 Java 配置文件；
 - `getServletMappings​()` 返回的是 `DispatcherServlet` 要处理的路径。
@@ -486,7 +486,7 @@ http://localhost:8080/admin/login?username=123&password=123
 ```java
 @PostMapping({"/admin", "/admin/login"})
 public String login(String username, String password) {
-  	return ""
+      return ""
 }
 ```
 
@@ -495,7 +495,7 @@ public String login(String username, String password) {
 ```java
 @PostMapping({"/admin", "/admin/login"})
 public String login(@RequestParam("username") String name, String password) {
-  	return ""
+      return ""
 }
 ```
 
@@ -510,7 +510,7 @@ http://localhost:8080/param/bindPojo?id=3&name=小米&price=3760
 ```java
 @RequestMapping(value = "bindPojo")
 public Item bindPojo(Item item) {
-	return item;
+    return item;
 }
 
 class Item {
@@ -552,7 +552,7 @@ http://localhost:8080/param/simpleArray?ids=1&ids=2&ids=3&ids=4
 ```java
 @RequestMapping(value = "simpleArray")
 public String[] simpleArray(String[] ids) {
-	return ids;
+    return ids;
 }
 ```
 

@@ -127,12 +127,11 @@ xmlns:jee="http://www.springframework.org/schema/jee"
 xsi:schemaLocation="...">
 
 <!-- other bean definitions -->
-
-<beans profile="production">
-<beans profile="us-east">
-<jee:jndi-lookup id="dataSource" jndi-name="java:comp/env/jdbc/datasource"/>
-</beans>
-</beans>
+    <beans profile="production">
+        <beans profile="us-east">
+            <jee:jndi-lookup id="dataSource" jndi-name="java:comp/env/jdbc/datasource"/>
+        </beans>
+    </beans>
 </beans>
 ```
 

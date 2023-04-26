@@ -5,7 +5,7 @@ updated: 2023-03-13 21:19:41
 tags: [Spring]
 categories: [Spring学习笔记]
 ---
-
+    
 ## XML 开启注解支持
 
 Spring 用 xml 配置是比较繁琐的，所以 Spring 由提供了另一种配置方法：注解配置。
@@ -52,13 +52,13 @@ Spring 用 xml 配置是比较繁琐的，所以 Spring 由提供了另一种配
   <context:component-scan base-package="com.chang.pojo">
       <exclude-filter type="" expression="" />
       <!--
-   	type的值可以为：
-  	assignable: 排除指定类型（expression指定要排除的类）
-  	annotation: 排除特定注解（expression指定要排除的注解）
-  	aspectj:    通过切入点表达式排除（expression指定切入点表达式，只能用包切入点或类切入点）
-  	regex:      通过正则
-  	custom:     自定义排除策略（一般用于框架底层开发）
-  	-->
+       type的值可以为：
+      assignable: 排除指定类型（expression指定要排除的类）
+      annotation: 排除特定注解（expression指定要排除的注解）
+      aspectj:    通过切入点表达式排除（expression指定切入点表达式，只能用包切入点或类切入点）
+      regex:      通过正则
+      custom:     自定义排除策略（一般用于框架底层开发）
+      -->
   </context:component-scan>
   ```
 
@@ -69,8 +69,8 @@ Spring 用 xml 配置是比较繁琐的，所以 Spring 由提供了另一种配
   <context:component-scan base-package="com.chang.pojo" use-default-filters="false">
       <include-filter type="" expression="" />
       <!--
-   	type的值可以为和排除方式一样
-  	-->
+       type的值可以为和排除方式一样
+      -->
   </context:component-scan>
   ```
 
