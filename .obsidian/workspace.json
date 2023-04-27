@@ -23,12 +23,12 @@
             }
           },
           {
-            "id": "6ff4577eaa32dbb3",
+            "id": "15c1724c19efeb45",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "常用/笔记目录.md",
+                "file": "学习笔记/数据库/MySQL操作.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -122,7 +122,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "常用/笔记目录.md"
+                "file": "学习笔记/数据库/MySQL操作.md"
               }
             }
           },
@@ -171,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "常用/笔记目录.md",
+                "file": "学习笔记/数据库/MySQL操作.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -183,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "常用/笔记目录.md",
+                "file": "学习笔记/数据库/MySQL操作.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -221,15 +221,33 @@
       "meld-encrypt:Create new encrypted note": false,
       "homepage:Open homepage": false,
       "workspaces:管理工作区布局": false,
-      "obsidian-memos:Memos": false
+      "obsidian-memos:Memos": false,
+      "omnisearch:Omnisearch": false
     }
   },
-  "active": "6ff4577eaa32dbb3",
+  "active": "15c1724c19efeb45",
   "lastOpenFiles": [
-    "附件/image/笔记目录_image_1.png",
+    "学习笔记/Java相关/SpringBoot/SpringBoot整合Springdoc.md",
+    "附件/image/MySQL操作_image_1.md",
+    "学习笔记/数据库/MySQL操作.md",
+    "assets",
+    "学习笔记/开发工具/vscode中的task.json和launch.json文件.md",
+    "附件/image/SpringBoot整合Springdoc_image_1.png",
+    "附件/image/image-20210404223742515.png",
+    "附件/image/image-20210404223725764.png",
+    "附件/image/image-20210404223653959.png",
+    "附件/image/image-20210404220518613.png",
+    "附件/image/image-20210404215420592.png",
+    "附件/image/image-20210403100405151.png",
+    "附件/image/image-20210403100338368.png",
+    "附件/image/image-20210403100103281.png",
+    "附件/image/image-20210403095926791.png",
+    "学习笔记/数据库",
+    "学习笔记/开发工具/docker 常用操作.md",
+    "学习笔记/开发工具/npm源管理.md",
+    "常用/笔记目录.md",
     "草稿/C++学习/模板.md",
     "WuCai/2023/04/wucai-2023-04-24-H835E9H.md",
-    "学习笔记/Java相关/SpringBoot/SpringBoot整合Springdoc.md",
     "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md",
     "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md",
     "学习笔记/Java相关/SpringMVC/SpringMVC配置.md",
@@ -240,38 +258,21 @@
     "学习笔记/Java相关/Spring/Spring的一些高级配置.md",
     "学习笔记/Java相关/Spring/Spirng基于Java和注解的配置.md",
     "学习笔记/操作系统/socket连接不安全的原因.md",
-    "学习笔记/开发工具/npm源管理.md",
     "学习笔记/Java相关/Java 中的 char 类型能否存储中文.md",
-    "学习笔记/开发工具/docker 常用操作.md",
     "模板/blog-frontmatter.md",
     "学习笔记/计算机网络/长连接的若干问题.md",
     "学习笔记/计算机知识/计算机中的路由表.md",
     "学习笔记/操作系统/计算机的启动.md",
-    "学习笔记/开发工具/vscode中的task.json和launch.json文件.md",
     "学习笔记/实用技巧/博客中插入obsidian源文件连接.md",
     "学习笔记/实用技巧",
-    "附件/image/SpringBoot整合Springdoc_image_11.png",
-    "附件/image/SpringBoot整合Springdoc_image_10.png",
-    "附件/image/SpringBoot整合Springdoc_image_9.png",
-    "附件/image/SpringBoot整合Springdoc_image_8.png",
-    "附件/Pasted image 20230426220352.png",
-    "附件/image/SpringBoot整合Springdoc_image_7.png",
-    "附件/image/SpringBoot整合Springdoc_image_6.png",
-    "附件/image/SpringBoot整合Springdoc_image_5.png",
-    "附件/image/SpringBoot整合Springdoc_image_4.png",
-    "附件/image/SpringBoot整合Springdoc_image_3.png",
     "WuCai/2023/04",
     "WuCai/2023",
     "WuCai",
     "学习笔记/Java相关/SpringBoot",
     "学习笔记/问题记录",
     "未命名看板.md",
-    "未命名.md",
-    "草稿/obsidian插件记录.md",
     "学习笔记/前端开发",
     "学习笔记/开发工具",
-    "学习笔记/计算机网络",
-    "学习笔记/操作系统",
     "未命名.canvas"
   ]
 }

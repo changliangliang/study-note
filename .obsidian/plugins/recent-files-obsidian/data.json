@@ -1,6 +1,42 @@
 {
   "recentFiles": [
     {
+      "basename": "MySQL操作",
+      "path": "学习笔记/数据库/MySQL操作.md"
+    },
+    {
+      "basename": "SpringBoot整合Springdoc",
+      "path": "学习笔记/Java相关/SpringBoot/SpringBoot整合Springdoc.md"
+    },
+    {
+      "basename": "MySQL操作_image_1",
+      "path": "附件/image/MySQL操作_image_1.md"
+    },
+    {
+      "basename": "vscode中的task.json和launch.json文件",
+      "path": "学习笔记/开发工具/vscode中的task.json和launch.json文件.md"
+    },
+    {
+      "basename": "SpringBoot整合Springdoc_image_1",
+      "path": "附件/image/SpringBoot整合Springdoc_image_1.png"
+    },
+    {
+      "basename": "SpringBoot整合Springdoc_image_2",
+      "path": "附件/image/SpringBoot整合Springdoc_image_2.png"
+    },
+    {
+      "basename": "Pasted image 20230426220352",
+      "path": "附件/Pasted image 20230426220352.png"
+    },
+    {
+      "basename": "docker 常用操作",
+      "path": "学习笔记/开发工具/docker 常用操作.md"
+    },
+    {
+      "basename": "npm源管理",
+      "path": "学习笔记/开发工具/npm源管理.md"
+    },
+    {
       "basename": "笔记目录",
       "path": "常用/笔记目录.md"
     },
@@ -11,14 +47,6 @@
     {
       "basename": "wucai-2023-04-24-H835E9H",
       "path": "WuCai/2023/04/wucai-2023-04-24-H835E9H.md"
-    },
-    {
-      "basename": "SpringBoot整合Springdoc",
-      "path": "学习笔记/Java相关/SpringBoot/SpringBoot整合Springdoc.md"
-    },
-    {
-      "basename": "vscode中的task.json和launch.json文件",
-      "path": "学习笔记/开发工具/vscode中的task.json和launch.json文件.md"
     },
     {
       "basename": "ucore操作系统实验：lab1",
@@ -61,16 +89,8 @@
       "path": "学习笔记/操作系统/socket连接不安全的原因.md"
     },
     {
-      "basename": "npm源管理",
-      "path": "学习笔记/开发工具/npm源管理.md"
-    },
-    {
       "basename": "Java 中的 char 类型能否存储中文",
       "path": "学习笔记/Java相关/Java 中的 char 类型能否存储中文.md"
-    },
-    {
-      "basename": "docker 常用操作",
-      "path": "学习笔记/开发工具/docker 常用操作.md"
     },
     {
       "basename": "blog-frontmatter",
@@ -179,26 +199,6 @@
     {
       "basename": "Java并发",
       "path": "草稿/Java拾遗迹/Java并发.md"
-    },
-    {
-      "basename": "const关键字",
-      "path": "草稿/C++学习/const关键字.md"
-    },
-    {
-      "basename": "未命名",
-      "path": "常用/未命名.md"
-    },
-    {
-      "basename": "软件列表",
-      "path": "常用/软件列表.md"
-    },
-    {
-      "basename": "列表",
-      "path": "常用/列表.md"
-    },
-    {
-      "basename": "卡片目录",
-      "path": "常用/卡片目录.md"
     }
   ],
   "omittedPaths": [],
