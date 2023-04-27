@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "wucai-2023-04-24-H835E9H",
+      "path": "WuCai/2023/04/wucai-2023-04-24-H835E9H.md"
+    },
+    {
       "basename": "SpringBoot整合Springdoc",
       "path": "学习笔记/Java相关/SpringBoot/SpringBoot整合Springdoc.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "截图笔记",
       "path": "常用/截图笔记.md"
-    },
-    {
-      "basename": "草稿目录",
-      "path": "常用/草稿目录.md"
     }
   ],
   "omittedPaths": [],
