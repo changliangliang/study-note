@@ -1,6 +1,38 @@
 {
   "recentFiles": [
     {
+      "basename": "笔记目录",
+      "path": "常用/笔记目录.md"
+    },
+    {
+      "basename": "相关知识",
+      "path": "学习笔记/数据库/相关知识.md"
+    },
+    {
+      "basename": "org.springframework.web.context.ContextLoaderListener",
+      "path": "卡片/Java类/org.springframework.web.context.ContextLoaderListener.md"
+    },
+    {
+      "basename": "VScode中的task.json和launch.json_image_7",
+      "path": "附件/image/VScode中的task.json和launch.json_image_7.png"
+    },
+    {
+      "basename": "ucore操作系统实验：环境搭建_image_7",
+      "path": "附件/image/ucore操作系统实验：环境搭建_image_7.png"
+    },
+    {
+      "basename": "ucore操作系统实验：环境搭建_image_4",
+      "path": "附件/image/ucore操作系统实验：环境搭建_image_4.png"
+    },
+    {
+      "basename": "ucore操作系统实验：环境搭建_image_3",
+      "path": "附件/image/ucore操作系统实验：环境搭建_image_3.png"
+    },
+    {
+      "basename": "ucore操作系统实验：环境搭建_image_1",
+      "path": "附件/image/ucore操作系统实验：环境搭建_image_1.png"
+    },
+    {
       "basename": "MySQL操作",
       "path": "学习笔记/数据库/MySQL操作.md"
     },
@@ -35,10 +67,6 @@
     {
       "basename": "npm源管理",
       "path": "学习笔记/开发工具/npm源管理.md"
-    },
-    {
-      "basename": "笔记目录",
-      "path": "常用/笔记目录.md"
     },
     {
       "basename": "模板",
@@ -149,10 +177,6 @@
       "path": "草稿/SpirngMVC进阶知识.md"
     },
     {
-      "basename": "org.springframework.web.context.ContextLoaderListener",
-      "path": "卡片/Java类/org.springframework.web.context.ContextLoaderListener.md"
-    },
-    {
       "basename": "2023-04-20",
       "path": "日记/2023-04-20.md"
     },
@@ -175,26 +199,6 @@
     {
       "basename": "MySQL学习笔记",
       "path": "草稿/MySQL学习笔记.md"
-    },
-    {
-      "basename": "CS自学指南",
-      "path": "草稿/CS自学指南.md"
-    },
-    {
-      "basename": "Java接口",
-      "path": "草稿/Java拾遗迹/Java接口.md"
-    },
-    {
-      "basename": "Java泛型",
-      "path": "草稿/Java拾遗迹/Java泛型.md"
-    },
-    {
-      "basename": "Java多态",
-      "path": "草稿/Java拾遗迹/Java多态.md"
-    },
-    {
-      "basename": "Java并发",
-      "path": "草稿/Java拾遗迹/Java并发.md"
     }
   ],
   "omittedPaths": [],

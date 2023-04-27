@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "05d3842d057e2b5c",
+        "id": "987da14dff1e91d3",
         "type": "tabs",
         "children": [
           {
-            "id": "e2fb8f67a9550177",
+            "id": "330ad692c21cb724",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "学习笔记/数据库/MySQL操作.md",
+                "file": "常用/笔记目录.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 259.5
+    "width": 548.5
   },
   "right": {
     "id": "471dd9cab433cd9a",
@@ -106,7 +106,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习笔记/数据库/MySQL操作.md"
+                "file": "常用/笔记目录.md"
               }
             }
           },
@@ -134,8 +134,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "e7beb231688408fa",
@@ -156,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "学习笔记/数据库/MySQL操作.md",
+                "file": "常用/笔记目录.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +167,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "学习笔记/数据库/MySQL操作.md",
+                "file": "常用/笔记目录.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -210,11 +209,19 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "e2fb8f67a9550177",
+  "active": "330ad692c21cb724",
   "lastOpenFiles": [
+    "学习笔记/数据库/相关知识.md",
+    "卡片/Java类/org.springframework.web.context.ContextLoaderListener.md",
+    "附件/image/相关知识_image_1.png",
+    "附件/image/VScode中的task.json和launch.json_image_7.png",
+    "附件/image/ucore操作系统实验：环境搭建_image_7.png",
+    "附件/image/ucore操作系统实验：环境搭建_image_4.png",
+    "附件/image/ucore操作系统实验：环境搭建_image_3.png",
+    "附件/image/ucore操作系统实验：环境搭建_image_1.png",
+    "学习笔记/数据库/MySQL操作.md",
     "草稿/docker常用容器创建.md",
     "附件/SpirngMVC进阶知识_image_2.png.md",
-    "学习笔记/数据库/MySQL操作.md",
     "学习笔记/Java相关/SpringBoot/SpringBoot整合Springdoc.md",
     "附件/image/MySQL操作_image_1.md",
     "assets",
@@ -223,12 +230,6 @@
     "附件/image/MySQL操作_image_67.png",
     "附件/image/MySQL操作_image_66.png",
     "附件/image/MySQL操作_image_65.png",
-    "附件/image/MySQL操作_image_64.png",
-    "附件/image/MySQL操作_image_63.png",
-    "附件/image/MySQL操作_image_62.png",
-    "附件/image/MySQL操作_image_61.png",
-    "附件/image/MySQL操作_image_60.png",
-    "附件/image/MySQL操作_image_59.png",
     "学习笔记/数据库",
     "学习笔记/开发工具/docker 常用操作.md",
     "学习笔记/开发工具/npm源管理.md",
@@ -247,9 +248,6 @@
     "学习笔记/操作系统/socket连接不安全的原因.md",
     "学习笔记/Java相关/Java 中的 char 类型能否存储中文.md",
     "模板/blog-frontmatter.md",
-    "学习笔记/计算机网络/长连接的若干问题.md",
-    "学习笔记/计算机知识/计算机中的路由表.md",
-    "学习笔记/操作系统/计算机的启动.md",
     "学习笔记/实用技巧",
     "WuCai/2023/04",
     "WuCai/2023",
