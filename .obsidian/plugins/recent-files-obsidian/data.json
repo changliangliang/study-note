@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "笔记目录",
+      "path": "常用/笔记目录.md"
+    },
+    {
+      "basename": "模板",
+      "path": "草稿/C++学习/模板.md"
+    },
+    {
       "basename": "wucai-2023-04-24-H835E9H",
       "path": "WuCai/2023/04/wucai-2023-04-24-H835E9H.md"
     },
@@ -125,10 +133,6 @@
       "path": "草稿/SpirngMVC进阶知识.md"
     },
     {
-      "basename": "模板",
-      "path": "草稿/C++学习/模板.md"
-    },
-    {
       "basename": "org.springframework.web.context.ContextLoaderListener",
       "path": "卡片/Java类/org.springframework.web.context.ContextLoaderListener.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "卡片目录",
       "path": "常用/卡片目录.md"
-    },
-    {
-      "basename": "截图笔记",
-      "path": "常用/截图笔记.md"
     }
   ],
   "omittedPaths": [],
