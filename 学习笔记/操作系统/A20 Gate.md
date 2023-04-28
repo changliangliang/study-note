@@ -9,9 +9,12 @@ categories: []
 
 ## 实模式和保护模式
 
+> 实模式和保护模式都是 CPU 的工作模式，而 CPU 的工作模式是指 CPU 的寻址方式、寄存器大小等用来反应 CPU 在该环境下如何工作的概念。
 
-###
+实模式的“实”体现在进程操作内存时使用的地址就是物理地址，而在保护模式下进程使用的地址为虚拟地址，需要经过地址转化
 
+
+## A20 Gate
 
 在 [[8086]] 中只有 20 根地址总线，所以可以访问的地址是 $2^{20}=1M$，但由于 8086 是 16 位地址模式，能够表示的地址范围是 0-64K，所以为了能够访问 1M 内存，Intel 采取了分段的模式：16 位段基地址: 16 位偏移。其绝对地址计算方法为：16 位基地址左移 4 位 +16 位偏移=20 位地址。
 
@@ -40,4 +43,6 @@ categories: []
 ## 参考资料
 
 - [https://docs.huihoo.com/gnu\_linux/own\_os/booting-a20\_4.htm](https://docs.huihoo.com/gnu_linux/own_os/booting-a20_4.htm)
+- [关于X86架构的 Gate A20相关理解\_gatea20激活\_重装起飞的博客-CSDN博客](https://blog.csdn.net/w375073907/article/details/119844052)
+- [CPU的实模式和保护模式(一) - 知乎](https://zhuanlan.zhihu.com/p/42309472)
 - 
