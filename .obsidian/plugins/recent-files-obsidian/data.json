@@ -1,20 +1,52 @@
 {
   "recentFiles": [
     {
-      "basename": "MySQL相关知识",
-      "path": "学习笔记/数据库/MySQL相关知识.md"
+      "basename": "A20 Gate",
+      "path": "学习笔记/操作系统/A20 Gate.md"
+    },
+    {
+      "basename": "wucai-2023-04-28-H83F65C",
+      "path": "WuCai/2023/04/wucai-2023-04-28-H83F65C.md"
+    },
+    {
+      "basename": "wucai-2023-04-24-H835E9H",
+      "path": "WuCai/2023/04/wucai-2023-04-24-H835E9H.md"
+    },
+    {
+      "basename": "8086",
+      "path": "草稿/8086.md"
+    },
+    {
+      "basename": "计算机的启动",
+      "path": "学习笔记/操作系统/计算机的启动.md"
+    },
+    {
+      "basename": "Pasted image 20230428131125.png",
+      "path": "附件/Pasted image 20230428131125.png.md"
+    },
+    {
+      "basename": "笔记目录",
+      "path": "常用/笔记目录.md"
+    },
+    {
+      "basename": "ucore操作系统实验：环境搭建",
+      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md"
     },
     {
       "basename": "ucore操作系统实验：lab1",
       "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md"
     },
     {
-      "basename": "MySQL操作",
-      "path": "学习笔记/数据库/MySQL操作.md"
+      "basename": "socket连接不安全的原因",
+      "path": "学习笔记/操作系统/socket连接不安全的原因.md"
     },
     {
-      "basename": "笔记目录",
-      "path": "常用/笔记目录.md"
+      "basename": "MySQL相关知识",
+      "path": "学习笔记/数据库/MySQL相关知识.md"
+    },
+    {
+      "basename": "MySQL操作",
+      "path": "学习笔记/数据库/MySQL操作.md"
     },
     {
       "basename": "org.springframework.web.context.ContextLoaderListener",
@@ -77,14 +109,6 @@
       "path": "草稿/C++学习/模板.md"
     },
     {
-      "basename": "wucai-2023-04-24-H835E9H",
-      "path": "WuCai/2023/04/wucai-2023-04-24-H835E9H.md"
-    },
-    {
-      "basename": "ucore操作系统实验：环境搭建",
-      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md"
-    },
-    {
       "basename": "SpringMVC配置",
       "path": "学习笔记/Java相关/SpringMVC/SpringMVC配置.md"
     },
@@ -113,10 +137,6 @@
       "path": "学习笔记/Java相关/Spring/Spirng基于Java和注解的配置.md"
     },
     {
-      "basename": "socket连接不安全的原因",
-      "path": "学习笔记/操作系统/socket连接不安全的原因.md"
-    },
-    {
       "basename": "Java 中的 char 类型能否存储中文",
       "path": "学习笔记/Java相关/Java 中的 char 类型能否存储中文.md"
     },
@@ -131,10 +151,6 @@
     {
       "basename": "计算机中的路由表",
       "path": "学习笔记/计算机知识/计算机中的路由表.md"
-    },
-    {
-      "basename": "计算机的启动",
-      "path": "学习笔记/操作系统/计算机的启动.md"
     },
     {
       "basename": "obsidian插件记录",
@@ -183,22 +199,6 @@
     {
       "basename": "C++学习笔记",
       "path": "草稿/C++学习笔记.md"
-    },
-    {
-      "basename": "中断、异常和系统调用",
-      "path": "草稿/中断、异常和系统调用.md"
-    },
-    {
-      "basename": "常用软件配置",
-      "path": "草稿/常用软件配置.md"
-    },
-    {
-      "basename": "Git 学习笔记",
-      "path": "草稿/Git 学习笔记.md"
-    },
-    {
-      "basename": "MySQL学习笔记",
-      "path": "草稿/MySQL学习笔记.md"
     }
   ],
   "omittedPaths": [],
