@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "学习笔记/操作系统/A20 Gate.md",
+                "file": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -106,7 +106,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习笔记/操作系统/A20 Gate.md"
+                "file": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md"
               }
             }
           },
@@ -156,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "学习笔记/操作系统/A20 Gate.md",
+                "file": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +168,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "学习笔记/操作系统/A20 Gate.md",
+                "file": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,8 +211,8 @@
   },
   "active": "330ad692c21cb724",
   "lastOpenFiles": [
+    "学习笔记/操作系统/实模式、保护模式、A20 Gate概念解析.md",
     "学习笔记/操作系统/socket连接不安全的原因.md",
-    "学习笔记/操作系统/A20 Gate.md",
     "学习笔记/操作系统/计算机的启动.md",
     "WuCai/2023/04/wucai-2023-04-28-H83F65C.md",
     "WuCai/2023/04/wucai-2023-04-24-H835E9H.md",
