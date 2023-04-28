@@ -1,5 +1,5 @@
 ---
-type: note
+type: blog
 status: 未发布
 created: 2023-04-28 00:05:53
 updated: 2023-04-28 00:05:53

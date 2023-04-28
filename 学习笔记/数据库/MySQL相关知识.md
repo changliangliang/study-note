@@ -1,5 +1,5 @@
 ---
-type: note
+type: blog
 status: 未发布
 created: 2023-04-28 00:26:27
 updated: 2023-04-28 00:26:27
@@ -19,5 +19,5 @@ alter table <表名> modify <列名> <类型>
 
 区别在于：
 
-* change：可以同时修改列名和列的类型
-* modify：只能用于修改列额类型
+* `change`：可以同时修改列名和列的类型
+* `modify`：只能用于修改列额类型
