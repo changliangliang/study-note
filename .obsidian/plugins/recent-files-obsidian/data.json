@@ -9,12 +9,32 @@
       "path": "学习笔记/操作系统/实模式、保护模式、A20 Gate概念解析.md"
     },
     {
+      "basename": "计算机的启动",
+      "path": "学习笔记/操作系统/计算机的启动.md"
+    },
+    {
+      "basename": "全局描述符表（GDT）",
+      "path": "学习笔记/操作系统/全局描述符表（GDT）.md"
+    },
+    {
       "basename": "socket连接不安全的原因",
       "path": "学习笔记/操作系统/socket连接不安全的原因.md"
     },
     {
-      "basename": "计算机的启动",
-      "path": "学习笔记/操作系统/计算机的启动.md"
+      "basename": "笔记目录",
+      "path": "常用/笔记目录.md"
+    },
+    {
+      "basename": "MySQL操作",
+      "path": "学习笔记/数据库/MySQL操作.md"
+    },
+    {
+      "basename": "Obsidian配置和插件",
+      "path": "草稿/Obsidian配置和插件.md"
+    },
+    {
+      "basename": "2023-04-20",
+      "path": "日记/2023-04-20.md"
     },
     {
       "basename": "wucai-2023-04-28-H83F65C",
@@ -33,20 +53,12 @@
       "path": "附件/Pasted image 20230428131125.png.md"
     },
     {
-      "basename": "笔记目录",
-      "path": "常用/笔记目录.md"
-    },
-    {
       "basename": "ucore操作系统实验：环境搭建",
       "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md"
     },
     {
       "basename": "MySQL相关知识",
       "path": "学习笔记/数据库/MySQL相关知识.md"
-    },
-    {
-      "basename": "MySQL操作",
-      "path": "学习笔记/数据库/MySQL操作.md"
     },
     {
       "basename": "org.springframework.web.context.ContextLoaderListener",
@@ -187,18 +199,6 @@
     {
       "basename": "零碎记录",
       "path": "草稿/Java拾遗迹/零碎记录.md"
-    },
-    {
-      "basename": "SpirngMVC进阶知识",
-      "path": "草稿/SpirngMVC进阶知识.md"
-    },
-    {
-      "basename": "2023-04-20",
-      "path": "日记/2023-04-20.md"
-    },
-    {
-      "basename": "C++学习笔记",
-      "path": "草稿/C++学习笔记.md"
     }
   ],
   "omittedPaths": [],

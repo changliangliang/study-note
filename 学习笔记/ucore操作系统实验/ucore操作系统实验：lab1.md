@@ -312,13 +312,47 @@ seta20.2:
     outb %al, $0x60           # 将al中的值写入0x60端口
 ```
 
-所以开启 A20
-
-第一步是向 804x 键盘控制器的 0x64 端口发送命令。这里传送的命令是 0xd1，这个命令的意思是要向键盘控制器的 P2 写入数据。这就是 seta20.1 代码段所做的工作。
-
-第二步就是向键盘控制器的 P2 端口写数据了。写数据的方法是把数据通过键盘控制器的 0x60 端口写进去。写入的数据是 0xdf，因为 A20 gate 就包含在键盘控制器的 P2 端口中，随着 0xdf 的写入，A20 gate 就被打开了。
+所以开启 A20 的整个步骤为：
+- 向键盘控制器的 `0x64` 端口发送的命令 `0xd1`，即代码段 `seta20.1` 完成的工作；
+- 向键盘控制器的 `0x60` 端口发送的命令 `0xdf`，即代码段 `seta20.2` 完成的工作；
 
 
+### 问题 2：如何初始化 GDT 表
+
+ `lab1/boot/bootasm.S` 文件尾部定义 `GDT` 表，代码如下：
+
+```asm
+# Bootstrap GDT
+.p2align 2                                  # force 4 byte alignment
+gdt:
+    SEG_NULLASM                             # null seg
+    SEG_ASM(STA_X|STA_R, 0x0, 0xffffffff)   # code seg for bootloader and kernel
+    SEG_ASM(STA_W, 0x0, 0xffffffff)         # data seg for bootloader and kernel
+
+gdtdesc:
+    .word 0x17                              # sizeof(gdt) - 1
+    .long gdt                               # address gdt
+```
+
+其中 `gdtdesc` 记录了 `gdt` 表的长度以及所在的位置，在 `lab1/boot/bootasm.S` 中有这么一条指令，它的作用是将 `gdtdesc` 处的数据读取到全局描述符表寄存器 `GDTR`，这是一个长度为 48 位的寄存器，计算机根据 `GDTR` 可以知道全局描述符表所在的位置上和长度。
+
+```asm
+lgdt gdtdesc
+```
+
+### 问题 3：如何使能和进入保护模式
+
+![](附件/image/ucore操作系统实验：lab1_image_16.png)
+
+在 CPU 中有一个 `CR0` 寄存器，包含了6个预定义标志，第 0 位是保护允许位 PE ( Protedted Enable )，用于启动保护模式，如果 PE 位置 1，则保护模式启动，如果 PE=0，则在实模式下运行。所以启动保护模式只需要将 `CR0` 寄存器第 0
+
+打开保护模式标志位，相当于按下了保护模式的开关。cr0寄存器的第0位就是这个开关，通过CR0_PE_ON或cr0寄存器，将第0位置1
+
+```asm
+movl %cr0, %eax
+orl $CR0_PE_ON, %eax
+movl %eax, %cr0
+```
 
 ## 参考资料
 

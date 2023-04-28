@@ -134,8 +134,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "e7beb231688408fa",
@@ -212,9 +211,16 @@
   },
   "active": "330ad692c21cb724",
   "lastOpenFiles": [
+    "附件/image/ucore操作系统实验：lab1_image_16.png",
     "学习笔记/操作系统/实模式、保护模式、A20 Gate概念解析.md",
-    "学习笔记/操作系统/socket连接不安全的原因.md",
     "学习笔记/操作系统/计算机的启动.md",
+    "学习笔记/操作系统/全局描述符表（GDT）.md",
+    "学习笔记/操作系统/socket连接不安全的原因.md",
+    "常用/笔记目录.md",
+    "学习笔记/数据库/MySQL操作.md",
+    "草稿/Obsidian配置和插件.md",
+    "日记/2023-04-20.md",
+    "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md",
     "WuCai/2023/04/wucai-2023-04-28-H83F65C.md",
     "WuCai/2023/04/wucai-2023-04-24-H835E9H.md",
     "草稿/8086.md",
@@ -225,11 +231,8 @@
     "附件/image/tmp1682658709865_A20 Gate_image_3.png",
     "附件/image/A20 Gate_image_1.png",
     "附件/image/tmp1682677469264_A20 Gate_image_1.png",
-    "常用/笔记目录.md",
     "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md",
-    "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md",
     "学习笔记/数据库/MySQL相关知识.md",
-    "学习笔记/数据库/MySQL操作.md",
     "卡片/Java类/org.springframework.web.context.ContextLoaderListener.md",
     "附件/image/相关知识_image_1.png",
     "附件/image/VScode中的task.json和launch.json_image_7.png",
@@ -247,10 +250,6 @@
     "学习笔记/开发工具/docker 常用操作.md",
     "学习笔记/开发工具/npm源管理.md",
     "草稿/C++学习/模板.md",
-    "学习笔记/Java相关/SpringMVC/SpringMVC配置.md",
-    "学习笔记/前端开发/this指向的问题.md",
-    "学习笔记/问题记录/springboot 3 自动装配方式更改.md",
-    "学习笔记/Java相关/Spring/Spring基于XML的配置.md",
     "学习笔记/实用技巧",
     "WuCai/2023/04",
     "WuCai/2023",
