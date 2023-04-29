@@ -355,44 +355,52 @@ movl %eax, %cr0
 ## 练习 4
 
 > 通过阅读 bootmain.c，了解 bootloader 如何加载 ELF 文件。通过分析源代码和通过 qemu 来运行并调试 bootloader&OS，
-> 
+>
 > - bootloader 如何读取硬盘扇区的？
 > - bootloader 是如何加载 ELF 格式的 OS？
 
 ### 问题 1：bootloader 如何读取硬盘扇区的
 
-`bootmain.c` 中有如下代码片段，作用就是从磁盘中读取扇区，
+`bootmain.c` 中有如下代码片段，作用就是从磁盘中读取扇区，整个流程大致为：
+
+- 等待磁盘准备好
+- 发出读取扇区的命令
+- 等待磁盘准备好
+- 把磁盘扇区数据读到指定内存
 
 ```c
-static void
-waitdisk(void)
+
+// 不断的读取磁盘状态，等待磁盘准备好
+static void waitdisk(void)
 {
     while ((inb(0x1F7) & 0xC0) != 0x40)
-        /* do nothing */;
 }
 
-/* readsect - read a single sector at @secno into @dst */
-static void
-readsect(void *dst, uint32_t secno)
+// 读取secno处一个扇区到dst处
+static void readsect(void *dst, uint32_t secno)
 {
-    // wait for disk to be ready
+    // 等待磁盘准备好
     waitdisk();
 
-    outb(0x1F2, 1); // count = 1
+	// 像磁盘中的寄存器写入要读取的扇区总数，这里始终为1
+    outb(0x1F2, 1);
+
+	// 写入secno
     outb(0x1F3, secno & 0xFF);
     outb(0x1F4, (secno >> 8) & 0xFF);
     outb(0x1F5, (secno >> 16) & 0xFF);
     outb(0x1F6, ((secno >> 24) & 0xF) | 0xE0);
+
+    // 发起读命令
     outb(0x1F7, 0x20); // cmd 0x20 - read sectors
 
-    // wait for disk to be ready
+    // 等待磁盘准备好
     waitdisk();
 
-    // read a sector
+    // 读取数据
     insl(0x1F0, dst, SECTSIZE / 4);
 }
 ```
-
 
 ## 参考资料
 
