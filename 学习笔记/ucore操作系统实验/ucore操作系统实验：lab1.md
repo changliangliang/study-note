@@ -292,7 +292,7 @@ x/10i $pc #显示汇编指令
 
 当 A20 处于关闭状态时，第 21 一根地址总线的值总是 0，会导致只能访问到 `0-1M`, `2-3M`, `4-5M` 等奇数内存，所以想要访问完整的内存空间，必须开启 A20。
 
-根据提示阅读 `lab1/boot/bootasm.S`（[bootasm.S源码](学习笔记/ucore操作系统实验/bootasm.S源码.md)），其中开启 A20 的代码如下，在 `ucore` 实验中通过控制键盘控制器实现 A20 的开启。
+根据提示阅读 `lab1/boot/bootasm.S`（[ucore实验：bootasm.S源码](学习笔记/ucore操作系统实验/ucore实验：bootasm.S源码.md)），其中开启 A20 的代码如下，在 `ucore` 实验中通过控制键盘控制器实现 A20 的开启。
 
 ```asm
 seta20.1:

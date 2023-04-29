@@ -1,8 +1,28 @@
 {
   "recentFiles": [
     {
-      "basename": "bootasm.S源码",
-      "path": "学习笔记/ucore操作系统实验/bootasm.S源码.md"
+      "basename": "org.springframework.web.context.ContextLoaderListener",
+      "path": "卡片/Java类/org.springframework.web.context.ContextLoaderListener.md"
+    },
+    {
+      "basename": "ubuntu中的网络配置",
+      "path": "学习笔记/linux学习/ubuntu中的网络配置.md"
+    },
+    {
+      "basename": "全局描述符表（GDT）",
+      "path": "学习笔记/操作系统/全局描述符表（GDT）.md"
+    },
+    {
+      "basename": "计算机的启动",
+      "path": "学习笔记/操作系统/计算机的启动.md"
+    },
+    {
+      "basename": "ucore实验：bootasm.S源码",
+      "path": "学习笔记/ucore操作系统实验/ucore实验：bootasm.S源码.md"
+    },
+    {
+      "basename": "Java继承",
+      "path": "草稿/Java拾遗迹/Java继承.md"
     },
     {
       "basename": "ucore操作系统实验：lab1",
@@ -35,14 +55,6 @@
     {
       "basename": "实模式、保护模式、A20 Gate概念解析",
       "path": "学习笔记/操作系统/实模式、保护模式、A20 Gate概念解析.md"
-    },
-    {
-      "basename": "计算机的启动",
-      "path": "学习笔记/操作系统/计算机的启动.md"
-    },
-    {
-      "basename": "全局描述符表（GDT）",
-      "path": "学习笔记/操作系统/全局描述符表（GDT）.md"
     },
     {
       "basename": "socket连接不安全的原因",
@@ -79,10 +91,6 @@
     {
       "basename": "MySQL相关知识",
       "path": "学习笔记/数据库/MySQL相关知识.md"
-    },
-    {
-      "basename": "org.springframework.web.context.ContextLoaderListener",
-      "path": "卡片/Java类/org.springframework.web.context.ContextLoaderListener.md"
     },
     {
       "basename": "VScode中的task.json和launch.json_image_7",
@@ -191,10 +199,6 @@
     {
       "basename": "docker镜像创建",
       "path": "草稿/docker镜像创建.md"
-    },
-    {
-      "basename": "MBR 主引导记录",
-      "path": "学习笔记/计算机知识/MBR 主引导记录.md"
     }
   ],
   "omittedPaths": [],
