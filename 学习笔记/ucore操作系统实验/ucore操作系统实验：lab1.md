@@ -404,6 +404,82 @@ static void readsect(void *dst, uint32_t secno)
 
 ### 问题 2：bootloader 是如何加载 ELF 格式的 OS
 
+```c
+void bootmain(void)
+{
+    // read the 1st page off disk
+    readseg((uintptr_t)ELFHDR, SECTSIZE * 8, 0);
+
+    // is this a valid ELF?
+    if (ELFHDR->e_magic != ELF_MAGIC)
+    {
+        goto bad;
+    }
+
+    struct proghdr *ph, *eph;
+
+    // load each program segment (ignores ph flags)
+    ph = (struct proghdr *)((uintptr_t)ELFHDR + ELFHDR->e_phoff);
+    eph = ph + ELFHDR->e_phnum;
+    for (; ph < eph; ph++)
+    {
+        readseg(ph->p_va & 0xFFFFFF, ph->p_memsz, ph->p_offset);
+    }
+
+    // call the entry point from the ELF header
+    // note: does not return
+    ((void (*)(void))(ELFHDR->e_entry & 0xFFFFFF))();
+
+bad:
+    outw(0x8A00, 0x8A00);
+    outw(0x8A00, 0x8E00);
+
+    /* do nothing */
+    while (1)
+        ;
+}
+```
+
+```c
+static void readseg(uintptr_t va, uint32_t count, uint32_t offset)
+{
+    uintptr_t end_va = va + count;
+
+    // round down to sector boundary
+    va -= offset % SECTSIZE;
+
+    // translate from bytes to sectors; kernel starts at sector 1
+    uint32_t secno = (offset / SECTSIZE) + 1;
+
+    // If this is too slow, we could read lots of sectors at a time.
+    // We'd write more to memory than asked, but it doesn't matter --
+    // we load in increasing order.
+    for (; va < end_va; va += SECTSIZE, secno++)
+    {
+        readsect((void *)va, secno);
+    }
+}
+```
+
+```c
+struct elfhdr {
+    uint32_t e_magic;     // must equal ELF_MAGIC
+    uint8_t e_elf[12];
+    uint16_t e_type;      // 1=relocatable, 2=executable, 3=shared object, 4=core image
+    uint16_t e_machine;   // 3=x86, 4=68K, etc.
+    uint32_t e_version;   // file version, always 1
+    uint32_t e_entry;     // entry point if executable
+    uint32_t e_phoff;     // file position of program header or 0
+    uint32_t e_shoff;     // file position of section header or 0
+    uint32_t e_flags;     // architecture-specific flags, usually 0
+    uint16_t e_ehsize;    // size of this elf header
+    uint16_t e_phentsize; // size of an entry in program header
+    uint16_t e_phnum;     // number of entries in program header or 0
+    uint16_t e_shentsize; // size of an entry in section header
+    uint16_t e_shnum;     // number of entries in section header or 0
+    uint16_t e_shstrndx;  // section number that contains section name strings
+};
+```
 
 ## 参考资料
 
