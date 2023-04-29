@@ -281,9 +281,9 @@ x/10i $pc #显示汇编指令
 ## 练习 3
 
 > BIOS 将通过读取硬盘主引导扇区到内存，并转跳到对应内存中的位置执行 bootloader。请分析 bootloader 是如何完成从实模式进入保护模式的。
-> 
+>
 > 提示：需要阅读小节“保护模式和分段机制”和 lab1/boot/bootasm.S 源码，了解如何从实模式切换到保护模式，需要了解：
-> 
+>
 > - 为何开启 A20，以及如何开启 A20
 > - 如何初始化 GDT 表
 > - 如何使能和进入保护模式
@@ -292,7 +292,7 @@ x/10i $pc #显示汇编指令
 
 当 A20 处于关闭状态时，第 21 一根地址总线的值总是 0，会导致只能访问到 `0-1M`, `2-3M`, `4-5M` 等奇数内存，所以想要访问完整的内存空间，必须开启 A20。
 
-根据提示阅读 `lab1/boot/bootasm.S`，其中开启 A20 的代码如下，在 `ucore` 实验中通过控制键盘控制器实现 A20 的开启。
+根据提示阅读 `lab1/boot/bootasm.S`（[bootasm.S源码](学习笔记/ucore操作系统实验/bootasm.S源码.md)），其中开启 A20 的代码如下，在 `ucore` 实验中通过控制键盘控制器实现 A20 的开启。
 
 ```asm
 seta20.1:
@@ -313,9 +313,9 @@ seta20.2:
 ```
 
 所以开启 A20 的整个步骤为：
+
 - 向键盘控制器的 `0x64` 端口发送的命令 `0xd1`，即代码段 `seta20.1` 完成的工作；
 - 向键盘控制器的 `0x60` 端口发送的命令 `0xdf`，即代码段 `seta20.2` 完成的工作；
-
 
 ### 问题 2：如何初始化 GDT 表
 
@@ -344,7 +344,7 @@ lgdt gdtdesc
 
 ![](附件/image/ucore操作系统实验：lab1_image_16.png)
 
-在 CPU 中有一个 `CR0` 寄存器，包含了6个预定义标志，第 0 位是保护允许位 PE ( Protedted Enable )，用于启动保护模式，如果 PE 位置 1，则保护模式启动，如果 PE=0，则在实模式下运行。所以启动保护模式只需要将 `CR0` 寄存器第 0 位设为 1 即可，相关代码如下：
+在 CPU 中有一个 `CR0` 寄存器，包含了 6 个预定义标志，第 0 位是保护允许位 PE ( Protedted Enable )，用于启动保护模式，如果 PE 位置 1，则保护模式启动，如果 PE=0，则在实模式下运行。所以启动保护模式只需要将 `CR0` 寄存器第 0 位设为 1 即可，相关代码如下：
 
 ```asm
 movl %cr0, %eax
@@ -357,4 +357,3 @@ movl %eax, %cr0
 - [Lab\_1：练习1——理解通过make生成执行文件的过程 - chuyaoxin - 博客园](https://www.cnblogs.com/cyx-b/p/11750020.html)
 - [Lab1：练习3——分析bootloader进入保护模式的过程 - huilinmumu - 博客园](https://www.cnblogs.com/huilinmumu/p/16217843.html)
 - [保护模式和分段机制 · ucore\_os\_docs](https://chyyuu.gitbooks.io/ucore_os_docs/content/lab1/lab1_3_2_1_protection_mode.html)
-- 
