@@ -344,9 +344,7 @@ lgdt gdtdesc
 
 ![](附件/image/ucore操作系统实验：lab1_image_16.png)
 
-在 CPU 中有一个 `CR0` 寄存器，包含了6个预定义标志，第 0 位是保护允许位 PE ( Protedted Enable )，用于启动保护模式，如果 PE 位置 1，则保护模式启动，如果 PE=0，则在实模式下运行。所以启动保护模式只需要将 `CR0` 寄存器第 0
-
-打开保护模式标志位，相当于按下了保护模式的开关。cr0寄存器的第0位就是这个开关，通过CR0_PE_ON或cr0寄存器，将第0位置1
+在 CPU 中有一个 `CR0` 寄存器，包含了6个预定义标志，第 0 位是保护允许位 PE ( Protedted Enable )，用于启动保护模式，如果 PE 位置 1，则保护模式启动，如果 PE=0，则在实模式下运行。所以启动保护模式只需要将 `CR0` 寄存器第 0 位设为 1 即可，相关代码如下：
 
 ```asm
 movl %cr0, %eax
@@ -357,3 +355,6 @@ movl %eax, %cr0
 ## 参考资料
 
 - [Lab\_1：练习1——理解通过make生成执行文件的过程 - chuyaoxin - 博客园](https://www.cnblogs.com/cyx-b/p/11750020.html)
+- [Lab1：练习3——分析bootloader进入保护模式的过程 - huilinmumu - 博客园](https://www.cnblogs.com/huilinmumu/p/16217843.html)
+- [保护模式和分段机制 · ucore\_os\_docs](https://chyyuu.gitbooks.io/ucore_os_docs/content/lab1/lab1_3_2_1_protection_mode.html)
+- 
