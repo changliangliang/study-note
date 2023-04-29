@@ -1,20 +1,36 @@
 {
   "recentFiles": [
     {
-      "basename": "自定义Json处理",
-      "path": "草稿/自定义Json处理.md"
+      "basename": "ucore操作系统实验：lab1",
+      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md"
+    },
+    {
+      "basename": "笔记目录",
+      "path": "常用/笔记目录.md"
+    },
+    {
+      "basename": "EFL文件详解",
+      "path": "草稿/EFL文件详解.md"
+    },
+    {
+      "basename": "博客列表",
+      "path": "常用/博客列表.md"
+    },
+    {
+      "basename": "未命名",
+      "path": "草稿/未命名.md"
     },
     {
       "basename": "bootasm.S源码",
       "path": "学习笔记/ucore操作系统实验/bootasm.S源码.md"
     },
     {
-      "basename": "ucore操作系统实验：环境搭建",
-      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md"
+      "basename": "自定义Json处理",
+      "path": "草稿/自定义Json处理.md"
     },
     {
-      "basename": "ucore操作系统实验：lab1",
-      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md"
+      "basename": "ucore操作系统实验：环境搭建",
+      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md"
     },
     {
       "basename": "实模式、保护模式、A20 Gate概念解析",
@@ -31,10 +47,6 @@
     {
       "basename": "socket连接不安全的原因",
       "path": "学习笔记/操作系统/socket连接不安全的原因.md"
-    },
-    {
-      "basename": "笔记目录",
-      "path": "常用/笔记目录.md"
     },
     {
       "basename": "MySQL操作",
@@ -187,18 +199,6 @@
     {
       "basename": "计算机补完计划——2023年",
       "path": "草稿/计算机补完计划——2023年.md"
-    },
-    {
-      "basename": "java编程思想学习心得",
-      "path": "草稿/Spring/java编程思想学习心得.md"
-    },
-    {
-      "basename": "零碎知识",
-      "path": "草稿/Spring/零碎知识.md"
-    },
-    {
-      "basename": "对 Spring 的认识",
-      "path": "草稿/Spring/对 Spring 的认识.md"
     }
   ],
   "omittedPaths": [],

@@ -11,12 +11,14 @@
   "lastCursor": "eyJsYXN0SGlnaGxpZ2h0UEtJRCI6NDYxODcyLCJsYXQiOjAsImxwbnQiOjB9",
   "exportConfig": {
     "titleFormat": 2,
+    "titleTemplate": "{{ createat_ts | date(\"YYYY/MM\") }}/wucai-{{ createat_ts | date(\"YYYY-MM-DD\") }}",
     "writeStyle": 1,
     "titleStyle": 2,
     "highlightStyle": 1,
     "annotationStyle": 1,
     "tagStyle": 1,
     "haveWuCaiTag": 1,
-    "obTemplate": ""
+    "obTemplate": "",
+    "obTemplateVer": 0
   }
 }

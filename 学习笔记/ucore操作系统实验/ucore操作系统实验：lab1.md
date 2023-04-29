@@ -352,6 +352,48 @@ orl $CR0_PE_ON, %eax
 movl %eax, %cr0
 ```
 
+## 练习 4
+
+> 通过阅读 bootmain.c，了解 bootloader 如何加载 ELF 文件。通过分析源代码和通过 qemu 来运行并调试 bootloader&OS，
+> 
+> - bootloader 如何读取硬盘扇区的？
+> - bootloader 是如何加载 ELF 格式的 OS？
+
+### 问题 1：bootloader 如何读取硬盘扇区的
+
+`bootmain.c` 中有如下代码片段，作用就是从磁盘中读取扇区，
+
+```c
+static void
+waitdisk(void)
+{
+    while ((inb(0x1F7) & 0xC0) != 0x40)
+        /* do nothing */;
+}
+
+/* readsect - read a single sector at @secno into @dst */
+static void
+readsect(void *dst, uint32_t secno)
+{
+    // wait for disk to be ready
+    waitdisk();
+
+    outb(0x1F2, 1); // count = 1
+    outb(0x1F3, secno & 0xFF);
+    outb(0x1F4, (secno >> 8) & 0xFF);
+    outb(0x1F5, (secno >> 16) & 0xFF);
+    outb(0x1F6, ((secno >> 24) & 0xF) | 0xE0);
+    outb(0x1F7, 0x20); // cmd 0x20 - read sectors
+
+    // wait for disk to be ready
+    waitdisk();
+
+    // read a sector
+    insl(0x1F0, dst, SECTSIZE / 4);
+}
+```
+
+
 ## 参考资料
 
 - [Lab\_1：练习1——理解通过make生成执行文件的过程 - chuyaoxin - 博客园](https://www.cnblogs.com/cyx-b/p/11750020.html)
