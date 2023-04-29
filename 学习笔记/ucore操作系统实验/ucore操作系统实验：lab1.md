@@ -404,13 +404,16 @@ static void readsect(void *dst, uint32_t secno)
 
 ### 问题 2：bootloader 是如何加载 ELF 格式的 OS
 
+下面是 `bootloader` 中加载 os 的代码，主要步骤是将 ELF 文件头部读到内存中，根据头部获取其他段的位置和长度，并读取到内存指定位置，之后开始执行入口函数，操作系统正式被运行起来。
+
 ```c
 void bootmain(void)
 {
-    // read the 1st page off disk
+    // 将操作系统第一页读取到内存中，位置在ELFHDR处,
+    // SECTSIZE * 8 其中 SECTSIZE 大小为512字节一个扇区，8个扇区组成一页
     readseg((uintptr_t)ELFHDR, SECTSIZE * 8, 0);
 
-    // is this a valid ELF?
+    // 判断读取到的数据是否为一个合法的ELF，主要根据ELF头部判断
     if (ELFHDR->e_magic != ELF_MAGIC)
     {
         goto bad;
@@ -418,7 +421,7 @@ void bootmain(void)
 
     struct proghdr *ph, *eph;
 
-    // load each program segment (ignores ph flags)
+    // 根据ELF头部的信息，将剩余部分读到内存中
     ph = (struct proghdr *)((uintptr_t)ELFHDR + ELFHDR->e_phoff);
     eph = ph + ELFHDR->e_phnum;
     for (; ph < eph; ph++)
@@ -426,8 +429,7 @@ void bootmain(void)
         readseg(ph->p_va & 0xFFFFFF, ph->p_memsz, ph->p_offset);
     }
 
-    // call the entry point from the ELF header
-    // note: does not return
+    // 根据ELF头部信息，执行入口函数
     ((void (*)(void))(ELFHDR->e_entry & 0xFFFFFF))();
 
 bad:
@@ -438,47 +440,6 @@ bad:
     while (1)
         ;
 }
-```
-
-```c
-static void readseg(uintptr_t va, uint32_t count, uint32_t offset)
-{
-    uintptr_t end_va = va + count;
-
-    // round down to sector boundary
-    va -= offset % SECTSIZE;
-
-    // translate from bytes to sectors; kernel starts at sector 1
-    uint32_t secno = (offset / SECTSIZE) + 1;
-
-    // If this is too slow, we could read lots of sectors at a time.
-    // We'd write more to memory than asked, but it doesn't matter --
-    // we load in increasing order.
-    for (; va < end_va; va += SECTSIZE, secno++)
-    {
-        readsect((void *)va, secno);
-    }
-}
-```
-
-```c
-struct elfhdr {
-    uint32_t e_magic;     // must equal ELF_MAGIC
-    uint8_t e_elf[12];
-    uint16_t e_type;      // 1=relocatable, 2=executable, 3=shared object, 4=core image
-    uint16_t e_machine;   // 3=x86, 4=68K, etc.
-    uint32_t e_version;   // file version, always 1
-    uint32_t e_entry;     // entry point if executable
-    uint32_t e_phoff;     // file position of program header or 0
-    uint32_t e_shoff;     // file position of section header or 0
-    uint32_t e_flags;     // architecture-specific flags, usually 0
-    uint16_t e_ehsize;    // size of this elf header
-    uint16_t e_phentsize; // size of an entry in program header
-    uint16_t e_phnum;     // number of entries in program header or 0
-    uint16_t e_shentsize; // size of an entry in section header
-    uint16_t e_shnum;     // number of entries in section header or 0
-    uint16_t e_shstrndx;  // section number that contains section name strings
-};
 ```
 
 ## 参考资料
