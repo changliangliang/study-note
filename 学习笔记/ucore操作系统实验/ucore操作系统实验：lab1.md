@@ -402,6 +402,9 @@ static void readsect(void *dst, uint32_t secno)
 }
 ```
 
+### 问题 2：bootloader 是如何加载 ELF 格式的 OS
+
+
 ## 参考资料
 
 - [Lab\_1：练习1——理解通过make生成执行文件的过程 - chuyaoxin - 博客园](https://www.cnblogs.com/cyx-b/p/11750020.html)
