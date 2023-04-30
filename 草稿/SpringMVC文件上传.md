@@ -1,6 +1,6 @@
 ---
-type: blog
-status: 未发布
+type: note
+status: 0
 created: 2023-04-30 15:05:58
 updated: 2023-04-30 15:05:58
 tags: []
@@ -86,4 +86,33 @@ public class FileUploadController {
         return "redirect:uploadFailure";
     }
 }
+```
+
+## 下载文件
+
+```java
+@GetMapping(value = "/download/{id}")
+public void downloadFile(@PathVariable("id") int id, HttpServletResponse response) throws Exception {
+
+	File file = fileService.getById(id);
+
+	if (null == file) {
+		// todo 文件不存在处理
+		throw new Exception();
+	}
+
+	//文件所在路径
+	String filepath = String.join("/", fileLocation, file.getUuid());
+
+	java.io.File downloadFile = new java.io.File(filepath);
+	response.reset();
+	response.setContentType("application/octet-stream");
+	response.setContentLength((int) downloadFile.length());
+	response.setHeader("Content-Disposition", "attachment;filename=" + file.getName());
+
+	try(BufferedInputStream in = new BufferedInputStream(new FileInputStream(downloadFile))) {
+		in.transferTo(response.getOutputStream());
+	}
+}
+
 ```
