@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "SpringMVC文件上传",
+      "path": "草稿/SpringMVC文件上传.md"
+    },
+    {
+      "basename": "SpringMVC配置",
+      "path": "学习笔记/Java相关/SpringMVC/SpringMVC配置.md"
+    },
+    {
+      "basename": "自定义Json处理",
+      "path": "草稿/自定义Json处理.md"
+    },
+    {
       "basename": "ucore实验：bootasm.S源码",
       "path": "学习笔记/ucore操作系统实验/ucore实验：bootasm.S源码.md"
     },
@@ -9,16 +21,8 @@
       "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md"
     },
     {
-      "basename": "自定义Json处理",
-      "path": "草稿/自定义Json处理.md"
-    },
-    {
       "basename": "笔记目录",
       "path": "常用/笔记目录.md"
-    },
-    {
-      "basename": "SpringMVC配置",
-      "path": "学习笔记/Java相关/SpringMVC/SpringMVC配置.md"
     },
     {
       "basename": "org.springframework.web.context.ContextLoaderListener",
@@ -195,10 +199,6 @@
     {
       "basename": "obsidian插件记录",
       "path": "草稿/obsidian插件记录.md"
-    },
-    {
-      "basename": "docker镜像创建",
-      "path": "草稿/docker镜像创建.md"
     }
   ],
   "omittedPaths": [],
