@@ -1,3 +1,5 @@
 {
-  "Blue-Topaz-Codebox-Highlight@@whole-code-wrap": false
+  "Blue-Topaz-Codebox-Highlight@@whole-code-wrap": false,
+  "minimal-style@@minimal-code-scroll": true,
+  "chime-theme@@theme-settings": "theme-chinchilla"
 }

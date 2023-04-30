@@ -16,7 +16,7 @@ categories: []
 - `CommonsMultipartResolver`：使用了 Apache 的 `commons-fileupload` 来完成具体的上传操作；
 - `StandardServletMultipartResolver`：使用了 Servlet 3.0 标准的上传方式。
 
-## CommonsMultipartResolver 使用
+## CommonsMultipartResolver
 
 由于 `CommonsMultipartResolver` 基于 `commons-fileupload` 实现的，所以在使用前需要引入额外的依赖：
 
@@ -41,36 +41,37 @@ public CommonsMultipartResolver multipartResolver() {
 ```
 
 
+## StandardServletMultipartResolver
 
 
-#### Servlet 3.0
+`StandardServletMultipartResolver`  使用了 Servlet 3.0 标准的上传方式，因此不需要额外的添加依赖，并且在使用 `SpringBoot` 时容器中会自动注入一个 `StandardServletMultipartResolver`，所以我们也不需要在手动注入。 
 
-需要通过 Servlet​ 容器配置启用 Servlet 3.0Multipart​ 解析，为此：
-
-- 在 Java​ 中，在 Servlet​ 注册上设置 MultipartConfigElement​。
-- 在 web.xml​ 中，将 `< multipart-config>` 部分添加到 Servlet​ 声明中
+对于 `StandardServletMultipartResolver` 的配置可以选择在容器中注入一个 `MultipartConfigElement`：
 
 ```java
-public class AppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
-
-    // ...
-
-    @Override
-    Protected void customizeRegistration (ServletRegistration. Dynamic registration) {
-
-        // Optionally also set maxFileSize, maxRequestSize, fileSizeThreshold
-        Registration.SetMultipartConfig (new MultipartConfigElement ("/tmp"));
-    }
-
+@Bean
+public MultipartConfigElement multipartConfigElement() {
+	MultipartConfigFactory multipartConfigFactory = new MultipartConfigFactory();
+	multipartConfigFactory.setLocation("d:/");
+	multipartConfigFactory.setMaxFileSize(DataSize.of(10, DataUnit.GIGABYTES));
+	return multipartConfigFactory.createMultipartConfig();
 }
-
 ```
 
-配置完成后可以添加名称为 multipartResolver​ 的类型为 StandardServletMultipartResolver​ 的 bean​。
+或者在 `SpringBoot` 配置文件中进行配置：
 
-#### 接收文件
+```yaml
+spring:
+  servlet:
+    multipart:
+      location: "D:/code/temp/file"
+      max-file-size: 1MB
+```
 
-通过下面的方式可以实现文件接收。
+
+## 接收文件
+
+单个文件的接收比较简单，只要在接口中添加 `MultipartFile` 类型的参数即可：
 
 ```java
 @Controller
