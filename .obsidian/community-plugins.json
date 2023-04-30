@@ -36,5 +36,9 @@
   "obsidian-meta-bind-plugin",
   "wucai-highlights-official",
   "omnisearch",
-  "obsidian-style-settings"
+  "obsidian-style-settings",
+  "obsidian-plugin-update-tracker",
+  "reveal-file-in-explorer",
+  "colorful-note-borders",
+  "codeblock-customizer"
 ]

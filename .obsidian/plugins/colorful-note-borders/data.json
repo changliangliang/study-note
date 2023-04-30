@@ -1,0 +1,10 @@
+{
+  "colorRules": [
+    {
+      "id": "inbox-ffb300",
+      "value": "/",
+      "type": "folder",
+      "color": "#ff0000"
+    }
+  ]
+}
