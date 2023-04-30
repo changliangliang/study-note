@@ -4,24 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "987da14dff1e91d3",
+        "id": "c3893d053d0bdc77",
         "type": "tabs",
         "children": [
           {
-            "id": "e01d6b0aaf951ea4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "学习笔记/Java相关/SpringMVC/SpringMVC文件上传.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3463bb1110f7c190",
+            "id": "4ab7a34b0f6c9f92",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -32,22 +19,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "18c888a27a6e2e76",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Excalidraw/Drawing 2023-04-30 21.22.07.excalidraw.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -105,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 234.5
+    "width": 447.5
   },
   "right": {
     "id": "471dd9cab433cd9a",
@@ -225,7 +198,6 @@
       "templater-obsidian:Templater": false,
       "oz-clear-unused-images:Clear Unused Images": false,
       "obsidian42-brat:BRAT": false,
-      "cmdr:Obsidian Git: Create backup": false,
       "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
       "obsidian-projects:Open projects": false,
       "dbfolder:创建一个新数据库表": false,
@@ -233,16 +205,28 @@
       "homepage:Open homepage": false,
       "workspaces:管理工作区布局": false,
       "omnisearch:Omnisearch": false,
-      "obsidian-memos:Memos": false
+      "obsidian-memos:Memos": false,
+      "cmdr:Obsidian Git: Create backup": false,
+      "cmdr:Excalidraw: 新建绘图 - 于新页签 - 并将其嵌入（形如 ![[drawing]]）到当前文档": false
     }
   },
-  "active": "3463bb1110f7c190",
+  "active": "4ab7a34b0f6c9f92",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2023-04-30 21.22.07.excalidraw.md",
-    "Excalidraw/Drawing 2023-04-30 21.22.07.excalidraw.png",
+    "Excalidraw/函数堆栈-20230430214255.excalidraw.md",
     "草稿/函数堆栈.md",
-    "Excalidraw",
+    "Excalidraw/函数堆栈-20230430214255.excalidraw.png",
+    "附件/image/函数堆栈_image_1.png",
+    "Excalidraw/函数堆栈 2023-04-30 21.24.24.excalidraw.dark.png.md",
+    "Excalidraw/函数堆栈.excalidraw.png",
+    "Excalidraw/笔记绘图.excalidraw.png",
+    "Excalidraw/笔记绘图.excalidraw.md",
     "学习笔记/Java相关/SpringMVC/SpringMVC文件上传.md",
+    "附件/image/tmp1682862236880_函数堆栈_image_1.png",
+    "Excalidraw/函数堆栈 2023-04-30 21.24.24.excalidraw.md",
+    "Excalidraw/函数堆栈.excalidraw.md",
+    "附件/image/tmp1682861555656_函数堆栈_image_1.png",
+    "Excalidraw/Drawing 2023-04-30 21.22.07.excalidraw.md",
+    "Excalidraw",
     "学习笔记/Java相关/SpringMVC/SpringMVC配置.md",
     "草稿/自定义Json处理.md",
     "学习笔记/ucore操作系统实验/ucore实验：bootasm.S源码.md",
@@ -261,20 +245,10 @@
     "附件/image/ucore操作系统实验：lab1_image_16.png",
     "学习笔记/操作系统/实模式、保护模式、A20 Gate概念解析.md",
     "学习笔记/操作系统/socket连接不安全的原因.md",
-    "学习笔记/数据库/MySQL操作.md",
-    "草稿/Obsidian配置和插件.md",
-    "日记/2023-04-20.md",
-    "WuCai/2023/04/wucai-2023-04-28-H83F65C.md",
-    "WuCai/2023/04/wucai-2023-04-24-H835E9H.md",
     "8086",
     "附件/image/A20 Gate_image_2.png",
     "附件/image/tmp1682658709865_A20 Gate_image_3.png",
     "附件/image/A20 Gate_image_1.png",
-    "附件/image/tmp1682677469264_A20 Gate_image_1.png",
-    "附件/image/相关知识_image_1.png",
-    "附件/image/VScode中的task.json和launch.json_image_7.png",
-    "附件/image/ucore操作系统实验：环境搭建_image_7.png",
-    "附件/image/ucore操作系统实验：环境搭建_image_4.png",
     "assets",
     "学习笔记/数据库",
     "学习笔记/实用技巧",

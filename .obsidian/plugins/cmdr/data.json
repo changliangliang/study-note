@@ -10,6 +10,12 @@
       "icon": "github",
       "name": "Obsidian Git: Create backup",
       "mode": "any"
+    },
+    {
+      "id": "obsidian-excalidraw-plugin:excalidraw-autocreate-and-embed-new-tab",
+      "icon": "pen-tool",
+      "name": "Excalidraw: 新建绘图 - 于新页签 - 并将其嵌入（形如 ![[drawing]]）到当前文档",
+      "mode": "any"
     }
   ],
   "rightRibbon": [],
