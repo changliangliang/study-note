@@ -1,8 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "函数堆栈",
+      "path": "草稿/函数堆栈.md"
+    },
+    {
+      "basename": "Drawing 2023-04-30 21.22.07.excalidraw",
+      "path": "Excalidraw/Drawing 2023-04-30 21.22.07.excalidraw.md"
+    },
+    {
+      "basename": "Drawing 2023-04-30 21.22.07.excalidraw",
+      "path": "Excalidraw/Drawing 2023-04-30 21.22.07.excalidraw.png"
+    },
+    {
       "basename": "SpringMVC文件上传",
-      "path": "草稿/SpringMVC文件上传.md"
+      "path": "学习笔记/Java相关/SpringMVC/SpringMVC文件上传.md"
     },
     {
       "basename": "SpringMVC配置",
@@ -187,18 +199,6 @@
     {
       "basename": "blog-frontmatter",
       "path": "模板/blog-frontmatter.md"
-    },
-    {
-      "basename": "长连接的若干问题",
-      "path": "学习笔记/计算机网络/长连接的若干问题.md"
-    },
-    {
-      "basename": "计算机中的路由表",
-      "path": "学习笔记/计算机知识/计算机中的路由表.md"
-    },
-    {
-      "basename": "obsidian插件记录",
-      "path": "草稿/obsidian插件记录.md"
     }
   ],
   "omittedPaths": [],

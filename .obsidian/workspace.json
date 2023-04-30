@@ -13,14 +13,41 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "草稿/SpringMVC文件上传.md",
+                "file": "学习笔记/Java相关/SpringMVC/SpringMVC文件上传.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3463bb1110f7c190",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "草稿/函数堆栈.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "18c888a27a6e2e76",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Excalidraw/Drawing 2023-04-30 21.22.07.excalidraw.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,7 +105,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 264.5
+    "width": 234.5
   },
   "right": {
     "id": "471dd9cab433cd9a",
@@ -106,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "草稿/SpringMVC文件上传.md"
+                "file": "草稿/函数堆栈.md"
               }
             }
           },
@@ -155,7 +182,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "草稿/SpringMVC文件上传.md",
+                "file": "草稿/函数堆栈.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -167,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "草稿/SpringMVC文件上传.md",
+                "file": "草稿/函数堆栈.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -209,10 +236,14 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "e01d6b0aaf951ea4",
+  "active": "3463bb1110f7c190",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2023-04-30 21.22.07.excalidraw.md",
+    "Excalidraw/Drawing 2023-04-30 21.22.07.excalidraw.png",
+    "草稿/函数堆栈.md",
+    "Excalidraw",
+    "学习笔记/Java相关/SpringMVC/SpringMVC文件上传.md",
     "学习笔记/Java相关/SpringMVC/SpringMVC配置.md",
-    "草稿/SpringMVC文件上传.md",
     "草稿/自定义Json处理.md",
     "学习笔记/ucore操作系统实验/ucore实验：bootasm.S源码.md",
     "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md",
@@ -235,11 +266,8 @@
     "日记/2023-04-20.md",
     "WuCai/2023/04/wucai-2023-04-28-H83F65C.md",
     "WuCai/2023/04/wucai-2023-04-24-H835E9H.md",
-    "草稿/8086.md",
-    "8086/8088.md",
     "8086",
     "附件/image/A20 Gate_image_2.png",
-    "附件/Pasted image 20230428131125.png.md",
     "附件/image/tmp1682658709865_A20 Gate_image_3.png",
     "附件/image/A20 Gate_image_1.png",
     "附件/image/tmp1682677469264_A20 Gate_image_1.png",
@@ -247,7 +275,6 @@
     "附件/image/VScode中的task.json和launch.json_image_7.png",
     "附件/image/ucore操作系统实验：环境搭建_image_7.png",
     "附件/image/ucore操作系统实验：环境搭建_image_4.png",
-    "附件/image/ucore操作系统实验：环境搭建_image_3.png",
     "assets",
     "学习笔记/数据库",
     "学习笔记/实用技巧",
@@ -256,7 +283,6 @@
     "WuCai",
     "学习笔记/Java相关/SpringBoot",
     "学习笔记/问题记录",
-    "学习笔记/前端开发",
     "未命名.canvas"
   ]
 }

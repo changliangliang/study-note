@@ -834,7 +834,7 @@ public ResponseEntity<String> handle() {
 }
 ```
 
-[SpringMVC文件上传](草稿/SpringMVC文件上传.md)
+[SpringMVC文件上传](学习笔记/Java相关/SpringMVC/SpringMVC文件上传.md)
 
 ## 跨域配置
 
