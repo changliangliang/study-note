@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "卡片/Java类/org.springframework.web.context.ContextLoaderListener.md",
+                "file": "学习笔记/Java相关/SpringMVC/SpringMVC配置.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -132,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "卡片/Java类/org.springframework.web.context.ContextLoaderListener.md"
+                "file": "学习笔记/Java相关/SpringMVC/SpringMVC配置.md"
               }
             }
           },
@@ -181,7 +181,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "卡片/Java类/org.springframework.web.context.ContextLoaderListener.md",
+                "file": "学习笔记/Java相关/SpringMVC/SpringMVC配置.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -193,7 +193,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "卡片/Java类/org.springframework.web.context.ContextLoaderListener.md",
+                "file": "学习笔记/Java相关/SpringMVC/SpringMVC配置.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -235,10 +235,10 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "2e6886b3461627b5",
+  "active": "e01d6b0aaf951ea4",
   "lastOpenFiles": [
-    "学习笔记/linux学习/ubuntu中的网络配置.md",
     "卡片/Java类/org.springframework.web.context.ContextLoaderListener.md",
+    "学习笔记/linux学习/ubuntu中的网络配置.md",
     "学习笔记/操作系统/全局描述符表（GDT）.md",
     "学习笔记/操作系统/计算机的启动.md",
     "学习笔记/ucore操作系统实验/ucore实验：bootasm.S源码.md",
