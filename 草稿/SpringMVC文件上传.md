@@ -3,18 +3,45 @@ type: blog
 status: 未发布
 created: 2023-04-30 15:05:58
 updated: 2023-04-30 15:05:58
-tags: blog
-categories: 
+tags: []
+categories: []
 ---
 
+## MultipartResolver
 
-要启用 Multipart​ 处理，需要在 DispatcherServlet​ 配置中声明名称为 multipartResolver​ 的 MultipartResolver​ 类型的 bean​。收到 Content Type​ 为 multipart/form-data​ 的 POST​ 时，解析程序将解析内容并将当前 HttpServletRequest​ 包装为 MultipartHttpServletRequest​ 以提供对已解析部分的访问权限。
+在 `SpringMVC` 中负责处理文件上传的是 `MultipartResolver` 接口，它负责将上传请求包装成可以直接获取文件的数据，使得我们可以在 `Controller` 中轻易的处理文件，而不需要自己对文件进行解析。
 
-​MultipartResolver​ 有两种实现，基于一种基于 Apache Commons FileUpload​，一种基于 Servlet 3.0Multipart​ 请求。
+`MultipartResolver` 接口有两个实现类：
 
-#### Apache Commons FileUpload
+- `CommonsMultipartResolver`：使用了 Apache 的 `commons-fileupload` 来完成具体的上传操作；
+- `StandardServletMultipartResolver`：使用了 Servlet 3.0 标准的上传方式。
 
-可以配置名称为 multipartResolver​ 的类型 CommonsMultipartResolver​ 的 bean​，同时还需要引入 commons-fileupload​ 依赖。
+## CommonsMultipartResolver 使用
+
+由于 `CommonsMultipartResolver` 基于 `commons-fileupload` 实现的，所以在使用前需要引入额外的依赖：
+
+```xml
+<dependency>
+    <groupId>commons-fileupload</groupId>
+    <artifactId>commons-fileupload</artifactId>
+    <version>1.2.2</version>
+</dependency>
+```
+
+之后想容器中添加一个 `CommonsMultipartResolver` 对象即可：
+
+```java
+@Bean
+public CommonsMultipartResolver multipartResolver() {
+	CommonsMultipartResolver commonsMultipartResolver = new CommonsMultipartResolver();
+	commonsMultipartResolver.setDefaultEncoding("utf-8");
+	commonsMultipartResolver.setMaxUploadSize(500);
+	return commonsMultipartResolver;
+}
+```
+
+
+
 
 #### Servlet 3.0
 

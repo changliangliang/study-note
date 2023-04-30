@@ -10,15 +10,15 @@
   "reimportShowConfirmation": true,
   "lastCursor": "eyJsYXN0SGlnaGxpZ2h0UEtJRCI6NDYxODcyLCJsYXQiOjAsImxwbnQiOjB9",
   "exportConfig": {
-    "titleFormat": 2,
-    "titleTemplate": "{{ createat_ts | date(\"YYYY/MM\") }}/wucai-{{ createat_ts | date(\"YYYY-MM-DD\") }}",
-    "writeStyle": 1,
+    "titleFormat": 4,
+    "titleTemplate": "wucai-{{title}}",
+    "writeStyle": 2,
     "titleStyle": 2,
     "highlightStyle": 1,
     "annotationStyle": 1,
     "tagStyle": 1,
     "haveWuCaiTag": 1,
-    "obTemplate": "",
+    "obTemplate": "---\n标题: \"{{title}}\"\n创建时间: {{createat}}\n笔记ID: {{noteid}}\n---\n\n## {{title}} \n{{tags}} #五彩插件 {{createat}} [原文]({{url}})\n\n## 页面笔记\n{% block pagenote %}\n{{pagenote}}\n{% endblock %}\n\n## 划线列表\n{% block highlights %}\n{% for item in highlights %}\n{% if item.imageUrl%}\n> ![]({{ item.imageUrl }})\n{% else %}\n> <font color=\"{{item.color}}\">█</font> {{item.note}}\n{% endif %}\n{%if item.annonation%} > 想法: {{item.annonation}} {% endif%}\n{% endfor %}\n{% endblock %}\n\n## 其他\n\n",
     "obTemplateVer": 0
   }
 }
