@@ -40,11 +40,9 @@ public CommonsMultipartResolver multipartResolver() {
 }
 ```
 
-
 ## StandardServletMultipartResolver
 
-
-`StandardServletMultipartResolver`  使用了 Servlet 3.0 标准的上传方式，因此不需要额外的添加依赖，并且在使用 `SpringBoot` 时容器中会自动注入一个 `StandardServletMultipartResolver`，所以我们也不需要在手动注入。 
+`StandardServletMultipartResolver` 使用了 Servlet 3.0 标准的上传方式，因此不需要额外的添加依赖，并且在使用 `SpringBoot` 时容器中会自动注入一个 `StandardServletMultipartResolver`，所以我们也不需要在手动注入。
 
 对于 `StandardServletMultipartResolver` 的配置可以选择在容器中注入一个 `MultipartConfigElement`：
 
@@ -68,10 +66,9 @@ spring:
       max-file-size: 1MB
 ```
 
-
 ## 接收文件
 
-单个文件的接收比较简单，只要在接口中添加 `MultipartFile` 类型的参数即可：
+文件的接收比较简单，只要在接口中添加 `MultipartFile` 类型的参数即可：
 
 ```java
 @Controller
@@ -90,5 +87,3 @@ public class FileUploadController {
     }
 }
 ```
-
-当参数类型声明为 `List<MultipartFile>` ​ 可以为同一参数名称解析多个文件，如果将 @RequestParam​ 注解声明为 Map<String, MultipartFile>​ 或 MultiValueMap<String, MultipartFile>​，而未在注解中指定参数名称，则将使用每个给定参数名的 Multipart​ 文件填充 Map​。
