@@ -3,12 +3,19 @@ module.exports = {
     entry: async (QuickAdd, settings) => {
 
         const {
-            quickAddApi: { inputPrompt },
+            quickAddApi: { inputPrompt, executeChoice },
         } = QuickAdd;
 
-        console.log(QuickAdd)
-
         const filename = await inputPrompt("新建草稿", "草稿名称")
+
+        executeChoice("添加到草稿管理", {
+            "filename": filename
+        })
+
+        await executeChoice("创建草稿笔记", {
+            "filename": filename
+        })
+
     },
     settings: {
         name: "Demo",

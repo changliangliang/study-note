@@ -8,74 +8,77 @@
       "macroId": "a98c00ea-25cc-42b4-b4bd-abbf70aafc9e"
     },
     {
-      "id": "1f93c5c0-204b-414b-971e-3e19d8ffeca7",
-      "name": "test",
-      "type": "Capture",
+      "id": "a8891d4c-7795-4d36-bd57-99420a9516ed",
+      "name": "子程序",
+      "type": "Multi",
       "command": false,
-      "appendLink": false,
-      "captureTo": "",
-      "captureToActiveFile": false,
-      "createFileIfItDoesntExist": {
-        "enabled": false,
-        "createWithTemplate": false,
-        "template": ""
-      },
-      "format": {
-        "enabled": false,
-        "format": ""
-      },
-      "insertAfter": {
-        "enabled": false,
-        "after": "",
-        "insertAtEnd": false,
-        "considerSubsections": false,
-        "createIfNotFound": false,
-        "createIfNotFoundLocation": "top"
-      },
-      "prepend": false,
-      "task": false,
-      "openFileInNewTab": {
-        "enabled": false,
-        "direction": "vertical",
-        "focus": true
-      },
-      "openFile": false,
-      "openFileInMode": "default"
-    },
-    {
-      "id": "f534f697-0d0b-4bdd-a184-53534e43b220",
-      "name": "添加到草稿管理",
-      "type": "Capture",
-      "command": true,
-      "appendLink": false,
-      "captureTo": "看板/草稿管理.md",
-      "captureToActiveFile": false,
-      "createFileIfItDoesntExist": {
-        "enabled": false,
-        "createWithTemplate": false,
-        "template": ""
-      },
-      "format": {
-        "enabled": false,
-        "format": ""
-      },
-      "insertAfter": {
-        "enabled": true,
-        "after": "## TODO",
-        "insertAtEnd": true,
-        "considerSubsections": false,
-        "createIfNotFound": false,
-        "createIfNotFoundLocation": "top"
-      },
-      "prepend": false,
-      "task": true,
-      "openFileInNewTab": {
-        "enabled": false,
-        "direction": "vertical",
-        "focus": true
-      },
-      "openFile": false,
-      "openFileInMode": "default"
+      "choices": [
+        {
+          "id": "817d2f73-03ec-463c-9712-2932c7cb2cf3",
+          "name": "创建草稿笔记",
+          "type": "Template",
+          "command": false,
+          "templatePath": "模板/笔记模板.md",
+          "fileNameFormat": {
+            "enabled": true,
+            "format": "{{VALUE:filename}}"
+          },
+          "folder": {
+            "enabled": true,
+            "folders": [
+              "草稿"
+            ],
+            "chooseWhenCreatingNote": false,
+            "createInSameFolderAsActiveFile": false,
+            "chooseFromSubfolders": false
+          },
+          "appendLink": false,
+          "openFileInNewTab": {
+            "enabled": false,
+            "direction": "vertical",
+            "focus": true
+          },
+          "openFile": false,
+          "openFileInMode": "default",
+          "fileExistsMode": "Increment the file name",
+          "setFileExistsBehavior": false
+        },
+        {
+          "id": "f534f697-0d0b-4bdd-a184-53534e43b220",
+          "name": "添加到草稿管理",
+          "type": "Capture",
+          "command": false,
+          "appendLink": false,
+          "captureTo": "看板/草稿管理.md",
+          "captureToActiveFile": false,
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "[{{VALUE:filename}}](草稿/{{VALUE:filename}}.md)"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "## TODO",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "prepend": false,
+          "task": true,
+          "openFileInNewTab": {
+            "enabled": false,
+            "direction": "vertical",
+            "focus": true
+          },
+          "openFile": false,
+          "openFileInMode": "default"
+        }
+      ]
     }
   ],
   "macros": [
@@ -84,16 +87,11 @@
       "id": "a98c00ea-25cc-42b4-b4bd-abbf70aafc9e",
       "commands": [
         {
-          "name": "da",
+          "name": "创建草稿",
           "type": "UserScript",
-          "id": "34d1b841-57e1-42c1-b14e-88203ff610fa",
-          "path": "scrpit/da.js",
-          "settings": {
-            "Text field": "第三方发放",
-            "Checkbox": false,
-            "Dropdown": "Option 1",
-            "Format": "{{DATE:YYYY-MM-DD}}"
-          }
+          "id": "9c86c18e-4c83-4795-ae37-18159ab2af43",
+          "path": "scrpit/创建草稿.js",
+          "settings": {}
         }
       ],
       "runOnStartup": false
