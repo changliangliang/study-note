@@ -16,13 +16,31 @@
       "icon": "pen-tool",
       "name": "Excalidraw: 新建绘图 - 于新页签 - 并将其嵌入（形如 ![[drawing]]）到当前文档",
       "mode": "any"
+    },
+    {
+      "id": "cmdr:macro-0",
+      "icon": "activity",
+      "name": "Commander: 添加图片",
+      "mode": "any"
     }
   ],
   "rightRibbon": [],
   "titleBar": [],
   "statusBar": [],
   "pageHeader": [],
-  "macros": [],
+  "macros": [
+    {
+      "macro": [
+        {
+          "action": 0,
+          "commandId": "editor:attach-file"
+        }
+      ],
+      "name": "添加图片",
+      "icon": "image",
+      "startup": false
+    }
+  ],
   "explorer": [],
   "hide": {
     "statusbar": [],

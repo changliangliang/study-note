@@ -9,6 +9,7 @@
   "notesToRefresh": [],
   "reimportShowConfirmation": true,
   "lastCursor": "eyJsYXN0SGlnaGxpZ2h0UEtJRCI6NDYxODcyLCJsYXQiOjAsImxwbnQiOjB9",
+  "dataVersion": 0,
   "exportConfig": {
     "titleFormat": 4,
     "titleTemplate": "wucai-{{title}}",

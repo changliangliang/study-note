@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "2d94cf1a2a6483e5",
+        "id": "2ee50608fd6490b0",
         "type": "tabs",
         "children": [
           {
-            "id": "d8961201270718e3",
+            "id": "d59e92756f5ba22f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -198,20 +198,22 @@
       "templater-obsidian:Templater": false,
       "oz-clear-unused-images:Clear Unused Images": false,
       "obsidian42-brat:BRAT": false,
-      "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
-      "obsidian-projects:Open projects": false,
       "dbfolder:创建一个新数据库表": false,
-      "meld-encrypt:Create new encrypted note": false,
       "homepage:Open homepage": false,
       "workspaces:管理工作区布局": false,
       "omnisearch:Omnisearch": false,
       "obsidian-memos:Memos": false,
+      "meld-encrypt:Create new encrypted note": false,
+      "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
+      "obsidian-projects:Open projects": false,
       "cmdr:Obsidian Git: Create backup": false,
-      "cmdr:Excalidraw: 新建绘图 - 于新页签 - 并将其嵌入（形如 ![[drawing]]）到当前文档": false
+      "cmdr:Excalidraw: 新建绘图 - 于新页签 - 并将其嵌入（形如 ![[drawing]]）到当前文档": false,
+      "cmdr:Commander: 添加图片": false
     }
   },
-  "active": "d8961201270718e3",
+  "active": "d59e92756f5ba22f",
   "lastOpenFiles": [
+    "草稿/sdfsdfsdfasdf.drawio.png.md",
     "草稿/函数堆栈.md",
     "附件/image/函数堆栈_image_1.svg",
     "Excalidraw/函数堆栈-20230430214255.excalidraw.md",

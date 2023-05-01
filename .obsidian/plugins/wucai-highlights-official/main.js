@@ -79,10 +79,12 @@ BGCONSTS.APPID = '20';
 BGCONSTS.SERVICE_ID = 7;
 BGCONSTS.MARKET_INFO = 'obsidian-plugin';
 BGCONSTS.ENDPOINT = 'obsidianwucai';
-BGCONSTS.VERSION = '23.4.24';
-BGCONSTS.VERSION_NUM = 230424;
+BGCONSTS.VERSION = '23.4.28';
+BGCONSTS.VERSION_NUM = 230428;
 BGCONSTS.IS_DEBUG = false;
-BGCONSTS.PRINT_LOG = false;
+BGCONSTS.TEST_TOKEN = '';
+BGCONSTS.BASE_URL = 'https://marker.dotalk.cn';
+BGCONSTS.OUT = 'json';
 
 var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
 
@@ -5815,7 +5817,7 @@ class WuCaiUtils {
     }
     // t1 is old file content
     // 处理目标文件
-    static replaceHolders(t1, renderHolders, writeStyle = 1) {
+    static replaceHolders(t1, renderHolders) {
         t1 = t1 || '';
         const bns = Object.keys(renderHolders || {});
         bns.forEach((bn) => {
@@ -5836,13 +5838,8 @@ class WuCaiUtils {
             let matchC = 0;
             for (const match1 of matchRet) {
                 let oldCnt = match1[1] || '';
-                if (writeStyle === 1) {
-                    // overwrite
-                    newCnt = '\n' + newCnt + '\n';
-                }
-                else {
-                    // append
-                    newCnt = oldCnt + '\n' + newCnt + '\n';
+                if (oldCnt !== newCnt) {
+                    newCnt = oldCnt + '\n' + newCnt;
                 }
                 t1 = t1.replace(oldCnt, newCnt);
                 matchC++;
@@ -5920,39 +5917,53 @@ class WuCaiUtils {
         // https://blog.csdn.net/xiejx618/article/details/17471819
         // \ / : * ? " < > |
         title = title.replace(/[?\\、\/\*"'<>%\$#!~&;；={}()~+-:。，！；（）？\|]/g, '');
+        if (title.length <= 0) {
+            return 'No title';
+        }
         return title;
     }
-    // 生成目标文件名
-    static generateFileName(titleStyle, { title = '', createAt = 0, noteIdX = '' }) {
-        let fn = '';
-        let ts = new Date(createAt * 1000);
-        if (1 === titleStyle) {
-            // 使用标题
-            title = this.normalTitle(title);
-            if (title.length <= 0) {
-                title = 'No title';
-            }
-            fn = this.formatDateTime(ts, 'YYYY/MM') + '/wucai-' + title;
-        }
-        else if (2 === titleStyle) {
-            // 使用时间戳，有目录结构
-            fn = this.formatDateTime(ts, 'YYYY/MM') + '/wucai-' + this.formatDateTime(ts, 'YYYY-MM-DD');
-        }
-        else if (4 === titleStyle) {
-            // only title
-            title = this.normalTitle(title);
-            if (title.length <= 0) {
-                title = 'No title';
-            }
-            fn = 'wucai-' + title;
-        }
-        else {
-            // title style is 3
-            // 使用时间戳，没有目录结构
-            fn = 'wucai-' + this.formatDateTime(ts, 'YYYY-MM-DD');
-        }
-        return `WuCai/${fn}-${noteIdX}.md`;
-    }
+    // // 处理老的配置是基于数值而非模板
+    // static getTitleTemplateByStyle(titleFormat: number): string {
+    //   let titleTpl = ''
+    //   // 将老版本的配置参数转换成新的
+    //   if (1 === titleFormat) {
+    //     // 2023/01/wucai-网页标题-X.md
+    //     titleTpl = `{{ createat_ts | date("YYYY/MM") }}/wucai-{{title}}`
+    //   } else if (2 === titleFormat) {
+    //     // 2023/01/wucai-20230102-X.md
+    //     titleTpl = `{{ createat_ts | date("YYYY/MM") }}/wucai-{{ createat_ts | date("YYYY-MM-DD") }}`
+    //   } else if (4 === titleFormat) {
+    //     // only title
+    //     titleTpl = `wucai-{{title}}`
+    //   } else {
+    //     // 使用时间戳，没有目录结构
+    //     titleTpl = 'wucai-{{ createat_ts | date("YYYY-MM-DD") }}'
+    //   }
+    //   return titleTpl
+    // }
+    // // 生成目标文件名，用于格式 1~4
+    // static generateFileName(titleFormat: number, { title = '', createAt = 0, noteIdX = '' }): string {
+    //   let fn = ''
+    //   let ts = new Date(createAt * 1000)
+    //   if (1 === titleFormat) {
+    //     // 使用标题
+    //     title = this.normalTitle(title)
+    //     fn = this.formatDateTime(ts, 'YYYY/MM') + '/wucai-' + title
+    //   } else if (2 === titleFormat) {
+    //     // 使用时间戳，有目录结构
+    //     fn = this.formatDateTime(ts, 'YYYY/MM') + '/wucai-' + this.formatDateTime(ts, 'YYYY-MM-DD')
+    //   } else if (4 === titleFormat) {
+    //     // only title
+    //     // title = this.normalTitle(title)
+    //     fn = 'wucai-' + title
+    //   } else {
+    //     // title style is 3
+    //     // 使用时间戳，没有目录结构
+    //     fn = 'wucai-' + this.formatDateTime(ts, 'YYYY-MM-DD')
+    //   }
+    //   return `WuCai/${fn}-${noteIdX}.md`
+    // }
+    // 通过时间（秒）获得一个默认的时间格式
     static formatTime(ts) {
         let d1 = new Date(ts * 1000);
         return this.formatDateTime(d1, 'YYYY-MM-DD HH:mm');
@@ -6004,17 +6015,18 @@ class WuCaiUtils {
         return wucaiTemplate.pageEngine.render(holders);
     }
     // 追加到文件末尾或替换文件里的局部内容
-    static renderTemplateWithEditable(holders, oldCnt, wucaiTemplate, exportCfg) {
+    static renderTemplateWithEditable(pageCtx, oldCnt, wucaiTemplate) {
         // 1) 局部渲染
         let renderHolders = {};
         if (wucaiTemplate.blocks.pagenote) {
-            renderHolders['pagenote'] = wucaiTemplate.pagenoteEngine.render(holders);
+            renderHolders['pagenote'] = wucaiTemplate.pagenoteEngine.render(pageCtx);
         }
         if (wucaiTemplate.blocks.highlights) {
-            renderHolders['highlights'] = wucaiTemplate.highlightsEngine.render(holders);
+            renderHolders['highlights'] = wucaiTemplate.highlightsEngine.render(pageCtx);
         }
         // 2) 将 block 结果替换到文件里
-        return this.replaceHolders(oldCnt, renderHolders, exportCfg.writeStyle);
+        // writeStyle=2是追加
+        return this.replaceHolders(oldCnt, renderHolders);
     }
 }
 WuCaiUtils.allowedBlock = ['highlights', 'pagenote'];
@@ -12997,8 +13009,85 @@ module.exports = installCompat;
 var nunjucks$1 = /*@__PURE__*/getDefaultExportFromCjs(nunjucks);
 
 class WuCaiTemplates {
+    static isNeedRender(s) {
+        return (s || '').indexOf(WuCaiTemplates.leftHolder) >= 0;
+    }
     constructor() {
         this.templateEnv = nunjucks$1.configure({ autoescape: false, trimBlocks: true, lstripBlocks: true });
+        // 添加自定义函数, https://mozilla.github.io/nunjucks/api.html#addfilter
+        this.templateEnv.addFilter('date', function (ts, fmt) {
+            if (ts <= 0) {
+                return '';
+            }
+            let dt = new Date(ts * 1000);
+            return WuCaiUtils.formatDateTime(dt, fmt);
+        });
+        this.templateEnv.addFilter('pretty', function (cnt, options) {
+            options = options || {};
+            let prefix = options.prefix || '';
+            let isTrim = options.trim === undefined ? true : options.trim;
+            cnt = cnt || '';
+            if (cnt.length <= 0) {
+                return '';
+            }
+            let lines = cnt.split(/\n/);
+            let ret = [];
+            for (let i = 0; i < lines.length; i++) {
+                let line = lines[i] || '';
+                if (isTrim) {
+                    line = line.replace(/^\s+|\s+$/g, '');
+                }
+                if (line.length <= 0) {
+                    continue;
+                }
+                ret.push(prefix + line + '\n');
+            }
+            return ret.join('\n');
+        });
+        // see https://help.obsidian.md/Editing+and+formatting/Callouts
+        // 默认样式1
+        this.templateEnv.addFilter('style1', function (item, options) {
+            options = options || {};
+            let imageUrl = item.imageUrl;
+            let note = item.note || '';
+            let anno = item.annonation || '';
+            let color = options.color || '';
+            let prefix = options.prefix || '';
+            let annoPrefix = options.anno || '';
+            let colorTags = options.color_tags || [];
+            let slotId = item.slotId || 1;
+            let ret = [];
+            if (imageUrl) {
+                ret.push(`${prefix}![](${imageUrl})`);
+            }
+            else {
+                let lines = note.split(/\n/);
+                let lineCount = 0;
+                lines.forEach((line) => {
+                    line = line.replace(/^\s+|\s+$/g, '');
+                    if (line) {
+                        if (lineCount == 0) {
+                            if (colorTags && colorTags.length > 0) {
+                                color = colorTags[slotId - 1];
+                            }
+                            ret.push(`${prefix}<font color="${item.color}">${color}</font>` + line);
+                        }
+                        else {
+                            ret.push(prefix + line);
+                        }
+                        lineCount++;
+                    }
+                });
+                if (anno) {
+                    ret.push(annoPrefix + anno);
+                }
+                if (ret.length > 0) {
+                    ret.push('');
+                }
+            }
+            return ret.join('\n');
+        });
+        this.cachedTitleTemplates = {};
     }
     // 预编译
     precompile(tpl) {
@@ -13024,18 +13113,28 @@ class WuCaiTemplates {
         this.blocks = blocks;
         return errMessage;
     }
+    getTitleTemplateByStr(titleTpl) {
+        if (this.cachedTitleTemplates[titleTpl]) {
+            return this.cachedTitleTemplates[titleTpl];
+        }
+        this.cachedTitleTemplates[titleTpl] = nunjucks$1.compile(titleTpl, this.templateEnv);
+        return this.cachedTitleTemplates[titleTpl];
+    }
 }
+WuCaiTemplates.leftHolder = '{{';
+WuCaiTemplates.rightHolder = '}}';
 // https://mozilla.github.io/nunjucks/templating.html
 // 默认的页面模板
 WuCaiTemplates.Style001 = `---
 标题: "{{title}}"
 创建时间: {{createat}}
+笔记ID: {{noteid}}
 ---
 
 ## {{title}} 
-{{tags}} {{createat}} [原文]({{url}})
+{{tags}} #五彩插件 {{createat}} [原文]({{url}})
 
-## Page Notes
+## 页面笔记
 {% block pagenote %}
 {{pagenote}}
 {% endblock %}
@@ -13043,14 +13142,7 @@ WuCaiTemplates.Style001 = `---
 ## 划线列表
 {% block highlights %}
 {% for item in highlights %}
-{% if item.imageUrl%}
-> ![]({{ item.imageUrl }})
-{% else %}
-> {{item.note}}
-{% endif %}
-{%if item.annonation%}
-> 想法: {{item.annonation}}
-{% endif%}
+{{ item | style1({prefix:"> ", anno:"> __想法__：", color:"█  "}) }}
 {% endfor %}
 {% endblock %}
 
@@ -13059,8 +13151,6 @@ WuCaiTemplates.Style001 = `---
 `;
 
 // the process.env variable will be replaced by its target value in the output main.js file
-// const baseURL = 'http://localhost:22021' || 'https://marker.dotalk.cn'
-const baseURL = 'https://marker.dotalk.cn';
 const WAITING_STATUSES = ['PENDING', 'RECEIVED', 'STARTED', 'RETRY'];
 const SUCCESS_STATUSES = ['SYNCING'];
 const API_URL_INIT = '/apix/openapi/wucai/sync/init';
@@ -13080,14 +13170,14 @@ const DEFAULT_SETTINGS = {
     notesToRefresh: [],
     reimportShowConfirmation: true,
     lastCursor: '',
+    dataVersion: 0,
     exportConfig: {
-        titleFormat: 2,
         writeStyle: 2,
-        titleStyle: 2,
         highlightStyle: 1,
         annotationStyle: 1,
         tagStyle: 1,
         obTemplate: '',
+        titleTemplate: '',
     },
 };
 // const localizeData = {
@@ -13107,7 +13197,7 @@ const DEFAULT_SETTINGS = {
 //   },
 // }
 function logger(msg) {
-    BGCONSTS.PRINT_LOG && console.log(msg);
+    BGCONSTS.IS_DEBUG && console.log(msg);
 }
 function localize(msg) {
     return msg;
@@ -13188,7 +13278,7 @@ class WuCaiPlugin extends obsidian.Plugin {
             params['v'] = BGCONSTS.VERSION_NUM;
             params['serviceId'] = BGCONSTS.SERVICE_ID;
             url += `?appid=${BGCONSTS.APPID}&ep=${BGCONSTS.ENDPOINT}&version=${BGCONSTS.VERSION}&reqtime=${reqtime}`;
-            return fetch(baseURL + url, {
+            return fetch(BGCONSTS.BASE_URL + url, {
                 headers: Object.assign(Object.assign({}, this.getAuthHeaders()), { 'Content-Type': 'application/json' }),
                 method: 'POST',
                 body: JSON.stringify(params),
@@ -13204,11 +13294,8 @@ class WuCaiPlugin extends obsidian.Plugin {
                 // 如果文件夹被删除，则重新同步
                 this.settings.lastCursor = '';
                 this.settings.notesToRefresh = [];
-                logger(['onload last cursor, deleted,', this.settings.lastCursor, flagx]);
             }
-            else {
-                logger(['onload last cursor, json, ', this.settings.lastCursor, flagx]);
-            }
+            logger({ msg: 'onload last cursor', lastCursor: this.settings.lastCursor, flagx, isDirDeleted });
             let lastCursor2 = this.settings.lastCursor;
             let params = { noteDirDeleted: isDirDeleted, lastCursor2 };
             let rsp;
@@ -13216,10 +13303,10 @@ class WuCaiPlugin extends obsidian.Plugin {
                 rsp = yield this.callApi(API_URL_INIT, params);
             }
             catch (e) {
-                logger(['WuCai Official plugin: fetch failed in exportInit: ', e]);
+                logger({ msg: 'WuCai Official plugin: fetch failed in exportInit: ', e });
             }
             if (!rsp || !rsp.ok) {
-                logger(['WuCai Official plugin: bad response in exportInit: ', rsp]);
+                logger({ msg: 'WuCai Official plugin: bad response in exportInit: ', rsp });
                 this.handleSyncError(buttonContext, this.getErrorMessageFromResponse(rsp));
                 return;
             }
@@ -13228,12 +13315,11 @@ class WuCaiPlugin extends obsidian.Plugin {
                 return;
             }
             let initRet = data2['data'] || {};
-            logger(['in exportInit', initRet, this.settings.lastCursor, flagx]);
-            // 记录导出配置
+            logger({ msg: 'in exportInit', initRet, lastCursor: this.settings.lastCursor, flagx });
+            // 每次都使用最新的配置，并行重新预编译模板
             this.settings.exportConfig = initRet.exportConfig;
-            // 提前编译模板
             this.pageTemplate.precompile(initRet.exportConfig.obTemplate);
-            // 通过服务端计算来确定当前需要从哪个id开始同步笔记
+            // 处理同步点位
             let tmpCursor = this.getLastCursor(initRet.lastCursor2, this.settings.lastCursor);
             if (tmpCursor) {
                 this.settings.lastCursor = tmpCursor;
@@ -13261,7 +13347,10 @@ class WuCaiPlugin extends obsidian.Plugin {
             }
             else if (SUCCESS_STATUSES.includes(initRet.taskStatus)) {
                 this.notice('Syncing WuCai data');
-                return this.downloadArchive(this.settings.lastCursor, [], buttonContext, flagx || 'init');
+                // 1) 先将同步点位之前有更新的数据更新完
+                // 2) 再从点位开始，将新数据同步过来
+                // await this.downloadArchive(this.settings.lastCursor, [], buttonContext, flagx || 'init+ck', true)
+                yield this.downloadArchive(this.settings.lastCursor, [], buttonContext, flagx || 'init');
             }
             else {
                 this.handleSyncError(buttonContext, 'Sync failed,' + initRet.taskStatus);
@@ -13292,8 +13381,12 @@ class WuCaiPlugin extends obsidian.Plugin {
         info.empty();
     }
     getAuthHeaders() {
+        let tk = this.settings.token || '';
+        if (tk.length <= 0 && BGCONSTS.IS_DEBUG && BGCONSTS.TEST_TOKEN) {
+            tk = BGCONSTS.TEST_TOKEN;
+        }
         return {
-            AUTHORIZATION: `Token ${this.settings.token}`,
+            AUTHORIZATION: `Token ${tk}`,
             'Obsidian-Client': `${this.getObsidianClientID()}`,
         };
     }
@@ -13309,21 +13402,26 @@ class WuCaiPlugin extends obsidian.Plugin {
         return savedCursor;
     }
     // 遍历页面并生成文件
-    processEntity(entry) {
+    processEntity(entry, titleTpl) {
         return __awaiter(this, void 0, void 0, function* () {
-            if (!entry) {
-                return;
+            let filename;
+            if (WuCaiTemplates.isNeedRender(titleTpl)) {
+                const titleTemplate = this.pageTemplate.getTitleTemplateByStr(titleTpl);
+                filename = titleTemplate.render({
+                    title: WuCaiUtils.normalTitle(entry.title),
+                    createat_ts: entry.createAt,
+                });
             }
-            const exportCfg = this.settings.exportConfig;
-            const filename = WuCaiUtils.generateFileName(exportCfg.titleFormat, {
-                title: entry.title,
-                createAt: entry.createAt,
-                noteIdX: entry.noteIdX,
-            });
-            const distFileName = obsidian.normalizePath(filename.replace(/^WuCai/, this.settings.wuCaiDir)).replace(/[\/ \s]+$/, '');
+            else {
+                filename = titleTpl;
+            }
+            // 设定在指定目录下，且添加笔记标识
+            filename = `${this.settings.wuCaiDir}/${filename}-${entry.noteIdX}.md`;
+            const distFileName = obsidian.normalizePath(filename).replace(/[\/ \s]+$/, '');
             if (!distFileName || distFileName.length <= 0) {
                 return;
             }
+            const exportCfg = this.settings.exportConfig;
             try {
                 // const contents = await entry.getData(new zip.TextWriter())
                 // 计算出笔记的最终路径和名字
@@ -13332,31 +13430,37 @@ class WuCaiPlugin extends obsidian.Plugin {
                 if (!fileInfo || !(fileInfo instanceof obsidian.TFolder)) {
                     yield this.app.vault.createFolder(dirPath);
                 }
-                const holders = {
+                const pageCtx = {
                     title: entry.title,
                     url: entry.url,
+                    wucaiurl: entry.wuCaiUrl,
                     tags: WuCaiUtils.formatTags(entry.tags, exportCfg),
                     pagenote: entry.pageNote,
                     highlights: entry.highlights,
                     createat: WuCaiUtils.formatTime(entry.createAt),
+                    createat_ts: entry.createAt,
                     updateat: WuCaiUtils.formatTime(entry.updateAt),
+                    updateat_ts: entry.updateAt,
+                    noteid: entry.noteIdX,
+                    citekey: entry.citekey || '',
+                    author: entry.author || '',
                 };
                 const noteFile = yield this.app.vault.getAbstractFileByPath(distFileName);
                 const isNoteExists = noteFile && noteFile instanceof obsidian.TFile;
                 if (!isNoteExists || WRITE_STYLE_OVERWRITE === exportCfg.writeStyle) {
-                    let contents = WuCaiUtils.renderTemplate(holders, this.pageTemplate);
+                    // 全量渲染整个页面里的所有内容
+                    const contents = WuCaiUtils.renderTemplate(pageCtx, this.pageTemplate);
                     if (isNoteExists) {
                         yield this.app.vault.modify(noteFile, contents);
                     }
                     else {
-                        logger(['wucai, create new mk file', distFileName]);
                         yield this.app.vault.create(distFileName, contents);
                     }
                 }
                 else if (WRITE_STYLE_APPEND === exportCfg.writeStyle) {
-                    // 这里有两种逻辑：1追加，2局部替换（主要通过模板里的占位符来区分）
+                    // 局部更新，仅会更新页面笔记和划线列表，添加到尾部，其他部分不改动
                     const oldCnt = yield this.app.vault.read(noteFile);
-                    let contents = WuCaiUtils.renderTemplateWithEditable(holders, oldCnt, this.pageTemplate, exportCfg);
+                    const contents = WuCaiUtils.renderTemplateWithEditable(pageCtx, oldCnt, this.pageTemplate);
                     yield this.app.vault.modify(noteFile, contents);
                 }
                 else {
@@ -13367,15 +13471,16 @@ class WuCaiPlugin extends obsidian.Plugin {
             catch (e) {
                 logger([`WuCai Official plugin: error writing ${distFileName}:`, e]);
                 this.notice(`WuCai: error while writing ${distFileName}: ${e}`, true, 4, true);
-                if (entry.noteId) {
-                    this.settings.notesToRefresh.push(entry.noteId + '');
+                if (entry.noteIdX) {
+                    this.settings.notesToRefresh.push(entry.noteIdX);
                     yield this.saveSettings();
                 }
             }
+            return;
         });
     }
     // 指定范围或指定笔记进行同步
-    downloadArchive(lastCursor2, noteIdXs, buttonContext, flagx = '') {
+    downloadArchive(lastCursor2, noteIdXs, buttonContext, flagx = '', checkUpdate = false) {
         return __awaiter(this, void 0, void 0, function* () {
             let response;
             const writeStyle = this.settings.exportConfig.writeStyle;
@@ -13385,14 +13490,15 @@ class WuCaiPlugin extends obsidian.Plugin {
                     noteIdXs,
                     flagx,
                     writeStyle,
-                    out: 'json',
+                    out: BGCONSTS.OUT,
+                    checkUpdate,
                 });
             }
             catch (e) {
-                logger(['WuCai Official plugin: fetch failed in downloadArchive: ', e]);
+                logger({ msg: 'WuCai Official plugin: fetch failed in downloadArchive: ', e });
             }
             if (!response || !response.ok) {
-                logger(['WuCai Official plugin: bad response in downloadArchive: ', response]);
+                logger({ msg: 'WuCai Official plugin: bad response in downloadArchive: ', response });
                 this.handleSyncError(buttonContext, this.getErrorMessageFromResponse(response));
                 return;
             }
@@ -13411,18 +13517,25 @@ class WuCaiPlugin extends obsidian.Plugin {
             // 是否为定向同步
             const isPartsDownload = noteIdXs.length > 0;
             const entriesCount = entries.length;
-            // 保存同步过来的文件
-            let ii = 0;
+            // 预编译标题模板
+            const exportCfg = this.settings.exportConfig;
+            let titleTpl = exportCfg.titleTemplate || 'wucai-{{ createat_ts | date("YYYY-MM-DD") }}';
+            // 去掉标题里的换行
+            titleTpl = titleTpl.replace(/[\n]+/, '').trim();
+            let ii = 1;
             for (const entry of entries) {
-                yield this.processEntity(entry);
-                if (BGCONSTS.IS_DEBUG && ++ii > 37) {
+                if (!entry) {
+                    continue;
+                }
+                yield this.processEntity(entry, titleTpl);
+                if (BGCONSTS.IS_DEBUG && ii++ > 47) {
                     // for debug
                     break;
                 }
             }
             let isCompleted = false;
             if (isPartsDownload) {
-                // 当前是指定笔记进行同步，所以每次就代表是一组同步完成
+                // 当前是指定笔记进行同步，所以每次就代表一组同步完成
                 isCompleted = true;
             }
             else {
@@ -13430,11 +13543,10 @@ class WuCaiPlugin extends obsidian.Plugin {
                 let tmpCursor = this.getLastCursor(downloadRet.lastCursor2, lastCursor2);
                 if (tmpCursor) {
                     this.settings.lastCursor = tmpCursor;
-                    // 当前是通过偏移量范围进行同步
                     isCompleted = entriesCount <= 0;
                 }
                 else {
-                    // 因为某种原因导致的定位不准，结束同步
+                    // 因为某种原因导致的定位异常，结束同步
                     isCompleted = true;
                 }
             }
@@ -13533,12 +13645,11 @@ class WuCaiPlugin extends obsidian.Plugin {
         logger(['started sync', this.settings.isSyncing]);
         if (this.settings.isSyncing) {
             this.notice('WuCai sync already in progress', true);
+            return;
         }
-        else {
-            this.settings.isSyncing = true;
-            this.saveSettings();
-            this.exportInit(null, false, 'startSync init');
-        }
+        this.settings.isSyncing = true;
+        this.saveSettings();
+        this.exportInit(null, false, 'startSync init');
     }
     onload() {
         return __awaiter(this, void 0, void 0, function* () {
@@ -13645,26 +13756,27 @@ class WuCaiPlugin extends obsidian.Plugin {
             //   },
             // })
             // this.registerMarkdownPostProcessor((el, ctx) => {
-            //   if (!ctx.sourcePath.startsWith(this.settings.wuCaiDir)) {
+            //   logger({ msg: 'registerMarkdownPostProcessor', pth: ctx.sourcePath, d: thiz.settings.wuCaiDir })
+            //   if (!ctx.sourcePath.startsWith(thiz.settings.wuCaiDir)) {
             //     return
             //   }
-            //   let matches: string[]
-            //   try {
-            //     // @ts-ignore
-            //     matches = [...ctx.getSectionInfo(el).text.matchAll(/__(.+)__/g)].map((a) => a[1])
-            //   } catch (TypeError) {
-            //     // failed interaction with a Dataview element
-            //     return
-            //   }
-            //   const hypers = el.findAll('strong').filter((e) => matches.contains(e.textContent))
-            //   hypers.forEach((strongEl) => {
-            //     const replacement = el.createEl('span')
-            //     while (strongEl.firstChild) {
-            //       replacement.appendChild(strongEl.firstChild)
-            //     }
-            //     replacement.addClass('wc-hyper-highlight')
-            //     strongEl.replaceWith(replacement)
-            //   })
+            //   // let matches: string[]
+            //   // try {
+            //   //   // @ts-ignore
+            //   //   matches = [...ctx.getSectionInfo(el).text.matchAll(/__(.+)__/g)].map((a) => a[1])
+            //   // } catch (TypeError) {
+            //   //   // failed interaction with a Dataview element
+            //   //   return
+            //   // }
+            //   // const hypers = el.findAll('strong')//.filter((e) => matches.contains(e.textContent))
+            //   // hypers.forEach((strongEl) => {
+            //   //   const replacement = el.createEl('span')
+            //   //   while (strongEl.firstChild) {
+            //   //     replacement.appendChild(strongEl.firstChild)
+            //   //   }
+            //   //   replacement.addClass('wc-hyper-highlight')
+            //   //   strongEl.replaceWith(replacement)
+            //   // })
             // })
             this.addSettingTab(new WuCaiSettingTab(this.app, this));
             yield this.configureSchedule();
@@ -13717,7 +13829,7 @@ class WuCaiPlugin extends obsidian.Plugin {
         return __awaiter(this, void 0, void 0, function* () {
             let uuid = this.getObsidianClientID();
             if (attempt === 0) {
-                window.open(`${baseURL}/page/gentoken/${BGCONSTS.SERVICE_ID}/${uuid}`);
+                window.open(`${BGCONSTS.BASE_URL}/page/gentoken/${BGCONSTS.SERVICE_ID}/${uuid}`);
             }
             let response;
             try {
@@ -13725,10 +13837,10 @@ class WuCaiPlugin extends obsidian.Plugin {
                 response = yield this.callApi(url, { did: uuid });
             }
             catch (e) {
-                logger(['WuCai Official plugin: fetch failed in getUserAuthToken: ', e]);
+                logger({ msg: 'WuCai Official plugin: fetch failed in getUserAuthToken: ', e });
             }
             if (!response || !response.ok) {
-                logger(['WuCai Official plugin: bad response in getUserAuthToken: ', response]);
+                logger({ msg: 'WuCai Official plugin: bad response in getUserAuthToken: ', response });
                 this.showInfoStatus(button.parentElement, 'Authorization failed. Try again', 'wc-error');
                 return;
             }
@@ -13740,10 +13852,10 @@ class WuCaiPlugin extends obsidian.Plugin {
             }
             else {
                 if (attempt > 20) {
-                    logger('WuCai Official plugin: reached attempt limit in getUserAuthToken');
+                    logger({ msg: 'WuCai Official plugin: reached attempt limit in getUserAuthToken' });
                     return;
                 }
-                logger(`WuCai Official plugin: didn't get token data, retrying (attempt ${attempt + 1})`);
+                logger({ msg: `WuCai Official plugin: didn't get token data`, attempt });
                 yield new Promise((resolve) => setTimeout(resolve, 1000));
                 yield this.getUserAuthToken(button, attempt + 1);
             }
@@ -13764,7 +13876,7 @@ class WuCaiSettingTab extends obsidian.PluginSettingTab {
         containerEl
             .createEl('p', { text: 'Created by ' })
             .createEl('a', { text: '希果壳五彩插件', href: 'https://www.dotalk.cn/product/wucai' });
-        containerEl.getElementsByTagName('p')[0].appendText(' 🚀🚀');
+        containerEl.getElementsByTagName('p')[0].appendText(` Version ${BGCONSTS.VERSION}`);
         containerEl.createEl('h2', { text: 'Settings' });
         let token = this.plugin.settings.token;
         if (token && token.length > 0) {
@@ -13779,10 +13891,6 @@ class WuCaiSettingTab extends obsidian.PluginSettingTab {
                     .setButtonText('Initiate Sync')
                     .onClick(() => __awaiter(this, void 0, void 0, function* () {
                     if (this.plugin.settings.isSyncing) {
-                        // NOTE: This is used to prevent multiple syncs at the same time. However, if a previous sync fails,
-                        //  it can stop new syncs from happening. Make sure to set isSyncing to false
-                        //  if there's ever errors/failures in previous sync attempts, so that
-                        //  we don't block syncing subsequent times.
                         new obsidian.Notice('WuCai sync already in progress');
                     }
                     else {
@@ -13801,7 +13909,7 @@ class WuCaiSettingTab extends obsidian.PluginSettingTab {
                 .setDesc('You can customize which items export to Obsidian and how they appear from the WuCai website')
                 .addButton((button) => {
                 button.setButtonText('Customize').onClick(() => {
-                    window.open(`${baseURL}/page/plugins/obsidian/preferences`);
+                    window.open(`${BGCONSTS.BASE_URL}/page/plugins/obsidian/preferences`);
                 });
             });
             new obsidian.Setting(containerEl)
@@ -13825,10 +13933,8 @@ class WuCaiSettingTab extends obsidian.PluginSettingTab {
                 // select the currently-saved option
                 dropdown.setValue(this.plugin.settings.frequency);
                 dropdown.onChange((newValue) => {
-                    // update the plugin settings
                     this.plugin.settings.frequency = newValue;
                     this.plugin.saveSettings();
-                    // destroy & re-create the scheduled task
                     this.plugin.configureSchedule();
                 });
             });
@@ -13866,7 +13972,7 @@ class WuCaiSettingTab extends obsidian.PluginSettingTab {
             new obsidian.Setting(containerEl)
                 .setName('Connect Obsidian to WuCai')
                 .setClass('wc-setting-connect')
-                .setDesc('The WuCai plugin enables automatic syncing of all your highlights . Note: Requires WuCai account.')
+                .setDesc('The WuCai plugin enables automatic syncing of all your highlights. Note: Requires WuCai account.')
                 .addButton((button) => {
                 button
                     .setButtonText('Connect')
