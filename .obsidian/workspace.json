@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c3893d053d0bdc77",
+        "id": "2d94cf1a2a6483e5",
         "type": "tabs",
         "children": [
           {
-            "id": "4ab7a34b0f6c9f92",
+            "id": "d8961201270718e3",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -210,10 +210,11 @@
       "cmdr:Excalidraw: 新建绘图 - 于新页签 - 并将其嵌入（形如 ![[drawing]]）到当前文档": false
     }
   },
-  "active": "4ab7a34b0f6c9f92",
+  "active": "d8961201270718e3",
   "lastOpenFiles": [
-    "Excalidraw/函数堆栈-20230430214255.excalidraw.md",
     "草稿/函数堆栈.md",
+    "附件/image/函数堆栈_image_1.svg",
+    "Excalidraw/函数堆栈-20230430214255.excalidraw.md",
     "Excalidraw/函数堆栈-20230430214255.excalidraw.png",
     "附件/image/函数堆栈_image_1.png",
     "Excalidraw/函数堆栈 2023-04-30 21.24.24.excalidraw.dark.png.md",
@@ -248,7 +249,6 @@
     "8086",
     "附件/image/A20 Gate_image_2.png",
     "附件/image/tmp1682658709865_A20 Gate_image_3.png",
-    "附件/image/A20 Gate_image_1.png",
     "assets",
     "学习笔记/数据库",
     "学习笔记/实用技巧",
