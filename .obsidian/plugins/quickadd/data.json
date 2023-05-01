@@ -49,79 +49,11 @@
       "id": "a98c00ea-25cc-42b4-b4bd-abbf70aafc9e",
       "commands": [
         {
-          "name": "添加笔记",
-          "type": "NestedChoice",
-          "id": "90b1156f-d5b4-4632-b882-846a64dcd85c",
-          "choice": {
-            "id": "4fb07fe8-6788-4b02-9ff8-3cace7cdeb3b",
-            "name": "添加笔记",
-            "type": "Template",
-            "command": false,
-            "templatePath": "模板/笔记模板.md",
-            "fileNameFormat": {
-              "enabled": false,
-              "format": ""
-            },
-            "folder": {
-              "enabled": true,
-              "folders": [
-                "草稿"
-              ],
-              "chooseWhenCreatingNote": false,
-              "createInSameFolderAsActiveFile": false,
-              "chooseFromSubfolders": false
-            },
-            "appendLink": false,
-            "openFileInNewTab": {
-              "enabled": false,
-              "direction": "vertical",
-              "focus": true
-            },
-            "openFile": false,
-            "openFileInMode": "default",
-            "fileExistsMode": "Increment the file name",
-            "setFileExistsBehavior": false
-          }
-        },
-        {
-          "name": "添加todo",
-          "type": "NestedChoice",
-          "id": "34272be8-9379-46c6-a45e-0f03c0aee821",
-          "choice": {
-            "id": "ee796919-9288-4194-a4c3-34f6201642b8",
-            "name": "添加todo",
-            "type": "Capture",
-            "command": false,
-            "appendLink": false,
-            "captureTo": "看板/草稿管理.md",
-            "captureToActiveFile": false,
-            "createFileIfItDoesntExist": {
-              "enabled": false,
-              "createWithTemplate": false,
-              "template": ""
-            },
-            "format": {
-              "enabled": true,
-              "format": "{{value}}"
-            },
-            "insertAfter": {
-              "enabled": false,
-              "after": "",
-              "insertAtEnd": false,
-              "considerSubsections": false,
-              "createIfNotFound": false,
-              "createIfNotFoundLocation": "top"
-            },
-            "prepend": true,
-            "task": false,
-            "openFileInNewTab": {
-              "enabled": false,
-              "direction": "vertical",
-              "focus": true
-            },
-            "openFile": false,
-            "openFileInMode": "default"
-          }
+          "name": "da",
+          "type": "UserScript",
+          "id": "34d1b841-57e1-42c1-b14e-88203ff610fa",
+          "path": "scrpit/da.js",
+          "settings": {}
         }
       ],
       "runOnStartup": false
