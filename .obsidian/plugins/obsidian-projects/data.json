@@ -39,18 +39,6 @@
           "id": "8d63f42a-bf82-4ae4-9ea8-98085bc0c9a0",
           "name": "Table",
           "type": "table"
-        },
-        {
-          "config": {},
-          "filter": {
-            "conditions": []
-          },
-          "colors": {
-            "conditions": []
-          },
-          "id": "a21ecb48-2a56-4834-aee0-d8590f649086",
-          "name": "Calendar",
-          "type": "calendar"
         }
       ],
       "id": "45a0451c-3a7b-4c87-91d7-5f00a7e11c75",
@@ -118,6 +106,51 @@
       ],
       "id": "c732dcb5-7845-4d47-8ef7-3304b6c3472f",
       "name": "日记"
+    },
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [],
+      "excludedNotes": [
+        "**源码**"
+      ],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "学习笔记/ucore操作系统实验",
+          "recursive": false
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {
+            "fieldConfig": {
+              "name": {
+                "width": 367
+              },
+              "path": {
+                "hide": true
+              },
+              "date": {
+                "hide": true
+              }
+            }
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "id": "d3be679d-77d0-4f61-8a8b-71b503ab8762",
+          "name": "Table",
+          "type": "table"
+        }
+      ],
+      "id": "6300ee18-db48-49a6-85c3-16ac7c0a1909",
+      "name": "ucore操作系统实验"
     }
   ],
   "preferences": {

@@ -31,22 +31,22 @@
     },
     "remove-yaml-keys": {
       "enabled": false,
-      "yaml-keys-to-remove": ""
+      "yaml-keys-to-remove": "status"
     },
     "yaml-key-sort": {
       "enabled": true,
-      "yaml-key-priority-sort-order": "type\nstatus\ncreated\nupdated\ntags\ncategories",
+      "yaml-key-priority-sort-order": "type\ndate\nupdate\ntags\ncategories",
       "priority-keys-at-start-of-yaml": true,
       "yaml-sort-order-for-other-keys": "Ascending Alphabetical"
     },
     "yaml-timestamp": {
-      "enabled": false,
-      "date-created": true,
+      "enabled": true,
+      "date-created": false,
       "date-created-key": "created",
       "force-retention-of-create-value": false,
       "date-modified": true,
-      "date-modified-key": "updated",
-      "format": "dddd, MMMM Do YYYY, h:mm:ss a"
+      "date-modified-key": "update",
+      "format": "YYYY-MM-DD HH:mm:ss"
     },
     "yaml-title": {
       "enabled": false,

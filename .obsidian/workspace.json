@@ -4,37 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "2ee50608fd6490b0",
+        "id": "1b2d184293392c5f",
         "type": "tabs",
         "children": [
           {
-            "id": "36600ef422c090e1",
+            "id": "3438b5196b39fa17",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WuCai/2023/04/wucai-2023-04-28-H83F65C.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bdd01a077e3e7614",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "草稿/未命名 1.md",
+                "file": "看板/草稿管理.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -92,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 447.5,
-    "collapsed": true
+    "width": 447.5
   },
   "right": {
     "id": "471dd9cab433cd9a",
@@ -121,7 +106,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "草稿/未命名 1.md"
+                "file": "看板/草稿管理.md"
               }
             }
           },
@@ -171,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "草稿/未命名 1.md",
+                "file": "看板/草稿管理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -183,7 +168,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "草稿/未命名 1.md",
+                "file": "看板/草稿管理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +184,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 448.5
+    "width": 448.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -226,13 +212,23 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "bdd01a077e3e7614",
+  "active": "3438b5196b39fa17",
   "lastOpenFiles": [
+    "草稿/未命名看板 1.md",
+    "草稿/函数堆栈.md",
+    "看板/草稿管理.md",
+    "草稿/未命名 2.md",
+    "看板",
+    "草稿/未命名看板.md",
+    "草稿/内核态和用户态.md",
+    "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md",
+    "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md",
     "WuCai/2023/04/wucai-2023-04-28-H83F65C.md",
+    "模板/笔记模板.md",
+    "模板/每日记录.md",
     "草稿/未命名 1.md",
     "WuCai/2023/04/wucai-2023-04-24-H835E9H.md",
     "学习笔记/Java相关/SpringMVC/SpringMVC配置.md",
-    "草稿/函数堆栈.md",
     "附件/image/函数堆栈_image_1.png",
     "草稿/sdfsdfsdfasdf.drawio.png.md",
     "附件/image/函数堆栈_image_1.svg",
@@ -252,17 +248,8 @@
     "Excalidraw",
     "草稿/自定义Json处理.md",
     "学习笔记/ucore操作系统实验/ucore实验：bootasm.S源码.md",
-    "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md",
     "常用/笔记目录.md",
     "卡片/Java类/org.springframework.web.context.ContextLoaderListener.md",
-    "学习笔记/linux学习/ubuntu中的网络配置.md",
-    "学习笔记/操作系统/全局描述符表（GDT）.md",
-    "学习笔记/操作系统/计算机的启动.md",
-    "草稿/Java拾遗迹/Java继承.md",
-    "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md",
-    "学习笔记/ucore操作系统实验/源码.md",
-    "草稿/EFL文件详解.md",
-    "常用/博客列表.md",
     "附件/image/ucore操作系统实验：lab1_image_16.png",
     "8086",
     "附件/image/A20 Gate_image_2.png",
@@ -273,7 +260,6 @@
     "WuCai/2023",
     "WuCai",
     "学习笔记/Java相关/SpringBoot",
-    "学习笔记/问题记录",
     "未命名.canvas"
   ]
 }
