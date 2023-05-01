@@ -13,14 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "学习笔记/Java相关/SpringMVC/SpringMVC配置.md",
+                "file": "WuCai/2023/04/wucai-2023-04-28-H83F65C.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bdd01a077e3e7614",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "草稿/未命名 1.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -74,12 +88,12 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 447.5
+    "width": 447.5,
+    "collapsed": true
   },
   "right": {
     "id": "471dd9cab433cd9a",
@@ -107,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习笔记/Java相关/SpringMVC/SpringMVC配置.md"
+                "file": "草稿/未命名 1.md"
               }
             }
           },
@@ -135,7 +149,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 4
       },
       {
         "id": "e7beb231688408fa",
@@ -156,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "学习笔记/Java相关/SpringMVC/SpringMVC配置.md",
+                "file": "草稿/未命名 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "学习笔记/Java相关/SpringMVC/SpringMVC配置.md",
+                "file": "草稿/未命名 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -184,8 +199,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 448.5,
-    "collapsed": true
+    "width": 448.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -212,8 +226,12 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "36600ef422c090e1",
+  "active": "bdd01a077e3e7614",
   "lastOpenFiles": [
+    "WuCai/2023/04/wucai-2023-04-28-H83F65C.md",
+    "草稿/未命名 1.md",
+    "WuCai/2023/04/wucai-2023-04-24-H835E9H.md",
+    "学习笔记/Java相关/SpringMVC/SpringMVC配置.md",
     "草稿/函数堆栈.md",
     "附件/image/函数堆栈_image_1.png",
     "草稿/sdfsdfsdfasdf.drawio.png.md",
@@ -232,7 +250,6 @@
     "附件/image/tmp1682861555656_函数堆栈_image_1.png",
     "Excalidraw/Drawing 2023-04-30 21.22.07.excalidraw.md",
     "Excalidraw",
-    "学习笔记/Java相关/SpringMVC/SpringMVC配置.md",
     "草稿/自定义Json处理.md",
     "学习笔记/ucore操作系统实验/ucore实验：bootasm.S源码.md",
     "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md",
@@ -246,9 +263,7 @@
     "学习笔记/ucore操作系统实验/源码.md",
     "草稿/EFL文件详解.md",
     "常用/博客列表.md",
-    "草稿/未命名.md",
     "附件/image/ucore操作系统实验：lab1_image_16.png",
-    "学习笔记/操作系统/实模式、保护模式、A20 Gate概念解析.md",
     "8086",
     "附件/image/A20 Gate_image_2.png",
     "assets",
