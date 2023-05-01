@@ -202,16 +202,16 @@
       "homepage:Open homepage": false,
       "workspaces:管理工作区布局": false,
       "omnisearch:Omnisearch": false,
-      "obsidian-memos:Memos": false,
       "meld-encrypt:Create new encrypted note": false,
       "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
       "obsidian-projects:Open projects": false,
       "cmdr:Obsidian Git: Create backup": false,
       "cmdr:Excalidraw: 新建绘图 - 于新页签 - 并将其嵌入（形如 ![[drawing]]）到当前文档": false,
-      "cmdr:Commander: 添加图片": false
+      "cmdr:Commander: 添加图片": false,
+      "obsidian-memos:Memos": false
     }
   },
-  "active": "36600ef422c090e1",
+  "active": "2e6886b3461627b5",
   "lastOpenFiles": [
     "附件/image/函数堆栈_image_1.png",
     "草稿/函数堆栈.md",
