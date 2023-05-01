@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "草稿/函数堆栈.md",
+                "file": "学习笔记/Java相关/SpringMVC/SpringMVC配置.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "type: blog",
+                "query": "line:wei",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -74,7 +74,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -106,7 +107,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "草稿/函数堆栈.md"
+                "file": "学习笔记/Java相关/SpringMVC/SpringMVC配置.md"
               }
             }
           },
@@ -155,7 +156,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "草稿/函数堆栈.md",
+                "file": "学习笔记/Java相关/SpringMVC/SpringMVC配置.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -167,7 +168,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "草稿/函数堆栈.md",
+                "file": "学习笔记/Java相关/SpringMVC/SpringMVC配置.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,10 +212,10 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "2e6886b3461627b5",
+  "active": "36600ef422c090e1",
   "lastOpenFiles": [
-    "附件/image/函数堆栈_image_1.png",
     "草稿/函数堆栈.md",
+    "附件/image/函数堆栈_image_1.png",
     "草稿/sdfsdfsdfasdf.drawio.png.md",
     "附件/image/函数堆栈_image_1.svg",
     "Excalidraw/函数堆栈-20230430214255.excalidraw.md",
