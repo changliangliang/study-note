@@ -1,26 +1,34 @@
 {
   "choices": [
     {
-      "id": "b5132bc5-d38a-4f38-b4c8-752668ae1b0b",
-      "name": "et",
+      "id": "94333220-4c51-4e98-89ab-57bddab61d76",
+      "name": "创建草稿",
+      "type": "Macro",
+      "command": true,
+      "macroId": "a98c00ea-25cc-42b4-b4bd-abbf70aafc9e"
+    },
+    {
+      "id": "1f93c5c0-204b-414b-971e-3e19d8ffeca7",
+      "name": "test",
       "type": "Capture",
       "command": false,
       "appendLink": false,
       "captureTo": "",
-      "captureToActiveFile": true,
+      "captureToActiveFile": false,
       "createFileIfItDoesntExist": {
         "enabled": false,
         "createWithTemplate": false,
         "template": ""
       },
       "format": {
-        "enabled": true,
-        "format": "<% tp.date.yesterday(\"YYYY-MM-DD HH:mm:ss\") %>\n{{value}}"
+        "enabled": false,
+        "format": ""
       },
       "insertAfter": {
         "enabled": false,
         "after": "",
         "insertAtEnd": false,
+        "considerSubsections": false,
         "createIfNotFound": false,
         "createIfNotFoundLocation": "top"
       },
@@ -33,65 +41,92 @@
       },
       "openFile": false,
       "openFileInMode": "default"
-    },
-    {
-      "id": "90a74c58-dda3-470a-b168-2165c332d7f6",
-      "name": "sdfasd",
-      "type": "Template",
-      "command": false,
-      "templatePath": "模板/blog-frontmatter.md",
-      "fileNameFormat": {
-        "enabled": false,
-        "format": ""
-      },
-      "folder": {
-        "enabled": false,
-        "folders": [],
-        "chooseWhenCreatingNote": false,
-        "createInSameFolderAsActiveFile": false,
-        "chooseFromSubfolders": false
-      },
-      "appendLink": false,
-      "openFileInNewTab": {
-        "enabled": false,
-        "direction": "vertical",
-        "focus": true
-      },
-      "openFile": false,
-      "openFileInMode": "default",
-      "fileExistsMode": "Increment the file name",
-      "setFileExistsBehavior": false
-    },
-    {
-      "id": "8a71c968-e0c2-4075-9a4a-be91d850f22b",
-      "name": "sdfasd (copy)",
-      "type": "Template",
-      "command": false,
-      "templatePath": "",
-      "fileNameFormat": {
-        "enabled": false,
-        "format": ""
-      },
-      "folder": {
-        "enabled": false,
-        "folders": [],
-        "chooseWhenCreatingNote": false,
-        "createInSameFolderAsActiveFile": false,
-        "chooseFromSubfolders": false
-      },
-      "appendLink": false,
-      "openFileInNewTab": {
-        "enabled": false,
-        "direction": "vertical",
-        "focus": true
-      },
-      "openFile": true,
-      "openFileInMode": "default",
-      "fileExistsMode": "Increment the file name",
-      "setFileExistsBehavior": false
     }
   ],
-  "macros": [],
+  "macros": [
+    {
+      "name": "创建草稿",
+      "id": "a98c00ea-25cc-42b4-b4bd-abbf70aafc9e",
+      "commands": [
+        {
+          "name": "添加笔记",
+          "type": "NestedChoice",
+          "id": "90b1156f-d5b4-4632-b882-846a64dcd85c",
+          "choice": {
+            "id": "4fb07fe8-6788-4b02-9ff8-3cace7cdeb3b",
+            "name": "添加笔记",
+            "type": "Template",
+            "command": false,
+            "templatePath": "模板/笔记模板.md",
+            "fileNameFormat": {
+              "enabled": false,
+              "format": ""
+            },
+            "folder": {
+              "enabled": true,
+              "folders": [
+                "草稿"
+              ],
+              "chooseWhenCreatingNote": false,
+              "createInSameFolderAsActiveFile": false,
+              "chooseFromSubfolders": false
+            },
+            "appendLink": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": false,
+            "openFileInMode": "default",
+            "fileExistsMode": "Increment the file name",
+            "setFileExistsBehavior": false
+          }
+        },
+        {
+          "name": "添加todo",
+          "type": "NestedChoice",
+          "id": "34272be8-9379-46c6-a45e-0f03c0aee821",
+          "choice": {
+            "id": "ee796919-9288-4194-a4c3-34f6201642b8",
+            "name": "添加todo",
+            "type": "Capture",
+            "command": false,
+            "appendLink": false,
+            "captureTo": "看板/草稿管理.md",
+            "captureToActiveFile": false,
+            "createFileIfItDoesntExist": {
+              "enabled": false,
+              "createWithTemplate": false,
+              "template": ""
+            },
+            "format": {
+              "enabled": true,
+              "format": "{{value}}"
+            },
+            "insertAfter": {
+              "enabled": false,
+              "after": "",
+              "insertAtEnd": false,
+              "considerSubsections": false,
+              "createIfNotFound": false,
+              "createIfNotFoundLocation": "top"
+            },
+            "prepend": true,
+            "task": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": false,
+            "openFileInMode": "default"
+          }
+        }
+      ],
+      "runOnStartup": false
+    }
+  ],
   "inputPrompt": "multi-line",
   "devMode": false,
   "templateFolderPath": "模板",

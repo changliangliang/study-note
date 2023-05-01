@@ -5,6 +5,18 @@
       "path": "看板/草稿管理.md"
     },
     {
+      "basename": "大法师的",
+      "path": "草稿/大法师的.md"
+    },
+    {
+      "basename": "未命名看板 2",
+      "path": "草稿/未命名看板 2.md"
+    },
+    {
+      "basename": "未命名 3",
+      "path": "草稿/未命名 3.md"
+    },
+    {
       "basename": "未命名看板 1",
       "path": "草稿/未命名看板 1.md"
     },
@@ -187,18 +199,6 @@
     {
       "basename": "ucore操作系统实验：环境搭建_image_1",
       "path": "附件/image/ucore操作系统实验：环境搭建_image_1.png"
-    },
-    {
-      "basename": "docker常用容器创建",
-      "path": "草稿/docker常用容器创建.md"
-    },
-    {
-      "basename": "SpringBoot整合Springdoc",
-      "path": "学习笔记/Java相关/SpringBoot/SpringBoot整合Springdoc.md"
-    },
-    {
-      "basename": "MySQL操作_image_1",
-      "path": "附件/image/MySQL操作_image_1.md"
     }
   ],
   "omittedPaths": [],
