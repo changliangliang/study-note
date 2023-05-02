@@ -11,7 +11,6 @@ categories: []
 程序运行过程中可能会出现各种各样的错误，比如下面 `Controller` 中，业务处理过程中可能出现异常，那么在 `Controller` 中就必须捕获可能出现的异常并进行处理。
 
 ```java
-
 @RestController
 @RequestMapping("/user")
 public class UserController {
@@ -50,5 +49,20 @@ public class GlobalExceptionHandler {
         return Result.fail(e.getMessage());
     }
 }
+```
 
+之后在 `Controller` 层中就可以把异常处理的代码去掉，当有异常发生时会自动
+
+```java
+@RestController
+@RequestMapping("/user")
+public class UserController {
+
+    @PostMapping("add")
+    public ResponseEntity<String> add( @RequestBody UserParam userParam) {
+    
+	    // 业务处理
+        return ResponseEntity.ok("success");
+    }
+}
 ```
