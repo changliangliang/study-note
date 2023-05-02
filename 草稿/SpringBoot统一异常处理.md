@@ -34,4 +34,21 @@ public class UserController {
 - 如果需要处理的异常比较多，那么代码中会充斥这大量的 `try...catch...` 语句；
 - 如果要改变某种异常的处理方式，需要在多处进行修改，可能会出现遗漏的情况。
 
-所以 `SpringBoot` 对统一异常处理提供了支持，
+为了解决以上问题， `SpringBoot` 对统一异常处理提供了支持：
+
+## 基于 @ControllerAdvice 实现异常统一处理
+
+`SpringBoot` 中异常统一处理使用到了 `@ControllerAdvice` 注解和 `@ExceptionHandler` 注解，其中 `@ControllerAdvice` 用在类上表明该类用于给 `Controller` 添加统一的操作和处理，`@ExceptionHandler` 用在方法上表明该方法用于处理异常，并且可以指定处理哪种异常，如下面的代码中 `handler` 方法用于处理 `CustomizeException` 及其子类异常。
+
+```java
+@ControllerAdvice
+public class GlobalExceptionHandler {
+
+    @ResponseBody
+    @ExceptionHandler(CustomizeException.class)
+    public Result<Object> handler(Exception e) {
+        return Result.fail(e.getMessage());
+    }
+}
+
+```
