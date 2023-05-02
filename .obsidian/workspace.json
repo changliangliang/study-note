@@ -18,8 +18,22 @@
               },
               "pinned": true
             }
+          },
+          {
+            "id": "72b27900d3b57382",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -209,7 +223,7 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "2e6886b3461627b5",
+  "active": "72b27900d3b57382",
   "lastOpenFiles": [
     "看板/草稿管理.md",
     "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md",
