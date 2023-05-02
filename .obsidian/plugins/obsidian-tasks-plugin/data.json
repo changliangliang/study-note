@@ -30,18 +30,11 @@
     ],
     "customStatuses": [
       {
-        "symbol": "/",
-        "name": "In Progress",
-        "nextStatusSymbol": "x",
-        "availableAsCommand": true,
-        "type": "IN_PROGRESS"
-      },
-      {
-        "symbol": "-",
-        "name": "Cancelled",
-        "nextStatusSymbol": " ",
-        "availableAsCommand": true,
-        "type": "CANCELLED"
+        "symbol": " ",
+        "name": "d",
+        "nextStatusSymbol": "d",
+        "availableAsCommand": false,
+        "type": "TODO"
       }
     ]
   },
