@@ -18,8 +18,19 @@
               },
               "pinned": true
             }
+          },
+          {
+            "id": "95ebd80ee1d9434a",
+            "type": "leaf",
+            "state": {
+              "type": "kanban",
+              "state": {
+                "file": "看板/Rust学习.md"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -105,7 +116,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "看板/草稿管理.md"
+                "file": "看板/Rust学习.md"
               }
             }
           },
@@ -155,7 +166,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "看板/草稿管理.md",
+                "file": "看板/Rust学习.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -167,7 +178,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "看板/草稿管理.md",
+                "file": "看板/Rust学习.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -213,11 +224,14 @@
   },
   "active": "2e6886b3461627b5",
   "lastOpenFiles": [
+    "学习笔记/Rust学习",
+    "看板/草稿管理.md",
+    "看板/Rust学习.md",
+    "看板/Rust学习.md",
     "草稿/如何使用java.md",
     "学习笔记/未整理/内核态和用户态.md",
     "学习笔记/未整理/中断、异常和系统调用.md",
     "草稿/C++学习笔记.md",
-    "看板/草稿管理.md",
     "草稿/CS自学指南.md",
     "草稿/docker常用容器创建.md",
     "草稿/EFL文件详解.md",
@@ -236,9 +250,6 @@
     "草稿/计算机补完计划——2023年.md",
     "草稿/函数堆栈.md",
     "草稿/未命名 1.md",
-    "草稿/发的发生的.md",
-    "草稿/大法师的.md",
-    "草稿/常用软件配置.md",
     "学习笔记/未整理",
     "scrpit/创建草稿.js",
     "scrpit",
