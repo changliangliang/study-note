@@ -1,7 +1,7 @@
 ---
 type: note
 date: 2023-05-02 15:55:09
-update: 2023-05-02 17:30:50
+update: 2023-05-02 18:09:14
 tags: []
 categories: []
 ---
@@ -128,3 +128,60 @@ private void initHandlerExceptionResolvers(ApplicationContext context) {
 	}
 ```
 
+![](附件/image/SpringBoot统一异常处理_image_1.png)
+
+通过调试可以得知 `initHandlerExceptionResolvers` 方法执行后，会有一个 `ExceptionHandlerExceptionResolver`，并且根据注释可知它就是处理 `@ExceptionHandler` 注解的，它会读取容器中所有 `@ControllerAdvice` 注解的类中所有的 `@ExceptionHandler` 注解的方法。
+
+![](附件/image/SpringBoot统一异常处理_image_2.png)
+
+```java
+@Override
+public void afterPropertiesSet() {
+	// Do this first, it may add ResponseBodyAdvice beans
+	initExceptionHandlerAdviceCache();
+
+	if (this.argumentResolvers == null) {
+		List<HandlerMethodArgumentResolver> resolvers = getDefaultArgumentResolvers();
+		this.argumentResolvers = new HandlerMethodArgumentResolverComposite().addResolvers(resolvers);
+	}
+	if (this.returnValueHandlers == null) {
+		List<HandlerMethodReturnValueHandler> handlers = getDefaultReturnValueHandlers();
+		this.returnValueHandlers = new HandlerMethodReturnValueHandlerComposite().addHandlers(handlers);
+	}
+}
+
+private void initExceptionHandlerAdviceCache() {
+	if (getApplicationContext() == null) {
+		return;
+	}
+
+	// 找到所有@ControllerAdvice注解的类
+	List<ControllerAdviceBean> adviceBeans = ControllerAdviceBean.findAnnotatedBeans(getApplicationContext());
+	for (ControllerAdviceBean adviceBean : adviceBeans) {
+		Class<?> beanType = adviceBean.getBeanType();
+		if (beanType == null) {
+			throw new IllegalStateException("Unresolvable type for ControllerAdviceBean: " + adviceBean);
+		}
+		// 所有@ExceptionHandler注解的方法
+		ExceptionHandlerMethodResolver resolver = new ExceptionHandlerMethodResolver(beanType);
+		if (resolver.hasExceptionMappings()) {
+			this.exceptionHandlerAdviceCache.put(adviceBean, resolver);
+		}
+		if (ResponseBodyAdvice.class.isAssignableFrom(beanType)) {
+			this.responseBodyAdvice.add(adviceBean);
+		}
+	}
+
+	if (logger.isDebugEnabled()) {
+		int handlerSize = this.exceptionHandlerAdviceCache.size();
+		int adviceSize = this.responseBodyAdvice.size();
+		if (handlerSize == 0 && adviceSize == 0) {
+			logger.debug("ControllerAdvice beans: none");
+		}
+		else {
+			logger.debug("ControllerAdvice beans: " +
+					handlerSize + " @ExceptionHandler, " + adviceSize + " ResponseBodyAdvice");
+		}
+	}
+}
+```

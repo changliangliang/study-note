@@ -2,7 +2,15 @@
   "recentFiles": [
     {
       "basename": "SpringBoot统一异常处理",
-      "path": "草稿/SpringBoot统一异常处理.md"
+      "path": "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md"
+    },
+    {
+      "basename": "草稿管理",
+      "path": "看板/草稿管理.md"
+    },
+    {
+      "basename": "doDispatch执行流程",
+      "path": "草稿/doDispatch执行流程.md"
     },
     {
       "basename": "initViewResolvers",
@@ -11,10 +19,6 @@
     {
       "basename": "initMultipartResolver",
       "path": "草稿/initMultipartResolver.md"
-    },
-    {
-      "basename": "草稿管理",
-      "path": "看板/草稿管理.md"
     },
     {
       "basename": "如何使用java",
@@ -195,10 +199,6 @@
     {
       "basename": "2023-04-20",
       "path": "日记/2023-04-20.md"
-    },
-    {
-      "basename": "Pasted image 20230428131125.png",
-      "path": "附件/Pasted image 20230428131125.png.md"
     }
   ],
   "omittedPaths": [],
