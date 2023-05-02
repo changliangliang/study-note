@@ -5,6 +5,14 @@
       "path": "草稿/SpringBoot统一异常处理.md"
     },
     {
+      "basename": "initViewResolvers",
+      "path": "草稿/initViewResolvers.md"
+    },
+    {
+      "basename": "initMultipartResolver",
+      "path": "草稿/initMultipartResolver.md"
+    },
+    {
       "basename": "草稿管理",
       "path": "看板/草稿管理.md"
     },

@@ -31,6 +31,32 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "7ccb821d68d64b28",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "草稿/initViewResolvers.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "00b731fd9012914f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "草稿/initMultipartResolver.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
         ],
         "currentTab": 1
@@ -91,7 +117,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 430.5
+    "width": 249.5
   },
   "right": {
     "id": "471dd9cab433cd9a",
@@ -225,8 +251,10 @@
   },
   "active": "c580d5f37beec35d",
   "lastOpenFiles": [
-    "看板/草稿管理.md",
+    "草稿/initViewResolvers.md",
     "草稿/SpringBoot统一异常处理.md",
+    "草稿/initMultipartResolver.md",
+    "看板/草稿管理.md",
     "附件/image/SpringBoot统一异常处理_image_1.png",
     "草稿/如何使用java.md",
     "学习笔记/操作系统/计算机的启动.md",
@@ -252,7 +280,6 @@
     "草稿/git学习笔记.md",
     "草稿/MySQL学习笔记.md",
     "草稿/obsidian插件记录.md",
-    "草稿/Obsidian配置和插件.md",
     "学习笔记/未整理",
     "scrpit/创建草稿.js",
     "scrpit",

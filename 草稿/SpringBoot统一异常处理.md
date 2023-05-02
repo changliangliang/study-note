@@ -1,7 +1,7 @@
 ---
 type: note
 date: 2023-05-02 15:55:09
-update: 2023-05-02 16:23:08
+update: 2023-05-02 17:30:50
 tags: []
 categories: []
 ---
@@ -33,7 +33,7 @@ public class UserController {
 - 如果需要处理的异常比较多，那么代码中会充斥这大量的 `try...catch...` 语句；
 - 如果要改变某种异常的处理方式，需要在多处进行修改，可能会出现遗漏的情况。
 
-为了解决以上问题， `SpringBoot` 对统一异常处理提供了支持：
+为了解决以上问题，`SpringBoot` 对统一异常处理提供了支持：
 
 ## 基于 @ControllerAdvice 实现异常统一处理
 
@@ -51,7 +51,7 @@ public class GlobalExceptionHandler {
 }
 ```
 
-之后在 `Controller` 层中就可以把异常处理的代码去掉，当有异常发生时会自动
+之后在 `Controller` 层中就可以把异常处理的代码去掉，当有异常发生时会自动跳转到 ` @ExceptionHandler` 标注的方法中处理。
 
 ```java
 @RestController
@@ -66,3 +66,65 @@ public class UserController {
     }
 }
 ```
+
+## 原理解析
+
+`DispatcherServlet` 是 `SpringMVC` 入口，它有一个 ` initStrategies ` 方法用于初始化当前 `DispatcherServlet` 使用的策略，如使用哪个文件处理器（[[initMultipartResolver]]) 或者使用哪些视图解析器（[[initViewResolvers]]）。
+
+```java
+/**
+ * Initialize the strategy objects that this servlet uses.
+ * <p>May be overridden in subclasses in order to initialize further strategy objects.
+ */
+protected void initStrategies(ApplicationContext context) {
+	initMultipartResolver(context);
+	initLocaleResolver(context);
+	initThemeResolver(context);
+	initHandlerMappings(context);
+	initHandlerAdapters(context);
+	initHandlerExceptionResolvers(context);
+	initRequestToViewNameTranslator(context);
+	initViewResolvers(context);
+	initFlashMapManager(context);
+}
+```
+
+其中 `initHandlerExceptionResolvers` 是与异常相关的，它会从容器中获取所有的 `HandlerExceptionResolver`。
+
+```java
+private void initHandlerExceptionResolvers(ApplicationContext context) {
+		this.handlerExceptionResolvers = null;
+
+		if (this.detectAllHandlerExceptionResolvers) {
+			// 从容器中获取所有的HandlerExceptionResolver
+			Map<String, HandlerExceptionResolver> matchingBeans = BeanFactoryUtils
+					.beansOfTypeIncludingAncestors(context, HandlerExceptionResolver.class, true, false);
+			if (!matchingBeans.isEmpty()) {
+				this.handlerExceptionResolvers = new ArrayList<>(matchingBeans.values());
+				// We keep HandlerExceptionResolvers in sorted order.
+				AnnotationAwareOrderComparator.sort(this.handlerExceptionResolvers);
+			}
+		}
+		else {
+			try {
+				HandlerExceptionResolver her =
+						context.getBean(HANDLER_EXCEPTION_RESOLVER_BEAN_NAME, HandlerExceptionResolver.class);
+				this.handlerExceptionResolvers = Collections.singletonList(her);
+			}
+			catch (NoSuchBeanDefinitionException ex) {
+				// Ignore, no HandlerExceptionResolver is fine too.
+			}
+		}
+
+		// Ensure we have at least some HandlerExceptionResolvers, by registering
+		// default HandlerExceptionResolvers if no other resolvers are found.
+		if (this.handlerExceptionResolvers == null) {
+			this.handlerExceptionResolvers = getDefaultStrategies(context, HandlerExceptionResolver.class);
+			if (logger.isTraceEnabled()) {
+				logger.trace("No HandlerExceptionResolvers declared in servlet '" + getServletName() +
+						"': using default strategies from DispatcherServlet.properties");
+			}
+		}
+	}
+```
+
