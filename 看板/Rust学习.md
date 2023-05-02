@@ -6,7 +6,7 @@ kanban-plugin: basic
 
 ## TODO
 
-- [ ] 环境搭建
+- [ ] [环境搭建](学习笔记/Rust学习/环境搭建.md)
 
 
 ## 进行中

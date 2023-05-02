@@ -1,12 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "Rust学习",
-      "path": "看板/Rust学习.md"
+      "basename": "常用软件配置",
+      "path": "草稿/常用软件配置.md"
     },
     {
       "basename": "草稿管理",
       "path": "看板/草稿管理.md"
+    },
+    {
+      "basename": "Rust学习",
+      "path": "看板/Rust学习.md"
+    },
+    {
+      "basename": "环境搭建",
+      "path": "学习笔记/Rust学习/环境搭建.md"
     },
     {
       "basename": "内核态和用户态",
@@ -39,10 +47,6 @@
     {
       "basename": "函数堆栈",
       "path": "草稿/函数堆栈.md"
-    },
-    {
-      "basename": "常用软件配置",
-      "path": "草稿/常用软件配置.md"
     },
     {
       "basename": "Java容器",
