@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "npm源管理",
+      "path": "学习笔记/开发工具/npm源管理.md"
+    },
+    {
+      "basename": "docker 常用操作",
+      "path": "学习笔记/开发工具/docker 常用操作.md"
+    },
+    {
+      "basename": "this指向的问题",
+      "path": "学习笔记/前端开发/this指向的问题.md"
+    },
+    {
       "basename": "计算机的启动",
       "path": "学习笔记/操作系统/计算机的启动.md"
     },

@@ -119,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习笔记/操作系统/计算机的启动.md"
+                "file": "学习笔记/开发工具/npm源管理.md"
               }
             }
           },
@@ -169,7 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "学习笔记/操作系统/计算机的启动.md",
+                "file": "学习笔记/开发工具/npm源管理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,7 +181,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "学习笔记/操作系统/计算机的启动.md",
+                "file": "学习笔记/开发工具/npm源管理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -225,10 +225,12 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "f1475263dce90206",
+  "active": "2e6886b3461627b5",
   "lastOpenFiles": [
-    "看板/草稿管理.md",
+    "学习笔记/开发工具/docker 常用操作.md",
+    "学习笔记/前端开发/this指向的问题.md",
     "学习笔记/操作系统/计算机的启动.md",
+    "看板/草稿管理.md",
     "学习笔记/操作系统/实模式、保护模式、A20 Gate概念解析.md",
     "学习笔记/操作系统/全局描述符表（GDT）.md",
     "学习笔记/操作系统/socket连接不安全的原因.md",
@@ -253,8 +255,6 @@
     "草稿/sdfsdfsdfasdf.drawio.png.md",
     "学习笔记/未整理/SpirngMVC进阶知识.md",
     "草稿/自定义Json处理.md",
-    "草稿/未命名看板.md",
-    "草稿/未命名 3.md",
     "学习笔记/未整理",
     "scrpit/创建草稿.js",
     "scrpit",
