@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "草稿/常用软件配置.md",
+                "file": "学习笔记/操作系统/计算机的启动.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -119,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "草稿/常用软件配置.md"
+                "file": "学习笔记/操作系统/计算机的启动.md"
               }
             }
           },
@@ -169,7 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "草稿/常用软件配置.md",
+                "file": "学习笔记/操作系统/计算机的启动.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,7 +181,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "草稿/常用软件配置.md",
+                "file": "学习笔记/操作系统/计算机的启动.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -225,14 +225,18 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "2e6886b3461627b5",
+  "active": "f1475263dce90206",
   "lastOpenFiles": [
-    "未命名",
+    "看板/草稿管理.md",
+    "学习笔记/操作系统/计算机的启动.md",
+    "学习笔记/操作系统/实模式、保护模式、A20 Gate概念解析.md",
+    "学习笔记/操作系统/全局描述符表（GDT）.md",
+    "学习笔记/操作系统/socket连接不安全的原因.md",
+    "看板/Rust学习.md",
     "草稿/函数堆栈.md",
     "草稿/常用软件配置.md",
-    "看板/草稿管理.md",
+    "未命名",
     "学习笔记/Rust学习/环境搭建.md",
-    "看板/Rust学习.md",
     "学习笔记/Rust学习",
     "草稿/如何使用java.md",
     "学习笔记/未整理/内核态和用户态.md",
@@ -251,9 +255,6 @@
     "草稿/自定义Json处理.md",
     "草稿/未命名看板.md",
     "草稿/未命名 3.md",
-    "草稿/未命名.md",
-    "草稿/撒旦法师打发是.md",
-    "草稿/计算机补完计划——2023年.md",
     "学习笔记/未整理",
     "scrpit/创建草稿.js",
     "scrpit",
@@ -272,7 +273,6 @@
     "8086",
     "附件/image/A20 Gate_image_2.png",
     "assets",
-    "学习笔记/数据库",
     "未命名.canvas"
   ]
 }
