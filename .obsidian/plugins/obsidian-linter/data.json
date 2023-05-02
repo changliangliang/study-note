@@ -145,7 +145,7 @@
       "tabsize": "4"
     },
     "empty-line-around-blockquotes": {
-      "enabled": false
+      "enabled": true
     },
     "empty-line-around-code-fences": {
       "enabled": true
