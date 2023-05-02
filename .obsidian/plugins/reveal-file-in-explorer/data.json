@@ -1,5 +1,5 @@
 {
-  "foldOtherDirsBefore": true,
+  "foldOtherDirsBefore": false,
   "revealOnOpen": true,
-  "foldWhenOpen": true
+  "foldWhenOpen": false
 }

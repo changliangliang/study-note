@@ -1,3 +1,0 @@
-- CS 自学指南：[https://csdiy.wiki/](https://csdiy.wiki/)
-- CS 基础课不完全自学指南：[https://www.cnblogs.com/kangyupl/p/cs-stack-self-study-guide.html](https://www.cnblogs.com/kangyupl/p/cs-stack-self-study-guide.html)
-- 自学计算机科学：[https://github.com/izackwu/TeachYourselfCS-CN/blob/master/TeachYourselfCS-CN.md](https://github.com/izackwu/TeachYourselfCS-CN/blob/master/TeachYourselfCS-CN.md)
