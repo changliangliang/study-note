@@ -33,7 +33,7 @@ public class UserController {
 - 如果需要处理的异常比较多，那么代码中会充斥这大量的 `try...catch...` 语句；
 - 如果要改变某种异常的处理方式，需要在多处进行修改，可能会出现遗漏的情况。
 
-为了解决以上问题，`SpringBoot` 对统一异常处理提供了支持：
+为了解决以上问题，`SpringBoot` 对统一异常处理提供了支持。
 
 ## 基于 @ControllerAdvice 实现异常统一处理
 

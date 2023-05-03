@@ -28,3 +28,5 @@ private void initMultipartResolver(ApplicationContext context) {
 ```
 
 
+![SpringBoot统一异常处理](学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md#为什么要统一处理异常)
+

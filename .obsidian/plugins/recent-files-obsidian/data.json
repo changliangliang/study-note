@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "SpringBoot统一异常处理",
+      "path": "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md"
+    },
+    {
       "basename": "initMultipartResolver",
       "path": "草稿/initMultipartResolver.md"
     },
@@ -11,10 +15,6 @@
     {
       "basename": "Rust学习",
       "path": "看板/Rust学习.md"
-    },
-    {
-      "basename": "SpringBoot统一异常处理",
-      "path": "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md"
     },
     {
       "basename": "doDispatch执行流程",
