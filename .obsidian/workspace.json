@@ -25,14 +25,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "草稿/函数堆栈.md",
+                "file": "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -118,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "看板/草稿管理.md"
+                "file": "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md"
               }
             }
           },
@@ -176,7 +177,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "看板/草稿管理.md",
+                "file": "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -188,7 +189,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "看板/草稿管理.md",
+                "file": "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -230,10 +231,11 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "ac0da6558a755eb5",
+  "active": "2e6886b3461627b5",
   "lastOpenFiles": [
-    "草稿/函数堆栈.md",
     "看板/草稿管理.md",
+    "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md",
+    "草稿/函数堆栈.md",
     "草稿/未命名.md",
     "附件/image/未命名_image_2.png",
     "附件/image/未命名_image_1.png",
@@ -246,7 +248,6 @@
     "草稿/如何使用java.md",
     "草稿/计算机补完计划——2023年.md",
     "草稿/常用软件配置.md",
-    "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md",
     "看板/Rust学习.md",
     "附件/image/SpringBoot统一异常处理_image_2.png",
     "附件/image/SpringBoot统一异常处理_image_1.png",
