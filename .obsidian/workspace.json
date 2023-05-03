@@ -20,19 +20,19 @@
             }
           },
           {
-            "id": "3336e76ab096525e",
+            "id": "654fed9aaa58c2a6",
             "type": "leaf",
             "state": {
-              "type": "diff-view",
+              "type": "markdown",
               "state": {
-                "file": "草稿/未命名 1.md",
-                "staged": false,
-                "hash": "f95c0ac185db328d76d70836798cde0f80c5a13c"
+                "file": "草稿/函数堆栈.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -117,7 +117,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "看板/草稿管理.md"
+              }
             }
           },
           {
@@ -174,6 +176,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "看板/草稿管理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,6 +188,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "看板/草稿管理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -226,8 +230,14 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "3336e76ab096525e",
+  "active": "ac0da6558a755eb5",
   "lastOpenFiles": [
+    "草稿/函数堆栈.md",
+    "看板/草稿管理.md",
+    "草稿/未命名.md",
+    "附件/image/未命名_image_2.png",
+    "附件/image/未命名_image_1.png",
+    "附件/image/tmp1683112698761_未命名_image_1.png",
     "模板/每日记录.md",
     "草稿/Obsidian配置和插件.md",
     "草稿/initMultipartResolver.md",
@@ -235,9 +245,7 @@
     "草稿/docker常用容器创建.md",
     "草稿/如何使用java.md",
     "草稿/计算机补完计划——2023年.md",
-    "草稿/函数堆栈.md",
     "草稿/常用软件配置.md",
-    "看板/草稿管理.md",
     "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md",
     "看板/Rust学习.md",
     "附件/image/SpringBoot统一异常处理_image_2.png",
@@ -257,8 +265,6 @@
     "学习笔记/未整理/内核态和用户态.md",
     "学习笔记/未整理/中断、异常和系统调用.md",
     "草稿/C++学习笔记.md",
-    "草稿/CS自学指南.md",
-    "草稿/EFL文件详解.md",
     "学习笔记/未整理",
     "scrpit/创建草稿.js",
     "scrpit",
@@ -268,9 +274,6 @@
     "附件/image/函数堆栈_image_1.svg",
     "Excalidraw/函数堆栈-20230430214255.excalidraw.png",
     "附件/image/tmp1682918862291_函数堆栈_image_1.png",
-    "Excalidraw/函数堆栈.excalidraw.png",
-    "Excalidraw/笔记绘图.excalidraw.png",
-    "附件/image/tmp1682862236880_函数堆栈_image_1.png",
     "Excalidraw",
     "8086",
     "assets",
