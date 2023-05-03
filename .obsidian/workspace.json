@@ -23,12 +23,11 @@
             "id": "3336e76ab096525e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "diff-view",
               "state": {
-                "file": "草稿/函数堆栈.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
+                "file": "草稿/未命名 1.md",
+                "staged": false,
+                "hash": "f95c0ac185db328d76d70836798cde0f80c5a13c"
               }
             }
           }
@@ -118,9 +117,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "草稿/函数堆栈.md"
-              }
+              "state": {}
             }
           },
           {
@@ -146,9 +143,17 @@
               "type": "todo",
               "state": {}
             }
+          },
+          {
+            "id": "0554ce7f519a089e",
+            "type": "leaf",
+            "state": {
+              "type": "git-history-view",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       },
       {
         "id": "e7beb231688408fa",
@@ -169,7 +174,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "草稿/函数堆栈.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,7 +185,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "草稿/函数堆栈.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -197,7 +200,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 448.5,
+    "width": 415.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -225,16 +228,22 @@
   },
   "active": "3336e76ab096525e",
   "lastOpenFiles": [
+    "模板/每日记录.md",
+    "草稿/Obsidian配置和插件.md",
+    "草稿/initMultipartResolver.md",
+    "草稿/doDispatch执行流程.md",
+    "草稿/docker常用容器创建.md",
+    "草稿/如何使用java.md",
+    "草稿/计算机补完计划——2023年.md",
+    "草稿/函数堆栈.md",
+    "草稿/常用软件配置.md",
     "看板/草稿管理.md",
     "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md",
-    "草稿/initMultipartResolver.md",
     "看板/Rust学习.md",
-    "草稿/doDispatch执行流程.md",
     "附件/image/SpringBoot统一异常处理_image_2.png",
     "附件/image/SpringBoot统一异常处理_image_1.png",
     "草稿/initViewResolvers.md",
     "附件/image/tmp1683021574657_SpringBoot统一异常处理_image_1.png",
-    "草稿/如何使用java.md",
     "学习笔记/操作系统/计算机的启动.md",
     "学习笔记/开发工具/npm源管理.md",
     "学习笔记/开发工具/docker 常用操作.md",
@@ -242,8 +251,6 @@
     "学习笔记/操作系统/实模式、保护模式、A20 Gate概念解析.md",
     "学习笔记/操作系统/全局描述符表（GDT）.md",
     "学习笔记/操作系统/socket连接不安全的原因.md",
-    "草稿/函数堆栈.md",
-    "草稿/常用软件配置.md",
     "未命名",
     "学习笔记/Rust学习/环境搭建.md",
     "学习笔记/Rust学习",
@@ -251,11 +258,7 @@
     "学习笔记/未整理/中断、异常和系统调用.md",
     "草稿/C++学习笔记.md",
     "草稿/CS自学指南.md",
-    "草稿/docker常用容器创建.md",
     "草稿/EFL文件详解.md",
-    "草稿/Git 学习笔记.md",
-    "草稿/git学习笔记.md",
-    "草稿/MySQL学习笔记.md",
     "学习笔记/未整理",
     "scrpit/创建草稿.js",
     "scrpit",
