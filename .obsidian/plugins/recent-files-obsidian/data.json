@@ -1,8 +1,16 @@
 {
   "recentFiles": [
     {
+      "basename": "SpringBoot中默认的异常处理",
+      "path": "草稿/SpringBoot中默认的异常处理.md"
+    },
+    {
       "basename": "草稿管理",
       "path": "看板/草稿管理.md"
+    },
+    {
+      "basename": "SpringBoot统一异常处理",
+      "path": "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md"
     },
     {
       "basename": "从PAXOS到ZOOKEEPER分布式一致性原理与实践",
@@ -47,10 +55,6 @@
     {
       "basename": "未命名",
       "path": "草稿/未命名.md"
-    },
-    {
-      "basename": "SpringBoot统一异常处理",
-      "path": "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md"
     },
     {
       "basename": "函数堆栈",
@@ -195,10 +199,6 @@
     {
       "basename": "tmp1682862236880_函数堆栈_image_1",
       "path": "附件/image/tmp1682862236880_函数堆栈_image_1.png"
-    },
-    {
-      "basename": "tmp1682861555656_函数堆栈_image_1",
-      "path": "附件/image/tmp1682861555656_函数堆栈_image_1.png"
     }
   ],
   "omittedPaths": [],

@@ -18,8 +18,22 @@
               },
               "pinned": true
             }
+          },
+          {
+            "id": "efb74c2d6558ffb3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "草稿/SpringBoot中默认的异常处理.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -105,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "看板/草稿管理.md"
+                "file": "草稿/SpringBoot中默认的异常处理.md"
               }
             }
           },
@@ -163,7 +177,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "看板/草稿管理.md",
+                "file": "草稿/SpringBoot中默认的异常处理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +189,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "看板/草稿管理.md",
+                "file": "草稿/SpringBoot中默认的异常处理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -217,12 +231,22 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "ac0da6558a755eb5",
+  "active": "efb74c2d6558ffb3",
   "lastOpenFiles": [
+    "附件/image/SpringBoot中默认的异常处理_image_7.png",
+    "附件/image/SpringBoot中默认的异常处理_image_6.png",
+    "看板/草稿管理.md",
+    "草稿/SpringBoot中默认的异常处理.md",
+    "附件/image/SpringBoot中默认的异常处理_image_5.png",
+    "附件/image/SpringBoot中默认的异常处理_image_4.png",
+    "附件/image/SpringBoot中默认的异常处理_image_3.png",
+    "附件/image/tmp1683187866897_SpringBoot中默认的异常处理_image_3.png",
+    "附件/image/SpringBoot中默认的异常处理_image_2.png",
+    "附件/image/SpringBoot中默认的异常处理_image_1.png",
+    "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md",
     "Bookxnote/从PAXOS到ZOOKEEPER分布式一致性原理与实践.md",
     "Bookxnote/从PAXOS到ZOOKEEPER分布式一致性原理与实践/4ae57d708a4c0865736a32afe02ec21f.png",
     "Bookxnote/从PAXOS到ZOOKEEPER分布式一致性原理与实践/03c9bf12c48b1ee62b8c5f2856d20544.png",
-    "看板/草稿管理.md",
     "看板/Rust学习.md",
     "Bookxnote/从PAXOS到ZOOKEEPER分布式一致性原理与实践/b9ba507df0e175bb0b134ccc71c1530f.png",
     "附件/Pasted image 20230428131125.png.md",
@@ -230,7 +254,6 @@
     "Bookxnote",
     "附件/从PAXOS到ZOOKEEPER分布式一致性原理与实践.md",
     "日记/2023-05-04.md",
-    "附件/image/2023-05-04_image_1.png",
     "模板/每日记录.md",
     "模板/笔记模板.md",
     "日记/2023-04-23.md",
@@ -238,13 +261,7 @@
     "日记/2023-04-22.md",
     "学习笔记/开发工具/npm源管理.md",
     "草稿/未命名.md",
-    "附件/image/未命名_image_2.png",
-    "附件/image/未命名_image_1.png",
-    "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md",
     "草稿/函数堆栈.md",
-    "附件/image/tmp1683121924985_未命名_image_2.png",
-    "附件/image/tmp1683120836639_未命名_image_1.png",
-    "附件/image/tmp1683112698761_未命名_image_1.png",
     "草稿/Obsidian配置和插件.md",
     "草稿/initMultipartResolver.md",
     "草稿/doDispatch执行流程.md",
@@ -252,10 +269,8 @@
     "草稿/如何使用java.md",
     "草稿/计算机补完计划——2023年.md",
     "草稿/常用软件配置.md",
-    "附件/image/SpringBoot统一异常处理_image_2.png",
     "草稿/initViewResolvers.md",
     "学习笔记/操作系统/计算机的启动.md",
-    "学习笔记/开发工具/docker 常用操作.md",
     "学习笔记/Rust学习",
     "学习笔记/未整理",
     "scrpit/创建草稿.js",
