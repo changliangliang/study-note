@@ -18,8 +18,22 @@
               },
               "pinned": true
             }
+          },
+          {
+            "id": "c0f7b635b71461fe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "日记/2023-05-04.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -105,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "看板/草稿管理.md"
+                "file": "日记/2023-05-04.md"
               }
             }
           },
@@ -163,7 +177,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "看板/草稿管理.md",
+                "file": "日记/2023-05-04.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +189,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "看板/草稿管理.md",
+                "file": "日记/2023-05-04.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -217,10 +231,11 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "ac0da6558a755eb5",
+  "active": "c0f7b635b71461fe",
   "lastOpenFiles": [
-    "学习笔记/Java相关/SpringBoot/SpringBoot中默认的异常处理.md",
+    "草稿/函数堆栈.md",
     "看板/草稿管理.md",
+    "学习笔记/Java相关/SpringBoot/SpringBoot中默认的异常处理.md",
     "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md",
     "学习笔记/Java相关/SpringBoot/SpringBoot中统一数据返回.md",
     "附件/image/SpringBoot统一异常处理_image_6.png",
@@ -247,7 +262,6 @@
     "日记/2023-04-22.md",
     "学习笔记/开发工具/npm源管理.md",
     "草稿/未命名.md",
-    "草稿/函数堆栈.md",
     "草稿/Obsidian配置和插件.md",
     "草稿/initMultipartResolver.md",
     "草稿/doDispatch执行流程.md",

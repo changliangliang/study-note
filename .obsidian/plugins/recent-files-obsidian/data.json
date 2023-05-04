@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "2023-05-04",
+      "path": "日记/2023-05-04.md"
+    },
+    {
+      "basename": "函数堆栈",
+      "path": "草稿/函数堆栈.md"
+    },
+    {
       "basename": "草稿管理",
       "path": "看板/草稿管理.md"
     },
@@ -37,10 +45,6 @@
       "path": "Bookxnote/从PAXOS到ZOOKEEPER分布式一致性原理与实践/b9ba507df0e175bb0b134ccc71c1530f.png"
     },
     {
-      "basename": "2023-05-04",
-      "path": "日记/2023-05-04.md"
-    },
-    {
       "basename": "每日记录",
       "path": "模板/每日记录.md"
     },
@@ -59,10 +63,6 @@
     {
       "basename": "未命名",
       "path": "草稿/未命名.md"
-    },
-    {
-      "basename": "函数堆栈",
-      "path": "草稿/函数堆栈.md"
     },
     {
       "basename": "Obsidian配置和插件",
