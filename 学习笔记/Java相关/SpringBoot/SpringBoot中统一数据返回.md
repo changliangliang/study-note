@@ -2,8 +2,8 @@
 type: note
 date: 2023-05-04 20:53:27
 update: 2023-05-04 20:53:27
-tags:
-categories: 
+tags: []
+categories: [SpringBoot]
 ---
 
 ## 为什么要统一封装接口返回数据
@@ -48,7 +48,6 @@ categories:
   "data": null
 } 
 ```
-
 
 ## 实现案例
 
@@ -109,43 +108,18 @@ public class Result<T> {
     }
 
 	public static <E> Result<E> fail() {
-        return new Result<>(CodeEnum.FAIL.getValue(), message, null);
-    }
-
-    public static void main(String[] args) {
-
+        return new Result<>(CodeEnum.FAIL.getValue(), CodeEnum.FAIL.getMessage(), null);
     }
 }
 ```
 
-### 接口返回时调用
+### 接口返回
 
 ```java
-@RestController
-@RequestMapping("/user")
-public class UserController {
-
-    @Autowired
-    private IUserService userService;
-
-    @ApiOperation("Add/Edit User")
-    @PostMapping("add")
-    public ResponseResult<User> add(User user) {
-        if (user.getId()==null || !userService.exists(user.getId())) {
-            user.setCreateTime(LocalDateTime.now());
-            user.setUpdateTime(LocalDateTime.now());
-            userService.save(user);
-        } else {
-            user.setUpdateTime(LocalDateTime.now());
-            userService.update(user);
-        }
-        return ResponseResult.success(userService.find(user.getId()));
-    }
-
-    @ApiOperation("Query User One")
-    @GetMapping("edit/{userId}")
-    public ResponseResult<User> edit(@PathVariable("userId") Long userId) {
-        return ResponseResult.success(userService.find(userId));
-    }
-}   
+@Operation(summary = "获取用户信息")
+@GetMapping("/{id}")
+public Result<User> getUser( @PathVariable("id") int id) {
+	User user = userService.getById(id);
+	return Result.ok(null, user);
+}
 ```
