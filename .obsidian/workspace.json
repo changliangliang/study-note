@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "草稿/SpringBoot中默认的异常处理.md",
+                "file": "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -120,7 +120,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "草稿/SpringBoot中默认的异常处理.md"
+                "file": "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md"
               }
             }
           },
@@ -178,7 +178,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "草稿/SpringBoot中默认的异常处理.md",
+                "file": "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -190,7 +190,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "草稿/SpringBoot中默认的异常处理.md",
+                "file": "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -206,7 +206,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 415.5
+    "width": 415.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -233,19 +234,19 @@
   },
   "active": "efb74c2d6558ffb3",
   "lastOpenFiles": [
-    "附件/image/SpringBoot中默认的异常处理_image_10.png",
-    "附件/image/SpringBoot中默认的异常处理_image_9.png",
-    "附件/image/SpringBoot中默认的异常处理_image_8.png",
-    "附件/image/SpringBoot中默认的异常处理_image_7.png",
-    "附件/image/SpringBoot中默认的异常处理_image_6.png",
+    "附件/image/SpringBoot统一异常处理_image_6.png",
+    "附件/image/SpringBoot统一异常处理_image_5.png",
+    "附件/Pasted image 20230504171656.png",
+    "附件/image/SpringBoot统一异常处理_image_4.png",
+    "附件/image/SpringBoot统一异常处理_image_3.png",
     "看板/草稿管理.md",
     "草稿/SpringBoot中默认的异常处理.md",
-    "附件/image/SpringBoot中默认的异常处理_image_5.png",
-    "附件/image/SpringBoot中默认的异常处理_image_4.png",
-    "附件/image/SpringBoot中默认的异常处理_image_3.png",
-    "附件/image/tmp1683187866897_SpringBoot中默认的异常处理_image_3.png",
-    "附件/image/SpringBoot中默认的异常处理_image_2.png",
-    "附件/image/SpringBoot中默认的异常处理_image_1.png",
+    "附件/image/SpringBoot中默认的异常处理_image_14.png",
+    "附件/image/SpringBoot中默认的异常处理_image_13.png",
+    "附件/image/SpringBoot中默认的异常处理_image_12.png",
+    "附件/image/SpringBoot中默认的异常处理_image_11.png",
+    "附件/image/SpringBoot中默认的异常处理_image_10.png",
+    "附件/image/SpringBoot中默认的异常处理_image_9.png",
     "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md",
     "Bookxnote/从PAXOS到ZOOKEEPER分布式一致性原理与实践.md",
     "看板/Rust学习.md",

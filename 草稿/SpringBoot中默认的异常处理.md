@@ -110,6 +110,19 @@ public class WebExceptionHandler {
 ## Springboot 如何跳转到 `/error`
 
 Springboot 在启动的时候会默认添加下面这三个异常解析器，如果这几个异常解析器都没有处理异常，那么异常将抛给 Tomcat：
-* `ExceptionHandlerExceptionResolver`：处理 `@ExceptionHandler`注解
+
+* `ExceptionHandlerExceptionResolver`：处理 `@ExceptionHandler` 注解
 * `ResponseStatusExceptionResolver`：处理 `@ResponseStatus` 注解
 * `DefaultHandlerExceptionResolver`：处理 SpringMVC 标准异常异常
+
+在 Tomcat 中的 `web.xml` 异常处理配置如下图所示，可以根据错误代码处理异常，也可以根据异常类型处理异常。
+
+![](附件/image/SpringBoot中默认的异常处理_image_11.png)
+
+![](附件/image/SpringBoot中默认的异常处理_image_12.png)
+
+SpringBoot 中 Tomcat 是以内嵌容器的形式出现的，所以将错误配置抽象成了 `ErrorPage` 类，而前文中的 `ErrorPageCustomizer` 就是用来配置 `ErrorPage` 的，它会读取配置文件中的 `server.error.path`，该值默认为 `/error`。
+
+![](附件/image/SpringBoot中默认的异常处理_image_13.png)
+
+![](附件/image/SpringBoot中默认的异常处理_image_14.png)
