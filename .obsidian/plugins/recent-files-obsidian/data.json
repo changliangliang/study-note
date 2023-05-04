@@ -1,12 +1,32 @@
 {
   "recentFiles": [
     {
-      "basename": "2023-05-04",
-      "path": "日记/2023-05-04.md"
-    },
-    {
       "basename": "草稿管理",
       "path": "看板/草稿管理.md"
+    },
+    {
+      "basename": "从PAXOS到ZOOKEEPER分布式一致性原理与实践",
+      "path": "Bookxnote/从PAXOS到ZOOKEEPER分布式一致性原理与实践.md"
+    },
+    {
+      "basename": "4ae57d708a4c0865736a32afe02ec21f",
+      "path": "Bookxnote/从PAXOS到ZOOKEEPER分布式一致性原理与实践/4ae57d708a4c0865736a32afe02ec21f.png"
+    },
+    {
+      "basename": "03c9bf12c48b1ee62b8c5f2856d20544",
+      "path": "Bookxnote/从PAXOS到ZOOKEEPER分布式一致性原理与实践/03c9bf12c48b1ee62b8c5f2856d20544.png"
+    },
+    {
+      "basename": "Rust学习",
+      "path": "看板/Rust学习.md"
+    },
+    {
+      "basename": "b9ba507df0e175bb0b134ccc71c1530f",
+      "path": "Bookxnote/从PAXOS到ZOOKEEPER分布式一致性原理与实践/b9ba507df0e175bb0b134ccc71c1530f.png"
+    },
+    {
+      "basename": "2023-05-04",
+      "path": "日记/2023-05-04.md"
     },
     {
       "basename": "每日记录",
@@ -63,10 +83,6 @@
     {
       "basename": "常用软件配置",
       "path": "草稿/常用软件配置.md"
-    },
-    {
-      "basename": "Rust学习",
-      "path": "看板/Rust学习.md"
     },
     {
       "basename": "initViewResolvers",
@@ -183,18 +199,6 @@
     {
       "basename": "tmp1682861555656_函数堆栈_image_1",
       "path": "附件/image/tmp1682861555656_函数堆栈_image_1.png"
-    },
-    {
-      "basename": "ucore实验：bootasm.S源码",
-      "path": "学习笔记/ucore操作系统实验/ucore实验：bootasm.S源码.md"
-    },
-    {
-      "basename": "笔记目录",
-      "path": "常用/笔记目录.md"
-    },
-    {
-      "basename": "org.springframework.web.context.ContextLoaderListener",
-      "path": "卡片/Java类/org.springframework.web.context.ContextLoaderListener.md"
     }
   ],
   "omittedPaths": [],

@@ -18,22 +18,8 @@
               },
               "pinned": true
             }
-          },
-          {
-            "id": "c1af77b002754d8c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "日记/2023-05-04.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -119,7 +105,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "日记/2023-05-04.md"
+                "file": "看板/草稿管理.md"
               }
             }
           },
@@ -177,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "日记/2023-05-04.md",
+                "file": "看板/草稿管理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -189,7 +175,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "日记/2023-05-04.md",
+                "file": "看板/草稿管理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -231,10 +217,20 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "2e6886b3461627b5",
+  "active": "ac0da6558a755eb5",
   "lastOpenFiles": [
+    "Bookxnote/从PAXOS到ZOOKEEPER分布式一致性原理与实践.md",
+    "Bookxnote/从PAXOS到ZOOKEEPER分布式一致性原理与实践/4ae57d708a4c0865736a32afe02ec21f.png",
+    "Bookxnote/从PAXOS到ZOOKEEPER分布式一致性原理与实践/03c9bf12c48b1ee62b8c5f2856d20544.png",
     "看板/草稿管理.md",
+    "看板/Rust学习.md",
+    "Bookxnote/从PAXOS到ZOOKEEPER分布式一致性原理与实践/b9ba507df0e175bb0b134ccc71c1530f.png",
+    "附件/Pasted image 20230428131125.png.md",
+    "Bookxnote/从PAXOS到ZOOKEEPER分布式一致性原理与实践",
+    "Bookxnote",
+    "附件/从PAXOS到ZOOKEEPER分布式一致性原理与实践.md",
     "日记/2023-05-04.md",
+    "附件/image/2023-05-04_image_1.png",
     "模板/每日记录.md",
     "模板/笔记模板.md",
     "日记/2023-04-23.md",
@@ -256,29 +252,18 @@
     "草稿/如何使用java.md",
     "草稿/计算机补完计划——2023年.md",
     "草稿/常用软件配置.md",
-    "看板/Rust学习.md",
     "附件/image/SpringBoot统一异常处理_image_2.png",
-    "附件/image/SpringBoot统一异常处理_image_1.png",
     "草稿/initViewResolvers.md",
-    "附件/image/tmp1683021574657_SpringBoot统一异常处理_image_1.png",
     "学习笔记/操作系统/计算机的启动.md",
     "学习笔记/开发工具/docker 常用操作.md",
-    "学习笔记/前端开发/this指向的问题.md",
-    "学习笔记/操作系统/实模式、保护模式、A20 Gate概念解析.md",
-    "学习笔记/操作系统/全局描述符表（GDT）.md",
-    "学习笔记/操作系统/socket连接不安全的原因.md",
-    "未命名",
     "学习笔记/Rust学习",
     "学习笔记/未整理",
     "scrpit/创建草稿.js",
     "scrpit",
     "新建文件夹",
     "看板",
-    "附件/image/函数堆栈_image_1.png",
-    "附件/image/函数堆栈_image_1.svg",
     "Excalidraw",
     "8086",
-    "assets",
     "未命名.canvas"
   ]
 }
