@@ -91,7 +91,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 249.5
+    "width": 249.5,
+    "collapsed": true
   },
   "right": {
     "id": "471dd9cab433cd9a",
@@ -156,7 +157,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       },
       {
         "id": "e7beb231688408fa",
@@ -205,8 +206,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 415.5,
-    "collapsed": true
+    "width": 415.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -233,6 +233,9 @@
   },
   "active": "efb74c2d6558ffb3",
   "lastOpenFiles": [
+    "附件/image/SpringBoot中默认的异常处理_image_10.png",
+    "附件/image/SpringBoot中默认的异常处理_image_9.png",
+    "附件/image/SpringBoot中默认的异常处理_image_8.png",
     "附件/image/SpringBoot中默认的异常处理_image_7.png",
     "附件/image/SpringBoot中默认的异常处理_image_6.png",
     "看板/草稿管理.md",
@@ -245,10 +248,7 @@
     "附件/image/SpringBoot中默认的异常处理_image_1.png",
     "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md",
     "Bookxnote/从PAXOS到ZOOKEEPER分布式一致性原理与实践.md",
-    "Bookxnote/从PAXOS到ZOOKEEPER分布式一致性原理与实践/4ae57d708a4c0865736a32afe02ec21f.png",
-    "Bookxnote/从PAXOS到ZOOKEEPER分布式一致性原理与实践/03c9bf12c48b1ee62b8c5f2856d20544.png",
     "看板/Rust学习.md",
-    "Bookxnote/从PAXOS到ZOOKEEPER分布式一致性原理与实践/b9ba507df0e175bb0b134ccc71c1530f.png",
     "附件/Pasted image 20230428131125.png.md",
     "Bookxnote/从PAXOS到ZOOKEEPER分布式一致性原理与实践",
     "Bookxnote",
