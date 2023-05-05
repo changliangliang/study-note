@@ -59,4 +59,38 @@ module.exports = {
 
 ## 配置文件
 
-根据 Eslint 官方
+根据 Eslint 官方文档，它支持多种形式的文件配置，默认的文件名和优先级如下：
+
+1. `.eslintrc.js`
+2. `.eslintrc.cjs`
+3. `.eslintrc.yaml`
+4. `.eslintrc.yml`
+5. `.eslintrc.json`
+6. `.eslintrc`
+7. `package.json`
+
+这里以 `.eslintrc.js` 为例对 Eslint 的配置文件进行讲解，它的大致形式如下：
+
+```js
+module.exports = {
+  env: {
+    browser: true,
+    es2021: true
+  },
+  extends: 'standard-with-typescript',
+  overrides: [
+  ],
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module'
+  },
+  rules: {
+  }
+}
+
+```
+
+### env
+
+`env` 用于定义系统的环境，一个环境定义了一组预定义的全局变量，如 ` browser ` 定义了浏览器环境中的全局变量，`node` 定义了 `nodejs` 中的全局变量，其他可用的选项见[官方文档](https://eslint.org/docs/latest/use/configure/language-options#specifying-environments) 。
+
