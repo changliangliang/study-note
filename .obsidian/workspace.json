@@ -20,12 +20,12 @@
             }
           },
           {
-            "id": "c0f7b635b71461fe",
+            "id": "af267dccb63f5039",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "日记/2023-05-04.md",
+                "file": "学习笔记/数据库/MySQL操作.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -91,7 +91,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 249.5
+    "width": 315.5
   },
   "right": {
     "id": "471dd9cab433cd9a",
@@ -100,7 +100,6 @@
       {
         "id": "0174626a1befb30d",
         "type": "tabs",
-        "dimension": 45.837231057062674,
         "children": [
           {
             "id": "8346761aae7cfd22",
@@ -119,24 +118,8 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "日记/2023-05-04.md"
+                "file": "学习笔记/数据库/MySQL操作.md"
               }
-            }
-          },
-          {
-            "id": "de59aad5d5e2a54e",
-            "type": "leaf",
-            "state": {
-              "type": "oz-calendar",
-              "state": {}
-            }
-          },
-          {
-            "id": "c739953dfe34a710",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
             }
           },
           {
@@ -154,15 +137,7 @@
               "type": "git-history-view",
               "state": {}
             }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "e7beb231688408fa",
-        "type": "tabs",
-        "dimension": 54.162768942937326,
-        "children": [
+          },
           {
             "id": "0422fa356abc823e",
             "type": "leaf",
@@ -177,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "日记/2023-05-04.md",
+                "file": "学习笔记/数据库/MySQL操作.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -189,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "日记/2023-05-04.md",
+                "file": "学习笔记/数据库/MySQL操作.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,14 +174,21 @@
                 "unlinkedCollapsed": true
               }
             }
+          },
+          {
+            "id": "dd9691fbc0366305",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
-    "width": 415.5,
-    "collapsed": true
+    "width": 533.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -231,10 +213,23 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "c0f7b635b71461fe",
+  "active": "dd9691fbc0366305",
   "lastOpenFiles": [
-    "草稿/函数堆栈.md",
+    "学习笔记/数据库/MySQL操作.md",
     "看板/草稿管理.md",
+    "学习笔记/数据库/MySQL相关知识.md",
+    "日记/2023-05-04.md",
+    "WuCai/wucai-ucore lab 扩展练习：用户态与内核态转换  whileskies  博客园-H8396CF.md",
+    "WuCai/wucai-x 特权级切换过程_soul_xhy的博客CSDN博客-H83952E.md",
+    "WuCai/wucai- 操作系统中断处理与特权级转移  lh  博客园-H839526.md",
+    "WuCai/wucai-Linux从头学：想彻底搞懂“系统调用”的底层原理建议您别错过这篇【调用门】  掘金-H8395HC.md",
+    "WuCai/wucai-操作系统深入特权级转移上_淡淡小孩的修仙之路的技术博客_CTO博客-H8395HH.md",
+    "WuCai/wucai-一致代码段与非一致代码段_一致代码段和非一致代码段_天马行空_xaut的博客CSDN博客-H8395H2.md",
+    "WuCai/wucai-操作系统实践之第二章特权级变换理论篇_尚书左仆射的博客CSDN博客-H8395H8.md",
+    "WuCai/wucai-保护模式篇——长调用与调用门中断门陷阱门  寂静的羽夏  博客园-H839C9H.md",
+    "WuCai/wucai-利用调用门实现特权级间跳转上  原理篇-H839CFD.md",
+    "WuCai/wucai-实模式与保护模式  seineos blog-H83F65C.md",
+    "草稿/函数堆栈.md",
     "学习笔记/Java相关/SpringBoot/SpringBoot中默认的异常处理.md",
     "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md",
     "学习笔记/Java相关/SpringBoot/SpringBoot中统一数据返回.md",
@@ -254,23 +249,10 @@
     "Bookxnote/从PAXOS到ZOOKEEPER分布式一致性原理与实践",
     "Bookxnote",
     "附件/从PAXOS到ZOOKEEPER分布式一致性原理与实践.md",
-    "日记/2023-05-04.md",
     "模板/每日记录.md",
     "模板/笔记模板.md",
     "日记/2023-04-23.md",
     "日记/2023-04-20.md",
-    "日记/2023-04-22.md",
-    "学习笔记/开发工具/npm源管理.md",
-    "草稿/未命名.md",
-    "草稿/Obsidian配置和插件.md",
-    "草稿/initMultipartResolver.md",
-    "草稿/doDispatch执行流程.md",
-    "草稿/docker常用容器创建.md",
-    "草稿/如何使用java.md",
-    "草稿/计算机补完计划——2023年.md",
-    "草稿/常用软件配置.md",
-    "草稿/initViewResolvers.md",
-    "学习笔记/操作系统/计算机的启动.md",
     "学习笔记/Rust学习",
     "学习笔记/未整理",
     "scrpit/创建草稿.js",

@@ -1,16 +1,24 @@
 {
   "recentFiles": [
     {
+      "basename": "MySQL操作",
+      "path": "学习笔记/数据库/MySQL操作.md"
+    },
+    {
+      "basename": "草稿管理",
+      "path": "看板/草稿管理.md"
+    },
+    {
+      "basename": "MySQL相关知识",
+      "path": "学习笔记/数据库/MySQL相关知识.md"
+    },
+    {
       "basename": "2023-05-04",
       "path": "日记/2023-05-04.md"
     },
     {
       "basename": "函数堆栈",
       "path": "草稿/函数堆栈.md"
-    },
-    {
-      "basename": "草稿管理",
-      "path": "看板/草稿管理.md"
     },
     {
       "basename": "SpringBoot中默认的异常处理",
@@ -191,14 +199,6 @@
     {
       "basename": "函数堆栈-20230430214255.excalidraw",
       "path": "Excalidraw/函数堆栈-20230430214255.excalidraw.png"
-    },
-    {
-      "basename": "tmp1682918862291_函数堆栈_image_1",
-      "path": "附件/image/tmp1682918862291_函数堆栈_image_1.png"
-    },
-    {
-      "basename": "SpringMVC文件上传",
-      "path": "学习笔记/Java相关/SpringMVC/SpringMVC文件上传.md"
     }
   ],
   "omittedPaths": [],

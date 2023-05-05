@@ -4,11 +4,11 @@
   "frequency": "0",
   "triggerOnLoad": true,
   "isSyncing": false,
-  "lastSyncFailed": true,
+  "lastSyncFailed": false,
   "refreshNotes": false,
   "notesToRefresh": [],
   "reimportShowConfirmation": true,
-  "lastCursor": "eyJsYXN0SGlnaGxpZ2h0UEtJRCI6NDYxODcyLCJsYXQiOjAsImxwbnQiOjB9",
+  "lastCursor": "eyJsYXN0SGlnaGxpZ2h0UEtJRCI6NDYxODcyLCJja1BLSUQiOjAsImNrTklEIjowLCJja1hOSUQiOjAsImNrVCI6MTY4MzI1NzYwNn0=",
   "dataVersion": 0,
   "exportConfig": {
     "titleFormat": 4,
