@@ -1,84 +1,164 @@
 {
   "recentFiles": [
     {
-      "basename": "2023-05-05",
-      "path": "日记/2023-05-05.md"
-    },
-    {
-      "basename": "2023-04-20",
-      "path": "日记/2023-04-20.md"
-    },
-    {
-      "basename": "草稿管理",
-      "path": "看板/草稿管理.md"
-    },
-    {
-      "basename": "每日记录",
-      "path": "模板/每日记录.md"
-    },
-    {
       "basename": "未命名",
-      "path": "模板/未命名.md"
+      "path": "草稿/未命名.md"
     },
     {
-      "basename": "blog-frontmatter",
-      "path": "模板/blog-frontmatter.md"
+      "basename": "环境搭建",
+      "path": "学习笔记/Rust学习/环境搭建.md"
     },
     {
-      "basename": "SpringBoot统一异常处理",
-      "path": "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md"
+      "basename": "ubuntu中的网络配置",
+      "path": "学习笔记/linux学习/ubuntu中的网络配置.md"
     },
     {
-      "basename": "SpringBoot整合Springdoc",
-      "path": "学习笔记/Java相关/SpringBoot/SpringBoot整合Springdoc.md"
+      "basename": "SpringMVC配置",
+      "path": "学习笔记/Java相关/SpringMVC/SpringMVC配置.md"
     },
     {
-      "basename": "SpringBoot中默认的异常处理",
-      "path": "学习笔记/Java相关/SpringBoot/SpringBoot中默认的异常处理.md"
+      "basename": "SpringMVC文件上传",
+      "path": "学习笔记/Java相关/SpringMVC/SpringMVC文件上传.md"
     },
     {
       "basename": "SpringBoot中统一数据返回",
       "path": "学习笔记/Java相关/SpringBoot/SpringBoot中统一数据返回.md"
     },
     {
-      "basename": "MySQL相关知识",
-      "path": "学习笔记/数据库/MySQL相关知识.md"
+      "basename": "SpringBoot中默认的异常处理",
+      "path": "学习笔记/Java相关/SpringBoot/SpringBoot中默认的异常处理.md"
+    },
+    {
+      "basename": "SpringBoot整合Springdoc",
+      "path": "学习笔记/Java相关/SpringBoot/SpringBoot整合Springdoc.md"
+    },
+    {
+      "basename": "SpringBoot统一异常处理",
+      "path": "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md"
+    },
+    {
+      "basename": "Spring中的AOP配置",
+      "path": "学习笔记/Java相关/Spring/Spring中的AOP配置.md"
+    },
+    {
+      "basename": "Spring基于XML的配置",
+      "path": "学习笔记/Java相关/Spring/Spring基于XML的配置.md"
+    },
+    {
+      "basename": "Spring的一些高级配置",
+      "path": "学习笔记/Java相关/Spring/Spring的一些高级配置.md"
+    },
+    {
+      "basename": "Spirng基于Java和注解的配置",
+      "path": "学习笔记/Java相关/Spring/Spirng基于Java和注解的配置.md"
+    },
+    {
+      "basename": "springboot 3 自动装配方式更改",
+      "path": "学习笔记/问题记录/springboot 3 自动装配方式更改.md"
+    },
+    {
+      "basename": "SpirngMVC进阶知识",
+      "path": "学习笔记/未整理/SpirngMVC进阶知识.md"
+    },
+    {
+      "basename": "中断、异常和系统调用",
+      "path": "学习笔记/未整理/中断、异常和系统调用.md"
+    },
+    {
+      "basename": "内核态和用户态",
+      "path": "学习笔记/未整理/内核态和用户态.md"
+    },
+    {
+      "basename": "java编程思想学习心得",
+      "path": "学习笔记/未整理/Spring/java编程思想学习心得.md"
+    },
+    {
+      "basename": "零碎知识",
+      "path": "学习笔记/未整理/Spring/零碎知识.md"
+    },
+    {
+      "basename": "对 Spring 的认识",
+      "path": "学习笔记/未整理/Spring/对 Spring 的认识.md"
     },
     {
       "basename": "MySQL操作",
       "path": "学习笔记/数据库/MySQL操作.md"
     },
     {
-      "basename": "笔记模板",
-      "path": "模板/笔记模板.md"
+      "basename": "MySQL相关知识",
+      "path": "学习笔记/数据库/MySQL相关知识.md"
     },
     {
-      "basename": "函数堆栈",
-      "path": "草稿/函数堆栈.md"
+      "basename": "this指向的问题",
+      "path": "学习笔记/前端开发/this指向的问题.md"
     },
     {
-      "basename": "从PAXOS到ZOOKEEPER分布式一致性原理与实践",
-      "path": "Bookxnote/从PAXOS到ZOOKEEPER分布式一致性原理与实践.md"
-    },
-    {
-      "basename": "4ae57d708a4c0865736a32afe02ec21f",
-      "path": "Bookxnote/从PAXOS到ZOOKEEPER分布式一致性原理与实践/4ae57d708a4c0865736a32afe02ec21f.png"
-    },
-    {
-      "basename": "03c9bf12c48b1ee62b8c5f2856d20544",
-      "path": "Bookxnote/从PAXOS到ZOOKEEPER分布式一致性原理与实践/03c9bf12c48b1ee62b8c5f2856d20544.png"
-    },
-    {
-      "basename": "b9ba507df0e175bb0b134ccc71c1530f",
-      "path": "Bookxnote/从PAXOS到ZOOKEEPER分布式一致性原理与实践/b9ba507df0e175bb0b134ccc71c1530f.png"
+      "basename": "vscode中的task.json和launch.json文件",
+      "path": "学习笔记/开发工具/vscode中的task.json和launch.json文件.md"
     },
     {
       "basename": "npm源管理",
       "path": "学习笔记/开发工具/npm源管理.md"
     },
     {
+      "basename": "docker 常用操作",
+      "path": "学习笔记/开发工具/docker 常用操作.md"
+    },
+    {
+      "basename": "草稿管理",
+      "path": "看板/草稿管理.md"
+    },
+    {
+      "basename": "MBR 主引导记录",
+      "path": "学习笔记/计算机知识/MBR 主引导记录.md"
+    },
+    {
+      "basename": "计算机中的路由表",
+      "path": "学习笔记/计算机知识/计算机中的路由表.md"
+    },
+    {
+      "basename": "socket连接不安全的原因",
+      "path": "学习笔记/操作系统/socket连接不安全的原因.md"
+    },
+    {
+      "basename": "实模式、保护模式、A20 Gate概念解析",
+      "path": "学习笔记/操作系统/实模式、保护模式、A20 Gate概念解析.md"
+    },
+    {
+      "basename": "全局描述符表（GDT）",
+      "path": "学习笔记/操作系统/全局描述符表（GDT）.md"
+    },
+    {
+      "basename": "计算机的启动",
+      "path": "学习笔记/操作系统/计算机的启动.md"
+    },
+    {
       "basename": "未命名",
-      "path": "草稿/未命名.md"
+      "path": "常用/未命名.md"
+    },
+    {
+      "basename": "软件列表",
+      "path": "常用/软件列表.md"
+    },
+    {
+      "basename": "列表",
+      "path": "常用/列表.md"
+    },
+    {
+      "basename": "卡片目录",
+      "path": "常用/卡片目录.md"
+    },
+    {
+      "basename": "截图笔记",
+      "path": "常用/截图笔记.md"
+    },
+    {
+      "basename": "博客列表",
+      "path": "常用/博客列表.md"
+    },
+    {
+      "basename": "笔记目录",
+      "path": "常用/笔记目录.md"
     },
     {
       "basename": "Obsidian配置和插件",
@@ -89,8 +169,16 @@
       "path": "草稿/initMultipartResolver.md"
     },
     {
+      "basename": "EFL文件详解",
+      "path": "草稿/EFL文件详解.md"
+    },
+    {
       "basename": "doDispatch执行流程",
       "path": "草稿/doDispatch执行流程.md"
+    },
+    {
+      "basename": "docker镜像创建",
+      "path": "草稿/docker镜像创建.md"
     },
     {
       "basename": "docker常用容器创建",
@@ -105,88 +193,12 @@
       "path": "草稿/计算机补完计划——2023年.md"
     },
     {
+      "basename": "函数堆栈",
+      "path": "草稿/函数堆栈.md"
+    },
+    {
       "basename": "常用软件配置",
       "path": "草稿/常用软件配置.md"
-    },
-    {
-      "basename": "initViewResolvers",
-      "path": "草稿/initViewResolvers.md"
-    },
-    {
-      "basename": "计算机的启动",
-      "path": "学习笔记/操作系统/计算机的启动.md"
-    },
-    {
-      "basename": "docker 常用操作",
-      "path": "学习笔记/开发工具/docker 常用操作.md"
-    },
-    {
-      "basename": "this指向的问题",
-      "path": "学习笔记/前端开发/this指向的问题.md"
-    },
-    {
-      "basename": "实模式、保护模式、A20 Gate概念解析",
-      "path": "学习笔记/操作系统/实模式、保护模式、A20 Gate概念解析.md"
-    },
-    {
-      "basename": "全局描述符表（GDT）",
-      "path": "学习笔记/操作系统/全局描述符表（GDT）.md"
-    },
-    {
-      "basename": "socket连接不安全的原因",
-      "path": "学习笔记/操作系统/socket连接不安全的原因.md"
-    },
-    {
-      "basename": "环境搭建",
-      "path": "学习笔记/Rust学习/环境搭建.md"
-    },
-    {
-      "basename": "内核态和用户态",
-      "path": "学习笔记/未整理/内核态和用户态.md"
-    },
-    {
-      "basename": "中断、异常和系统调用",
-      "path": "学习笔记/未整理/中断、异常和系统调用.md"
-    },
-    {
-      "basename": "EFL文件详解",
-      "path": "草稿/EFL文件详解.md"
-    },
-    {
-      "basename": "SpirngMVC进阶知识",
-      "path": "学习笔记/未整理/SpirngMVC进阶知识.md"
-    },
-    {
-      "basename": "Java容器",
-      "path": "学习笔记/未整理/Java拾遗迹/Java容器.md"
-    },
-    {
-      "basename": "Java类型信息",
-      "path": "学习笔记/未整理/Java拾遗迹/Java类型信息.md"
-    },
-    {
-      "basename": "Java继承",
-      "path": "学习笔记/未整理/Java拾遗迹/Java继承.md"
-    },
-    {
-      "basename": "Java多态",
-      "path": "学习笔记/未整理/Java拾遗迹/Java多态.md"
-    },
-    {
-      "basename": "ucore操作系统实验：lab1",
-      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md"
-    },
-    {
-      "basename": "ucore操作系统实验：环境搭建",
-      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md"
-    },
-    {
-      "basename": "wucai-2023-04-28-H83F65C",
-      "path": "WuCai/2023/04/wucai-2023-04-28-H83F65C.md"
-    },
-    {
-      "basename": "wucai-2023-04-24-H835E9H",
-      "path": "WuCai/2023/04/wucai-2023-04-24-H835E9H.md"
     }
   ],
   "omittedPaths": [],
