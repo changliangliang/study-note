@@ -87,10 +87,78 @@ module.exports = {
   rules: {
   }
 }
-
 ```
 
 ### env
 
-`env` 用于定义系统的环境，一个环境定义了一组预定义的全局变量，如 ` browser ` 定义了浏览器环境中的全局变量，`node` 定义了 `nodejs` 中的全局变量，其他可用的选项见[官方文档](https://eslint.org/docs/latest/use/configure/language-options#specifying-environments) 。
+`env` 用于定义系统的环境，一个环境定义了一组预定义的全局变量，如 ` browser ` 定义了浏览器环境中的全局变量，`node` 定义了 `nodejs` 中的全局变量，其他可用的选项见 [官方文档](https://eslint.org/docs/latest/use/configure/language-options#specifying-environments)。
 
+### plugins
+
+Eslint 支持使用第三方插件，可以通过 `npm` 来安装这些插件，它们的主要作用是提供一些 Eslint 中不存在的系统环境或者规则。在配置文件里配置插件时，可以使用 ` plugins ` 关键字来存放插件名字的列表，插件名称可以省略 `eslint-plugin-` 前缀。
+
+```js
+module.exports = {
+  plugins: [
+    "plugin1",
+    "eslint-plugin-plugin2"
+  ],
+  env: {
+    browser: true,
+    es2021: true,
+    "plugin1/custom": true
+  }
+}
+```
+
+### gloabals
+
+当访问当前源文件内未定义的变量时，`no-undef` 规则将发出警告，如果想要在一个源文件里使用全局变量，可以在 `eslint` 中定义这些全局变量，这样就不会发出警告了。
+
+```js
+module.exports = {
+  globals: {
+    "var1": "readonly"
+  },
+  env: {
+    browser: true,
+    es2021: true,
+  }
+}
+```
+
+对于每个全局变量，可以将对应的值设置为 `writable` 允许重写变量，或 `readonly` 不允许重写变量，还可以使用字符串 `off` 禁用全局变量，注意在使用 `readonly` 时需要启用 `​no-global-assign` 规则来禁止对只读的全局变量进行修改，通常情况下该规则都是启动的。
+
+### paserOptions
+
+解析器的作用是将 `javascrpit` 源码转化为抽象语法树，以便于后续的处理，`eslint` 默认的解析器为 `espree`，此外还可以使用第三方提供的解析器。
+
+```json
+{
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "rules": {
+        "semi": "error"
+    }
+}
+```
+
+解析器选项使用 `parserOptions` 属性设置，可用的选项有：
+
+* `ecmaVersion` - 默认设置为 3，5（默认）， 可以使用 6、7、8、9 或 10 来指定你想要使用的 ECMAScript 版本，也可以用使用年份命名的版本号指定为 2015（同 6），2016（同 7），或 2017（同 8）或 2018（同 9）或 2019 (同 10)；
+* `sourceType` ：设置为 `"script"` (默认) 或 `"module"`；
+* `ecmaFeatures` 这是个对象，表示你想使用的额外的语言特性，可设置如下属性：
+
+  * `globalReturn` ：允许在全局作用域下使用 `return` 语句；
+  * `impliedStrict`：启用全局 严格模式；
+  * `jsx`：启用 JSX；
+  * `experimentalObjectRestSpread` ：启用实验性的 object rest/spread properties 支持。
+
+设置解析器选项能帮助 `eslint` 确定什么是解析错误，默认情况下对于所有语言该选项都是 `false`。
+
+需要注意的一点是，对于 `ES6` 语法的支持需要使用 `{ "parserOptions": { "ecmaVersion": 6 } }` 开启，但是此时对 `ES6` 中的全局变量是不支持的， 还需要配置 `{ "env":{ "es6": true } }`。另外，也可以直接配置 `{ "env": { "es6": true } }` ，它会会自动启用对 `ES6` 语法的支持。
