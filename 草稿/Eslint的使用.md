@@ -56,3 +56,7 @@ module.exports = {
   }
 }
 ```
+
+## 配置文件
+
+根据 Eslint 官方
