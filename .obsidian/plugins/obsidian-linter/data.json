@@ -35,7 +35,7 @@
     },
     "yaml-key-sort": {
       "enabled": true,
-      "yaml-key-priority-sort-order": "type\ndate\nupdate\ntags\ncategories\n类型\n日期\n创建时间\n修改时间\n",
+      "yaml-key-priority-sort-order": "type\ncreated\nupdated\ntags\ncategories\n类型\n日期\n创建时间\n修改时间\n",
       "priority-keys-at-start-of-yaml": true,
       "yaml-sort-order-for-other-keys": "Ascending Alphabetical"
     },

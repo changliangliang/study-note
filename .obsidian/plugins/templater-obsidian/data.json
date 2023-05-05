@@ -23,8 +23,8 @@
       "template": "模板/笔记模板.md"
     },
     {
-      "folder": "DB测试",
-      "template": "模板/笔记模板.md"
+      "folder": "日记",
+      "template": "模板/每日记录.md"
     }
   ],
   "syntax_highlighting": true,

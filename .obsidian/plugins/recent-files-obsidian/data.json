@@ -1,36 +1,60 @@
 {
   "recentFiles": [
     {
-      "basename": "MySQL操作",
-      "path": "学习笔记/数据库/MySQL操作.md"
+      "basename": "2023-05-05",
+      "path": "日记/2023-05-05.md"
+    },
+    {
+      "basename": "2023-04-20",
+      "path": "日记/2023-04-20.md"
     },
     {
       "basename": "草稿管理",
       "path": "看板/草稿管理.md"
     },
     {
-      "basename": "MySQL相关知识",
-      "path": "学习笔记/数据库/MySQL相关知识.md"
+      "basename": "每日记录",
+      "path": "模板/每日记录.md"
     },
     {
-      "basename": "2023-05-04",
-      "path": "日记/2023-05-04.md"
+      "basename": "未命名",
+      "path": "模板/未命名.md"
     },
     {
-      "basename": "函数堆栈",
-      "path": "草稿/函数堆栈.md"
-    },
-    {
-      "basename": "SpringBoot中默认的异常处理",
-      "path": "学习笔记/Java相关/SpringBoot/SpringBoot中默认的异常处理.md"
+      "basename": "blog-frontmatter",
+      "path": "模板/blog-frontmatter.md"
     },
     {
       "basename": "SpringBoot统一异常处理",
       "path": "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md"
     },
     {
+      "basename": "SpringBoot整合Springdoc",
+      "path": "学习笔记/Java相关/SpringBoot/SpringBoot整合Springdoc.md"
+    },
+    {
+      "basename": "SpringBoot中默认的异常处理",
+      "path": "学习笔记/Java相关/SpringBoot/SpringBoot中默认的异常处理.md"
+    },
+    {
       "basename": "SpringBoot中统一数据返回",
       "path": "学习笔记/Java相关/SpringBoot/SpringBoot中统一数据返回.md"
+    },
+    {
+      "basename": "MySQL相关知识",
+      "path": "学习笔记/数据库/MySQL相关知识.md"
+    },
+    {
+      "basename": "MySQL操作",
+      "path": "学习笔记/数据库/MySQL操作.md"
+    },
+    {
+      "basename": "笔记模板",
+      "path": "模板/笔记模板.md"
+    },
+    {
+      "basename": "函数堆栈",
+      "path": "草稿/函数堆栈.md"
     },
     {
       "basename": "从PAXOS到ZOOKEEPER分布式一致性原理与实践",
@@ -45,24 +69,8 @@
       "path": "Bookxnote/从PAXOS到ZOOKEEPER分布式一致性原理与实践/03c9bf12c48b1ee62b8c5f2856d20544.png"
     },
     {
-      "basename": "Rust学习",
-      "path": "看板/Rust学习.md"
-    },
-    {
       "basename": "b9ba507df0e175bb0b134ccc71c1530f",
       "path": "Bookxnote/从PAXOS到ZOOKEEPER分布式一致性原理与实践/b9ba507df0e175bb0b134ccc71c1530f.png"
-    },
-    {
-      "basename": "每日记录",
-      "path": "模板/每日记录.md"
-    },
-    {
-      "basename": "笔记模板",
-      "path": "模板/笔记模板.md"
-    },
-    {
-      "basename": "2023-04-20",
-      "path": "日记/2023-04-20.md"
     },
     {
       "basename": "npm源管理",
@@ -179,26 +187,6 @@
     {
       "basename": "wucai-2023-04-24-H835E9H",
       "path": "WuCai/2023/04/wucai-2023-04-24-H835E9H.md"
-    },
-    {
-      "basename": "SpringMVC配置",
-      "path": "学习笔记/Java相关/SpringMVC/SpringMVC配置.md"
-    },
-    {
-      "basename": "函数堆栈_image_1",
-      "path": "附件/image/函数堆栈_image_1.png"
-    },
-    {
-      "basename": "函数堆栈_image_1",
-      "path": "附件/image/函数堆栈_image_1.svg"
-    },
-    {
-      "basename": "函数堆栈-20230430214255.excalidraw",
-      "path": "Excalidraw/函数堆栈-20230430214255.excalidraw.md"
-    },
-    {
-      "basename": "函数堆栈-20230430214255.excalidraw",
-      "path": "Excalidraw/函数堆栈-20230430214255.excalidraw.png"
     }
   ],
   "omittedPaths": [],

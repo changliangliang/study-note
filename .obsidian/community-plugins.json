@@ -39,5 +39,6 @@
   "reveal-file-in-explorer",
   "colorful-note-borders",
   "obsidian-local-rest-api",
-  "metaedit"
+  "metaedit",
+  "obsidian-frontmatter-tag-suggest"
 ]
