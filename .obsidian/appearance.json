@@ -1,11 +1,11 @@
 {
   "accentColor": "#fe7e06",
-  "cssTheme": "Blue Topaz",
+  "cssTheme": "Obsidian Nord",
   "interfaceFontFamily": "微软雅黑",
   "textFontFamily": "微软雅黑",
   "monospaceFontFamily": "Consolas",
   "baseFontSize": 16,
-  "theme": "moonstone",
+  "theme": "obsidian",
   "nativeMenus": false,
   "translucency": false
 }

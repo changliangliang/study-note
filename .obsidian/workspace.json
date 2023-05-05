@@ -32,8 +32,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -118,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "草稿/未命名.md"
+                "file": "看板/草稿管理.md"
               }
             }
           },
@@ -152,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "草稿/未命名.md",
+                "file": "看板/草稿管理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -164,7 +163,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "草稿/未命名.md",
+                "file": "看板/草稿管理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -214,8 +213,10 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "5546666039fb824a",
+  "active": "ac0da6558a755eb5",
   "lastOpenFiles": [
+    "草稿/typescript中的this.md",
+    "草稿/未命名.md",
     "附件/image/未命名_image_4.png",
     "附件/image/未命名_image_3.png",
     "学习笔记/Rust学习/环境搭建.md",
@@ -242,7 +243,6 @@
     "学习笔记/前端开发/this指向的问题.md",
     "学习笔记/开发工具/vscode中的task.json和launch.json文件.md",
     "学习笔记/开发工具/npm源管理.md",
-    "学习笔记/开发工具/docker 常用操作.md",
     "附件/image/未命名_image_2.png",
     "附件/image/未命名_image_1.png",
     "附件/image/SpringBoot统一异常处理_image_6.png",
@@ -251,7 +251,6 @@
     "附件/image/SpringBoot统一异常处理_image_4.png",
     "附件/image/SpringBoot统一异常处理_image_3.png",
     "附件/image/SpringBoot中默认的异常处理_image_14.png",
-    "附件/image/SpringBoot中默认的异常处理_image_13.png",
     "Bookxnote/从PAXOS到ZOOKEEPER分布式一致性原理与实践",
     "Bookxnote",
     "学习笔记/Rust学习",

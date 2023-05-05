@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "草稿管理",
+      "path": "看板/草稿管理.md"
+    },
+    {
       "basename": "未命名",
       "path": "草稿/未命名.md"
     },
@@ -103,10 +107,6 @@
     {
       "basename": "docker 常用操作",
       "path": "学习笔记/开发工具/docker 常用操作.md"
-    },
-    {
-      "basename": "草稿管理",
-      "path": "看板/草稿管理.md"
     },
     {
       "basename": "MBR 主引导记录",
