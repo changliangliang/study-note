@@ -133,32 +133,79 @@ module.exports = {
 
 解析器的作用是将 `javascrpit` 源码转化为抽象语法树，以便于后续的处理，`eslint` 默认的解析器为 `espree`，此外还可以使用第三方提供的解析器。
 
-```json
-{
-    "parserOptions": {
-        "ecmaVersion": 6,
-        "sourceType": "module",
-        "ecmaFeatures": {
-            "jsx": true
-        }
-    },
-    "rules": {
-        "semi": "error"
-    }
+```js
+module.exports = {
+
+  env: {
+    browser: true,
+    es2021: true,
+  },
+  
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module'
+  },
+  rules: {
+  }
 }
 ```
 
 解析器选项使用 `parserOptions` 属性设置，可用的选项有：
 
-* `ecmaVersion` - 默认设置为 3，5（默认）， 可以使用 6、7、8、9 或 10 来指定你想要使用的 ECMAScript 版本，也可以用使用年份命名的版本号指定为 2015（同 6），2016（同 7），或 2017（同 8）或 2018（同 9）或 2019 (同 10)；
-* `sourceType` ：设置为 `"script"` (默认) 或 `"module"`；
+* `ecmaVersion`：默认设置为 3，5（默认），可以使用 6~14 来指定你想要使用的 ECMAScript 版本，也可以用使用年份命名的版本号指定为 2015，2016 之类的。
+* `sourceType`：设置为 `"script"` (默认) 或 `"module"`；
+* `allowReserved`：是否允许使用保留字作为关键字（`ecmaVersion` 需为 13）；
 * `ecmaFeatures` 这是个对象，表示你想使用的额外的语言特性，可设置如下属性：
-
-  * `globalReturn` ：允许在全局作用域下使用 `return` 语句；
+  * `globalReturn`：允许在全局作用域下使用 `return` 语句；
   * `impliedStrict`：启用全局 严格模式；
   * `jsx`：启用 JSX；
-  * `experimentalObjectRestSpread` ：启用实验性的 object rest/spread properties 支持。
 
-设置解析器选项能帮助 `eslint` 确定什么是解析错误，默认情况下对于所有语言该选项都是 `false`。
+需要注意的一点是，对于 `ES6` 语法的支持需要使用 `{ "parserOptions": { "ecmaVersion": 6 } }` 开启，但是此时对 `ES6` 中的全局变量是不支持的，还需要配置 `{ "env":{ "es6": true } }`。另外，也可以直接配置 `{ "env": { "es6": true } }`，它会会自动启用对 `ES6` 语法的支持。
 
-需要注意的一点是，对于 `ES6` 语法的支持需要使用 `{ "parserOptions": { "ecmaVersion": 6 } }` 开启，但是此时对 `ES6` 中的全局变量是不支持的， 还需要配置 `{ "env":{ "es6": true } }`。另外，也可以直接配置 `{ "env": { "es6": true } }` ，它会会自动启用对 `ES6` 语法的支持。
+### rules
+
+Eslint 附带有大量的规则，我们可以使用注释或配置文件修改项目中要使用的规则, 这些规则的取值可以为
+- `off` 或 `0`：不开启该规则；
+- `warn` 或 `1`：违反该规则触发警告；
+- `error` 或 `2`：违反该规则触发错误；
+
+```js
+module.exports = {
+
+  env: {
+    browser: true,
+    es2021: true,
+  },
+  
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module'
+  },
+  rules: {
+    eqeqeq: "off",
+    curly: "error",
+  }
+}
+```
+
+
+同环境一样，Eslint 可以使用定义在插件中的规则，使用时必须为`插件名/规则ID` 的形式。
+
+```json
+{
+    "plugins": [
+        "plugin1"
+    ],
+    "rules": {
+        "eqeqeq": "off",
+        "curly": "error",
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "plugin1/rule1": "error"
+    }
+}
+```
+
+### overrides
