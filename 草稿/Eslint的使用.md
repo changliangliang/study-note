@@ -165,9 +165,10 @@ module.exports = {
 ### rules
 
 Eslint 附带有大量的规则，我们可以使用注释或配置文件修改项目中要使用的规则, 这些规则的取值可以为
-- `off` 或 `0`：不开启该规则；
-- `warn` 或 `1`：违反该规则触发警告；
-- `error` 或 `2`：违反该规则触发错误；
+
+* `off` 或 `0`：不开启该规则；
+* `warn` 或 `1`：违反该规则触发警告；
+* `error` 或 `2`：违反该规则触发错误；
 
 ```js
 module.exports = {
@@ -188,8 +189,7 @@ module.exports = {
 }
 ```
 
-
-同环境一样，Eslint 可以使用定义在插件中的规则，使用时必须为`插件名/规则ID` 的形式。
+同环境一样，Eslint 可以使用定义在插件中的规则，使用时必须为 `插件名/规则ID` 的形式。
 
 ```json
 {
@@ -210,4 +210,120 @@ module.exports = {
 
 ### overrides
 
-如果想要将更改部分文件的检查规则，可以配置 `overrides` 项实现，
+如果想要将更改部分文件的检查规则，可以配置 `overrides` 项实现，所有 `files` 匹配到的文件都会适用对应的 `rules`。
+
+```js
+module.exports = {
+  overrides: [
+    {
+      "files": ["*-test.js", "*.spec.js"],
+      "rules": {
+        "no-unused-expressions": "off"
+      }
+    }
+  ]
+}
+```
+
+### ignorePatterns
+
+`ignorePatterns` 用于设置哪些文件不会被 Eslint 检查
+
+```js
+module.exports = {
+  overrides: [
+    {
+      "files": ["*-test.js", "*.spec.js"],
+      "rules": {
+        "no-unused-expressions": "off"
+      }
+    }
+  ],
+
+  ignorePatterns: ["temp.js", "**/vendor/*.js"],
+}
+```
+
+### extents
+
+`extends` 属性用来拓展配置文件，例如以下两个配置文件，B 在 A 的基础上进行拓展：
+
+```json
+// 配置文件A
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": [
+        "eslint:recommended"
+    ],
+    "parserOptions": {},
+    "rules": {
+        "quotes": [
+            "error",
+            "single"
+        ]
+    }
+}
+```
+
+```json
+// 配置文件B
+{
+    "env": {
+        "node": false
+    },
+    "extends": [
+        "A"
+    ],
+    "rules": {
+        "quotes": [
+            "warn",
+            "single"
+        ]
+    }
+}
+```
+
+```json
+// 等效于B的配置文件
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": false
+    },
+    "extends": [
+        "eslint:recommended"
+    ],
+    "parserOptions": {},
+    "rules": {
+        "quotes": [
+            "warn",
+            "single"
+        ]
+    }
+}
+```
+
+### root
+
+子配置文件会向上继承父文件夹中的配置文件，直到遇到 `root` 选项为 `true` 的配置文件，子配置文件会覆盖父配置文件中相同的选项。
+
+```js
+module.exports = {
+  root: true,
+  overrides: [
+    {
+      "files": ["*-test.js", "*.spec.js"],
+      "rules": {
+        "no-unused-expressions": "off"
+      }
+    }
+  ],
+
+  ignorePatterns: ["temp.js", "**/vendor/*.js"],
+}
+```

@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "日记/2023-05-05.md",
+                "file": "草稿/Eslint的使用.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -118,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "日记/2023-05-05.md"
+                "file": "草稿/Eslint的使用.md"
               }
             }
           },
@@ -152,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "日记/2023-05-05.md",
+                "file": "草稿/Eslint的使用.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -164,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "日记/2023-05-05.md",
+                "file": "草稿/Eslint的使用.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -214,15 +214,15 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "2e6886b3461627b5",
+  "active": "bf58b1fc3144fa25",
   "lastOpenFiles": [
+    "看板/草稿管理.md",
+    "草稿/Eslint的使用.md",
+    "日记/2023-05-05.md",
     "Code/java/Spring/Main.java",
     "Code/java/Spring",
     "Code/java",
     "Code",
-    "看板/草稿管理.md",
-    "日记/2023-05-05.md",
-    "草稿/Eslint的使用.md",
     "附件/image/Eslint的使用_image_4.png",
     "附件/image/Eslint的使用_image_3.png",
     "附件/image/Eslint的使用_image_2.png",
@@ -261,7 +261,6 @@
     "学习笔记/未整理",
     "scrpit/创建草稿.js",
     "scrpit",
-    "新建文件夹",
     "未命名.canvas"
   ]
 }
