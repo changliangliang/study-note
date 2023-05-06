@@ -327,3 +327,22 @@ module.exports = {
   ignorePatterns: ["temp.js", "**/vendor/*.js"],
 }
 ```
+
+## typescript
+
+Eslint 可以通过安装插件提供对 `typescript` 的支持，简单流程如下，详情见：[typescript-eslint](https://typescript-eslint.io/) 。
+
+- 安装必要的包
+	```
+	npm install --save-dev @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint typescript
+	```
+- 修改配置文件
+	```js
+	/* eslint-env node */
+	module.exports = {
+	  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended'],
+	  parser: '@typescript-eslint/parser',
+	  plugins: ['@typescript-eslint'],
+	  root: true,
+	};
+	```
