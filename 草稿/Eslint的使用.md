@@ -210,3 +210,4 @@ module.exports = {
 
 ### overrides
 
+如果想要将更改部分文件的检查规则，可以配置 `overrides` 项实现，
