@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "Eslint的使用",
-      "path": "草稿/Eslint的使用.md"
+      "basename": "2023-05-05",
+      "path": "日记/2023-05-05.md"
     },
     {
       "basename": "草稿管理",
       "path": "看板/草稿管理.md"
+    },
+    {
+      "basename": "Eslint的使用",
+      "path": "草稿/Eslint的使用.md"
     },
     {
       "basename": "未命名",
@@ -195,10 +199,6 @@
     {
       "basename": "计算机补完计划——2023年",
       "path": "草稿/计算机补完计划——2023年.md"
-    },
-    {
-      "basename": "函数堆栈",
-      "path": "草稿/函数堆栈.md"
     }
   ],
   "omittedPaths": [],
