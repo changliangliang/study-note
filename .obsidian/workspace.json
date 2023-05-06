@@ -214,8 +214,12 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "2e6886b3461627b5",
+  "active": "7f877525636d7bd1",
   "lastOpenFiles": [
+    "草稿/ts中的this.md",
+    "WuCai/wucai-UCore Lab   Niebelungen-H83DBDM.md",
+    "WuCai/wucai-学习四 中断  小熊餐馆  博客园-H83DB6D.md",
+    "WuCai/wucai-ucore操作系统学习一 ucore lab系统启动流程分析  小熊餐馆  博客园-H83DB67.md",
     "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md",
     "学习笔记/ucore操作系统实验/ucore实验：bootasm.S源码.md",
     "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md",
@@ -250,10 +254,6 @@
     "学习笔记/Java相关/Spring/Spring中的AOP配置.md",
     "学习笔记/Java相关/Spring/Spring基于XML的配置.md",
     "学习笔记/Java相关/Spring/Spring的一些高级配置.md",
-    "学习笔记/Java相关/Spring/Spirng基于Java和注解的配置.md",
-    "学习笔记/问题记录/springboot 3 自动装配方式更改.md",
-    "学习笔记/未整理/SpirngMVC进阶知识.md",
-    "学习笔记/未整理/中断、异常和系统调用.md",
     "附件/image/未命名_image_2.png",
     "附件/image/未命名_image_1.png",
     "Bookxnote/从PAXOS到ZOOKEEPER分布式一致性原理与实践",
