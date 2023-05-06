@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "vscode插件之Eslint",
+      "path": "学习笔记/开发工具/vscode插件之Eslint.md"
+    },
+    {
       "basename": "Eslint的使用",
       "path": "草稿/Eslint的使用.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "如何使用java",
       "path": "草稿/如何使用java.md"
-    },
-    {
-      "basename": "计算机补完计划——2023年",
-      "path": "草稿/计算机补完计划——2023年.md"
     }
   ],
   "omittedPaths": [],
