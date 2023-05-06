@@ -214,8 +214,11 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "bf58b1fc3144fa25",
+  "active": "2e6886b3461627b5",
   "lastOpenFiles": [
+    "Code/java/Spring/Main.java",
+    "Code/java/Spring",
+    "Code/java",
     "Code",
     "看板/草稿管理.md",
     "日记/2023-05-05.md",
@@ -259,9 +262,6 @@
     "scrpit/创建草稿.js",
     "scrpit",
     "新建文件夹",
-    "看板",
-    "Excalidraw",
-    "8086",
     "未命名.canvas"
   ]
 }
