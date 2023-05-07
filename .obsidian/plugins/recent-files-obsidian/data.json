@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "草稿管理",
+      "path": "看板/草稿管理.md"
+    },
+    {
+      "basename": "doDispatch执行流程",
+      "path": "草稿/doDispatch执行流程.md"
+    },
+    {
+      "basename": "EFL文件详解",
+      "path": "草稿/EFL文件详解.md"
+    },
+    {
       "basename": "ucore操作系统实验：环境搭建",
       "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md"
     },
@@ -19,10 +31,6 @@
     {
       "basename": "实模式、保护模式、A20 Gate概念解析",
       "path": "学习笔记/操作系统/实模式、保护模式、A20 Gate概念解析.md"
-    },
-    {
-      "basename": "草稿管理",
-      "path": "看板/草稿管理.md"
     },
     {
       "basename": "vscode插件之Eslint",
@@ -191,14 +199,6 @@
     {
       "basename": "initMultipartResolver",
       "path": "草稿/initMultipartResolver.md"
-    },
-    {
-      "basename": "EFL文件详解",
-      "path": "草稿/EFL文件详解.md"
-    },
-    {
-      "basename": "doDispatch执行流程",
-      "path": "草稿/doDispatch执行流程.md"
     }
   ],
   "omittedPaths": [],
