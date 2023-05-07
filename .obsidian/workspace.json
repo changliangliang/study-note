@@ -18,8 +18,22 @@
               },
               "pinned": true
             }
+          },
+          {
+            "id": "fd8a54ad8748bfff",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "草稿/Eslint的使用.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -104,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "看板/草稿管理.md"
+                "file": "草稿/Eslint的使用.md"
               }
             }
           },
@@ -138,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "看板/草稿管理.md",
+                "file": "草稿/Eslint的使用.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "看板/草稿管理.md",
+                "file": "草稿/Eslint的使用.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,8 +214,9 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "ac0da6558a755eb5",
+  "active": "fd8a54ad8748bfff",
   "lastOpenFiles": [
+    "看板/草稿管理.md",
     "草稿/doDispatch执行流程.md",
     "草稿/EFL文件详解.md",
     "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md",
@@ -213,7 +228,6 @@
     "学习笔记/ucore操作系统实验/ucore实验：bootasm.S源码.md",
     "学习笔记/操作系统/socket连接不安全的原因.md",
     "学习笔记/操作系统/实模式、保护模式、A20 Gate概念解析.md",
-    "看板/草稿管理.md",
     "学习笔记/开发工具/vscode插件之Eslint.md",
     "草稿/Eslint的使用.md",
     "附件/image/vscode插件之Eslint_image_2.png",

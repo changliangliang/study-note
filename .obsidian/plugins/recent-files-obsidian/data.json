@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Eslint的使用",
+      "path": "草稿/Eslint的使用.md"
+    },
+    {
       "basename": "草稿管理",
       "path": "看板/草稿管理.md"
     },
@@ -35,10 +39,6 @@
     {
       "basename": "vscode插件之Eslint",
       "path": "学习笔记/开发工具/vscode插件之Eslint.md"
-    },
-    {
-      "basename": "Eslint的使用",
-      "path": "草稿/Eslint的使用.md"
     },
     {
       "basename": "2023-05-05",
