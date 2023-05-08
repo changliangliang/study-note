@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "SpringSecurity配置",
+      "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md"
+    },
+    {
       "basename": "Eslint的使用",
       "path": "草稿/Eslint的使用.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Obsidian配置和插件",
       "path": "草稿/Obsidian配置和插件.md"
-    },
-    {
-      "basename": "initMultipartResolver",
-      "path": "草稿/initMultipartResolver.md"
     }
   ],
   "omittedPaths": [],
