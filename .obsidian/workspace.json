@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "草稿/Eslint的使用.md",
+                "file": "学习笔记/开发工具/vscode中的task.json和launch.json文件.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -46,7 +46,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -131,7 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md"
+                "file": "学习笔记/开发工具/vscode中的task.json和launch.json文件.md"
               }
             }
           },
@@ -165,7 +165,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md",
+                "file": "学习笔记/开发工具/vscode中的task.json和launch.json文件.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,7 +177,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md",
+                "file": "学习笔记/开发工具/vscode中的task.json和launch.json文件.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -227,9 +227,11 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "d0ca1bc03a188155",
+  "active": "2e6886b3461627b5",
   "lastOpenFiles": [
-    "草稿/Eslint的使用.md",
+    "学习笔记/开发工具/vscode插件之Eslint.md",
+    "学习笔记/前端开发/Eslint的使用.md",
+    "学习笔记/前端开发/this指向的问题.md",
     "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md",
     "学习笔记/Java相关/SpringBoot/SpringSecurity",
     "学习笔记/Java相关/未命名",
@@ -247,7 +249,6 @@
     "学习笔记/ucore操作系统实验/ucore实验：bootasm.S源码.md",
     "学习笔记/操作系统/socket连接不安全的原因.md",
     "学习笔记/操作系统/实模式、保护模式、A20 Gate概念解析.md",
-    "学习笔记/开发工具/vscode插件之Eslint.md",
     "附件/image/vscode插件之Eslint_image_2.png",
     "附件/image/vscode插件之Eslint_image_1.png",
     "日记/2023-05-05.md",
@@ -268,7 +269,6 @@
     "学习笔记/Java相关/SpringMVC/SpringMVC配置.md",
     "学习笔记/Java相关/SpringMVC/SpringMVC文件上传.md",
     "学习笔记/Java相关/SpringBoot/SpringBoot中统一数据返回.md",
-    "学习笔记/Java相关/SpringBoot/SpringBoot中默认的异常处理.md",
     "附件/image/未命名_image_2.png",
     "附件/image/未命名_image_1.png",
     "Bookxnote/从PAXOS到ZOOKEEPER分布式一致性原理与实践",

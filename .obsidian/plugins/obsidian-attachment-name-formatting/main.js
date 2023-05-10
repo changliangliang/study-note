@@ -2780,6 +2780,7 @@ var DEFAULT_SETTINGS = {
   connectorOption: "Single",
   connector: "_",
   multipleConnectors: ["_", "_", "_"],
+  multipleConnectorsEnabled: [true, true, true],
   enableImage: true,
   imageExtensions: [true, true, true, true, true, true, true],
   image: "image",
@@ -2907,15 +2908,29 @@ var MultiConnectorModal = class extends import_obsidian.Modal {
     }
     const startPonit = this.plugin.settings.enableExcludeFileName ? 1 : 0;
     for (let i = startPonit; i < optionLength; i++) {
-      new import_obsidian.Setting(contentEl).setName(optionNames[i]).addText((text) => text.setPlaceholder("_").setValue(this.plugin.settings.multipleConnectors[i] === "_" ? "" : this.plugin.settings.multipleConnectors[i]).onChange((value) => __async(this, null, function* () {
-        this.checkValidity(value);
-        this.plugin.settings.multipleConnectors[i] = value === "" ? DEFAULT_SETTINGS.multipleConnectors[i] : value;
-        yield this.plugin.saveSettings();
-      })));
+      const connectorSetting = new import_obsidian.Setting(contentEl).setName(optionNames[i]);
+      if (this.plugin.settings.multipleConnectorsEnabled[i]) {
+        connectorSetting.addText((text) => text.setPlaceholder("_").setValue(this.plugin.settings.multipleConnectors[i] === "_" ? "" : this.plugin.settings.multipleConnectors[i]).onChange((value) => __async(this, null, function* () {
+          this.checkValidity(value);
+          this.plugin.settings.multipleConnectors[i] = value === "" ? DEFAULT_SETTINGS.multipleConnectors[i] : value;
+          yield this.plugin.saveSettings();
+        })));
+      }
+      connectorSetting.addToggle((toggle) => {
+        toggle.setValue(this.plugin.settings.multipleConnectorsEnabled[i]).onChange((value) => __async(this, null, function* () {
+          this.plugin.settings.multipleConnectorsEnabled[i] = value;
+          yield this.plugin.saveSettings();
+          this.onClose();
+          this.onOpen();
+        }));
+      });
     }
     new import_obsidian.Setting(contentEl).addButton((button) => button.setButtonText("Reset").onClick(() => __async(this, null, function* () {
       this.plugin.settings.multipleConnectors = [
         ...DEFAULT_SETTINGS.multipleConnectors
+      ];
+      this.plugin.settings.multipleConnectorsEnabled = [
+        ...DEFAULT_SETTINGS.multipleConnectorsEnabled
       ];
       yield this.plugin.saveSettings();
       this.onClose();
@@ -3091,7 +3106,7 @@ var ANFSettingTab = class extends import_obsidian2.PluginSettingTab {
           new MultiConnectorModal(app, this.plugin).open();
         });
       }).addDropdown((dropDown) => {
-        dropDown.addOption("None", "None").addOption("Single", "Single").addOption("Multiple", "Multiple").setValue("Multiple").onChange((value) => __async(this, null, function* () {
+        dropDown.addOption("Single", "Single").addOption("Multiple", "Multiple").setValue("Multiple").onChange((value) => __async(this, null, function* () {
           this.plugin.settings.connectorOption = value;
           yield this.plugin.saveSettings();
           this.display();
@@ -3109,17 +3124,8 @@ var ANFSettingTab = class extends import_obsidian2.PluginSettingTab {
         this.plugin.settings.connector = value === "" ? DEFAULT_SETTINGS.connector : value;
         yield this.plugin.saveSettings();
       }))).addDropdown((dropDown) => {
-        dropDown.addOption("None", "None").addOption("Single", "Single").addOption("Multiple", "Multiple").setValue("Single").onChange((value) => __async(this, null, function* () {
+        dropDown.addOption("Single", "Single").addOption("Multiple", "Multiple").setValue("Single").onChange((value) => __async(this, null, function* () {
           this.plugin.settings.connectorOption = value;
-          yield this.plugin.saveSettings();
-          this.display();
-        }));
-      });
-    } else {
-      connectorSetting.addDropdown((dropDown) => {
-        dropDown.addOption("None", "None").addOption("Single", "Single").addOption("Multiple", "Multiple").onChange((value) => __async(this, null, function* () {
-          this.plugin.settings.connectorOption = value;
-          this.plugin.settings.oneInMany = "Default";
           yield this.plugin.saveSettings();
           this.display();
         }));
@@ -3156,7 +3162,7 @@ var ANFSettingTab = class extends import_obsidian2.PluginSettingTab {
       });
     }
     new import_obsidian2.Setting(containerEl).setName("Handle same attachment used in different notes").setDesc("Choose to how to handle the same attachment used in different notes.There are three options: 1. Default: Always rename with the note name; 2. Copy: Create a copy for the attachment; 3. NoChange: Stick to the first time that attachment is renamed, and will not occupy index number;").addDropdown((dropDown) => {
-      dropDown.addOption("Default", "Default").addOption("Copy", "Copy").addOption("NoChange", "NoChange").setDisabled(this.plugin.settings.enableExcludeFileName || this.plugin.settings.connectorOption === "None").onChange((value) => __async(this, null, function* () {
+      dropDown.addOption("Default", "Default").addOption("Copy", "Copy").addOption("NoChange", "NoChange").setValue(this.plugin.settings.oneInMany).setDisabled(this.plugin.settings.enableExcludeFileName).onChange((value) => __async(this, null, function* () {
         this.plugin.settings.oneInMany = value;
         yield this.plugin.saveSettings();
       }));
@@ -3183,6 +3189,7 @@ var ANFSettingTab = class extends import_obsidian2.PluginSettingTab {
       toggle.setValue(this.plugin.settings.enableExcludeFileName).onChange((value) => __async(this, null, function* () {
         this.plugin.settings.enableExcludeFileName = value;
         this.plugin.settings.enableTime = value;
+        this.plugin.settings.multipleConnectorsEnabled[0] = !value;
         this.plugin.settings.oneInMany = "Default";
         yield this.plugin.saveSettings();
         this.display();
@@ -3485,17 +3492,17 @@ var AttachmentNameFormatting = class extends import_obsidian3.Plugin {
               let newName = "";
               if (this.settings.connectorOption === "Multiple") {
                 newName += baseNameComponent[0];
-                const startPoint = this.settings.enableExcludeFileName ? 2 : 1;
-                for (let i = startPoint; i < baseNameComponent.length; i++) {
-                  newName += this.settings.multipleConnectors[i - 1] + baseNameComponent[i];
+                const connectorShift = this.settings.enableExcludeFileName ? 0 : 1;
+                for (let i = 1; i < baseNameComponent.length; i++) {
+                  if (this.settings.multipleConnectorsEnabled[i - connectorShift]) {
+                    newName += this.settings.multipleConnectors[i - connectorShift];
+                  }
+                  newName += baseNameComponent[i];
                 }
                 newName += "." + attachmentFile.extension;
               } else if (this.settings.connectorOption === "Single") {
                 newName = baseNameComponent.join(this.settings.connector) + "." + attachmentFile.extension;
-              } else {
-                newName = baseNameComponent.join("") + "." + attachmentFile.extension;
               }
-              console.log(newName);
               yield this.app.vault.adapter.exists(path.join(parent_path, subfolder)).then((value) => __async(this, null, function* () {
                 if (!value) {
                   yield this.app.vault.createFolder(path.join(parent_path, subfolder));
@@ -3685,33 +3692,55 @@ var AttachmentNameFormatting = class extends import_obsidian3.Plugin {
     return attachmentFile;
   }
   checkAlreadyRenamed(name, noteName, attachmentType) {
-    name = name.replace(path.extname(name), "");
     let components = [];
-    if (this.settings.connectorOption) {
-      const regexString = /xxx(\S*)/;
-      for (const i in this.settings.multipleConnectors) {
-        const newRegex = RegExp(regexString.toString().replace(/\//g, "").replace(/xxx/g, `\\` + this.settings.multipleConnectors[i]));
-        const matchString = name.match(newRegex);
-        if (matchString) {
-          components.push(name.replace(name.match(newRegex)[0], ""));
-          name = name.match(newRegex)[1];
+    if (this.settings.connectorOption === "Multiple") {
+      if (!this.settings.enableExcludeFileName) {
+        const matchString2 = name.match(RegExp(/.*(?=xxx)/.toString().replace(/\//g, "").replace(/xxx/g, attachmentType)));
+        if (matchString2) {
+          if (this.settings.multipleConnectorsEnabled[0]) {
+            components.push(matchString2[0].replace(this.settings.multipleConnectors[0], ""));
+          } else {
+            components.push(matchString2[0]);
+          }
+          name = name.replace(matchString2[0], "");
         } else {
-          components.push(name);
+          return false;
         }
       }
-      if (!this.settings.enableExcludeFileName && this.settings.enableTime) {
-        components.push(name);
+      const matchString = name.match(RegExp(/xxx/.toString().replace(/\//g, "").replace(/xxx/g, attachmentType)));
+      if (matchString) {
+        components.push(matchString[0]);
+        name = name.replace(matchString[0], "");
+      } else {
+        return false;
+      }
+      components.push("indexNumberPlaceholder");
+      if (this.settings.enableTime) {
+        const matchString2 = name.match(RegExp(/\d{14}(?=xxx)/.toString().replace(/\//g, "").replace(/xxx/g, `\\` + path.extname(name))));
+        if (matchString2) {
+          components.push(matchString2[0]);
+          name = name.replace(matchString2[0], "");
+        } else {
+          return false;
+        }
       }
     } else {
       components = [...name.split(this.settings.connector)];
     }
-    if (this.settings.enableTime) {
-      const dateCheck = new Date(+components[3].slice(0, 4), +components[3].slice(4, 6) - 1, +components[3].slice(6, 8), +components[3].slice(8, 10), +components[3].slice(10, 12), +components[3].slice(12, 14));
-      if (components.length === 4 && components[0] !== noteName && components[1] === attachmentType && dateCheck.toString() !== "Invalid Date") {
-        return true;
+    if (components.length === 3) {
+      if (components[2].length > 1) {
+        const dateCheck = new Date(+components[2].slice(0, 4), +components[2].slice(4, 6) - 1, +components[2].slice(6, 8), +components[2].slice(8, 10), +components[2].slice(10, 12), +components[2].slice(12, 14));
+        if (components[1] === attachmentType && dateCheck.toString() !== "Invalid Date") {
+          return true;
+        }
+      } else {
+        if (components[0] !== noteName && components[1] === attachmentType) {
+          return true;
+        }
       }
-    } else {
-      if (components.length === 3 && components[0] !== noteName && components[1] === attachmentType) {
+    } else if (components.length === 4) {
+      const dateCheck = new Date(+components[3].slice(0, 4), +components[3].slice(4, 6) - 1, +components[3].slice(6, 8), +components[3].slice(8, 10), +components[3].slice(10, 12), +components[3].slice(12, 14));
+      if (components[0] !== noteName && components[1] === attachmentType && dateCheck.toString() !== "Invalid Date") {
         return true;
       }
     }
