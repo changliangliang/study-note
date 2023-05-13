@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "SpringSecurity配置",
+      "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md"
+    },
+    {
+      "basename": "SpringSecurity原理",
+      "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md"
+    },
+    {
+      "basename": "草稿管理",
+      "path": "看板/草稿管理.md"
+    },
+    {
+      "basename": "常用软件配置",
+      "path": "草稿/常用软件配置.md"
+    },
+    {
       "basename": "vscode中的task.json和launch.json文件",
       "path": "学习笔记/开发工具/vscode中的task.json和launch.json文件.md"
     },
@@ -15,14 +31,6 @@
     {
       "basename": "this指向的问题",
       "path": "学习笔记/前端开发/this指向的问题.md"
-    },
-    {
-      "basename": "SpringSecurity配置",
-      "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md"
-    },
-    {
-      "basename": "草稿管理",
-      "path": "看板/草稿管理.md"
     },
     {
       "basename": "doDispatch执行流程",
@@ -191,14 +199,6 @@
     {
       "basename": "博客列表",
       "path": "常用/博客列表.md"
-    },
-    {
-      "basename": "笔记目录",
-      "path": "常用/笔记目录.md"
-    },
-    {
-      "basename": "Obsidian配置和插件",
-      "path": "草稿/Obsidian配置和插件.md"
     }
   ],
   "omittedPaths": [],
