@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "SpringBoot异步任务和定时任务",
+      "path": "学习笔记/Java相关/SpringBoot/SpringBoot异步任务和定时任务.md"
+    },
+    {
       "basename": "SpringBoot整合redis",
       "path": "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot整合redis.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "列表",
       "path": "常用/列表.md"
-    },
-    {
-      "basename": "卡片目录",
-      "path": "常用/卡片目录.md"
     }
   ],
   "omittedPaths": [],
