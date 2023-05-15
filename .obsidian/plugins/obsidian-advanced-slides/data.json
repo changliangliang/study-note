@@ -14,8 +14,8 @@
   "controls": true,
   "progress": true,
   "slideNumber": false,
-  "showGrid": false,
+  "showGrid": true,
   "autoComplete": "inPreview",
-  "paneMode": "split",
+  "paneMode": "tab",
   "motm": "2023-05-15T13:52:18.969Z"
 }

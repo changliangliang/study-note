@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "SpringBoot整合redis",
+      "path": "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot整合redis.md"
+    },
+    {
       "basename": "未命名",
       "path": "草稿/未命名.md"
     },
@@ -15,10 +19,6 @@
     {
       "basename": "SpringBoot异步任务和定时任务",
       "path": "学习笔记/Java相关/SpringBoot/SpringBoot异步任务和定时任务.md"
-    },
-    {
-      "basename": "SpringBoot整合redis",
-      "path": "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot整合redis.md"
     },
     {
       "basename": "SpringSecurity配置",
