@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "未命名",
+      "path": "草稿/未命名.md"
+    },
+    {
+      "basename": "SpringMVC配置",
+      "path": "学习笔记/Java相关/SpringMVC/SpringMVC配置.md"
+    },
+    {
+      "basename": "SpringBoot中默认的异常处理",
+      "path": "学习笔记/Java相关/SpringBoot/SpringBoot中默认的异常处理.md"
+    },
+    {
       "basename": "SpringBoot异步任务和定时任务",
       "path": "学习笔记/Java相关/SpringBoot/SpringBoot异步任务和定时任务.md"
     },
@@ -81,10 +93,6 @@
       "path": "日记/2023-05-05.md"
     },
     {
-      "basename": "未命名",
-      "path": "草稿/未命名.md"
-    },
-    {
       "basename": "环境搭建",
       "path": "学习笔记/Rust学习/环境搭建.md"
     },
@@ -93,20 +101,12 @@
       "path": "学习笔记/linux学习/ubuntu中的网络配置.md"
     },
     {
-      "basename": "SpringMVC配置",
-      "path": "学习笔记/Java相关/SpringMVC/SpringMVC配置.md"
-    },
-    {
       "basename": "SpringMVC文件上传",
       "path": "学习笔记/Java相关/SpringMVC/SpringMVC文件上传.md"
     },
     {
       "basename": "SpringBoot中统一数据返回",
       "path": "学习笔记/Java相关/SpringBoot/SpringBoot中统一数据返回.md"
-    },
-    {
-      "basename": "SpringBoot中默认的异常处理",
-      "path": "学习笔记/Java相关/SpringBoot/SpringBoot中默认的异常处理.md"
     },
     {
       "basename": "SpringBoot整合Springdoc",
