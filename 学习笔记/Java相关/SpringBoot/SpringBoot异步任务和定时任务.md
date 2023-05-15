@@ -29,3 +29,24 @@ public void test() throws InterruptedException {
 
 ## 定时任务
 
+### 注解方式
+
+在 SpringBoot 中使用定时任务需要添加 `@EnableScheduling` 注解，之后需要在方法上使用 `@Scheduled` 注解，其中 `cron` 属性为可以添加 `cron` 表达式。
+
+```java
+@SpringBootApplication
+@EnableScheduling
+@MapperScan("com.liang.cfile.mapper")
+public class CflieApplication {
+}
+```
+
+```java
+@Scheduled(cron = "*/5 * * * * ?")
+public void test() throws InterruptedException {
+	System.out.println(Thread.currentThread() + "+++++++++++++");
+}
+```
+
+### 接口方式
+
