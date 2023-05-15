@@ -26,7 +26,6 @@ public void test() throws InterruptedException {
 }
 ```
 
-
 ## 定时任务
 
 ### 注解方式
@@ -50,8 +49,7 @@ public void test() throws InterruptedException {
 
 ### 接口方式
 
-接口方式实现定时任务可以向容器中添加一个 `SchedulingConfigurer` 类，比起注解方式它的优势是可以将任务执行时间放在数据库中，做到动态的修改任务的执行时间，
-
+接口方式实现定时任务可以向容器中添加一个 `SchedulingConfigurer` 类，比起注解方式它的优势是可以将任务执行时间放在数据库中，做到动态的修改任务的执行时间，不用每次更改都重启程序。
 
 ```java
 @Bean
