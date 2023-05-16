@@ -25,3 +25,4 @@ spring:
     password: 123456
     database: 0
 ```
+
