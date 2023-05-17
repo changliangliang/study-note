@@ -222,8 +222,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 533.5,
-    "collapsed": true
+    "width": 533.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -249,7 +248,7 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "4b431eab4c5f4cb0",
+  "active": "2e6886b3461627b5",
   "lastOpenFiles": [
     "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot整合redis.md",
     "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot序列化.md",
