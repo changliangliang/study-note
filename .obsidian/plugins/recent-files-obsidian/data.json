@@ -1,16 +1,24 @@
 {
   "recentFiles": [
     {
+      "basename": "SpringMVC文件上传",
+      "path": "学习笔记/Java相关/SpringMVC/SpringMVC文件上传.md"
+    },
+    {
+      "basename": "SpringMVC配置",
+      "path": "学习笔记/Java相关/SpringMVC/SpringMVC配置.md"
+    },
+    {
+      "basename": "Java 中的 char 类型能否存储中文",
+      "path": "学习笔记/Java相关/Java 中的 char 类型能否存储中文.md"
+    },
+    {
       "basename": "SpringBoot整合redis",
       "path": "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot整合redis.md"
     },
     {
       "basename": "未命名",
       "path": "草稿/未命名.md"
-    },
-    {
-      "basename": "SpringMVC配置",
-      "path": "学习笔记/Java相关/SpringMVC/SpringMVC配置.md"
     },
     {
       "basename": "SpringBoot中默认的异常处理",
@@ -99,10 +107,6 @@
     {
       "basename": "ubuntu中的网络配置",
       "path": "学习笔记/linux学习/ubuntu中的网络配置.md"
-    },
-    {
-      "basename": "SpringMVC文件上传",
-      "path": "学习笔记/Java相关/SpringMVC/SpringMVC文件上传.md"
     },
     {
       "basename": "SpringBoot中统一数据返回",
@@ -195,10 +199,6 @@
     {
       "basename": "软件列表",
       "path": "常用/软件列表.md"
-    },
-    {
-      "basename": "列表",
-      "path": "常用/列表.md"
     }
   ],
   "omittedPaths": [],
