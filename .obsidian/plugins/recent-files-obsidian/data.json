@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "SpringBoot序列化",
+      "path": "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot序列化.md"
+    },
+    {
+      "basename": "SpringBoot整合redis",
+      "path": "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot整合redis.md"
+    },
+    {
+      "basename": "SpringSecurity原理",
+      "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md"
+    },
+    {
       "basename": "SpringMVC文件上传",
       "path": "学习笔记/Java相关/SpringMVC/SpringMVC文件上传.md"
     },
@@ -11,10 +23,6 @@
     {
       "basename": "Java 中的 char 类型能否存储中文",
       "path": "学习笔记/Java相关/Java 中的 char 类型能否存储中文.md"
-    },
-    {
-      "basename": "SpringBoot整合redis",
-      "path": "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot整合redis.md"
     },
     {
       "basename": "未命名",
@@ -43,10 +51,6 @@
     {
       "basename": "草稿管理",
       "path": "看板/草稿管理.md"
-    },
-    {
-      "basename": "SpringSecurity原理",
-      "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md"
     },
     {
       "basename": "常用软件配置",
@@ -195,10 +199,6 @@
     {
       "basename": "未命名",
       "path": "常用/未命名.md"
-    },
-    {
-      "basename": "软件列表",
-      "path": "常用/软件列表.md"
     }
   ],
   "omittedPaths": [],
