@@ -1,12 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "Jackson中LocalDateTime序列化与反序列化",
-      "path": "草稿/Jackson中LocalDateTime序列化与反序列化.md"
-    },
-    {
       "basename": "SpringBoot整合redis",
       "path": "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot整合redis.md"
+    },
+    {
+      "basename": "Jackson中LocalDateTime序列化与反序列化",
+      "path": "草稿/Jackson中LocalDateTime序列化与反序列化.md"
     },
     {
       "basename": "SpringBoot序列化",
