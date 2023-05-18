@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "Jackson中LocalDateTime序列化与反序列化",
+      "path": "草稿/Jackson中LocalDateTime序列化与反序列化.md"
+    },
+    {
+      "basename": "SpringBoot整合redis",
+      "path": "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot整合redis.md"
+    },
+    {
+      "basename": "SpringBoot序列化",
+      "path": "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot序列化.md"
+    },
+    {
       "basename": "@ConditionalOnClass注解",
       "path": "草稿/@ConditionalOnClass注解.md"
     },
@@ -11,14 +23,6 @@
     {
       "basename": "Spirng基于Java和注解的配置",
       "path": "学习笔记/Java相关/Spring/Spirng基于Java和注解的配置.md"
-    },
-    {
-      "basename": "SpringBoot序列化",
-      "path": "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot序列化.md"
-    },
-    {
-      "basename": "SpringBoot整合redis",
-      "path": "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot整合redis.md"
     },
     {
       "basename": "SpringSecurity原理",
@@ -195,10 +199,6 @@
     {
       "basename": "全局描述符表（GDT）",
       "path": "学习笔记/操作系统/全局描述符表（GDT）.md"
-    },
-    {
-      "basename": "计算机的启动",
-      "path": "学习笔记/操作系统/计算机的启动.md"
     }
   ],
   "omittedPaths": [],
