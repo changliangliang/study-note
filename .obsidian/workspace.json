@@ -38,7 +38,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot序列化.md",
+                "file": "草稿/@ConditionalOnClass注解.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -88,7 +88,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "mysql",
+                "query": "ConditionalOnClass",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot序列化.md"
+                "file": "草稿/@ConditionalOnClass注解.md"
               }
             }
           },
@@ -178,7 +178,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot序列化.md",
+                "file": "草稿/@ConditionalOnClass注解.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -190,7 +190,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot序列化.md",
+                "file": "草稿/@ConditionalOnClass注解.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -222,7 +222,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 533.5
+    "width": 533.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -250,8 +251,11 @@
   },
   "active": "4b431eab4c5f4cb0",
   "lastOpenFiles": [
-    "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot整合redis.md",
+    "看板/草稿管理.md",
+    "学习笔记/Java相关/Spring/Spirng基于Java和注解的配置.md",
+    "草稿/@ConditionalOnClass注解.md",
     "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot序列化.md",
+    "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot整合redis.md",
     "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md",
     "学习笔记/Java相关/SpringMVC/SpringMVC文件上传.md",
     "学习笔记/Java相关/SpringMVC/SpringMVC配置.md",
@@ -263,7 +267,6 @@
     "草稿/docker常用容器创建.md",
     "学习笔记/开发工具/docker 常用操作.md",
     "学习笔记/Java相关/SpringBoot/SpringBoot整合",
-    "看板/草稿管理.md",
     "附件/image/SpringSecurity配置_image_2.png",
     "附件/image/SpringSecurity配置_image_1.png",
     "草稿/常用软件配置.md",
@@ -279,8 +282,6 @@
     "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md",
     "草稿/ts中的this.md",
     "WuCai/wucai-UCore Lab   Niebelungen-H83DBDM.md",
-    "WuCai/wucai-学习四 中断  小熊餐馆  博客园-H83DB6D.md",
-    "WuCai/wucai-ucore操作系统学习一 ucore lab系统启动流程分析  小熊餐馆  博客园-H83DB67.md",
     "附件/image/vscode插件之Eslint_image_2.png",
     "附件/image/vscode插件之Eslint_image_1.png",
     "Code/java/Spring/Main.java",
