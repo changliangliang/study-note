@@ -9,12 +9,12 @@
       "path": "草稿/Jackson中LocalDateTime序列化与反序列化.md"
     },
     {
-      "basename": "SpringBoot序列化",
-      "path": "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot序列化.md"
-    },
-    {
       "basename": "@ConditionalOnClass注解",
       "path": "草稿/@ConditionalOnClass注解.md"
+    },
+    {
+      "basename": "SpringBoot序列化",
+      "path": "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot序列化.md"
     },
     {
       "basename": "草稿管理",

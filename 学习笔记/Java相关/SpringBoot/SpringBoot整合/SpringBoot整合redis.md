@@ -28,7 +28,7 @@ spring:
 
 ## LocalDateTime 序列化失败
 
-原因在于 `GenericJackson2JsonRedisSerializer` 不支持 `LocalDateTime` 的序列化，那么要解决这个问题可以添加一个针对 `LocalDateTime` 的序列化和反序列化器
+原因在于 `GenericJackson2JsonRedisSerializer` 不支持 `LocalDateTime` 的序列化，那么要解决这个问题可以添加一个针对 `LocalDateTime` 类型的序列化和反序列化器：
 
 ```java
 ObjectMapper objectMapper = new ObjectMapper();
