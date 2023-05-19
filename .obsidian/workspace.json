@@ -23,12 +23,9 @@
             "id": "feebe82fe3d7ae56",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "kanban",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot整合redis.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
+                "file": "看板/C++学习进度.md"
               }
             }
           }
@@ -118,7 +115,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot整合redis.md"
+                "file": "看板/C++学习进度.md"
               }
             }
           },
@@ -152,7 +149,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot整合redis.md",
+                "file": "看板/C++学习进度.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -164,7 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot整合redis.md",
+                "file": "看板/C++学习进度.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -224,11 +221,12 @@
   },
   "active": "feebe82fe3d7ae56",
   "lastOpenFiles": [
+    "看板/草稿管理.md",
+    "看板/C++学习进度.md",
+    "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot整合redis.md",
     "草稿/Jackson中LocalDateTime序列化与反序列化.md",
     "草稿/@ConditionalOnClass注解.md",
-    "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot整合redis.md",
     "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot序列化.md",
-    "看板/草稿管理.md",
     "学习笔记/Java相关/Spring/Spirng基于Java和注解的配置.md",
     "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md",
     "学习笔记/Java相关/SpringMVC/SpringMVC文件上传.md",
@@ -254,7 +252,6 @@
     "草稿/doDispatch执行流程.md",
     "草稿/EFL文件详解.md",
     "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md",
-    "草稿/ts中的this.md",
     "附件/image/vscode插件之Eslint_image_2.png",
     "附件/image/vscode插件之Eslint_image_1.png",
     "Code/java/Spring/Main.java",
