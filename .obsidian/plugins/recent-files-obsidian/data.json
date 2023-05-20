@@ -1,6 +1,46 @@
 {
   "recentFiles": [
     {
+      "basename": "EFL文件详解",
+      "path": "草稿/EFL文件详解.md"
+    },
+    {
+      "basename": "计算机补完计划——2023年",
+      "path": "草稿/计算机补完计划——2023年.md"
+    },
+    {
+      "basename": "函数堆栈",
+      "path": "草稿/函数堆栈.md"
+    },
+    {
+      "basename": "如何使用java",
+      "path": "草稿/如何使用java.md"
+    },
+    {
+      "basename": "常用软件配置",
+      "path": "草稿/常用软件配置.md"
+    },
+    {
+      "basename": "@ConditionalOnClass注解",
+      "path": "草稿/@ConditionalOnClass注解.md"
+    },
+    {
+      "basename": "C++学习进度",
+      "path": "看板/C++学习进度.md"
+    },
+    {
+      "basename": "草稿管理",
+      "path": "看板/草稿管理.md"
+    },
+    {
+      "basename": "SpringMVC文件上传",
+      "path": "学习笔记/Java相关/SpringMVC/SpringMVC文件上传.md"
+    },
+    {
+      "basename": "SpringMVC配置",
+      "path": "学习笔记/Java相关/SpringMVC/SpringMVC配置.md"
+    },
+    {
       "basename": "SpringSecurity原理",
       "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md"
     },
@@ -45,28 +85,8 @@
       "path": "学习笔记/操作系统/计算机的启动.md"
     },
     {
-      "basename": "C++学习进度",
-      "path": "看板/C++学习进度.md"
-    },
-    {
-      "basename": "草稿管理",
-      "path": "看板/草稿管理.md"
-    },
-    {
       "basename": "Jackson中LocalDateTime序列化与反序列化",
       "path": "草稿/Jackson中LocalDateTime序列化与反序列化.md"
-    },
-    {
-      "basename": "@ConditionalOnClass注解",
-      "path": "草稿/@ConditionalOnClass注解.md"
-    },
-    {
-      "basename": "SpringMVC文件上传",
-      "path": "学习笔记/Java相关/SpringMVC/SpringMVC文件上传.md"
-    },
-    {
-      "basename": "SpringMVC配置",
-      "path": "学习笔记/Java相关/SpringMVC/SpringMVC配置.md"
     },
     {
       "basename": "未命名",
@@ -93,10 +113,6 @@
       "path": "学习笔记/开发工具/docker 常用操作.md"
     },
     {
-      "basename": "常用软件配置",
-      "path": "草稿/常用软件配置.md"
-    },
-    {
       "basename": "vscode中的task.json和launch.json文件",
       "path": "学习笔记/开发工具/vscode中的task.json和launch.json文件.md"
     },
@@ -115,10 +131,6 @@
     {
       "basename": "doDispatch执行流程",
       "path": "草稿/doDispatch执行流程.md"
-    },
-    {
-      "basename": "EFL文件详解",
-      "path": "草稿/EFL文件详解.md"
     },
     {
       "basename": "ucore操作系统实验：环境搭建",
@@ -187,18 +199,6 @@
     {
       "basename": "MySQL操作",
       "path": "学习笔记/数据库/MySQL操作.md"
-    },
-    {
-      "basename": "MySQL相关知识",
-      "path": "学习笔记/数据库/MySQL相关知识.md"
-    },
-    {
-      "basename": "npm源管理",
-      "path": "学习笔记/开发工具/npm源管理.md"
-    },
-    {
-      "basename": "MBR 主引导记录",
-      "path": "学习笔记/计算机知识/MBR 主引导记录.md"
     }
   ],
   "omittedPaths": [],
