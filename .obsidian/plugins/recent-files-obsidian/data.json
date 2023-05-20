@@ -1,6 +1,38 @@
 {
   "recentFiles": [
     {
+      "basename": "SpringBoot统一异常处理",
+      "path": "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md"
+    },
+    {
+      "basename": "Java 中的 char 类型能否存储中文",
+      "path": "学习笔记/Java相关/Java 中的 char 类型能否存储中文.md"
+    },
+    {
+      "basename": "Spring基于XML的配置",
+      "path": "学习笔记/Java相关/Spring/Spring基于XML的配置.md"
+    },
+    {
+      "basename": "Spring的一些高级配置",
+      "path": "学习笔记/Java相关/Spring/Spring的一些高级配置.md"
+    },
+    {
+      "basename": "Spirng基于Java和注解的配置",
+      "path": "学习笔记/Java相关/Spring/Spirng基于Java和注解的配置.md"
+    },
+    {
+      "basename": "socket连接不安全的原因",
+      "path": "学习笔记/操作系统/socket连接不安全的原因.md"
+    },
+    {
+      "basename": "全局描述符表（GDT）",
+      "path": "学习笔记/操作系统/全局描述符表（GDT）.md"
+    },
+    {
+      "basename": "计算机的启动",
+      "path": "学习笔记/操作系统/计算机的启动.md"
+    },
+    {
       "basename": "C++学习进度",
       "path": "看板/C++学习进度.md"
     },
@@ -25,10 +57,6 @@
       "path": "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot序列化.md"
     },
     {
-      "basename": "Spirng基于Java和注解的配置",
-      "path": "学习笔记/Java相关/Spring/Spirng基于Java和注解的配置.md"
-    },
-    {
       "basename": "SpringSecurity原理",
       "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md"
     },
@@ -39,10 +67,6 @@
     {
       "basename": "SpringMVC配置",
       "path": "学习笔记/Java相关/SpringMVC/SpringMVC配置.md"
-    },
-    {
-      "basename": "Java 中的 char 类型能否存储中文",
-      "path": "学习笔记/Java相关/Java 中的 char 类型能否存储中文.md"
     },
     {
       "basename": "未命名",
@@ -109,10 +133,6 @@
       "path": "学习笔记/ucore操作系统实验/ucore实验：bootasm.S源码.md"
     },
     {
-      "basename": "socket连接不安全的原因",
-      "path": "学习笔记/操作系统/socket连接不安全的原因.md"
-    },
-    {
       "basename": "实模式、保护模式、A20 Gate概念解析",
       "path": "学习笔记/操作系统/实模式、保护模式、A20 Gate概念解析.md"
     },
@@ -133,20 +153,8 @@
       "path": "学习笔记/Java相关/SpringBoot/SpringBoot整合Springdoc.md"
     },
     {
-      "basename": "SpringBoot统一异常处理",
-      "path": "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md"
-    },
-    {
       "basename": "Spring中的AOP配置",
       "path": "学习笔记/Java相关/Spring/Spring中的AOP配置.md"
-    },
-    {
-      "basename": "Spring基于XML的配置",
-      "path": "学习笔记/Java相关/Spring/Spring基于XML的配置.md"
-    },
-    {
-      "basename": "Spring的一些高级配置",
-      "path": "学习笔记/Java相关/Spring/Spring的一些高级配置.md"
     },
     {
       "basename": "springboot 3 自动装配方式更改",
@@ -191,14 +199,6 @@
     {
       "basename": "MBR 主引导记录",
       "path": "学习笔记/计算机知识/MBR 主引导记录.md"
-    },
-    {
-      "basename": "计算机中的路由表",
-      "path": "学习笔记/计算机知识/计算机中的路由表.md"
-    },
-    {
-      "basename": "全局描述符表（GDT）",
-      "path": "学习笔记/操作系统/全局描述符表（GDT）.md"
     }
   ],
   "omittedPaths": [],
