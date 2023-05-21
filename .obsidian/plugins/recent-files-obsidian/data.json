@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "草稿管理",
+      "path": "看板/草稿管理.md"
+    },
+    {
+      "basename": "static关键字",
+      "path": "学习笔记/C++学习笔记/static关键字.md"
+    },
+    {
+      "basename": "C++学习进度",
+      "path": "看板/C++学习进度.md"
+    },
+    {
+      "basename": "2023-05-20",
+      "path": "日记/2023-05-20.md"
+    },
+    {
+      "basename": "Spirng基于Java和注解的配置",
+      "path": "学习笔记/Java相关/Spring/Spirng基于Java和注解的配置.md"
+    },
+    {
       "basename": "EFL文件详解",
       "path": "草稿/EFL文件详解.md"
     },
@@ -23,14 +43,6 @@
     {
       "basename": "@ConditionalOnClass注解",
       "path": "草稿/@ConditionalOnClass注解.md"
-    },
-    {
-      "basename": "C++学习进度",
-      "path": "看板/C++学习进度.md"
-    },
-    {
-      "basename": "草稿管理",
-      "path": "看板/草稿管理.md"
     },
     {
       "basename": "SpringMVC文件上传",
@@ -67,10 +79,6 @@
     {
       "basename": "Spring的一些高级配置",
       "path": "学习笔记/Java相关/Spring/Spring的一些高级配置.md"
-    },
-    {
-      "basename": "Spirng基于Java和注解的配置",
-      "path": "学习笔记/Java相关/Spring/Spirng基于Java和注解的配置.md"
     },
     {
       "basename": "socket连接不安全的原因",
@@ -191,14 +199,6 @@
     {
       "basename": "零碎知识",
       "path": "学习笔记/未整理/Spring/零碎知识.md"
-    },
-    {
-      "basename": "对 Spring 的认识",
-      "path": "学习笔记/未整理/Spring/对 Spring 的认识.md"
-    },
-    {
-      "basename": "MySQL操作",
-      "path": "学习笔记/数据库/MySQL操作.md"
     }
   ],
   "omittedPaths": [],

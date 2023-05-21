@@ -18,22 +18,8 @@
               },
               "pinned": true
             }
-          },
-          {
-            "id": "feebe82fe3d7ae56",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "草稿/EFL文件详解.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -118,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "草稿/EFL文件详解.md"
+                "file": "看板/草稿管理.md"
               }
             }
           },
@@ -152,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "草稿/EFL文件详解.md",
+                "file": "看板/草稿管理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -164,7 +150,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "草稿/EFL文件详解.md",
+                "file": "看板/草稿管理.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -223,14 +209,19 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "feebe82fe3d7ae56",
+  "active": "ac0da6558a755eb5",
   "lastOpenFiles": [
+    "学习笔记/C++学习笔记/static关键字.md",
+    "看板/C++学习进度.md",
+    "学习笔记/C++学习笔记",
+    "日记/2023-05-20.md",
+    "学习笔记/Java相关/Spring/Spirng基于Java和注解的配置.md",
+    "草稿/EFL文件详解.md",
     "草稿/计算机补完计划——2023年.md",
     "草稿/函数堆栈.md",
     "草稿/如何使用java.md",
     "草稿/常用软件配置.md",
     "草稿/@ConditionalOnClass注解.md",
-    "看板/C++学习进度.md",
     "看板/草稿管理.md",
     "学习笔记/Java相关/SpringMVC/SpringMVC文件上传.md",
     "学习笔记/Java相关/SpringMVC/SpringMVC配置.md",
@@ -241,16 +232,12 @@
     "学习笔记/Java相关/Java 中的 char 类型能否存储中文.md",
     "学习笔记/Java相关/Spring/Spring基于XML的配置.md",
     "学习笔记/Java相关/Spring/Spring的一些高级配置.md",
-    "学习笔记/Java相关/Spring/Spirng基于Java和注解的配置.md",
     "学习笔记/操作系统/socket连接不安全的原因.md",
     "学习笔记/操作系统/全局描述符表（GDT）.md",
     "学习笔记/操作系统/计算机的启动.md",
     "草稿/Jackson中LocalDateTime序列化与反序列化.md",
     "草稿/未命名.md",
     "学习笔记/Java相关/SpringBoot/SpringBoot中默认的异常处理.md",
-    "学习笔记/Java相关/SpringBoot/SpringBoot异步任务和定时任务.md",
-    "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md",
-    "草稿/docker常用容器创建.md",
     "学习笔记/Java相关/SpringBoot/SpringBoot整合",
     "附件/image/SpringSecurity配置_image_2.png",
     "附件/image/SpringSecurity配置_image_1.png",
@@ -270,7 +257,6 @@
     "附件/image/未命名_image_2.png",
     "Bookxnote/从PAXOS到ZOOKEEPER分布式一致性原理与实践",
     "Bookxnote",
-    "学习笔记/Rust学习",
     "未命名.canvas"
   ]
 }
