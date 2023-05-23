@@ -216,6 +216,15 @@
     },
     "remove-multiple-blank-lines-on-paste": {
       "enabled": false
+    },
+    "blockquote-style": {
+      "enabled": false,
+      "style": "space"
+    },
+    "remove-space-before-or-after-characters": {
+      "enabled": false,
+      "characters-to-remove-space-before": ",!?;:).’”]",
+      "characters-to-remove-space-after": "¿¡‘“(["
     }
   },
   "lintOnSave": true,
@@ -228,7 +237,13 @@
   "linterLocale": "zh-cn",
   "logLevel": 4,
   "lintCommands": [],
-  "customRegexes": [],
+  "customRegexes": [
+    {
+      "find": "\\t",
+      "replace": "    ",
+      "flags": "gm"
+    }
+  ],
   "commonStyles": {
     "aliasArrayStyle": "single-line",
     "tagArrayStyle": "single-line",

@@ -1,0 +1,284 @@
+{
+  "main": {
+    "id": "2982240f9bf1a17a",
+    "type": "split",
+    "children": [
+      {
+        "id": "6dfd3f37c5b09bae",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ac0da6558a755eb5",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "kanban",
+              "state": {
+                "file": "看板/草稿管理.md"
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "bc6170cf22eeb8d1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cf86fd2cef622ad8",
+            "type": "leaf",
+            "state": {
+              "type": "swar8080/AVAILABLE_PLUGIN_UPDATES",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9e01617994f91927",
+    "type": "split",
+    "children": [
+      {
+        "id": "50882398d788acf3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2e6886b3461627b5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "be9ca6d9588b3fbc",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "ConditionalOnClass",
+                "matchingCase": false,
+                "explainSearch": true,
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "5e0405f367c38d06",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "e4aa2c41c50dd854",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 289.5
+  },
+  "right": {
+    "id": "471dd9cab433cd9a",
+    "type": "split",
+    "children": [
+      {
+        "id": "0174626a1befb30d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8346761aae7cfd22",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": false
+              }
+            }
+          },
+          {
+            "id": "663697a7bf64fcf7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md"
+              }
+            }
+          },
+          {
+            "id": "7cde5b82d26a1269",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {}
+            }
+          },
+          {
+            "id": "0554ce7f519a089e",
+            "type": "leaf",
+            "state": {
+              "type": "git-history-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "0422fa356abc823e",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "bb4b5168a9c73f1f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c3497e550662e817",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "dd9691fbc0366305",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "bb0739e0b7bc1426",
+            "type": "leaf",
+            "state": {
+              "type": "oz-calendar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "horizontal",
+    "width": 533.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "table-editor-obsidian:Advanced Tables Toolbar": true,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "templater-obsidian:Templater": false,
+      "oz-clear-unused-images:Clear Unused Images": false,
+      "obsidian42-brat:BRAT": false,
+      "dbfolder:创建一个新数据库表": false,
+      "homepage:Open homepage": false,
+      "workspaces:管理工作区布局": false,
+      "omnisearch:Omnisearch": false,
+      "meld-encrypt:Create new encrypted note": false,
+      "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
+      "obsidian-projects:Open projects": false,
+      "cmdr:Obsidian Git: Create backup": false,
+      "obsidian-advanced-slides:Show Slide Preview": false,
+      "obsidian-memos:Memos": false
+    }
+  },
+  "active": "bc6170cf22eeb8d1",
+  "lastOpenFiles": [
+    "附件/image/SpringSecurity配置_image_1.png",
+    "看板/草稿管理.md",
+    "学习笔记/C++学习笔记/static关键字.md",
+    "看板/C++学习进度.md",
+    "学习笔记/C++学习笔记",
+    "日记/2023-05-20.md",
+    "学习笔记/Java相关/Spring/Spirng基于Java和注解的配置.md",
+    "草稿/EFL文件详解.md",
+    "草稿/计算机补完计划——2023年.md",
+    "草稿/函数堆栈.md",
+    "草稿/如何使用java.md",
+    "草稿/常用软件配置.md",
+    "草稿/@ConditionalOnClass注解.md",
+    "学习笔记/Java相关/SpringMVC/SpringMVC文件上传.md",
+    "学习笔记/Java相关/SpringMVC/SpringMVC配置.md",
+    "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md",
+    "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot整合redis.md",
+    "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot序列化.md",
+    "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md",
+    "学习笔记/Java相关/Java 中的 char 类型能否存储中文.md",
+    "学习笔记/Java相关/Spring/Spring基于XML的配置.md",
+    "学习笔记/Java相关/Spring/Spring的一些高级配置.md",
+    "学习笔记/操作系统/socket连接不安全的原因.md",
+    "学习笔记/操作系统/全局描述符表（GDT）.md",
+    "学习笔记/操作系统/计算机的启动.md",
+    "草稿/Jackson中LocalDateTime序列化与反序列化.md",
+    "草稿/未命名.md",
+    "学习笔记/Java相关/SpringBoot/SpringBoot整合",
+    "附件/image/SpringSecurity配置_image_2.png",
+    "附件/image/tmp1684856805581_SpringSecurity配置_image_1.png",
+    "学习笔记/Java相关/SpringBoot/SpringSecurity",
+    "学习笔记/Java相关/未命名",
+    "附件/image/vscode插件之Eslint_image_2.png",
+    "附件/image/vscode插件之Eslint_image_1.png",
+    "Code/java/Spring/Main.java",
+    "Code/java/Spring",
+    "Code/java",
+    "Code",
+    "附件/image/Eslint的使用_image_4.png",
+    "附件/image/Eslint的使用_image_3.png",
+    "附件/image/Eslint的使用_image_2.png",
+    "附件/image/Eslint的使用_image_1.png",
+    "附件/image/未命名_image_3.png",
+    "附件/image/未命名_image_2.png",
+    "Bookxnote/从PAXOS到ZOOKEEPER分布式一致性原理与实践",
+    "Bookxnote",
+    "未命名.canvas"
+  ]
+}

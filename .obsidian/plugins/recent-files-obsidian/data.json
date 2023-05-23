@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "SpringSecurity配置",
+      "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md"
+    },
+    {
       "basename": "草稿管理",
       "path": "看板/草稿管理.md"
     },
@@ -107,10 +111,6 @@
     {
       "basename": "SpringBoot异步任务和定时任务",
       "path": "学习笔记/Java相关/SpringBoot/SpringBoot异步任务和定时任务.md"
-    },
-    {
-      "basename": "SpringSecurity配置",
-      "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md"
     },
     {
       "basename": "docker常用容器创建",
