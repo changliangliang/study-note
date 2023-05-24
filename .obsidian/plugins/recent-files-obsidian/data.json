@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "2023-05-24",
+      "path": "日记/2023-05-24.md"
+    },
+    {
       "basename": "SpringSecurity配置",
       "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "java编程思想学习心得",
       "path": "学习笔记/未整理/Spring/java编程思想学习心得.md"
-    },
-    {
-      "basename": "零碎知识",
-      "path": "学习笔记/未整理/Spring/零碎知识.md"
     }
   ],
   "omittedPaths": [],
