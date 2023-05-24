@@ -31,14 +31,6 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "cf86fd2cef622ad8",
-            "type": "leaf",
-            "state": {
-              "type": "swar8080/AVAILABLE_PLUGIN_UPDATES",
-              "state": {}
-            }
           }
         ],
         "currentTab": 1
@@ -99,7 +91,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 289.5
+    "width": 289.5,
+    "collapsed": true
   },
   "right": {
     "id": "471dd9cab433cd9a",
@@ -200,12 +193,11 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
-    "width": 533.5,
-    "collapsed": true
+    "width": 533.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -233,6 +225,8 @@
   },
   "active": "bc6170cf22eeb8d1",
   "lastOpenFiles": [
+    "附件/image/SpringSecurity配置_image_2.png",
+    "附件/image/tmp1684858033209_SpringSecurity配置_image_2.png",
     "附件/image/SpringSecurity配置_image_1.png",
     "看板/草稿管理.md",
     "学习笔记/C++学习笔记/static关键字.md",
@@ -261,7 +255,7 @@
     "草稿/Jackson中LocalDateTime序列化与反序列化.md",
     "草稿/未命名.md",
     "学习笔记/Java相关/SpringBoot/SpringBoot整合",
-    "附件/image/SpringSecurity配置_image_2.png",
+    "附件/image/tmp1684857943427_SpringSecurity配置_image_2.png",
     "附件/image/tmp1684856805581_SpringSecurity配置_image_1.png",
     "学习笔记/Java相关/SpringBoot/SpringSecurity",
     "学习笔记/Java相关/未命名",
@@ -275,8 +269,6 @@
     "附件/image/Eslint的使用_image_3.png",
     "附件/image/Eslint的使用_image_2.png",
     "附件/image/Eslint的使用_image_1.png",
-    "附件/image/未命名_image_3.png",
-    "附件/image/未命名_image_2.png",
     "Bookxnote/从PAXOS到ZOOKEEPER分布式一致性原理与实践",
     "Bookxnote",
     "未命名.canvas"

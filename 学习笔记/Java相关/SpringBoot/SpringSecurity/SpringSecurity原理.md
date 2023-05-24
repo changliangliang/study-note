@@ -21,6 +21,6 @@ public void doFilter(ServletRequest request, ServletResponse response, FilterCha
 ```
 
 
-![](附件/image/SpringSecurity配置_image_2.png)
+![](附件/image/tmp1684857943427_SpringSecurity配置_image_2.png)
 
 
