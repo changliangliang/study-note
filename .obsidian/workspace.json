@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md",
+                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -118,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md"
+                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md"
               }
             }
           },
@@ -152,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md",
+                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -164,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md",
+                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -224,13 +224,18 @@
   },
   "active": "37e9b33a221b0a2e",
   "lastOpenFiles": [
+    "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md",
+    "附件/image/SpringSecurity原理_image_6.png",
+    "附件/image/SpringSecurity配置_image_6.png",
+    "附件/image/SpringSecurity原理_image_5.png",
+    "附件/image/tmp1684931289753_SpringSecurity配置_image_4.png",
+    "附件/image/SpringSecurity原理_image_4.png",
     "看板/草稿管理.md",
     "日记/2023-05-24.md",
     "附件/image/2023-05-24_image_1.png",
-    "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md",
-    "附件/image/SpringSecurity配置_image_2.png",
+    "附件/image/SpringSecurity原理_image_3.png",
     "附件/image/tmp1684858033209_SpringSecurity配置_image_2.png",
-    "附件/image/SpringSecurity配置_image_1.png",
+    "附件/image/SpringSecurity原理_image_2.png",
     "学习笔记/C++学习笔记/static关键字.md",
     "看板/C++学习进度.md",
     "学习笔记/C++学习笔记",
@@ -256,17 +261,12 @@
     "学习笔记/操作系统/计算机的启动.md",
     "学习笔记/Java相关/SpringBoot/SpringBoot整合",
     "附件/image/tmp1684857943427_SpringSecurity配置_image_2.png",
-    "附件/image/tmp1684856805581_SpringSecurity配置_image_1.png",
     "学习笔记/Java相关/SpringBoot/SpringSecurity",
     "学习笔记/Java相关/未命名",
-    "附件/image/vscode插件之Eslint_image_2.png",
-    "附件/image/vscode插件之Eslint_image_1.png",
     "Code/java/Spring/Main.java",
     "Code/java/Spring",
     "Code/java",
     "Code",
-    "附件/image/Eslint的使用_image_4.png",
-    "附件/image/Eslint的使用_image_3.png",
     "Bookxnote/从PAXOS到ZOOKEEPER分布式一致性原理与实践",
     "Bookxnote",
     "未命名.canvas"

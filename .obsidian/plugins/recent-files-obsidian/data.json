@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "SpringSecurity原理",
+      "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md"
+    },
+    {
       "basename": "SpringSecurity配置",
       "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md"
     },
@@ -59,10 +63,6 @@
     {
       "basename": "SpringMVC配置",
       "path": "学习笔记/Java相关/SpringMVC/SpringMVC配置.md"
-    },
-    {
-      "basename": "SpringSecurity原理",
-      "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md"
     },
     {
       "basename": "SpringBoot整合redis",
