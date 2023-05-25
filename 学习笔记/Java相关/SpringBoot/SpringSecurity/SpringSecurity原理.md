@@ -140,3 +140,5 @@ SpringSecurity 负责认证的组件的是 `AuthenticationManager`，其中 `Pro
     - 如果没有通过认证，则就进行认证失败的处理流程。
 
 ![](附件/image/SpringSecurity原理_image_5.png)
+
+![](附件/image/SpringSecurity原理_image_6.png)

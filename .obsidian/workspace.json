@@ -31,9 +31,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "842530d1575514e3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -118,7 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md"
+                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md"
               }
             }
           },
@@ -152,7 +165,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md",
+                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -164,7 +177,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md",
+                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -222,10 +235,11 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "663697a7bf64fcf7",
+  "active": "842530d1575514e3",
   "lastOpenFiles": [
-    "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md",
+    "附件/image/SpringSecurity原理_image_6.png",
     "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md",
+    "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md",
     "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md",
     "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot序列化.md",
     "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot整合redis.md",
@@ -260,7 +274,6 @@
     "学习笔记/Java相关/SpringMVC/SpringMVC配置.md",
     "学习笔记/Java相关/Java 中的 char 类型能否存储中文.md",
     "学习笔记/Java相关/Spring/Spring基于XML的配置.md",
-    "学习笔记/Java相关/Spring/Spring的一些高级配置.md",
     "学习笔记/Java相关/SpringBoot/SpringBoot整合",
     "学习笔记/Java相关/SpringBoot/SpringSecurity",
     "学习笔记/Java相关/未命名",
