@@ -178,20 +178,20 @@ public UserDetailsService users() {
 ```java
 @Bean
 UserDetailsService users(DataSource dataSource) {
-	UserDetails user = User.builder()
-		.username("user")
-		.password("{bcrypt}$2a$10$GRLdNijSQMUvl/au9ofL.eDwmoohzzS7.rmNSJZ.0FxO/BTk76klW")
-		.roles("USER")
-		.build();
-	UserDetails admin = User.builder()
-		.username("admin")
-		.password("{bcrypt}$2a$10$GRLdNijSQMUvl/au9ofL.eDwmoohzzS7.rmNSJZ.0FxO/BTk76klW")
-		.roles("USER", "ADMIN")
-		.build();
-	JdbcUserDetailsManager users = new JdbcUserDetailsManager(dataSource);
-	users.createUser(user);
-	users.createUser(admin);
-	return users;
+    UserDetails user = User.builder()
+        .username("user")
+        .password("{bcrypt}$2a$10$GRLdNijSQMUvl/au9ofL.eDwmoohzzS7.rmNSJZ.0FxO/BTk76klW")
+        .roles("USER")
+        .build();
+    UserDetails admin = User.builder()
+        .username("admin")
+        .password("{bcrypt}$2a$10$GRLdNijSQMUvl/au9ofL.eDwmoohzzS7.rmNSJZ.0FxO/BTk76klW")
+        .roles("USER", "ADMIN")
+        .build();
+    JdbcUserDetailsManager users = new JdbcUserDetailsManager(dataSource);
+    users.createUser(user);
+    users.createUser(admin);
+    return users;
 }
 ```
 
@@ -226,6 +226,38 @@ public class UserDetailsService implements org.springframework.security.core.use
 }
 ```
 
+## Session 管理
 
+### 超时设置
+
+Session 超时设置的单位为秒，的最小有效期为60秒，也就是说即使你设置为小于60秒的值，其有效期还是为60秒。
+
+```java
+server:
+  servlet:
+    session:
+      timeout: 1000
+```
+
+### 创建时机
+
+```java
+@Bean
+public SecurityFilterChain filterChain(HttpSecurity http) {
+    http.sessionManagement()
+    return http.build();
+}
+```
+
+```java
+@Bean
+public SecurityFilterChain filterChain(HttpSecurity http) {
+    http
+        .logout(logout -> logout
+            .deleteCookies("JSESSIONID")
+        );
+    return http.build();
+}
+```
 
 ## 密码问题
