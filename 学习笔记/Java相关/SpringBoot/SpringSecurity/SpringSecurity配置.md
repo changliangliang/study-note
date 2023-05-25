@@ -61,6 +61,8 @@ public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 
 ### 用户名密码认证
 
+#### 登陆页面
+
 SpringSecurity 中默认支持了使用密码和用户名登陆，只要引入 SpringSecurity 相关依赖后我们的应用就被保护起来了，这时候访问任意一个连接都会跳转到如下页面，需要输入用户名和密码后才能继续访问。
 
 ![](附件/image/SpringSecurity配置_image_1.png)
@@ -69,14 +71,102 @@ SpringSecurity 中默认支持了使用密码和用户名登陆，只要引入 S
 
 ![](附件/image/SpringSecurity配置_image_2.png)
 
-
+SpringSecurity 支持了我们对登陆页面的自定义，方式如下：
 
 ```java
 http.formLogin()
-        .usernameParameter("username")
-        .passwordParameter("password")
-        .loginPage("/loginPage")
-        .loginProcessingUrl("/longin")
-        .successForwardUrl("/success")
-        .failureForwardUrl("/fail");                        
+        .usernameParameter("username") // 用户名参数名
+        .passwordParameter("password") // 密码参数名
+        .loginPage("/loginPage")       // 登陆页面路径,访问时如果用户没登陆会跳转到该页面
+        .loginProcessingUrl("/longin") // 登陆处理路径,登陆时提交数据的地址
+        .successForwardUrl("/success") // 登陆成功后返回的地址
+        .failureForwardUrl("/fail");   // 登陆失败后返回的地址                     
+```
+
+如果程序采用前后端分离的方式，那么登陆成功或失败的时候应该返回 `json` 数据，可以选择使用 `successHandler` 和 `failureHandler`。
+
+```java
+http.formLogin()
+        .successHandler()
+        .failureHandler();
+```
+
+这两个方法分别需要传入一个 `AuthenticationSuccessHandler` 和 `AuthenticationFailureHandler`，在登陆成功或失败的时候会分别调用 `onAuthenticationSuccess` 和 `onAuthenticationFailure` 。
+
+```java
+public final T successHandler(AuthenticationSuccessHandler successHandler) {
+	this.successHandler = successHandler;
+	return getSelf();
+}
+
+public interface AuthenticationSuccessHandler {
+
+	void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response,
+			Authentication authentication) throws IOException, ServletException;
+
+}
+```
+
+```java
+public final T failureHandler(AuthenticationFailureHandler authenticationFailureHandler) {
+	this.failureUrl = null;
+	this.failureHandler = authenticationFailureHandler;
+	return getSelf();
+}
+
+public interface AuthenticationFailureHandler {
+
+	void onAuthenticationFailure(HttpServletRequest request, HttpServletResponse response,
+			AuthenticationException exception) throws IOException, ServletException;
+
+}
+```
+
+想要返回 `json` 数据可以实现这两个方法，如下面的代码所示：
+
+```java
+public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
+        Result<String> ok = Result.ok("登陆成功", JwtUtil.create(authentication.getName()));
+        response.setCharacterEncoding("UTF-8");
+        response.setContentType("application/json");
+        response.getWriter().print(JSONUtil.toJsonStr(ok));
+}
+```
+
+#### 密码存储
+
+##### 存储在内存
+
+默认配置下程序启动时会创建一个名为 `user` 用户，原因是在 SrpingSecurity 自动配置中注入了一个 `InMemoryUserDetailsManager` 实例，它实现了 `UserDetailsService` 接口，是获取用户名的组件。
+
+```java
+@Bean
+@Lazy
+public InMemoryUserDetailsManager inMemoryUserDetailsManager(SecurityProperties properties,
+		ObjectProvider<PasswordEncoder> passwordEncoder) {
+	SecurityProperties.User user = properties.getUser();
+	List<String> roles = user.getRoles();
+	return new InMemoryUserDetailsManager(
+			User.withUsername(user.getName()).password(getOrDeducePassword(user, passwordEncoder.getIfAvailable()))
+					.roles(StringUtils.toStringArray(roles)).build());
+}
+```
+
+如果想用添加自定义的用户，需要 Spring 向容器中添加一个新的 `InMemoryUserDetailsManager`。
+
+```java
+@Bean
+public UserDetailsService users() {
+	UserDetails user = User.builder()
+		.username("user")
+		.password("{bcrypt}$2a$10$GRLdNijSQMUvl/au9ofL.eDwmoohzzS7.rmNSJZ.0FxO/BTk76klW")
+		.roles("USER")
+		.build();
+	UserDetails admin = User.builder()
+		.username("admin")
+		.password("{bcrypt}$2a$10$GRLdNijSQMUvl/au9ofL.eDwmoohzzS7.rmNSJZ.0FxO/BTk76klW")
+		.roles("USER", "ADMIN")
+		.build();
+	return new InMemoryUserDetailsManager(user, admin);
+}
 ```
