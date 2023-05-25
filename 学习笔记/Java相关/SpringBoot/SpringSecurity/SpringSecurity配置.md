@@ -230,7 +230,7 @@ public class UserDetailsService implements org.springframework.security.core.use
 
 ### 超时设置
 
-Session 超时设置的单位为秒，的最小有效期为60秒，也就是说即使你设置为小于60秒的值，其有效期还是为60秒。
+Session 超时设置的单位为秒，的最小有效期为 60 秒，也就是说即使你设置为小于 60 秒的值，其有效期还是为 60 秒。
 
 ```java
 server:
@@ -241,13 +241,23 @@ server:
 
 ### 创建时机
 
+SpringSecurity 通过了四种创建 Session 的策略：
+- ALWAYS：总是创建 Session
+- NEVER：不主动创建 Seesion，但会使用已存在的 Session
+- IF_REQUIRED：近在需要的时候创建 Session
+- STATELESS：从不使用 Session
+
+需要注意的是这里仅是 SpringSecurity 的 Session 创建策略，没办法控制应用中的其他部分，假设使用了 `STATELESS` 策略，也仅仅表示 SpringSecurity 不会使用或者操作 Session，但我们仍能在 `Controller` 中创建 Session 和使用 Session。
+
 ```java
 @Bean
 public SecurityFilterChain filterChain(HttpSecurity http) {
     http.sessionManagement()
+        .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
     return http.build();
 }
 ```
+
 
 ```java
 @Bean
