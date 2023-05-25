@@ -91,7 +91,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 324.5
+    "width": 274.5
   },
   "right": {
     "id": "471dd9cab433cd9a",
@@ -224,12 +224,12 @@
   },
   "active": "37e9b33a221b0a2e",
   "lastOpenFiles": [
+    "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md",
+    "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md",
     "附件/image/SpringSecurity配置_image_2.png",
     "附件/image/SpringSecurity配置_image_1.png",
     "日记/2023-05-24.md",
     "附件/image/2023-05-24_image_1.png",
-    "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md",
-    "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md",
     "附件/image/SpringSecurity原理_image_5.png",
     "附件/image/SpringSecurity配置_image_6.png",
     "附件/image/SpringSecurity原理_image_4.png",
@@ -238,7 +238,6 @@
     "看板/草稿管理.md",
     "附件/image/2023-05-24_image_2.png",
     "附件/image/SpringSecurity原理_image_2.png",
-    "附件/image/tmp1684858033209_SpringSecurity配置_image_2.png",
     "学习笔记/C++学习笔记/static关键字.md",
     "看板/C++学习进度.md",
     "学习笔记/C++学习笔记",

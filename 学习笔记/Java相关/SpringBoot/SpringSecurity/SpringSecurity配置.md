@@ -65,11 +65,11 @@ SpringSecurity 中默认支持了使用密码和用户名登陆，只要引入 S
 
 ![](附件/image/SpringSecurity配置_image_1.png)
 
-默认配置下用户名为 `user`，在后台日志中可以看到默认生成的密码。
+默认配置下会创建一个名为 `user` 的用户，在后台日志中可以看到该用户的密码，需要注意的是每次程序启动都会生成一个新的密码。
 
 ![](附件/image/SpringSecurity配置_image_2.png)
 
-当然大部分时候默认的处理都不能满足我们的需要，所以 SpringSecurity 支持我们对登陆页面进行自定义配置，如下面的代码所示。
+
 
 ```java
 http.formLogin()
