@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Vue路由传参",
+      "path": "学习笔记/前端开发/Vue路由传参.md"
+    },
+    {
       "basename": "SpringSecurity原理",
       "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "内核态和用户态",
       "path": "学习笔记/未整理/内核态和用户态.md"
-    },
-    {
-      "basename": "java编程思想学习心得",
-      "path": "学习笔记/未整理/Spring/java编程思想学习心得.md"
     }
   ],
   "omittedPaths": [],
