@@ -283,8 +283,25 @@ http.sessionManagement()
 
 ```java
 http.sessionManagement()
-		.invalidSessionStrategy(invalidSessionStrategy) // 自己实现的策略
+        .invalidSessionStrategy(invalidSessionStrategy) // 自己实现的策略
 ```
 
+### 并发控制
+
+要对 Session 进行并发控制，首先要做的是向容器中添加一个监听器，之后可以在配置中设置最大的并发量。
+
+```java
+@Bean
+public HttpSessionEventPublisher httpSessionEventPublisher() {
+    return new HttpSessionEventPublisher();
+}
+```
+
+```java
+http.sessionManagement()
+        .maximumSessions(1)
+        .maxSessionsPreventsLogin(true); // 默认情况下后登陆的会把先登陆的顶掉
+								         // 该配置用于阻止后登陆
+```
 
 ## 密码问题
