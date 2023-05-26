@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "SpringMVC配置",
+      "path": "学习笔记/Java相关/SpringMVC/SpringMVC配置.md"
+    },
+    {
       "basename": "SpringSecurity配置",
       "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md"
     },
@@ -91,10 +95,6 @@
     {
       "basename": "SpringMVC文件上传",
       "path": "学习笔记/Java相关/SpringMVC/SpringMVC文件上传.md"
-    },
-    {
-      "basename": "SpringMVC配置",
-      "path": "学习笔记/Java相关/SpringMVC/SpringMVC配置.md"
     },
     {
       "basename": "Java 中的 char 类型能否存储中文",

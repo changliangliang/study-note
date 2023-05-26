@@ -38,19 +38,11 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md",
+                "file": "学习笔记/Java相关/SpringMVC/SpringMVC配置.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
-            }
-          },
-          {
-            "id": "6fd705ba47c5a590",
-            "type": "leaf",
-            "state": {
-              "type": "swar8080/AVAILABLE_PLUGIN_UPDATES",
-              "state": {}
             }
           }
         ],
@@ -83,7 +75,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ConditionalOnClass",
+                "query": "@modelattribute",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -108,7 +100,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -139,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md"
+                "file": "学习笔记/Java相关/SpringMVC/SpringMVC配置.md"
               }
             }
           },
@@ -173,7 +166,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md",
+                "file": "学习笔记/Java相关/SpringMVC/SpringMVC配置.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +178,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md",
+                "file": "学习笔记/Java相关/SpringMVC/SpringMVC配置.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -245,9 +238,9 @@
   },
   "active": "dc3853ab2a18ed9c",
   "lastOpenFiles": [
+    "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md",
     "学习笔记/前端开发/Vue路由传参.md",
     "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md",
-    "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md",
     "附件/image/SpringSecurity原理_image_6.png",
     "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md",
     "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot序列化.md",
