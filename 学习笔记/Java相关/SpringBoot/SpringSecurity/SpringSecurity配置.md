@@ -230,7 +230,7 @@ public class UserDetailsService implements org.springframework.security.core.use
 
 ### 超时设置
 
-Session 超时设置的单位为秒，的最小有效期为 60 秒，也就是说即使你设置为小于 60 秒的值，其有效期还是为 60 秒。
+Session 超时设置是 SpringBoot 原生支持的，时间单位为秒，最小有效期为 60 秒，也就是说即使你设置为小于 60 秒的值，其有效期还是为 60 秒。
 
 ```java
 server:
@@ -242,6 +242,7 @@ server:
 ### 创建时机
 
 SpringSecurity 通过了四种创建 Session 的策略：
+
 - ALWAYS：总是创建 Session
 - NEVER：不主动创建 Seesion，但会使用已存在的 Session
 - IF_REQUIRED：近在需要的时候创建 Session
@@ -258,7 +259,6 @@ public SecurityFilterChain filterChain(HttpSecurity http) {
 }
 ```
 
-
 ```java
 @Bean
 public SecurityFilterChain filterChain(HttpSecurity http) {
@@ -269,5 +269,22 @@ public SecurityFilterChain filterChain(HttpSecurity http) {
     return http.build();
 }
 ```
+
+### 失效处理
+
+当 Session 过期之后，可以选择跳转到指定页面 (如登陆页面)：
+
+```java
+http.sessionManagement()
+        .invalidSessionUrl("/login/page"); 
+```
+
+也可以使用自定义的失效处理策略：
+
+```java
+http.sessionManagement()
+		.invalidSessionStrategy(invalidSessionStrategy) // 自己实现的策略
+```
+
 
 ## 密码问题

@@ -44,6 +44,14 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "6fd705ba47c5a590",
+            "type": "leaf",
+            "state": {
+              "type": "swar8080/AVAILABLE_PLUGIN_UPDATES",
+              "state": {}
+            }
           }
         ],
         "currentTab": 2
@@ -235,7 +243,7 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "663697a7bf64fcf7",
+  "active": "dc3853ab2a18ed9c",
   "lastOpenFiles": [
     "学习笔记/前端开发/Vue路由传参.md",
     "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md",
