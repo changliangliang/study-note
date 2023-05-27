@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "ref 和 reactive",
+      "path": "学习笔记/前端开发/Vue相关/ref 和 reactive.md"
+    },
+    {
+      "basename": "Vue路由传参",
+      "path": "学习笔记/前端开发/Vue相关/Vue路由传参.md"
+    },
+    {
       "basename": "SpringSecurity原理",
       "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md"
     },
@@ -11,10 +19,6 @@
     {
       "basename": "SpringSecurity配置",
       "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md"
-    },
-    {
-      "basename": "Vue路由传参",
-      "path": "学习笔记/前端开发/Vue路由传参.md"
     },
     {
       "basename": "SpringBoot统一异常处理",
@@ -195,10 +199,6 @@
     {
       "basename": "中断、异常和系统调用",
       "path": "学习笔记/未整理/中断、异常和系统调用.md"
-    },
-    {
-      "basename": "内核态和用户态",
-      "path": "学习笔记/未整理/内核态和用户态.md"
     }
   ],
   "omittedPaths": [],

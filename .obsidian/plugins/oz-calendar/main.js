@@ -7778,6 +7778,10 @@ function MyCalendar(params) {
     }
     return null;
   };
+  const customTileClass = ({ activeStartDate: activeStartDate2, date, view }) => {
+    let today = new Date();
+    return date.getFullYear() === today.getFullYear() && date.getMonth() === today.getMonth() && date.getDate() === today.getDate() ? "oz-calendar-plugin-today" : "";
+  };
   const fixedCalendarClass = plugin.settings.fixedCalendar ? "fixed" : "";
   return /* @__PURE__ */ Cn.createElement("div", { className: "oz-calendar-plugin-view " + fixedCalendarClass }, /* @__PURE__ */ Cn.createElement(
     esm_default2,
@@ -7788,6 +7792,7 @@ function MyCalendar(params) {
       minDetail: "month",
       view: "month",
       tileContent: customTileContent,
+      tileClassName: customTileClass,
       calendarType: plugin.settings.calendarType,
       showFixedNumberOfWeeks: plugin.settings.fixedCalendar,
       activeStartDate,

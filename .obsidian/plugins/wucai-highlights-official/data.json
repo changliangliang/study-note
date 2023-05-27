@@ -8,8 +8,9 @@
   "refreshNotes": false,
   "notesToRefresh": [],
   "reimportShowConfirmation": true,
-  "lastCursor": "eyJsYXN0SGlnaGxpZ2h0UEtJRCI6NTA2NTA2LCJja1BLSUQiOjAsImNrTklEIjowLCJja1hOSUQiOjAsImNrVCI6MTY4NTE1NDM4NX0=",
+  "lastCursor": "eyJsYXN0SGlnaGxpZ2h0UEtJRCI6NTA2NTA2LCJja1BLSUQiOjAsImNrTklEIjowLCJja1hOSUQiOjAsImNrVCI6MTY4NTE1NzUwMn0=",
   "dataVersion": 0,
+  "notePaths": {},
   "exportConfig": {
     "titleFormat": 4,
     "titleTemplate": "wucai-{{title}}",

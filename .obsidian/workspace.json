@@ -12,9 +12,12 @@
             "type": "leaf",
             "pinned": true,
             "state": {
-              "type": "kanban",
+              "type": "markdown",
               "state": {
-                "file": "看板/草稿管理.md"
+                "file": "看板/草稿管理.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               },
               "pinned": true
             }
@@ -25,7 +28,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md",
+                "file": "学习笔记/前端开发/Vue相关/Vue路由传参.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f0361fa5654353f1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "学习笔记/前端开发/Vue相关/ref 和 reactive.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -33,7 +49,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -87,7 +103,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -118,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md"
+                "file": "学习笔记/前端开发/Vue相关/ref 和 reactive.md"
               }
             }
           },
@@ -152,7 +169,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md",
+                "file": "学习笔记/前端开发/Vue相关/ref 和 reactive.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -164,7 +181,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md",
+                "file": "学习笔记/前端开发/Vue相关/ref 和 reactive.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,23 +228,25 @@
       "oz-clear-unused-images:Clear Unused Images": false,
       "obsidian42-brat:BRAT": false,
       "dbfolder:创建一个新数据库表": false,
-      "homepage:Open homepage": false,
       "workspaces:管理工作区布局": false,
       "omnisearch:Omnisearch": false,
       "meld-encrypt:Create new encrypted note": false,
-      "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
       "obsidian-projects:Open projects": false,
       "cmdr:Obsidian Git: Create backup": false,
       "obsidian-advanced-slides:Show Slide Preview": false,
-      "obsidian-memos:Memos": false
+      "obsidian-memos:Memos": false,
+      "homepage:Open homepage": false,
+      "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false
     }
   },
-  "active": "2e6886b3461627b5",
+  "active": "e4aa2c41c50dd854",
   "lastOpenFiles": [
+    "学习笔记/前端开发/Vue相关/Vue路由传参.md",
+    "学习笔记/前端开发/Vue相关/ref 和 reactive.md",
+    "学习笔记/前端开发/Vue相关",
+    "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md",
     "学习笔记/Java相关/SpringMVC/SpringMVC配置.md",
     "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md",
-    "学习笔记/前端开发/Vue路由传参.md",
-    "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md",
     "附件/image/SpringSecurity原理_image_6.png",
     "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md",
     "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot序列化.md",
@@ -260,7 +279,6 @@
     "草稿/@ConditionalOnClass注解.md",
     "学习笔记/Java相关/SpringMVC/SpringMVC文件上传.md",
     "学习笔记/Java相关/Java 中的 char 类型能否存储中文.md",
-    "学习笔记/Java相关/Spring/Spring基于XML的配置.md",
     "学习笔记/Java相关/SpringBoot/SpringBoot整合",
     "学习笔记/Java相关/SpringBoot/SpringSecurity",
     "学习笔记/Java相关/未命名",
@@ -269,7 +287,6 @@
     "Code/java",
     "Code",
     "Bookxnote/从PAXOS到ZOOKEEPER分布式一致性原理与实践",
-    "Bookxnote",
     "未命名.canvas"
   ]
 }

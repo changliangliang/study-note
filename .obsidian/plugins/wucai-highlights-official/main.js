@@ -79,8 +79,8 @@ BGCONSTS.APPID = '20';
 BGCONSTS.SERVICE_ID = 7;
 BGCONSTS.MARKET_INFO = 'obsidian-plugin';
 BGCONSTS.ENDPOINT = 'obsidianwucai';
-BGCONSTS.VERSION = '23.5.3';
-BGCONSTS.VERSION_NUM = 230503;
+BGCONSTS.VERSION = '23.5.14';
+BGCONSTS.VERSION_NUM = 230514;
 BGCONSTS.IS_DEBUG = false;
 BGCONSTS.TEST_TOKEN = '';
 BGCONSTS.BASE_URL = 'https://marker.dotalk.cn';
@@ -6035,6 +6035,16 @@ class WuCaiUtils {
         }
         // 2) 将 block 结果追加到指定占位符
         return this.replaceHolders(oldCnt, renderHolders);
+    }
+    static getDirFromPath(p) {
+        if (!p) {
+            return '';
+        }
+        const idx = p.lastIndexOf('/');
+        if (idx <= 0) {
+            return '';
+        }
+        return p.substring(0, idx);
     }
 }
 WuCaiUtils.allowedBlock = ['highlights', 'pagenote'];
@@ -13179,6 +13189,7 @@ const DEFAULT_SETTINGS = {
     reimportShowConfirmation: true,
     lastCursor: '',
     dataVersion: 0,
+    notePaths: {},
     exportConfig: {
         writeStyle: 2,
         highlightStyle: 1,
@@ -13302,6 +13313,7 @@ class WuCaiPlugin extends obsidian.Plugin {
                 // 如果文件夹被删除，则重新同步
                 this.settings.lastCursor = '';
                 this.settings.notesToRefresh = [];
+                this.settings.notePaths = {};
             }
             logger({ msg: 'onload last cursor', lastCursor: this.settings.lastCursor, flagx, isDirDeleted });
             let lastCursor2 = this.settings.lastCursor;
@@ -13419,20 +13431,41 @@ class WuCaiPlugin extends obsidian.Plugin {
             else {
                 filename = titleTpl;
             }
-            // 设定在指定目录下，且添加笔记标识
+            // 根据规则生成文件路径
             filename = `${this.settings.wuCaiDir}/${filename}-${entry.noteIdX}.md`;
-            const distFileName = obsidian.normalizePath(filename).replace(/[\/ \s]+$/, '');
-            if (!distFileName || distFileName.length <= 0) {
+            const outFilename = obsidian.normalizePath(filename).replace(/[\/ \s]+$/, '');
+            if (!outFilename || outFilename.length <= 0) {
                 return;
             }
+            let isDirChecked = false;
+            const oldPath = this.settings.notePaths[entry.noteIdX] || '';
+            if (oldPath && oldPath != outFilename) {
+                // 将本地的文件rename成新的文件，因为文件标题有改动
+                const oldPathInfo = yield this.app.vault.getAbstractFileByPath(oldPath);
+                if (oldPathInfo && oldPathInfo instanceof obsidian.TFile) {
+                    const dirPath = WuCaiUtils.getDirFromPath(outFilename);
+                    if (dirPath) {
+                        const fileInfo = yield this.app.vault.getAbstractFileByPath(dirPath);
+                        if (!fileInfo || !(fileInfo instanceof obsidian.TFolder)) {
+                            yield this.app.vault.createFolder(dirPath);
+                            isDirChecked = true;
+                        }
+                    }
+                    yield this.app.vault.rename(oldPathInfo, outFilename);
+                }
+            }
+            this.settings.notePaths[entry.noteIdX] = outFilename;
             const exportCfg = this.settings.exportConfig;
             try {
                 // const contents = await entry.getData(new zip.TextWriter())
-                // 计算出笔记的最终路径和名字
-                let dirPath = distFileName.substring(0, distFileName.lastIndexOf('/'));
-                const fileInfo = yield this.app.vault.getAbstractFileByPath(dirPath);
-                if (!fileInfo || !(fileInfo instanceof obsidian.TFolder)) {
-                    yield this.app.vault.createFolder(dirPath);
+                if (!isDirChecked) {
+                    const dirPath = WuCaiUtils.getDirFromPath(outFilename);
+                    if (dirPath) {
+                        const fileInfo = yield this.app.vault.getAbstractFileByPath(dirPath);
+                        if (!fileInfo || !(fileInfo instanceof obsidian.TFolder)) {
+                            yield this.app.vault.createFolder(dirPath);
+                        }
+                    }
                 }
                 const pageCtx = {
                     title: entry.title,
@@ -13449,7 +13482,7 @@ class WuCaiPlugin extends obsidian.Plugin {
                     citekey: entry.citekey || '',
                     author: entry.author || '',
                 };
-                const noteFile = yield this.app.vault.getAbstractFileByPath(distFileName);
+                const noteFile = yield this.app.vault.getAbstractFileByPath(outFilename);
                 const isNoteExists = noteFile && noteFile instanceof obsidian.TFile;
                 if (!isNoteExists || WRITE_STYLE_OVERWRITE === exportCfg.writeStyle) {
                     // 全量渲染整个页面里的所有内容
@@ -13458,7 +13491,7 @@ class WuCaiPlugin extends obsidian.Plugin {
                         yield this.app.vault.modify(noteFile, contents);
                     }
                     else {
-                        yield this.app.vault.create(distFileName, contents);
+                        yield this.app.vault.create(outFilename, contents);
                     }
                 }
                 else if (WRITE_STYLE_APPEND === exportCfg.writeStyle) {
@@ -13473,8 +13506,8 @@ class WuCaiPlugin extends obsidian.Plugin {
                 }
             }
             catch (e) {
-                logger([`WuCai Official plugin: error writing ${distFileName}:`, e]);
-                this.notice(`WuCai: error while writing ${distFileName}: ${e}`, true, 4, true);
+                logger([`WuCai Official plugin: error writing ${outFilename}:`, e]);
+                this.notice(`WuCai: error while writing ${outFilename}: ${e}`, true, 4, true);
                 if (entry.noteIdX) {
                     this.settings.notesToRefresh.push(entry.noteIdX);
                     yield this.saveSettings();
@@ -13928,7 +13961,7 @@ class WuCaiSettingTab extends obsidian.PluginSettingTab {
                 .setDesc('If not set to Manual, WuCai will automatically resync with Obsidian when the app is open at the specified interval')
                 .addDropdown((dropdown) => {
                 dropdown.addOption('0', 'Manual');
-                dropdown.addOption('60', 'Every 1 hour');
+                dropdown.addOption('180', 'Every 3 hour');
                 dropdown.addOption((12 * 60).toString(), 'Every 12 hours');
                 dropdown.addOption((24 * 60).toString(), 'Every 24 hours');
                 // select the currently-saved option
