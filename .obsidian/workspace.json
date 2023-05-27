@@ -31,22 +31,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "dc3853ab2a18ed9c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "学习笔记/Java相关/SpringMVC/SpringMVC配置.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -100,8 +87,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -132,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习笔记/Java相关/SpringMVC/SpringMVC配置.md"
+                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md"
               }
             }
           },
@@ -166,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "学习笔记/Java相关/SpringMVC/SpringMVC配置.md",
+                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "学习笔记/Java相关/SpringMVC/SpringMVC配置.md",
+                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -236,8 +222,9 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "dc3853ab2a18ed9c",
+  "active": "2e6886b3461627b5",
   "lastOpenFiles": [
+    "学习笔记/Java相关/SpringMVC/SpringMVC配置.md",
     "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md",
     "学习笔记/前端开发/Vue路由传参.md",
     "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md",
@@ -272,7 +259,6 @@
     "草稿/常用软件配置.md",
     "草稿/@ConditionalOnClass注解.md",
     "学习笔记/Java相关/SpringMVC/SpringMVC文件上传.md",
-    "学习笔记/Java相关/SpringMVC/SpringMVC配置.md",
     "学习笔记/Java相关/Java 中的 char 类型能否存储中文.md",
     "学习笔记/Java相关/Spring/Spring基于XML的配置.md",
     "学习笔记/Java相关/SpringBoot/SpringBoot整合",
