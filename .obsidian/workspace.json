@@ -213,7 +213,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 465.5
+    "width": 274.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -239,7 +239,7 @@
       "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false
     }
   },
-  "active": "e4aa2c41c50dd854",
+  "active": "f0361fa5654353f1",
   "lastOpenFiles": [
     "学习笔记/前端开发/Vue相关/Vue路由传参.md",
     "学习笔记/前端开发/Vue相关/ref 和 reactive.md",
