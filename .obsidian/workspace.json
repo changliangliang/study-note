@@ -20,6 +20,32 @@
             }
           },
           {
+            "id": "757b72efd310f9f5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "学习笔记/linux学习/ubuntu中的网络配置.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a359e43880896746",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "学习笔记/linux学习/常用命令.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
             "id": "f0361fa5654353f1",
             "type": "leaf",
             "state": {
@@ -32,7 +58,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -117,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "看板/草稿管理.md"
+                "file": "学习笔记/linux学习/常用命令.md"
               }
             }
           },
@@ -151,7 +178,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "看板/草稿管理.md",
+                "file": "学习笔记/linux学习/常用命令.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +190,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "看板/草稿管理.md",
+                "file": "学习笔记/linux学习/常用命令.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -191,11 +218,11 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 274.5
+    "width": 458.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -211,18 +238,22 @@
       "obsidian42-brat:BRAT": false,
       "dbfolder:创建一个新数据库表": false,
       "workspaces:管理工作区布局": false,
-      "omnisearch:Omnisearch": false,
       "meld-encrypt:Create new encrypted note": false,
       "obsidian-projects:Open projects": false,
       "cmdr:Obsidian Git: Create backup": false,
       "obsidian-advanced-slides:Show Slide Preview": false,
       "homepage:Open homepage": false,
       "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
-      "obsidian-memos:Memos": false
+      "obsidian-memos:Memos": false,
+      "omnisearch:Omnisearch": false
     }
   },
-  "active": "2e6886b3461627b5",
+  "active": "a359e43880896746",
   "lastOpenFiles": [
+    "学习笔记/linux学习/ubuntu中的网络配置.md",
+    "学习笔记/linux学习/常用命令.md",
+    "学习笔记/开发工具/docker 常用操作.md",
+    "看板/草稿管理.md",
     "学习笔记/前端开发/Vue相关/Vue路由传参.md",
     "学习笔记/前端开发/Vue相关/ref 和 reactive.md",
     "学习笔记/前端开发/Vue相关",
@@ -246,7 +277,6 @@
     "附件/image/SpringSecurity原理_image_4.png",
     "附件/image/tmp1684931289753_SpringSecurity配置_image_4.png",
     "附件/image/SpringSecurity原理_image_3.png",
-    "看板/草稿管理.md",
     "附件/image/2023-05-24_image_2.png",
     "学习笔记/C++学习笔记/static关键字.md",
     "看板/C++学习进度.md",
@@ -258,9 +288,6 @@
     "草稿/函数堆栈.md",
     "草稿/如何使用java.md",
     "草稿/常用软件配置.md",
-    "草稿/@ConditionalOnClass注解.md",
-    "学习笔记/Java相关/SpringMVC/SpringMVC文件上传.md",
-    "学习笔记/Java相关/Java 中的 char 类型能否存储中文.md",
     "学习笔记/Java相关/SpringBoot/SpringBoot整合",
     "学习笔记/Java相关/SpringBoot/SpringSecurity",
     "学习笔记/Java相关/未命名",
