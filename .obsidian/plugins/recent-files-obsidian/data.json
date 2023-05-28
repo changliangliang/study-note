@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "ref 和 reactive",
-      "path": "学习笔记/前端开发/Vue相关/ref 和 reactive.md"
+      "basename": "草稿管理",
+      "path": "看板/草稿管理.md"
     },
     {
       "basename": "Vue路由传参",
       "path": "学习笔记/前端开发/Vue相关/Vue路由传参.md"
+    },
+    {
+      "basename": "ref 和 reactive",
+      "path": "学习笔记/前端开发/Vue相关/ref 和 reactive.md"
     },
     {
       "basename": "SpringSecurity原理",
@@ -51,10 +55,6 @@
     {
       "basename": "2023-05-24",
       "path": "日记/2023-05-24.md"
-    },
-    {
-      "basename": "草稿管理",
-      "path": "看板/草稿管理.md"
     },
     {
       "basename": "static关键字",

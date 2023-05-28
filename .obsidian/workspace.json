@@ -20,19 +20,6 @@
             }
           },
           {
-            "id": "37e9b33a221b0a2e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "学习笔记/前端开发/Vue相关/Vue路由传参.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "f0361fa5654353f1",
             "type": "leaf",
             "state": {
@@ -45,8 +32,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -100,8 +86,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -132,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习笔记/前端开发/Vue相关/ref 和 reactive.md"
+                "file": "看板/草稿管理.md"
               }
             }
           },
@@ -166,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "学习笔记/前端开发/Vue相关/ref 和 reactive.md",
+                "file": "看板/草稿管理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +163,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "学习笔记/前端开发/Vue相关/ref 和 reactive.md",
+                "file": "看板/草稿管理.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -236,7 +221,7 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "f0361fa5654353f1",
+  "active": "2e6886b3461627b5",
   "lastOpenFiles": [
     "学习笔记/前端开发/Vue相关/Vue路由传参.md",
     "学习笔记/前端开发/Vue相关/ref 和 reactive.md",
