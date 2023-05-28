@@ -12,12 +12,9 @@
             "type": "leaf",
             "pinned": true,
             "state": {
-              "type": "markdown",
+              "type": "kanban",
               "state": {
-                "file": "看板/草稿管理.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
+                "file": "看板/草稿管理.md"
               },
               "pinned": true
             }
@@ -234,9 +231,9 @@
       "obsidian-projects:Open projects": false,
       "cmdr:Obsidian Git: Create backup": false,
       "obsidian-advanced-slides:Show Slide Preview": false,
-      "obsidian-memos:Memos": false,
       "homepage:Open homepage": false,
-      "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false
+      "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
+      "obsidian-memos:Memos": false
     }
   },
   "active": "f0361fa5654353f1",
