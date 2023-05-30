@@ -218,7 +218,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
@@ -244,8 +244,8 @@
       "obsidian-advanced-slides:Show Slide Preview": false,
       "homepage:Open homepage": false,
       "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
-      "obsidian-memos:Memos": false,
-      "omnisearch:Omnisearch": false
+      "omnisearch:Omnisearch": false,
+      "obsidian-memos:Memos": false
     }
   },
   "active": "a359e43880896746",
