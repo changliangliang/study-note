@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "草稿/init函数注意事项.md",
+                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -95,8 +95,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -127,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "看板/草稿管理.md"
+                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md"
               }
             }
           },
@@ -161,7 +160,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "看板/草稿管理.md",
+                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,7 +172,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "看板/草稿管理.md",
+                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -232,8 +231,13 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "be9ca6d9588b3fbc",
+  "active": "70aaae65a076c641",
   "lastOpenFiles": [
+    "附件/image/SpringSecurity原理_image_8.png",
+    "附件/Pasted image 20230601214912.png",
+    "附件/image/SpringSecurity原理_image_7.png",
+    "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md",
+    "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot序列化.md",
     "看板/草稿管理.md",
     "草稿/未命名.md",
     "学习笔记/前端开发/this指向的问题.md",
@@ -249,10 +253,8 @@
     "学习笔记/前端开发/Vue相关",
     "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md",
     "学习笔记/Java相关/SpringMVC/SpringMVC配置.md",
-    "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md",
     "附件/image/SpringSecurity原理_image_6.png",
     "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md",
-    "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot序列化.md",
     "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot整合redis.md",
     "学习笔记/Java相关/SpringBoot/SpringBoot整合Springdoc.md",
     "学习笔记/Java相关/SpringBoot/SpringBoot异步任务和定时任务.md",
@@ -266,13 +268,10 @@
     "附件/image/SpringSecurity配置_image_6.png",
     "附件/image/SpringSecurity原理_image_4.png",
     "附件/image/tmp1684931289753_SpringSecurity配置_image_4.png",
-    "附件/image/SpringSecurity原理_image_3.png",
-    "附件/image/2023-05-24_image_2.png",
     "学习笔记/C++学习笔记/static关键字.md",
     "看板/C++学习进度.md",
     "学习笔记/C++学习笔记",
     "日记/2023-05-20.md",
-    "学习笔记/Java相关/Spring/Spirng基于Java和注解的配置.md",
     "学习笔记/Java相关/SpringBoot/SpringBoot整合",
     "学习笔记/Java相关/SpringBoot/SpringSecurity",
     "学习笔记/Java相关/未命名",
