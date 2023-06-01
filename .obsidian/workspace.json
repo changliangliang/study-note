@@ -62,7 +62,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "@modelattribute",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": true,
