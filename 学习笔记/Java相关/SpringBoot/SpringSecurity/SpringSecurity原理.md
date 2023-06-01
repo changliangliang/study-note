@@ -143,7 +143,6 @@ SpringSecurity 负责认证的组件的是 `AuthenticationManager`，其中 `Pro
 
 ![](附件/image/SpringSecurity原理_image_6.png)
 
-
 ## 授权
 
 根据认证的原理可以知道在 SpringSecurity 中当前用户被表示为一个 `Authentication`，它有一个方法用于获取当前用户的权限：
@@ -152,7 +151,9 @@ SpringSecurity 负责认证的组件的是 `AuthenticationManager`，其中 `Pro
 String getAuthority();
 ```
 
-请求在过滤器链中会被 `AuthorizationFilter` 拦截，然后会利用 `AuthorizationManager` 判断当前用户是否有权限访问该请求。
+请求在过滤器链中会被 `AuthorizationFilter` 拦截，然后会利用 `AuthorizationManager` 判断当前用户是否有权限访问该请求，SpirngSecuriy 中有多个实现：
+
+![](附件/image/SpringSecurity原理_image_7.png)
 
 ```java
 AuthorizationDecision check(Supplier<Authentication> authentication, Object secureObject);
@@ -165,6 +166,12 @@ default AuthorizationDecision verify(Supplier<Authentication> authentication, Ob
 
 `AuthorizationManager` 的 `verify` 调用 `check` 检查当前用户权限。其中参数 `authentication` 为当前用户，这里的 `secureObject` 查看源码可知就是当前请求。
 
-![](附件/image/SpringSecurity原理_image_7.png)
-
 ![](附件/image/SpringSecurity原理_image_8.png)
+
+![](附件/image/SpringSecurity原理_image_9.png)
+
+总结以下 SpringSecurity 的授权流程：
+
+- `AuthorizationFilter` 从 `SecurityContextHolder` 获得一个 `Authentication`，它被包装在一个 `Supplier` 中；
+- 其次，它将 `Supplier<Authentication>` 和 `HttpServletRequest` 会传递给 `AuthorizationManager`；
+- 如果授权被拒绝，就会抛出一个 `AccessDeniedException`，然后 `ExceptionTranslationFilter` 会处理这个 `AccessDeniedException`；

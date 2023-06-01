@@ -301,15 +301,55 @@ public HttpSessionEventPublisher httpSessionEventPublisher() {
 http.sessionManagement()
         .maximumSessions(1)
         .maxSessionsPreventsLogin(true); // 默认情况下后登陆的会把先登陆的顶掉
-								         // 该配置用于阻止后登陆
+                                         // 该配置用于阻止后登陆
 ```
 
 ## 授权
 
+权限相关的配置使用 `http.authorizeHttpRequests()`，大致就是设置对应的路径，然后在配置需要的权限：
+
+```java
+@Bean
+SecurityFilterChain web(HttpSecurity http) throws AuthenticationException {
+    http.authorizeHttpRequests().mvcMatchers("/xxxxxx").hasRole("user");    
+    return http.build();
+}
+```
+
+```java
+http.requestMatchers("/resources/**", "/signup", "/about").permitAll()         
+http.requestMatchers("/admin/**").hasRole("ADMIN")                             
+http.requestMatchers("/db/**").access(new WebExpressionAuthorizationManager("hasRole('ADMIN') and hasRole('DBA')"))   
+http.anyRequest().denyAll()          
+```
+
+`permitAll()` 表示全部放行，`denyAll()` 表示全部拒绝，`hasRole("ADMIN")`，表示必须是 `ADMIN` 角色，`access(new WebExpressionAuthorizationManager("hasRole('ADMIN') and hasRole('DBA')")) ` 使用表达式形式（更多表达式的信息可以查看文档 [基于表达式的访问控制 :: Spring Security Reference](https://springdoc.cn/spring-security/servlet/authorization/expression-based.html)）。
+
+如果默认的授权无法满足需求，可以实现自己的 `AuthorizationManager`：
+
+```java
+@Bean
+AuthorizationManager<RequestAuthorizationContext> requestMatcherAuthorizationManager(HandlerMappingIntrospector introspector) {
+    MvcRequestMatcher.Builder mvcMatcherBuilder = new MvcRequestMatcher.Builder(introspector);
+    RequestMatcher permitAll =
+            new AndRequestMatcher(
+                    mvcMatcherBuilder.pattern("/resources/**"),
+                    mvcMatcherBuilder.pattern("/signup"),
+                    mvcMatcherBuilder.pattern("/about"));
+    RequestMatcher admin = mvcMatcherBuilder.pattern("/admin/**");
+    RequestMatcher db = mvcMatcherBuilder.pattern("/db/**");
+    RequestMatcher any = AnyRequestMatcher.INSTANCE;
+    AuthorizationManager<HttpServletRequest> manager = RequestMatcherDelegatingAuthorizationManager.builder()
+            .add(permitAll, (context) -> new AuthorizationDecision(true))
+            .add(admin, AuthorityAuthorizationManager.hasRole("ADMIN"))
+            .add(db, AuthorityAuthorizationManager.hasRole("DBA"))
+            .add(any, new AuthenticatedAuthorizationManager())
+            .build();
+    return (context) -> manager.check(context.getRequest());
+}
+```
 
 
-
-## Remenber Me
 
 #todo
 
