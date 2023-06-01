@@ -13,9 +13,11 @@
   "note-composer",
   "command-palette",
   "editor-status",
-  "starred",
+  "bookmarks",
+  "markdown-importer",
   "outline",
   "word-count",
+  "slides",
   "workspaces",
   "file-recovery"
 ]
