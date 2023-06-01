@@ -348,9 +348,3 @@ AuthorizationManager<RequestAuthorizationContext> requestMatcherAuthorizationMan
     return (context) -> manager.check(context.getRequest());
 }
 ```
-
-
-
-#todo
-
-## 密码问题
