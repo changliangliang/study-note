@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "ubuntu中的网络配置",
+      "path": "学习笔记/linux学习/ubuntu中的网络配置.md"
+    },
+    {
       "basename": "linxu 设置笔记本合盖子不挂起",
       "path": "学习笔记/linux学习/linxu 设置笔记本合盖子不挂起.md"
     },
@@ -43,10 +47,6 @@
     {
       "basename": "函数堆栈",
       "path": "草稿/函数堆栈.md"
-    },
-    {
-      "basename": "ubuntu中的网络配置",
-      "path": "学习笔记/linux学习/ubuntu中的网络配置.md"
     },
     {
       "basename": "常用命令",
