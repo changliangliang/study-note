@@ -306,6 +306,29 @@ http.sessionManagement()
 
 ## 记住我
 
+记住我配置使用的 `http.rememberMe()` 方法：
+
+```java
+http.rememberMe().rememberMeServices()
+```
+
+
+## 注销
+
+注销的配置与登陆配置类似,，就不在作过多的赘述。
+
+```java
+http
+	.logout()                                            
+		.logoutUrl("/my/logout")                                            
+		.logoutSuccessUrl("/my/index")                                      
+		.logoutSuccessHandler(logoutSuccessHandler)                         
+		.invalidateHttpSession(true)                                        
+		.addLogoutHandler(logoutHandler)                                    
+		.deleteCookies(cookieNamesToClear)                                  
+	)
+```
+
 ## 授权
 
 权限相关的配置使用 `http.authorizeHttpRequests()`，大致就是设置对应的路径，然后在配置需要的权限：

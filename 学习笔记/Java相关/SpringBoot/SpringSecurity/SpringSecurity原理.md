@@ -198,3 +198,9 @@ void loginSuccess(HttpServletRequest request, HttpServletResponse response,
 ![](附件/image/SpringSecurity原理_image_10.png)
 
 `AbstractAuthenticationProcessingFilter` 拦截登陆请求，会在登陆成功或失败的时候分别调用 `loginSuccess` 和 `loginFail` 两个方法。
+
+## 注销
+
+注销功能通过 `LogoutFilter` 过滤器实现，主要是进行一些信息的删除的工作，如删除 cookie，使 session 失效等任务。
+
+![](附件/image/SpringSecurity原理_image_11.png)
