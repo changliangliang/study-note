@@ -204,3 +204,43 @@ void loginSuccess(HttpServletRequest request, HttpServletResponse response,
 注销功能通过 `LogoutFilter` 过滤器实现，主要是进行一些信息的删除的工作，如删除 cookie，使 session 失效等任务。
 
 ![](附件/image/SpringSecurity原理_image_11.png)
+
+## Csrf
+
+Csrf 功能通过 `CsrfFilter` 实现，主要就是同
+
+```java
+protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
+		throws ServletException, IOException {
+	request.setAttribute(HttpServletResponse.class.getName(), response);
+	CsrfToken csrfToken = this.tokenRepository.loadToken(request);
+	boolean missingToken = (csrfToken == null);
+	if (missingToken) {
+		csrfToken = this.tokenRepository.generateToken(request);
+		this.tokenRepository.saveToken(csrfToken, request, response);
+	}
+	request.setAttribute(CsrfToken.class.getName(), csrfToken);
+	request.setAttribute(csrfToken.getParameterName(), csrfToken);
+	if (!this.requireCsrfProtectionMatcher.matches(request)) {
+		if (this.logger.isTraceEnabled()) {
+			this.logger.trace("Did not protect against CSRF since request did not match "
+					+ this.requireCsrfProtectionMatcher);
+		}
+		filterChain.doFilter(request, response);
+		return;
+	}
+	String actualToken = request.getHeader(csrfToken.getHeaderName());
+	if (actualToken == null) {
+		actualToken = request.getParameter(csrfToken.getParameterName());
+	}
+	if (!equalsConstantTime(csrfToken.getToken(), actualToken)) {
+		this.logger.debug(
+				LogMessage.of(() -> "Invalid CSRF token found for " + UrlUtils.buildFullRequestUrl(request)));
+		AccessDeniedException exception = (!missingToken) ? new InvalidCsrfTokenException(csrfToken, actualToken)
+				: new MissingCsrfTokenException(actualToken);
+		this.accessDeniedHandler.handle(request, response, exception);
+		return;
+	}
+	filterChain.doFilter(request, response);
+}
+```
