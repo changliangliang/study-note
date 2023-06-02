@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "linxu 设置笔记本合盖子不挂起",
+      "path": "学习笔记/linux学习/linxu 设置笔记本合盖子不挂起.md"
+    },
+    {
       "basename": "SpringSeucrity自定义密码认证",
       "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSeucrity自定义密码认证.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "2023-05-05",
       "path": "日记/2023-05-05.md"
-    },
-    {
-      "basename": "Spring中的AOP配置",
-      "path": "学习笔记/Java相关/Spring/Spring中的AOP配置.md"
     }
   ],
   "omittedPaths": [],
