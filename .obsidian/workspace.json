@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md",
+                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md"
+                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md"
               }
             }
           },
@@ -160,7 +160,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md",
+                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,7 +172,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md",
+                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -233,8 +233,8 @@
   },
   "active": "70aaae65a076c641",
   "lastOpenFiles": [
-    "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md",
     "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md",
+    "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md",
     "附件/image/SpringSecurity原理_image_11.png",
     "附件/image/SpringSecurity原理_image_10.png",
     "附件/image/SpringSecurity原理_image_7.png",
