@@ -304,6 +304,8 @@ http.sessionManagement()
                                          // 该配置用于阻止后登陆
 ```
 
+## 记住我
+
 ## 授权
 
 权限相关的配置使用 `http.authorizeHttpRequests()`，大致就是设置对应的路径，然后在配置需要的权限：

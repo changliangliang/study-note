@@ -175,3 +175,26 @@ default AuthorizationDecision verify(Supplier<Authentication> authentication, Ob
 - `AuthorizationFilter` 从 `SecurityContextHolder` 获得一个 `Authentication`，它被包装在一个 `Supplier` 中；
 - 其次，它将 `Supplier<Authentication>` 和 `HttpServletRequest` 会传递给 `AuthorizationManager`；
 - 如果授权被拒绝，就会抛出一个 `AccessDeniedException`，然后 `ExceptionTranslationFilter` 会处理这个 `AccessDeniedException`；
+
+## 记住我
+
+记住我功能通过 `RememberMeAuthenticationFilter` 实现，过程大致是实现在用户登陆的时候生成一个 token，每次 `RememberMeAuthenticationFilter` 拦截请求后发现还没认证用户的时候，就根据 token 生成一个认证用户。
+
+token 的存放位置有两种，一种是存放在 cookie 中，客户端每次请求时都带上 cookie，另一种是存放在数据库中，仅通过 cookie 给客户端一个于 token 对应的 id。
+
+具体的 token 存放和获取是通过 `RememberMeServices` 实现的，它提供了以下三个重要的接口：
+
+```java
+Authentication autoLogin(HttpServletRequest request, HttpServletResponse response);
+
+void loginFail(HttpServletRequest request, HttpServletResponse response);
+
+void loginSuccess(HttpServletRequest request, HttpServletResponse response,
+    Authentication successfulAuthentication);
+```
+
+`autoLogin` 会在 `RememberMeAuthenticationFilter` 中被调用，生成一个未认证的 `Authentication`，然后交个 `AuthenticationManager` 进行认证。
+
+![](附件/image/SpringSecurity原理_image_10.png)
+
+`AbstractAuthenticationProcessingFilter` 拦截登陆请求，会在登陆成功或失败的时候分别调用 `loginSuccess` 和 `loginFail` 两个方法。
