@@ -207,40 +207,40 @@ void loginSuccess(HttpServletRequest request, HttpServletResponse response,
 
 ## Csrf
 
-Csrf 功能通过 `CsrfFilter` 实现，主要就是同
+Csrf 功能通过 `CsrfFilter` 实现，主要就是当请求到来的时候根据请判断一下请求中携带的 csrftoken 和存储中的是否一样。
 
 ```java
 protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
-		throws ServletException, IOException {
-	request.setAttribute(HttpServletResponse.class.getName(), response);
-	CsrfToken csrfToken = this.tokenRepository.loadToken(request);
-	boolean missingToken = (csrfToken == null);
-	if (missingToken) {
-		csrfToken = this.tokenRepository.generateToken(request);
-		this.tokenRepository.saveToken(csrfToken, request, response);
-	}
-	request.setAttribute(CsrfToken.class.getName(), csrfToken);
-	request.setAttribute(csrfToken.getParameterName(), csrfToken);
-	if (!this.requireCsrfProtectionMatcher.matches(request)) {
-		if (this.logger.isTraceEnabled()) {
-			this.logger.trace("Did not protect against CSRF since request did not match "
-					+ this.requireCsrfProtectionMatcher);
-		}
-		filterChain.doFilter(request, response);
-		return;
-	}
-	String actualToken = request.getHeader(csrfToken.getHeaderName());
-	if (actualToken == null) {
-		actualToken = request.getParameter(csrfToken.getParameterName());
-	}
-	if (!equalsConstantTime(csrfToken.getToken(), actualToken)) {
-		this.logger.debug(
-				LogMessage.of(() -> "Invalid CSRF token found for " + UrlUtils.buildFullRequestUrl(request)));
-		AccessDeniedException exception = (!missingToken) ? new InvalidCsrfTokenException(csrfToken, actualToken)
-				: new MissingCsrfTokenException(actualToken);
-		this.accessDeniedHandler.handle(request, response, exception);
-		return;
-	}
-	filterChain.doFilter(request, response);
+        throws ServletException, IOException {
+    request.setAttribute(HttpServletResponse.class.getName(), response);
+    CsrfToken csrfToken = this.tokenRepository.loadToken(request);
+    boolean missingToken = (csrfToken == null);
+    if (missingToken) {
+        csrfToken = this.tokenRepository.generateToken(request);
+        this.tokenRepository.saveToken(csrfToken, request, response);
+    }
+    request.setAttribute(CsrfToken.class.getName(), csrfToken);
+    request.setAttribute(csrfToken.getParameterName(), csrfToken);
+    if (!this.requireCsrfProtectionMatcher.matches(request)) {
+        if (this.logger.isTraceEnabled()) {
+            this.logger.trace("Did not protect against CSRF since request did not match "
+                    + this.requireCsrfProtectionMatcher);
+        }
+        filterChain.doFilter(request, response);
+        return;
+    }
+    String actualToken = request.getHeader(csrfToken.getHeaderName());
+    if (actualToken == null) {
+        actualToken = request.getParameter(csrfToken.getParameterName());
+    }
+    if (!equalsConstantTime(csrfToken.getToken(), actualToken)) {
+        this.logger.debug(
+                LogMessage.of(() -> "Invalid CSRF token found for " + UrlUtils.buildFullRequestUrl(request)));
+        AccessDeniedException exception = (!missingToken) ? new InvalidCsrfTokenException(csrfToken, actualToken)
+                : new MissingCsrfTokenException(actualToken);
+        this.accessDeniedHandler.handle(request, response, exception);
+        return;
+    }
+    filterChain.doFilter(request, response);
 }
 ```

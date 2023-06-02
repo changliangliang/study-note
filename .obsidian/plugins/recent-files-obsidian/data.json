@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "SpringSecurity配置",
-      "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md"
+      "basename": "SpringSeucrity自定义密码认证",
+      "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSeucrity自定义密码认证.md"
     },
     {
       "basename": "SpringSecurity原理",
       "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md"
+    },
+    {
+      "basename": "SpringSecurity配置",
+      "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md"
     },
     {
       "basename": "SpringBoot序列化",
@@ -195,10 +199,6 @@
     {
       "basename": "Spring中的AOP配置",
       "path": "学习笔记/Java相关/Spring/Spring中的AOP配置.md"
-    },
-    {
-      "basename": "springboot 3 自动装配方式更改",
-      "path": "学习笔记/问题记录/springboot 3 自动装配方式更改.md"
     }
   ],
   "omittedPaths": [],
