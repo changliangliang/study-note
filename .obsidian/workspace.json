@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "学习笔记/linux学习/ubuntu中的网络配置.md",
+                "file": "学习笔记/linux学习/硬盘自动挂载.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习笔记/linux学习/ubuntu中的网络配置.md"
+                "file": "学习笔记/linux学习/硬盘自动挂载.md"
               }
             }
           },
@@ -160,7 +160,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "学习笔记/linux学习/ubuntu中的网络配置.md",
+                "file": "学习笔记/linux学习/硬盘自动挂载.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,7 +172,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "学习笔记/linux学习/ubuntu中的网络配置.md",
+                "file": "学习笔记/linux学习/硬盘自动挂载.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -234,11 +234,12 @@
   },
   "active": "70aaae65a076c641",
   "lastOpenFiles": [
+    "学习笔记/linux学习/ubuntu中的网络配置.md",
+    "学习笔记/linux学习/硬盘自动挂载.md",
     "学习笔记/linux学习/ubuntu启动时等待网络时间过长.md",
     "学习笔记/linux学习/linxu 设置笔记本合盖子不挂起.md",
     "学习笔记/linux学习/常用命令.md",
     "附件/image/linxu 设置笔记本合盖子不挂起_image_1.png",
-    "学习笔记/linux学习/ubuntu中的网络配置.md",
     "学习笔记/Java相关/SpringMVC/SpringMVC文件上传.md",
     "附件/image/ubuntu启动时等待网络时间过长_image_3.png",
     "附件/image/ubuntu启动时等待网络时间过长_image_2.png",

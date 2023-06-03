@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "硬盘自动挂载",
+      "path": "学习笔记/linux学习/硬盘自动挂载.md"
+    },
+    {
       "basename": "ubuntu中的网络配置",
       "path": "学习笔记/linux学习/ubuntu中的网络配置.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "ucore实验：bootasm.S源码",
       "path": "学习笔记/ucore操作系统实验/ucore实验：bootasm.S源码.md"
-    },
-    {
-      "basename": "实模式、保护模式、A20 Gate概念解析",
-      "path": "学习笔记/操作系统/实模式、保护模式、A20 Gate概念解析.md"
     }
   ],
   "omittedPaths": [],
