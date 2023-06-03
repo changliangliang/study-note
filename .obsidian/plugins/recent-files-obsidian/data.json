@@ -9,12 +9,16 @@
       "path": "学习笔记/linux学习/ubuntu启动时等待网络时间过长.md"
     },
     {
-      "basename": "SpringMVC文件上传",
-      "path": "学习笔记/Java相关/SpringMVC/SpringMVC文件上传.md"
-    },
-    {
       "basename": "linxu 设置笔记本合盖子不挂起",
       "path": "学习笔记/linux学习/linxu 设置笔记本合盖子不挂起.md"
+    },
+    {
+      "basename": "常用命令",
+      "path": "学习笔记/linux学习/常用命令.md"
+    },
+    {
+      "basename": "SpringMVC文件上传",
+      "path": "学习笔记/Java相关/SpringMVC/SpringMVC文件上传.md"
     },
     {
       "basename": "SpringSeucrity自定义密码认证",
@@ -55,10 +59,6 @@
     {
       "basename": "函数堆栈",
       "path": "草稿/函数堆栈.md"
-    },
-    {
-      "basename": "常用命令",
-      "path": "学习笔记/linux学习/常用命令.md"
     },
     {
       "basename": "docker 常用操作",

@@ -23,6 +23,7 @@ categories: []
 ![](附件/image/ubuntu启动时等待网络时间过长_image_3.png)
 
 这里有两种解决方案：
+
 - 禁用该网卡
 - 减少 `systemd-networkd-wait-online.service` 等待时间
 
@@ -32,3 +33,23 @@ categories: []
 ip link set 网卡名 down
 ```
 
+不过重启后会重新开启，如果想永久禁用，可以在 `/usr/lib/systemd/network` 目录下创建一个文件 `01-disable-enp5s0.network`：
+
+```
+[Match]
+MACAddress=00:e0:4c:54:17:3a
+
+[Link]
+Unmanaged=yes
+```
+
+减少等待时间在 `/etc/systemd/system/network-online.target.wants/` 的 `systemd-networkd-wait-online.service` 文件中添加配置项：
+
+```
+[Service]
+Type=oneshot
+ExecStart=/lib/systemd/systemd-networkd-wait-online
+RemainAfterExit=yes
+TimeoutStartSec=2sec            # 增加这一行
+
+```
