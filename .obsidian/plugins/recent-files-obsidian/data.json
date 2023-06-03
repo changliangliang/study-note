@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "ubuntu中的网络配置",
-      "path": "学习笔记/linux学习/ubuntu中的网络配置.md"
+      "basename": "ubuntu启动时等待网络时间过长",
+      "path": "学习笔记/linux学习/ubuntu启动时等待网络时间过长.md"
     },
     {
       "basename": "linxu 设置笔记本合盖子不挂起",
       "path": "学习笔记/linux学习/linxu 设置笔记本合盖子不挂起.md"
+    },
+    {
+      "basename": "ubuntu中的网络配置",
+      "path": "学习笔记/linux学习/ubuntu中的网络配置.md"
     },
     {
       "basename": "SpringSeucrity自定义密码认证",
@@ -195,10 +199,6 @@
     {
       "basename": "实模式、保护模式、A20 Gate概念解析",
       "path": "学习笔记/操作系统/实模式、保护模式、A20 Gate概念解析.md"
-    },
-    {
-      "basename": "2023-05-05",
-      "path": "日记/2023-05-05.md"
     }
   ],
   "omittedPaths": [],
