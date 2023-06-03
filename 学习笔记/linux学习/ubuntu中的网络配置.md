@@ -51,9 +51,10 @@ network:
     enp3s0:
       addresses:
         - 10.10.10.2/24
-      gateway4: 10.10.10.1
+      routes: 
+        - to: default
+          via: 10.10.10.1
       nameservers:
-          search: [mydomain, otherdomain]
           addresses: [10.10.10.1, 1.1.1.1]
 ```
 
@@ -96,7 +97,9 @@ network:
       dhcp4: no
       dhcp6: no
       addresses: [192.168.0.21/24]
-      gateway4: 192.168.0.1
+      routes: 
+        - to: default
+          via: 10.10.10.1
       nameservers:
         addresses: [192.168.0.1, 8.8.8.8]
       access-points:
