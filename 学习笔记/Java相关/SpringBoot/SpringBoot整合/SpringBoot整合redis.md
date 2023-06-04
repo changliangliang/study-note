@@ -28,7 +28,7 @@ spring:
 
 ## LocalDateTime 序列化失败
 
-原因在于 `GenericJackson2JsonRedisSerializer` 不支持 `LocalDateTime` 的序列化，那么要解决这个问题可以添加一个针对 `LocalDateTime` 类型的序列化和反序列化器：
+自定义的 `RedisTemplate` 是无法序列化 `LocalDateTime` 类型，原因在于 `GenericJackson2JsonRedisSerializer` 不支持 `LocalDateTime` 的序列化，那么要解决这个问题可以添加一个针对 `LocalDateTime` 类型的序列化和反序列化器：
 
 ```java
 ObjectMapper objectMapper = new ObjectMapper();
@@ -42,7 +42,7 @@ objectMapper.activateDefaultTyping(objectMapper.getPolymorphicTypeValidator(), O
 GenericJackson2JsonRedisSerializer valueSerializer = new GenericJackson2JsonRedisSerializer(objectMapper);
 ```
 
-其中 `objectMapper.activateDefaultTyping(objectMapper.getPolymorphicTypeValidator(), ObjectMapper.DefaultTyping.EVERYTHING, JsonTypeInfo.As.PROPERTY)` 是为了在序列化时记录当前实例的类型，会以 `@class` 为 `key`。
+其中 `objectMapper.activateDefaultTyping(objectMapper.getPolymorphicTypeValidator(), ObjectMapper.DefaultTyping.EVERYTHING, JsonTypeInfo.As.PROPERTY)` 是为了在序列化时记录当前实例的类型，会以 `@class` 为 `key` 存储到序列化后的数据中，这样从 Redis 中读取数据的时候就能知道要将数据反序列化为什么样的类型。
 
 ```json
 {
