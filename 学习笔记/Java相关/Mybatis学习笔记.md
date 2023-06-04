@@ -103,4 +103,32 @@ video v = mapper.getVideoByCode("ipx-414");
 System.out.println(v) ;
 ```
 
-## 全局配置
+## 全局配置文件详解
+
+### propertise
+
+用来引入外部 properties 配置文件, resource 用来引入类路径下的资源, url 用来引入磁盘路径下的资源
+
+```xml
+<properties resource="org/mybatis/example/config.properties">
+  <property name="username" value="dev_user"/>
+  <property name="password" value="F2Fa3!33TYyg"/>
+</properties>
+```
+
+设置好的属性可以在配置文件中的其他地方引用
+
+```xml
+<dataSource type="POOLED">
+  <property name="driver" value="${driver}"/>
+  <property name="url" value="${url}"/>
+  <property name="username" value="${username}"/>
+  <property name="password" value="${password}"/>
+</dataSource>
+```
+
+这个例子中的 username 和 password 将会由 properties 元素中设置的相应值来替换。driver 和 url 属性将会由 config.properties 文件中对应的值来替换。
+
+### settings
+
+该项用于设置 Mybatis 的中一些全局性配置，如是否开启缓存，是否开启懒加载之类的，具体选项可以查看官方配置文档：[mybatis – MyBatis 3 | 配置](https://mybatis.org/mybatis-3/zh/configuration.html#%E8%AE%BE%E7%BD%AE%EF%BC%88settings%EF%BC%89)

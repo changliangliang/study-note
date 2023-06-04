@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "常用软件配置",
+      "path": "草稿/常用软件配置.md"
+    },
+    {
+      "basename": "SpringBoot整合redis",
+      "path": "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot整合redis.md"
+    },
+    {
       "basename": "Mybatis学习笔记",
       "path": "学习笔记/Java相关/Mybatis学习笔记.md"
     },
@@ -47,10 +55,6 @@
     {
       "basename": "SpringBoot异步任务和定时任务",
       "path": "学习笔记/Java相关/SpringBoot/SpringBoot异步任务和定时任务.md"
-    },
-    {
-      "basename": "SpringBoot整合redis",
-      "path": "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot整合redis.md"
     },
     {
       "basename": "Jackson中LocalDateTime序列化与反序列化",
@@ -159,10 +163,6 @@
     {
       "basename": "如何使用java",
       "path": "草稿/如何使用java.md"
-    },
-    {
-      "basename": "常用软件配置",
-      "path": "草稿/常用软件配置.md"
     },
     {
       "basename": "Java 中的 char 类型能否存储中文",
