@@ -25,7 +25,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：SpringSeucrity自定义密码认证.md",
+                "file": "学习笔记/Java相关/Mybatis学习笔记.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f11ff84c08de1314",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：SpringSeucrity从数据库中读取数据.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -99,8 +112,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 510.5,
-    "collapsed": true
+    "width": 510.5
   },
   "right": {
     "id": "471dd9cab433cd9a",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：SpringSeucrity自定义密码认证.md"
+                "file": "学习笔记/Java相关/Mybatis学习笔记.md"
               }
             }
           },
@@ -161,7 +173,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：SpringSeucrity自定义密码认证.md",
+                "file": "学习笔记/Java相关/Mybatis学习笔记.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,7 +185,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：SpringSeucrity自定义密码认证.md",
+                "file": "学习笔记/Java相关/Mybatis学习笔记.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -201,11 +213,12 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
-    "width": 480.5
+    "width": 459.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -234,22 +247,32 @@
   },
   "active": "70aaae65a076c641",
   "lastOpenFiles": [
+    "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurtiy相关问题.md",
+    "学习笔记/Java相关/Mybatis学习笔记.md",
+    "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md",
     "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md",
-    "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：SpringSeucrity自定义密码认证.md",
+    "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：SpringSeucrity从数据库中读取数据.md",
+    "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：基于token的认证.md",
+    "学习笔记/数据库/MySQL操作.md",
+    "学习笔记/数据库/MySQL相关知识.md",
+    "学习笔记/Java相关/SpringMVC/SpringMVC文件上传.md",
+    "学习笔记/Java相关/SpringBoot/SpringBoot中默认的异常处理.md",
+    "学习笔记/Java相关/SpringBoot/SpringBoot中统一数据返回.md",
+    "学习笔记/Java相关/SpringBoot/SpringBoot异步任务和定时任务.md",
+    "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot整合redis.md",
+    "草稿/Jackson中LocalDateTime序列化与反序列化.md",
+    "草稿/@ConditionalOnClass注解.md",
+    "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot序列化.md",
     "学习笔记/linux学习/linxu 设置笔记本合盖子不挂起.md",
     "学习笔记/linux学习/ubuntu启动时等待网络时间过长.md",
     "学习笔记/linux学习/硬盘自动挂载.md",
     "学习笔记/linux学习/软件安装.md",
-    "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot整合redis.md",
-    "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot序列化.md",
     "学习笔记/linux学习/常用命令.md",
     "学习笔记/linux学习/ubuntu中的网络配置.md",
     "附件/image/linxu 设置笔记本合盖子不挂起_image_1.png",
-    "学习笔记/Java相关/SpringMVC/SpringMVC文件上传.md",
     "附件/image/ubuntu启动时等待网络时间过长_image_3.png",
     "附件/image/ubuntu启动时等待网络时间过长_image_2.png",
     "附件/image/ubuntu启动时等待网络时间过长_image_1.png",
-    "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md",
     "附件/image/SpringSecurity原理_image_11.png",
     "附件/image/SpringSecurity原理_image_10.png",
     "附件/image/SpringSecurity原理_image_7.png",
@@ -260,18 +283,8 @@
     "草稿/未命名.md",
     "学习笔记/前端开发/this指向的问题.md",
     "草稿/doDispatch执行流程.md",
-    "草稿/函数堆栈.md",
-    "草稿/init函数注意事项.md",
     "学习笔记/golang相关",
-    "学习笔记/开发工具/docker 常用操作.md",
-    "学习笔记/前端开发/Vue相关/Vue路由传参.md",
-    "学习笔记/前端开发/Vue相关/ref 和 reactive.md",
     "学习笔记/前端开发/Vue相关",
-    "学习笔记/Java相关/SpringMVC/SpringMVC配置.md",
-    "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md",
-    "学习笔记/Java相关/SpringBoot/SpringBoot整合Springdoc.md",
-    "学习笔记/Java相关/SpringBoot/SpringBoot异步任务和定时任务.md",
-    "学习笔记/Java相关/SpringBoot/SpringBoot中默认的异常处理.md",
     "学习笔记/C++学习笔记",
     "学习笔记/Java相关/SpringBoot/SpringBoot整合",
     "学习笔记/Java相关/SpringBoot/SpringSecurity",

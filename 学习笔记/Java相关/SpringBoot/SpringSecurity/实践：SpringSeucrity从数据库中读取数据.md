@@ -6,8 +6,6 @@ tags: []
 categories: []
 ---
 
-## 从数据库中读取数据
-
 使用默认的配置时要想将用户数据存储到数据库中，需要根据 `org/springframework/security/core/userdetails/jdbc/users.ddl` 中的 SQ 创建一个数据表，如果我们想用自己的用户表，那么就需要编写代码实现自己的用户加载逻辑，即实现一个 `UserDetailsService`。
 
 ```java
@@ -143,10 +141,5 @@ public AuthenticationProvider authenticationProvider() {
 
 ```java
 UsernamePasswordAuthenticationFilter loginFilter = new UsernamePasswordAuthenticationFilter();
-
-loginFilter.setPostOnly(false);
-
-loginFilter.setFilterProcessesUrl("/login");
-loginFilter.setAuthenticationSuccessHandler(new AuthenticationSuccessHandler());
 loginFilter.setAuthenticationManager(authenticationManager());
 ```
