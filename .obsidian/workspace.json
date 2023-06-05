@@ -20,19 +20,6 @@
             }
           },
           {
-            "id": "70aaae65a076c641",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "草稿/常用软件配置.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "f11ff84c08de1314",
             "type": "leaf",
             "state": {
@@ -139,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "草稿/常用软件配置.md"
+                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：SpringSeucrity从数据库中读取数据.md"
               }
             }
           },
@@ -173,7 +160,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "草稿/常用软件配置.md",
+                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：SpringSeucrity从数据库中读取数据.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +172,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "草稿/常用软件配置.md",
+                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：SpringSeucrity从数据库中读取数据.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -217,8 +204,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 459.5,
-    "collapsed": true
+    "width": 459.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -245,8 +231,9 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "70aaae65a076c641",
+  "active": "f11ff84c08de1314",
   "lastOpenFiles": [
+    "草稿/常用软件配置.md",
     "附件/image/常用软件配置_image_4.png",
     "附件/image/常用软件配置_image_2.png",
     "附件/image/常用软件配置_image_9.png",
@@ -279,7 +266,6 @@
     "学习笔记/linux学习/常用命令.md",
     "学习笔记/linux学习/ubuntu中的网络配置.md",
     "附件/image/linxu 设置笔记本合盖子不挂起_image_1.png",
-    "附件/image/ubuntu启动时等待网络时间过长_image_3.png",
     "看板/草稿管理.md",
     "草稿/未命名.md",
     "学习笔记/前端开发/this指向的问题.md",

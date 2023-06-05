@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "实践：SpringSeucrity从数据库中读取数据",
+      "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：SpringSeucrity从数据库中读取数据.md"
+    },
+    {
+      "basename": "草稿管理",
+      "path": "看板/草稿管理.md"
+    },
+    {
       "basename": "常用软件配置",
       "path": "草稿/常用软件配置.md"
     },
@@ -23,10 +31,6 @@
     {
       "basename": "SpringSecurity配置",
       "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md"
-    },
-    {
-      "basename": "实践：SpringSeucrity从数据库中读取数据",
-      "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：SpringSeucrity从数据库中读取数据.md"
     },
     {
       "basename": "实践：基于token的认证",
@@ -83,10 +87,6 @@
     {
       "basename": "ubuntu中的网络配置",
       "path": "学习笔记/linux学习/ubuntu中的网络配置.md"
-    },
-    {
-      "basename": "草稿管理",
-      "path": "看板/草稿管理.md"
     },
     {
       "basename": "init函数注意事项",
