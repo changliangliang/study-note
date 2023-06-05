@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "ubuntu启动时等待网络时间过长",
+      "path": "学习笔记/linux学习/ubuntu启动时等待网络时间过长.md"
+    },
+    {
       "basename": "实践：SpringSeucrity从数据库中读取数据",
       "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：SpringSeucrity从数据库中读取数据.md"
     },
@@ -67,10 +71,6 @@
     {
       "basename": "linxu 设置笔记本合盖子不挂起",
       "path": "学习笔记/linux学习/linxu 设置笔记本合盖子不挂起.md"
-    },
-    {
-      "basename": "ubuntu启动时等待网络时间过长",
-      "path": "学习笔记/linux学习/ubuntu启动时等待网络时间过长.md"
     },
     {
       "basename": "硬盘自动挂载",

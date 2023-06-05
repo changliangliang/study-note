@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：SpringSeucrity从数据库中读取数据.md",
+                "file": "学习笔记/linux学习/ubuntu启动时等待网络时间过长.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：SpringSeucrity从数据库中读取数据.md"
+                "file": "学习笔记/linux学习/ubuntu启动时等待网络时间过长.md"
               }
             }
           },
@@ -160,7 +160,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：SpringSeucrity从数据库中读取数据.md",
+                "file": "学习笔记/linux学习/ubuntu启动时等待网络时间过长.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,7 +172,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：SpringSeucrity从数据库中读取数据.md",
+                "file": "学习笔记/linux学习/ubuntu启动时等待网络时间过长.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -233,6 +233,7 @@
   },
   "active": "f11ff84c08de1314",
   "lastOpenFiles": [
+    "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：SpringSeucrity从数据库中读取数据.md",
     "草稿/常用软件配置.md",
     "附件/image/常用软件配置_image_4.png",
     "附件/image/常用软件配置_image_2.png",
@@ -248,7 +249,6 @@
     "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurtiy相关问题.md",
     "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md",
     "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md",
-    "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：SpringSeucrity从数据库中读取数据.md",
     "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：基于token的认证.md",
     "学习笔记/数据库/MySQL操作.md",
     "学习笔记/数据库/MySQL相关知识.md",
