@@ -1,12 +1,32 @@
 {
   "recentFiles": [
     {
-      "basename": "ubuntu启动时等待网络时间过长",
-      "path": "学习笔记/linux学习/ubuntu启动时等待网络时间过长.md"
+      "basename": "实践：基于token的认证",
+      "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：基于token的认证.md"
     },
     {
       "basename": "实践：SpringSeucrity从数据库中读取数据",
       "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：SpringSeucrity从数据库中读取数据.md"
+    },
+    {
+      "basename": "SpringSecurtiy相关问题",
+      "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurtiy相关问题.md"
+    },
+    {
+      "basename": "SpringBoot统一异常处理",
+      "path": "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md"
+    },
+    {
+      "basename": "SpringBoot整合Springdoc",
+      "path": "学习笔记/Java相关/SpringBoot/SpringBoot整合Springdoc.md"
+    },
+    {
+      "basename": "SpringBoot中统一数据返回",
+      "path": "学习笔记/Java相关/SpringBoot/SpringBoot中统一数据返回.md"
+    },
+    {
+      "basename": "ubuntu启动时等待网络时间过长",
+      "path": "学习笔记/linux学习/ubuntu启动时等待网络时间过长.md"
     },
     {
       "basename": "草稿管理",
@@ -25,20 +45,12 @@
       "path": "学习笔记/Java相关/Mybatis学习笔记.md"
     },
     {
-      "basename": "SpringSecurtiy相关问题",
-      "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurtiy相关问题.md"
-    },
-    {
       "basename": "SpringSecurity原理",
       "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md"
     },
     {
       "basename": "SpringSecurity配置",
       "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md"
-    },
-    {
-      "basename": "实践：基于token的认证",
-      "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：基于token的认证.md"
     },
     {
       "basename": "MySQL操作",
@@ -55,10 +67,6 @@
     {
       "basename": "SpringBoot中默认的异常处理",
       "path": "学习笔记/Java相关/SpringBoot/SpringBoot中默认的异常处理.md"
-    },
-    {
-      "basename": "SpringBoot中统一数据返回",
-      "path": "学习笔记/Java相关/SpringBoot/SpringBoot中统一数据返回.md"
     },
     {
       "basename": "SpringBoot异步任务和定时任务",
@@ -123,14 +131,6 @@
     {
       "basename": "SpringMVC配置",
       "path": "学习笔记/Java相关/SpringMVC/SpringMVC配置.md"
-    },
-    {
-      "basename": "SpringBoot统一异常处理",
-      "path": "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md"
-    },
-    {
-      "basename": "SpringBoot整合Springdoc",
-      "path": "学习笔记/Java相关/SpringBoot/SpringBoot整合Springdoc.md"
     },
     {
       "basename": "2023-05-24",
