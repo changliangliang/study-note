@@ -31,17 +31,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "6eca000a35387386",
-            "type": "leaf",
-            "state": {
-              "type": "swar8080/AVAILABLE_PLUGIN_UPDATES",
-              "state": {}
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -107,7 +99,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 510.5
+    "width": 265.5
   },
   "right": {
     "id": "471dd9cab433cd9a",
@@ -212,7 +204,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 459.5
+    "width": 459.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -239,8 +232,10 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "6eca000a35387386",
+  "active": "f11ff84c08de1314",
   "lastOpenFiles": [
+    "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot整合redis.md",
+    "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：基于token的认证.md",
     "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：SpringSeucrity从数据库中读取数据.md",
     "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurtiy相关问题.md",
     "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md",
@@ -257,11 +252,9 @@
     "附件/image/常用软件配置_image_5.png",
     "附件/image/常用软件配置_image_3.png",
     "附件/image/常用软件配置_image_1.png",
-    "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot整合redis.md",
     "学习笔记/Java相关/Mybatis学习笔记.md",
     "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md",
     "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md",
-    "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：基于token的认证.md",
     "学习笔记/数据库/MySQL操作.md",
     "学习笔记/数据库/MySQL相关知识.md",
     "学习笔记/Java相关/SpringMVC/SpringMVC文件上传.md",
