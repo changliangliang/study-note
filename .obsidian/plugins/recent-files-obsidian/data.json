@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "草稿管理",
+      "path": "看板/草稿管理.md"
+    },
+    {
       "basename": "实践：基于token的认证",
       "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：基于token的认证.md"
     },
@@ -31,10 +35,6 @@
     {
       "basename": "ubuntu启动时等待网络时间过长",
       "path": "学习笔记/linux学习/ubuntu启动时等待网络时间过长.md"
-    },
-    {
-      "basename": "草稿管理",
-      "path": "看板/草稿管理.md"
     },
     {
       "basename": "常用软件配置",
