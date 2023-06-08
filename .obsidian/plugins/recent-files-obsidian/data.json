@@ -5,6 +5,10 @@
       "path": "看板/草稿管理.md"
     },
     {
+      "basename": "SpringBoot统一异常处理",
+      "path": "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md"
+    },
+    {
       "basename": "实践：基于token的认证",
       "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：基于token的认证.md"
     },
@@ -19,10 +23,6 @@
     {
       "basename": "SpringSecurtiy相关问题",
       "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurtiy相关问题.md"
-    },
-    {
-      "basename": "SpringBoot统一异常处理",
-      "path": "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md"
     },
     {
       "basename": "SpringBoot整合Springdoc",
