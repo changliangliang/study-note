@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "常用软件配置",
+      "path": "草稿/常用软件配置.md"
+    },
+    {
+      "basename": "函数堆栈",
+      "path": "草稿/函数堆栈.md"
+    },
+    {
       "basename": "doDispatch执行流程",
       "path": "草稿/doDispatch执行流程.md"
     },
@@ -39,10 +47,6 @@
     {
       "basename": "ubuntu启动时等待网络时间过长",
       "path": "学习笔记/linux学习/ubuntu启动时等待网络时间过长.md"
-    },
-    {
-      "basename": "常用软件配置",
-      "path": "草稿/常用软件配置.md"
     },
     {
       "basename": "Mybatis学习笔记",
@@ -111,10 +115,6 @@
     {
       "basename": "this指向的问题",
       "path": "学习笔记/前端开发/this指向的问题.md"
-    },
-    {
-      "basename": "函数堆栈",
-      "path": "草稿/函数堆栈.md"
     },
     {
       "basename": "docker 常用操作",

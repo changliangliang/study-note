@@ -42,6 +42,12 @@
     },
     {
       "name": "OPML"
+    },
+    {
+      "name": "Typst"
+    },
+    {
+      "name": "Bibliography"
     }
   ],
   "pandocPath": {
@@ -50,7 +56,7 @@
   "defaultExportDirectoryMode": "Auto",
   "openExportedFile": true,
   "lastExportDirectory": {
-    "win32": "C:\\Users\\chang\\Desktop\\新建文件夹"
+    "win32": "C:\\Users\\chang\\Desktop\\笔记"
   },
   "lastEditName": "Markdown",
   "lastExportType": "Markdown"

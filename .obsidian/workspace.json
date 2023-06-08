@@ -25,11 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "草稿/doDispatch执行流程.md",
+                "file": "草稿/常用软件配置.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
+            }
+          },
+          {
+            "id": "edd53775d8dc60b2",
+            "type": "leaf",
+            "state": {
+              "type": "swar8080/AVAILABLE_PLUGIN_UPDATES",
+              "state": {}
             }
           }
         ],
@@ -126,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "草稿/doDispatch执行流程.md"
+                "file": "草稿/常用软件配置.md"
               }
             }
           },
@@ -160,7 +168,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "草稿/doDispatch执行流程.md",
+                "file": "草稿/常用软件配置.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,7 +180,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "草稿/doDispatch执行流程.md",
+                "file": "草稿/常用软件配置.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,12 +208,11 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 459.5,
-    "collapsed": true
+    "width": 459.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -234,6 +241,9 @@
   },
   "active": "50b6162a22b21ab0",
   "lastOpenFiles": [
+    "草稿/toPF3D2.html",
+    "草稿/函数堆栈.md",
+    "草稿/doDispatch执行流程.md",
     "看板/草稿管理.md",
     "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md",
     "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：基于token的认证.md",
@@ -266,9 +276,6 @@
     "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot序列化.md",
     "学习笔记/linux学习/linxu 设置笔记本合盖子不挂起.md",
     "学习笔记/linux学习/硬盘自动挂载.md",
-    "学习笔记/linux学习/软件安装.md",
-    "学习笔记/linux学习/常用命令.md",
-    "学习笔记/linux学习/ubuntu中的网络配置.md",
     "附件/image/linxu 设置笔记本合盖子不挂起_image_1.png",
     "学习笔记/golang相关",
     "学习笔记/前端开发/Vue相关",
