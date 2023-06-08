@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "doDispatch执行流程",
+      "path": "草稿/doDispatch执行流程.md"
+    },
+    {
       "basename": "草稿管理",
       "path": "看板/草稿管理.md"
     },
@@ -107,10 +111,6 @@
     {
       "basename": "this指向的问题",
       "path": "学习笔记/前端开发/this指向的问题.md"
-    },
-    {
-      "basename": "doDispatch执行流程",
-      "path": "草稿/doDispatch执行流程.md"
     },
     {
       "basename": "函数堆栈",
