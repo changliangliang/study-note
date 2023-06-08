@@ -5,6 +5,70 @@
       "path": "草稿/常用软件配置.md"
     },
     {
+      "basename": "常用软件配置_image_1",
+      "path": "附件/image/常用软件配置_image_1.png"
+    },
+    {
+      "basename": "SpringBoot中统一数据返回",
+      "path": "学习笔记/Java相关/SpringBoot/SpringBoot中统一数据返回.md"
+    },
+    {
+      "basename": "SpringBoot中默认的异常处理",
+      "path": "学习笔记/Java相关/SpringBoot/SpringBoot中默认的异常处理.md"
+    },
+    {
+      "basename": "SpringSecurity原理",
+      "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md"
+    },
+    {
+      "basename": "SpringSecurity配置",
+      "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md"
+    },
+    {
+      "basename": "SpringBoot异步任务和定时任务",
+      "path": "学习笔记/Java相关/SpringBoot/SpringBoot异步任务和定时任务.md"
+    },
+    {
+      "basename": "SpringBoot整合redis",
+      "path": "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot整合redis.md"
+    },
+    {
+      "basename": "Jackson中LocalDateTime序列化与反序列化",
+      "path": "草稿/Jackson中LocalDateTime序列化与反序列化.md"
+    },
+    {
+      "basename": "ref 和 reactive",
+      "path": "学习笔记/前端开发/Vue相关/ref 和 reactive.md"
+    },
+    {
+      "basename": "实践：SpringSeucrity从数据库中读取数据",
+      "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：SpringSeucrity从数据库中读取数据.md"
+    },
+    {
+      "basename": "ubuntu启动时等待网络时间过长",
+      "path": "学习笔记/linux学习/ubuntu启动时等待网络时间过长.md"
+    },
+    {
+      "basename": "硬盘自动挂载",
+      "path": "学习笔记/linux学习/硬盘自动挂载.md"
+    },
+    {
+      "basename": "软件安装",
+      "path": "学习笔记/linux学习/软件安装.md"
+    },
+    {
+      "basename": "Mybatis学习笔记",
+      "path": "学习笔记/Java相关/Mybatis学习笔记.md"
+    },
+    {
+      "basename": "SpringSecurtiy相关问题",
+      "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurtiy相关问题.md"
+    },
+    {
+      "basename": "实践：基于token的认证",
+      "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：基于token的认证.md"
+    },
+    {
       "basename": "函数堆栈",
       "path": "草稿/函数堆栈.md"
     },
@@ -21,44 +85,8 @@
       "path": "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md"
     },
     {
-      "basename": "实践：基于token的认证",
-      "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：基于token的认证.md"
-    },
-    {
-      "basename": "SpringBoot整合redis",
-      "path": "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot整合redis.md"
-    },
-    {
-      "basename": "实践：SpringSeucrity从数据库中读取数据",
-      "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：SpringSeucrity从数据库中读取数据.md"
-    },
-    {
-      "basename": "SpringSecurtiy相关问题",
-      "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurtiy相关问题.md"
-    },
-    {
       "basename": "SpringBoot整合Springdoc",
       "path": "学习笔记/Java相关/SpringBoot/SpringBoot整合Springdoc.md"
-    },
-    {
-      "basename": "SpringBoot中统一数据返回",
-      "path": "学习笔记/Java相关/SpringBoot/SpringBoot中统一数据返回.md"
-    },
-    {
-      "basename": "ubuntu启动时等待网络时间过长",
-      "path": "学习笔记/linux学习/ubuntu启动时等待网络时间过长.md"
-    },
-    {
-      "basename": "Mybatis学习笔记",
-      "path": "学习笔记/Java相关/Mybatis学习笔记.md"
-    },
-    {
-      "basename": "SpringSecurity原理",
-      "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md"
-    },
-    {
-      "basename": "SpringSecurity配置",
-      "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md"
     },
     {
       "basename": "MySQL操作",
@@ -73,28 +101,8 @@
       "path": "学习笔记/Java相关/SpringMVC/SpringMVC文件上传.md"
     },
     {
-      "basename": "SpringBoot中默认的异常处理",
-      "path": "学习笔记/Java相关/SpringBoot/SpringBoot中默认的异常处理.md"
-    },
-    {
-      "basename": "SpringBoot异步任务和定时任务",
-      "path": "学习笔记/Java相关/SpringBoot/SpringBoot异步任务和定时任务.md"
-    },
-    {
-      "basename": "Jackson中LocalDateTime序列化与反序列化",
-      "path": "草稿/Jackson中LocalDateTime序列化与反序列化.md"
-    },
-    {
       "basename": "linxu 设置笔记本合盖子不挂起",
       "path": "学习笔记/linux学习/linxu 设置笔记本合盖子不挂起.md"
-    },
-    {
-      "basename": "硬盘自动挂载",
-      "path": "学习笔记/linux学习/硬盘自动挂载.md"
-    },
-    {
-      "basename": "软件安装",
-      "path": "学习笔记/linux学习/软件安装.md"
     },
     {
       "basename": "常用命令",
@@ -123,10 +131,6 @@
     {
       "basename": "Vue路由传参",
       "path": "学习笔记/前端开发/Vue相关/Vue路由传参.md"
-    },
-    {
-      "basename": "ref 和 reactive",
-      "path": "学习笔记/前端开发/Vue相关/ref 和 reactive.md"
     },
     {
       "basename": "SpringMVC配置",
@@ -195,10 +199,6 @@
     {
       "basename": "vscode中的task.json和launch.json文件",
       "path": "学习笔记/开发工具/vscode中的task.json和launch.json文件.md"
-    },
-    {
-      "basename": "vscode插件之Eslint",
-      "path": "学习笔记/开发工具/vscode插件之Eslint.md"
     }
   ],
   "omittedPaths": [],
