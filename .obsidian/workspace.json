@@ -20,12 +20,12 @@
             }
           },
           {
-            "id": "50b6162a22b21ab0",
+            "id": "3ce15810c6950d4f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "草稿/常用软件配置.md",
+                "file": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -33,12 +33,15 @@
             }
           },
           {
-            "id": "c27bd87e94d74953",
+            "id": "5a7b217e2941172d",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "附件/image/常用软件配置_image_1.png"
+                "file": "草稿/函数堆栈.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               }
             }
           }
@@ -109,7 +112,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 265.5
+    "width": 350.5
   },
   "right": {
     "id": "471dd9cab433cd9a",
@@ -136,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "草稿/常用软件配置.md"
+                "file": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md"
               }
             }
           },
@@ -170,7 +173,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "草稿/常用软件配置.md",
+                "file": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +185,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "草稿/常用软件配置.md",
+                "file": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -214,7 +217,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 459.5
+    "width": 459.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -241,8 +245,14 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "50b6162a22b21ab0",
+  "active": "3ce15810c6950d4f",
   "lastOpenFiles": [
+    "草稿/函数堆栈.md",
+    "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md",
+    "学习笔记/ucore操作系统实验/ucore实验：bootasm.S源码.md",
+    "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md",
+    "学习笔记/Java相关/Java 中的 char 类型能否存储中文.md",
+    "看板/草稿管理.md",
     "附件/image/常用软件配置_image_1.png",
     "草稿/常用软件配置.md",
     "学习笔记/Java相关/SpringBoot/SpringBoot中统一数据返回.md",
@@ -261,9 +271,7 @@
     "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurtiy相关问题.md",
     "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：基于token的认证.md",
     "草稿/toPF3D2.html",
-    "草稿/函数堆栈.md",
     "草稿/doDispatch执行流程.md",
-    "看板/草稿管理.md",
     "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md",
     "学习笔记/Java相关/SpringBoot/SpringBoot整合Springdoc.md",
     "附件/image/常用软件配置_image_4.png",
@@ -275,9 +283,6 @@
     "附件/image/常用软件配置_image_5.png",
     "附件/image/常用软件配置_image_3.png",
     "学习笔记/数据库/MySQL操作.md",
-    "学习笔记/数据库/MySQL相关知识.md",
-    "学习笔记/Java相关/SpringMVC/SpringMVC文件上传.md",
-    "草稿/@ConditionalOnClass注解.md",
     "附件/image/linxu 设置笔记本合盖子不挂起_image_1.png",
     "学习笔记/golang相关",
     "学习笔记/前端开发/Vue相关",

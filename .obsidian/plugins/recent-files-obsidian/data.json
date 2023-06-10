@@ -1,12 +1,36 @@
 {
   "recentFiles": [
     {
-      "basename": "常用软件配置",
-      "path": "草稿/常用软件配置.md"
+      "basename": "ucore操作系统实验：lab1",
+      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md"
+    },
+    {
+      "basename": "函数堆栈",
+      "path": "草稿/函数堆栈.md"
+    },
+    {
+      "basename": "ucore实验：bootasm.S源码",
+      "path": "学习笔记/ucore操作系统实验/ucore实验：bootasm.S源码.md"
+    },
+    {
+      "basename": "ucore操作系统实验：环境搭建",
+      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md"
+    },
+    {
+      "basename": "Java 中的 char 类型能否存储中文",
+      "path": "学习笔记/Java相关/Java 中的 char 类型能否存储中文.md"
+    },
+    {
+      "basename": "草稿管理",
+      "path": "看板/草稿管理.md"
     },
     {
       "basename": "常用软件配置_image_1",
       "path": "附件/image/常用软件配置_image_1.png"
+    },
+    {
+      "basename": "常用软件配置",
+      "path": "草稿/常用软件配置.md"
     },
     {
       "basename": "SpringBoot中统一数据返回",
@@ -69,16 +93,8 @@
       "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：基于token的认证.md"
     },
     {
-      "basename": "函数堆栈",
-      "path": "草稿/函数堆栈.md"
-    },
-    {
       "basename": "doDispatch执行流程",
       "path": "草稿/doDispatch执行流程.md"
-    },
-    {
-      "basename": "草稿管理",
-      "path": "看板/草稿管理.md"
     },
     {
       "basename": "SpringBoot统一异常处理",
@@ -169,10 +185,6 @@
       "path": "草稿/如何使用java.md"
     },
     {
-      "basename": "Java 中的 char 类型能否存储中文",
-      "path": "学习笔记/Java相关/Java 中的 char 类型能否存储中文.md"
-    },
-    {
       "basename": "Spring基于XML的配置",
       "path": "学习笔记/Java相关/Spring/Spring基于XML的配置.md"
     },
@@ -187,18 +199,6 @@
     {
       "basename": "全局描述符表（GDT）",
       "path": "学习笔记/操作系统/全局描述符表（GDT）.md"
-    },
-    {
-      "basename": "计算机的启动",
-      "path": "学习笔记/操作系统/计算机的启动.md"
-    },
-    {
-      "basename": "docker常用容器创建",
-      "path": "草稿/docker常用容器创建.md"
-    },
-    {
-      "basename": "vscode中的task.json和launch.json文件",
-      "path": "学习笔记/开发工具/vscode中的task.json和launch.json文件.md"
     }
   ],
   "omittedPaths": [],
