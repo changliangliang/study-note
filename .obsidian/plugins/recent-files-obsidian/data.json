@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "锻炼记录",
+      "path": "常用/锻炼记录.md"
+    },
+    {
       "basename": "ucore操作系统实验-lab1-练习6",
       "path": "学习笔记/ucore操作系统实验/ucore操作系统实验-lab1-练习6.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Spring基于XML的配置",
       "path": "学习笔记/Java相关/Spring/Spring基于XML的配置.md"
-    },
-    {
-      "basename": "Spring的一些高级配置",
-      "path": "学习笔记/Java相关/Spring/Spring的一些高级配置.md"
     }
   ],
   "omittedPaths": [],
