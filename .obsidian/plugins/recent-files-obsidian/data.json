@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "草稿管理",
+      "path": "看板/草稿管理.md"
+    },
+    {
+      "basename": "函数堆栈",
+      "path": "草稿/函数堆栈.md"
+    },
+    {
       "basename": "锻炼记录",
       "path": "常用/锻炼记录.md"
     },
@@ -21,20 +29,12 @@
       "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md"
     },
     {
-      "basename": "函数堆栈",
-      "path": "草稿/函数堆栈.md"
-    },
-    {
       "basename": "ucore实验：bootasm.S源码",
       "path": "学习笔记/ucore操作系统实验/ucore实验：bootasm.S源码.md"
     },
     {
       "basename": "Java 中的 char 类型能否存储中文",
       "path": "学习笔记/Java相关/Java 中的 char 类型能否存储中文.md"
-    },
-    {
-      "basename": "草稿管理",
-      "path": "看板/草稿管理.md"
     },
     {
       "basename": "常用软件配置_image_1",
