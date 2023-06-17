@@ -36,6 +36,9 @@
           "colors": {
             "conditions": []
           },
+          "sort": {
+            "criteria": []
+          },
           "id": "8d63f42a-bf82-4ae4-9ea8-98085bc0c9a0",
           "name": "Table",
           "type": "table"
@@ -66,6 +69,9 @@
           },
           "colors": {
             "conditions": []
+          },
+          "sort": {
+            "criteria": []
           },
           "id": "2b269f18-2a1f-4157-a605-90b994fb6932",
           "name": "Table",
@@ -98,6 +104,9 @@
           },
           "colors": {
             "conditions": []
+          },
+          "sort": {
+            "criteria": []
           },
           "id": "1c71f80f-4b58-4fd0-b9e7-5ed72383cea5",
           "name": "Table",
@@ -143,6 +152,9 @@
           },
           "colors": {
             "conditions": []
+          },
+          "sort": {
+            "criteria": []
           },
           "id": "d3be679d-77d0-4f61-8a8b-71b503ab8762",
           "name": "Table",

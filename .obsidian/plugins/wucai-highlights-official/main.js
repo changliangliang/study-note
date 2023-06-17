@@ -79,8 +79,8 @@ BGCONSTS.APPID = '20';
 BGCONSTS.SERVICE_ID = 7;
 BGCONSTS.MARKET_INFO = 'obsidian-plugin';
 BGCONSTS.ENDPOINT = 'obsidianwucai';
-BGCONSTS.VERSION = '23.5.14';
-BGCONSTS.VERSION_NUM = 230514;
+BGCONSTS.VERSION = '23.6.12';
+BGCONSTS.VERSION_NUM = 230612;
 BGCONSTS.IS_DEBUG = false;
 BGCONSTS.TEST_TOKEN = '';
 BGCONSTS.BASE_URL = 'https://marker.dotalk.cn';
@@ -5815,6 +5815,26 @@ class WuCaiUtils {
         }
         return ret;
     }
+    // 天数对比，如果updateat和createat不再同一天，则返回createat
+    static getDiffDay(createat, updateat) {
+        if (updateat <= 0 || createat <= 0) {
+            return 0;
+        }
+        const day1 = this.formatDateTime(new Date(createat * 1000), 'YYYY-MM-DD');
+        const day2 = this.formatDateTime(new Date(updateat * 1000), 'YYYY-MM-DD');
+        if (day1 !== day2) {
+            return updateat;
+        }
+        return 0;
+    }
+    // 23.6.8 https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html#gotchas
+    static formatPageTitle(s) {
+        s = s || s;
+        if (s.length <= 0) {
+            return s;
+        }
+        return s.replace(/(:\s+)/g, ':');
+    }
     // t1 is old file content
     // 处理目标文件
     // 基于占位符的局部更新策略
@@ -5916,11 +5936,79 @@ class WuCaiUtils {
         title = title.replace(/[\s\t\n]+/g, ' ');
         // https://blog.csdn.net/xiejx618/article/details/17471819
         // \ / : * ? " < > |
-        title = title.replace(/[?\\、\/\*"'<>%\$#!~&;；={}()~+-:。，！；（）？\|]/g, '');
+        // 23.5.31 修复短横线需要转移问题
+        title = title.replace(/[\~\\、\/\*"'<>%\$#&;；{}()=+\-:?？。，！!（）\|]/g, '');
         if (title.length <= 0) {
             return 'No title';
         }
         return title;
+    }
+    static isWhiteSpaceForTagParser(c) {
+        if (65292 == c || 12290 == c || 65307 == c || 65311 == c) {
+            return true;
+        }
+        return (10 == c ||
+            13 == c ||
+            (32 <= c && c <= 34) ||
+            (36 <= c && c <= 44) ||
+            46 == c ||
+            (58 <= c && c <= 63) ||
+            59 == c ||
+            64 == c ||
+            (91 <= c && c <= 94) ||
+            (123 <= c && c <= 126) ||
+            65292 == c);
+    }
+    static convertHashTagToDoubleLink(cnt) {
+        cnt = cnt || '';
+        if (cnt.length <= 0) {
+            return cnt;
+        }
+        if (cnt.indexOf('#') < 0) {
+            return cnt;
+        }
+        const cntLength = cnt.length;
+        let left = -1;
+        const lastL = cntLength - 1;
+        const tagsPosi = [];
+        for (let i = 0; i < cntLength; i++) {
+            const cCode = cnt.charCodeAt(i);
+            const isLast = i == lastL;
+            const isWhiteS = this.isWhiteSpaceForTagParser(cCode);
+            const il = i - left;
+            if (35 === cCode) {
+                if (left > -1 && il > 1) {
+                    tagsPosi.push([left, i]);
+                }
+                left = i;
+            }
+            else if (left > -1 && (isWhiteS || isLast) && il >= 1) {
+                if (isLast && !isWhiteS && il >= 1) {
+                    tagsPosi.push([left, i + 1]);
+                }
+                else if (il > 1) {
+                    tagsPosi.push([left, i]);
+                }
+                left = -1;
+            }
+        }
+        if (tagsPosi.length <= 0) {
+            return cnt;
+        }
+        // 开始拼接
+        const ret = [];
+        let offsetStart = 0;
+        for (let i = 0; i < tagsPosi.length; i++) {
+            const posi = tagsPosi[i];
+            const s = posi[0];
+            const e = posi[1];
+            if (s - offsetStart > 0) {
+                ret.push(cnt.substring(offsetStart, s));
+            }
+            ret.push('[[' + cnt.substring(s + 1, e) + ']]');
+            offsetStart = e;
+        }
+        return ret.join('');
     }
     // // 处理老的配置是基于数值而非模板
     // static getTitleTemplateByStyle(titleFormat: number): string {
@@ -5968,11 +6056,29 @@ class WuCaiUtils {
         let d1 = new Date(ts * 1000);
         return this.formatDateTime(d1, 'YYYY-MM-DD HH:mm');
     }
+    static formatPageNote(note, isHashTag) {
+        if (isHashTag) {
+            return note || '';
+        }
+        return this.convertHashTagToDoubleLink(note) || '';
+    }
+    static formatHighlights(highlights, exportCfg) {
+        const isHashTag = exportCfg.tagStyle === 1;
+        if (isHashTag || !highlights || highlights.length <= 0) {
+            return highlights;
+        }
+        for (let i = 0; i < highlights.length; i++) {
+            const highlight = highlights[i];
+            if (highlight && highlight.annonation && highlight.annonation.length > 0) {
+                highlight.annonation = this.convertHashTagToDoubleLink(highlight.annonation);
+            }
+        }
+        return highlights;
+    }
     // 根据配置生成 tag 列表
-    static formatTags(tags, exportCfg) {
+    static formatTags(tags, isHashTag) {
         let ret = [];
         tags = tags || [];
-        const isNeedHashTag = exportCfg.tagStyle === 1;
         tags.forEach((tag) => {
             tag = tag.trim();
             if (!tag || tag.length <= 0) {
@@ -5980,10 +6086,10 @@ class WuCaiUtils {
             }
             let isHash = tag[0] === '#';
             let isInner = tag[0] === '[';
-            if (isHash && isNeedHashTag) {
+            if (isHash && isHashTag) {
                 ret.push(tag);
             }
-            else if (isInner && !isNeedHashTag) {
+            else if (isInner && !isHashTag) {
                 ret.push(tag);
             }
             else {
@@ -5996,7 +6102,7 @@ class WuCaiUtils {
                     coreTag = tag.substring(2, tag.length - 2).trim();
                 }
                 if (coreTag.length > 0) {
-                    if (isNeedHashTag) {
+                    if (isHashTag) {
                         ret.push('#' + coreTag);
                     }
                     else {
@@ -13069,10 +13175,11 @@ class WuCaiTemplates {
             let imageUrl = item.imageUrl;
             let note = item.note || '';
             let anno = item.annonation || '';
-            let color = options.color || '';
             let prefix = options.prefix || '';
             let annoPrefix = options.anno || '';
             let colorTags = options.color_tags || [];
+            let color = options.color || '';
+            let color_line = options.color_line || false;
             let slotId = item.slotId || 1;
             let ret = [];
             if (imageUrl) {
@@ -13083,18 +13190,33 @@ class WuCaiTemplates {
                 let lineCount = 0;
                 lines.forEach((line) => {
                     line = line.replace(/^\s+|\s+$/g, '');
-                    if (line) {
-                        if (lineCount == 0) {
-                            if (colorTags && colorTags.length > 0) {
-                                color = colorTags[slotId - 1];
-                            }
+                    if (!line || line.length <= 0) {
+                        return;
+                    }
+                    if (lineCount == 0) {
+                        // first line
+                        if (colorTags && colorTags.length > 0) {
+                            color = colorTags[slotId - 1];
+                        }
+                        if (color) {
                             ret.push(`${prefix}<font color="${item.color}">${color}</font>` + line);
+                        }
+                        else if (color_line) {
+                            ret.push(`${prefix}<font color="${item.color}">${line}</font>`);
+                        }
+                        else {
+                            ret.push(`${prefix}` + line);
+                        }
+                    }
+                    else {
+                        if (color_line) {
+                            ret.push(`${prefix}<font color="${item.color}">${line}</font>`);
                         }
                         else {
                             ret.push(prefix + line);
                         }
-                        lineCount++;
                     }
+                    lineCount++;
                 });
                 if (anno) {
                     ret.push(annoPrefix + anno);
@@ -13150,7 +13272,7 @@ WuCaiTemplates.Style001 = `---
 ---
 
 ## {{title}} 
-{{tags}} #五彩插件 {{createat}} [原文]({{url}})
+{{tags}} #五彩插件 [原文]({{url}})
 
 ## 页面笔记
 {% block pagenote %}
@@ -13467,13 +13589,14 @@ class WuCaiPlugin extends obsidian.Plugin {
                         }
                     }
                 }
+                const isHashTag = exportCfg.tagStyle === 1;
                 const pageCtx = {
-                    title: entry.title,
+                    title: WuCaiUtils.formatPageTitle(entry.title),
                     url: entry.url,
                     wucaiurl: entry.wuCaiUrl || '',
-                    tags: WuCaiUtils.formatTags(entry.tags, exportCfg),
-                    pagenote: entry.pageNote,
-                    highlights: entry.highlights,
+                    tags: WuCaiUtils.formatTags(entry.tags, isHashTag),
+                    pagenote: WuCaiUtils.formatPageNote(entry.pageNote, isHashTag),
+                    highlights: WuCaiUtils.formatHighlights(entry.highlights, exportCfg),
                     createat: WuCaiUtils.formatTime(entry.createAt),
                     createat_ts: entry.createAt,
                     updateat: WuCaiUtils.formatTime(entry.updateAt),
@@ -13481,6 +13604,7 @@ class WuCaiPlugin extends obsidian.Plugin {
                     noteid: entry.noteIdX,
                     citekey: entry.citekey || '',
                     author: entry.author || '',
+                    diffupdateat_ts: WuCaiUtils.getDiffDay(entry.createAt, entry.updateAt),
                 };
                 const noteFile = yield this.app.vault.getAbstractFileByPath(outFilename);
                 const isNoteExists = noteFile && noteFile instanceof obsidian.TFile;

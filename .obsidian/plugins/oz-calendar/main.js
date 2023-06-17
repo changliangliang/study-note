@@ -5517,19 +5517,26 @@ function NoteListComponent(params) {
         setSelectedDay(new Date());
       }
     }
-  ))), /* @__PURE__ */ Cn.createElement("div", { className: "oz-calendar-notelist-container" }, selectedDayNotes.length === 0 && /* @__PURE__ */ Cn.createElement("div", { className: "oz-calendar-note-no-note" }, /* @__PURE__ */ Cn.createElement(RiPhoneFindLine, { className: "oz-calendar-no-note-icon" }), "No note found"), selectedDayNotes.map((notePath) => {
-    return /* @__PURE__ */ Cn.createElement(
-      "div",
-      {
-        className: "oz-calendar-note-line",
-        id: notePath,
-        onClick: (e3) => openFilePath(e3, notePath),
-        onContextMenu: (e3) => triggerFileContextMenu(e3, notePath)
-      },
-      /* @__PURE__ */ Cn.createElement(HiOutlineDocumentText, { className: "oz-calendar-note-line-icon" }),
-      /* @__PURE__ */ Cn.createElement("span", null, extractFileName(notePath))
-    );
-  })));
+  ))), /* @__PURE__ */ Cn.createElement(
+    "div",
+    {
+      className: "oz-calendar-notelist-container " + (plugin.settings.fileNameOverflowBehaviour == "scroll" ? "oz-calendar-overflow-scroll" : "")
+    },
+    selectedDayNotes.length === 0 && /* @__PURE__ */ Cn.createElement("div", { className: "oz-calendar-note-no-note" }, /* @__PURE__ */ Cn.createElement(RiPhoneFindLine, { className: "oz-calendar-no-note-icon" }), "No note found"),
+    selectedDayNotes.map((notePath) => {
+      return /* @__PURE__ */ Cn.createElement(
+        "div",
+        {
+          className: "oz-calendar-note-line" + (plugin.settings.fileNameOverflowBehaviour == "hide" ? " oz-calendar-overflow-hide" : ""),
+          id: notePath,
+          onClick: (e3) => openFilePath(e3, notePath),
+          onContextMenu: (e3) => triggerFileContextMenu(e3, notePath)
+        },
+        /* @__PURE__ */ Cn.createElement(HiOutlineDocumentText, { className: "oz-calendar-note-line-icon" }),
+        /* @__PURE__ */ Cn.createElement("span", null, extractFileName(notePath))
+      );
+    })
+  ));
 }
 
 // src/components/calendar.tsx
@@ -7670,10 +7677,13 @@ var CreateNoteModal = class extends import_obsidian4.Modal {
       folderInputEl.value = this.plugin.settings.defaultFolder;
     }
     let addSpace = contentEl.createEl("div", { cls: "oz-calendar-modal-addspacediv " });
-    const createButton = contentEl.createEl("button", { text: "Create Note" });
+    const createButton = contentEl.createEl("button", {
+      text: "Create Note",
+      cls: this.plugin.settings.newNoteCancelButtonReverse ? "oz-calendar-modal-float-right" : ""
+    });
     const cancelButton = contentEl.createEl("button", {
       text: "Cancel",
-      cls: "oz-calendar-modal-float-right"
+      cls: this.plugin.settings.newNoteCancelButtonReverse ? "" : "oz-calendar-modal-float-right"
     });
     cancelButton.addEventListener("click", () => {
       thisModal.close();
@@ -7873,7 +7883,9 @@ var DEFAULT_SETTINGS = {
   showDestinationFolderDuringCreate: true,
   openFileBehaviour: "current-tab",
   sortingOption: "name",
-  newNoteDate: "current-date"
+  newNoteDate: "current-date",
+  newNoteCancelButtonReverse: false,
+  fileNameOverflowBehaviour: "hide"
 };
 var OZCalendarPluginSettingsTab = class extends import_obsidian6.PluginSettingTab {
   constructor(app2, plugin) {
@@ -8033,6 +8045,14 @@ var OZCalendarPluginSettingsTab = class extends import_obsidian6.PluginSettingTa
         this.plugin.saveSettings();
       });
     });
+    new import_obsidian6.Setting(containerEl).setName("Reverse direction of Cancel and New Note Buttons").setDesc(
+      `Enable this setting to change the direction of Cancel and New Note buttons within the New Note Creation Modal`
+    ).addToggle((toggle) => {
+      toggle.setValue(this.plugin.settings.newNoteCancelButtonReverse).onChange((newValue) => {
+        this.plugin.settings.newNoteCancelButtonReverse = newValue;
+        this.plugin.saveSettings();
+      });
+    });
     containerEl.createEl("h2", { text: "Style Settings" });
     containerEl.createEl("p", {
       text: `
@@ -8045,6 +8065,13 @@ var OZCalendarPluginSettingsTab = class extends import_obsidian6.PluginSettingTa
     new import_obsidian6.Setting(containerEl).setName("Fixed Calendar (Only File List Scrollable)").setDesc("Disable this if you want whole calendar view to be scrollable and not only the file list").addToggle((toggle) => {
       toggle.setValue(this.plugin.settings.fixedCalendar).onChange((newValue) => {
         this.plugin.settings.fixedCalendar = newValue;
+        this.plugin.saveSettings();
+        this.plugin.calendarForceUpdate();
+      });
+    });
+    new import_obsidian6.Setting(containerEl).setName("File Names Overflow Behaviour").setDesc("Change the default behaviour for file names when they dont fit to the view").addDropdown((dropdown) => {
+      dropdown.addOption("hide", "Hide Overflow").addOption("scroll", "Scroll Overflow").addOption("next-line", "Show Overflow in the Next Line").setValue(this.plugin.settings.fileNameOverflowBehaviour).onChange((newValue) => {
+        this.plugin.settings.fileNameOverflowBehaviour = newValue;
         this.plugin.saveSettings();
         this.plugin.calendarForceUpdate();
       });

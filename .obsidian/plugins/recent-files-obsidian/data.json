@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "计算机的启动",
+      "path": "学习笔记/操作系统/计算机的启动.md"
+    },
+    {
       "basename": "草稿管理",
       "path": "看板/草稿管理.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "如何使用java",
       "path": "草稿/如何使用java.md"
-    },
-    {
-      "basename": "Spring基于XML的配置",
-      "path": "学习笔记/Java相关/Spring/Spring基于XML的配置.md"
     }
   ],
   "omittedPaths": [],
