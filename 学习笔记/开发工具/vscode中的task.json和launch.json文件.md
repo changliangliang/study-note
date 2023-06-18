@@ -10,7 +10,7 @@ categories: [vscode配置]
 
 ### task. json
 
-![](附件/image/VScode中的task.json和launch.json_image_1.png)
+![](附件/image/vscode中的task.json和launch.json文件_image_1.png)
 
 在 `task.json` 文件中写入如下内容：
 
@@ -44,13 +44,13 @@ categories: [vscode配置]
 
 点击 `终端->运行任务->build`，vscode 将会读取上述配置文件，并根据配置文件编译当前打开的文件，如 `main.c`。
 
-![](附件/image/VScode中的task.json和launch.json_image_2.png)
+![](附件/image/vscode中的task.json和launch.json文件_image_2.png)
 
-![](附件/image/VScode中的task.json和launch.json_image_3.png)
+![](附件/image/vscode中的task.json和launch.json文件_image_3.png)
 
 从终端输出的结果可以看到任务 `build` 执行了，并且可以看到实际执行的命令。
 
-![](附件/image/VScode中的task.json和launch.json_image_4.png)
+![](附件/image/vscode中的task.json和launch.json文件_image_4.png)
 
 `task.json` 更详细的参数介绍, 可查看：[Tasks in Visual Studio Code](https://code.visualstudio.com/docs/editor/tasks)
 
@@ -97,12 +97,12 @@ categories: [vscode配置]
 }
 ```
 
-![](附件/image/VScode中的task.json和launch.json_image_5.png)
+![](附件/image/vscode中的task.json和launch.json文件_image_5.png)
 
 使用 `c 调试` 则可以用来调试 `cdebug.c` 程序，`python调试` 能用来调试 `pydebug.py` 程序。
 
-![](附件/image/VScode中的task.json和launch.json_image_6.png)
+![](附件/image/vscode中的task.json和launch.json文件_image_6.png)
 
-![](附件/image/VScode中的task.json和launch.json_image_7.png)
+![](附件/image/vscode中的task.json和launch.json文件_image_7.png)
 
 `launch.json` 更详细的参数介绍可查看：[Debugging in Visual Studio Code](https://code.visualstudio.com/docs/editor/debugging)

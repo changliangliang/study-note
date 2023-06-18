@@ -1,12 +1,28 @@
 {
   "recentFiles": [
     {
-      "basename": "计算机的启动",
-      "path": "学习笔记/操作系统/计算机的启动.md"
+      "basename": "vscode中的task.json和launch.json文件",
+      "path": "学习笔记/开发工具/vscode中的task.json和launch.json文件.md"
+    },
+    {
+      "basename": "npm源管理",
+      "path": "学习笔记/开发工具/npm源管理.md"
+    },
+    {
+      "basename": "vscode插件之Eslint",
+      "path": "学习笔记/开发工具/vscode插件之Eslint.md"
+    },
+    {
+      "basename": "docker 常用操作",
+      "path": "学习笔记/开发工具/docker 常用操作.md"
     },
     {
       "basename": "草稿管理",
       "path": "看板/草稿管理.md"
+    },
+    {
+      "basename": "计算机的启动",
+      "path": "学习笔记/操作系统/计算机的启动.md"
     },
     {
       "basename": "函数堆栈",
@@ -157,10 +173,6 @@
       "path": "学习笔记/前端开发/this指向的问题.md"
     },
     {
-      "basename": "docker 常用操作",
-      "path": "学习笔记/开发工具/docker 常用操作.md"
-    },
-    {
       "basename": "Vue路由传参",
       "path": "学习笔记/前端开发/Vue相关/Vue路由传参.md"
     },
@@ -187,18 +199,6 @@
     {
       "basename": "Spirng基于Java和注解的配置",
       "path": "学习笔记/Java相关/Spring/Spirng基于Java和注解的配置.md"
-    },
-    {
-      "basename": "EFL文件详解",
-      "path": "草稿/EFL文件详解.md"
-    },
-    {
-      "basename": "计算机补完计划——2023年",
-      "path": "草稿/计算机补完计划——2023年.md"
-    },
-    {
-      "basename": "如何使用java",
-      "path": "草稿/如何使用java.md"
     }
   ],
   "omittedPaths": [],
