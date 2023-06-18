@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "常用软件配置",
+      "path": "草稿/常用软件配置.md"
+    },
+    {
       "basename": "vscode中的task.json和launch.json文件",
       "path": "学习笔记/开发工具/vscode中的task.json和launch.json文件.md"
     },
@@ -59,10 +63,6 @@
     {
       "basename": "常用软件配置_image_1",
       "path": "附件/image/常用软件配置_image_1.png"
-    },
-    {
-      "basename": "常用软件配置",
-      "path": "草稿/常用软件配置.md"
     },
     {
       "basename": "SpringBoot中统一数据返回",

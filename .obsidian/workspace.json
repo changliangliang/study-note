@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "学习笔记/开发工具/vscode中的task.json和launch.json文件.md",
+                "file": "草稿/常用软件配置.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习笔记/开发工具/vscode中的task.json和launch.json文件.md"
+                "file": "草稿/常用软件配置.md"
               }
             }
           },
@@ -160,7 +160,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "学习笔记/开发工具/vscode中的task.json和launch.json文件.md",
+                "file": "草稿/常用软件配置.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,7 +172,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "学习笔记/开发工具/vscode中的task.json和launch.json文件.md",
+                "file": "草稿/常用软件配置.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -234,6 +234,7 @@
   },
   "active": "8c322346a6a2a412",
   "lastOpenFiles": [
+    "学习笔记/开发工具/vscode中的task.json和launch.json文件.md",
     "学习笔记/开发工具/npm源管理.md",
     "学习笔记/开发工具/vscode插件之Eslint.md",
     "学习笔记/开发工具/docker 常用操作.md",
@@ -261,7 +262,6 @@
     "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：SpringSeucrity从数据库中读取数据.md",
     "学习笔记/linux学习/ubuntu启动时等待网络时间过长.md",
     "学习笔记/linux学习/硬盘自动挂载.md",
-    "学习笔记/linux学习/软件安装.md",
     "草稿/toPF3D2.html",
     "附件/image/常用软件配置_image_4.png",
     "附件/image/常用软件配置_image_2.png",
