@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Eslint的使用",
+      "path": "学习笔记/前端开发/Eslint的使用.md"
+    },
+    {
       "basename": "docker 常用操作_image_5",
       "path": "附件/image/docker 常用操作_image_5.png"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Jackson中LocalDateTime序列化与反序列化",
       "path": "草稿/Jackson中LocalDateTime序列化与反序列化.md"
-    },
-    {
-      "basename": "ref 和 reactive",
-      "path": "学习笔记/前端开发/Vue相关/ref 和 reactive.md"
     }
   ],
   "omittedPaths": [],

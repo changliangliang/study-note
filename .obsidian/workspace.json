@@ -36,9 +36,12 @@
             "id": "42d2b6cc65e91410",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "附件/image/docker 常用操作_image_5.png"
+                "file": "学习笔记/前端开发/Eslint的使用.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               }
             }
           }
@@ -136,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "附件/image/docker 常用操作_image_5.png"
+                "file": "学习笔记/前端开发/Eslint的使用.md"
               }
             }
           },
@@ -170,7 +173,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "附件/image/docker 常用操作_image_5.png",
+                "file": "学习笔记/前端开发/Eslint的使用.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +185,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "附件/image/docker 常用操作_image_5.png",
+                "file": "学习笔记/前端开发/Eslint的使用.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -243,6 +246,7 @@
   },
   "active": "42d2b6cc65e91410",
   "lastOpenFiles": [
+    "附件/image/docker 常用操作_image_5.png",
     "附件/image/docker 常用操作_image_1.png",
     "附件/image/docker 常用操作_image_3.png",
     "附件/image/vscode中的task.json和launch.json文件_image_5.png",
@@ -255,7 +259,6 @@
     "附件/image/MySQL操作_image_64.png",
     "附件/image/MySQL操作_image_63.png",
     "附件/image/MySQL操作_image_62.png",
-    "附件/image/MySQL操作_image_61.png",
     "学习笔记/未整理/Java拾遗迹/零碎记录.md",
     "学习笔记/未整理/Java拾遗迹/Java泛型.md",
     "学习笔记/操作系统/计算机的启动.md",
