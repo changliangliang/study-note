@@ -1,7 +1,5 @@
 ---
-{}
 ---
-
 
 ## 打印异常堆栈信息
 
@@ -54,8 +52,8 @@ public void printStackTrace(PrintStream s) {
 class MyException extends Exception {  
   
     public MyException() {  
-		// 日志处理
-		// 另外该方法在构造函数中也可以获得完整的调用堆栈
+        // 日志处理
+        // 另外该方法在构造函数中也可以获得完整的调用堆栈
         this.printStackTrace();  
     }  
 }
@@ -183,10 +181,9 @@ public class Main {
 
 ![](附件/image/Java异常_image_3.png)
 
-
 ## 异常分类
 
-下图展示了 Java 中异常的分类，所有的异常都继承自 `Throwable` ，其中 `Error` 表示严重的错误，会直接影响到程序的运行，通常反生在编译期间或者系统出现错误时；`Exeption` 为 Java 程序运行过程中出现的错误，可以被程序员捕获和处理。
+下图展示了 Java 中异常的分类，所有的异常都继承自 `Throwable`，其中 `Error` 表示严重的错误，会直接影响到程序的运行，通常反生在编译期间或者系统出现错误时；`Exeption` 为 Java 程序运行过程中出现的错误，可以被程序员捕获和处理。
 
 `Execption` 又可以分为两部分，`RuntimeException` 为运行时异常，如空指针异常，只有程序真正运行时才会发现这些异常，这些异常不用程序员来捕获，Java 虚拟机会自动抛出它们；剩下的异常则需要程序员显示的进行捕获处理，可以使用 `try` 语句，或者在方法中抛出。
 
@@ -267,4 +264,3 @@ public static void test() {
     }  
 }
 ```
-

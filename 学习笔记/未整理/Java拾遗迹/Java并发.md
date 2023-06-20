@@ -94,20 +94,20 @@ thread.interrupt();
 
 - 如果处于 `sleep`、`wait` 等阻塞状态，那么调用终止方法后，会从方法中跳出，并抛出异常，所以调用的时候需要进行异常处理；
 
-	```java
-	try {  
-	    Thread.sleep(1000);  
-	} catch (InterruptedException e) {  
-	    throw new RuntimeException(e);  
-	}
-	
-	
-	try {  
-	    thread.wait();  
-	} catch (InterruptedException e) {  
-	    throw new RuntimeException(e);  
-	}
-	```
+    ```java
+    try {  
+        Thread.sleep(1000);  
+    } catch (InterruptedException e) {  
+        throw new RuntimeException(e);  
+    }
+    
+    
+    try {  
+        thread.wait();  
+    } catch (InterruptedException e) {  
+        throw new RuntimeException(e);  
+    }
+    ```
 
 - 如果阻塞在获取锁或者 `read` 等 IO 时，调用终止方法后不会打断当前阻塞状态。
 
@@ -250,7 +250,7 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {  
         Exchanger<String> exchanger = new Exchanger<>();  
 
-		// 线程A
+        // 线程A
         new Thread(new Runnable() {  
             @Override  
             public void run() {  
@@ -266,7 +266,7 @@ public class Main {
                 }  
             }  
         }).start();  
-		// 线程B
+        // 线程B
         while (true) {  
             String a = null;  
             try {  

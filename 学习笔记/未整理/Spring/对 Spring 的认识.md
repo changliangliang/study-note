@@ -1,7 +1,5 @@
 ---
-{}
 ---
-
 
 Spring 是一个 Java 语言框架，它的出现极大的简化了 Java 的开发过程，使用过程中最明显的感觉是各种类都不要手动取实例化了，通过配置文件就可以定制出各种需要的类，直接从 Spring 中获取即可。
 
@@ -42,14 +40,14 @@ Spring 还有使用 XML 配置文件的方式来将类变为 Spring 的组件，
 
 ### 对象之间的关系
 
-只是将普通类编程 Spring 的组件作用并不大，Spring 跟强大的地方在于它可以维护对象之间的关系。在传统的编程中，对象与对象之间的关系由程序员来维护，如下面 `Worker` 和 `Hammer` ，在 `Worker` 内部手动创建了一个 `Hammer`。
+只是将普通类编程 Spring 的组件作用并不大，Spring 跟强大的地方在于它可以维护对象之间的关系。在传统的编程中，对象与对象之间的关系由程序员来维护，如下面 `Worker` 和 `Hammer`，在 `Worker` 内部手动创建了一个 `Hammer`。
 
 ```java
 public class Worker {  
       
     private Hammer hammer;  
           
-	public Worker() {  
+    public Worker() {  
         hammer = new Hammer();  
     }  
       
@@ -167,6 +165,7 @@ public static void main( String[] args )
 在编程工程中有一些模块是通用的，会在其他模块中反复调用，如日志模块。
 
 当代码量比较小的时候可能看不出什么问题，但是随着项目规模的不断变大，这种调用关系就会出现一些明显的缺陷：
+
 - 调用通用模块的代码会大量重复；
 - 对通用模块的调用会使得核心逻辑变得不清晰。
 
@@ -174,11 +173,9 @@ Spring 中通过 AOP 来解决这一问题，以日志模块为例，原先它�
 
 ![](附件/image/对%20Spring%20的认识_image_1.png)
 
-
-
 ### 提供模板
 
-Spring 的作用之一是简化开发，对于一些模板化的代码，如 JDBC 的操作等，都提供对应的封装，并统一命名为 `XXXTemplate` 。在传统的开发流程中，使用 JDBC 的代码大致如下，需要手动获取连接，执行命令等。
+Spring 的作用之一是简化开发，对于一些模板化的代码，如 JDBC 的操作等，都提供对应的封装，并统一命名为 `XXXTemplate`。在传统的开发流程中，使用 JDBC 的代码大致如下，需要手动获取连接，执行命令等。
 
 ```java
 public Employee getEmployeeById(long id) {

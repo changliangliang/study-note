@@ -1,5 +1,4 @@
 ---
-{}
 ---
 
 ## values 和 valueOf 方法
@@ -196,7 +195,6 @@ public static void main(String[] args) {
     }  
 }
 ```
-
 
 ## 实现方法
 

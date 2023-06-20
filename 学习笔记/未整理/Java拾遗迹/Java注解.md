@@ -1,5 +1,4 @@
 ---
-{}
 ---
 
 注解可以简单的理解为给类添加的额外信息，它本身并不会做任何事情，通常由其它程序识别后做出对应的处理，如 `@Override` 注解由编译器识别，会判断该注解标识的类是否重写正确。
@@ -7,9 +6,10 @@
 ## 内置注解
 
 Java 中内置了三个注解：
-- `@Override` ：表示方法重写了父类方法；
-- `@Deprecated` ：表示该方法已经过期，不推荐使用；
-- `@SuppressWarnings` ：关闭不当的编译器警告。
+
+- `@Override`：表示方法重写了父类方法；
+- `@Deprecated`：表示该方法已经过期，不推荐使用；
+- `@SuppressWarnings`：关闭不当的编译器警告。
 
 ## 定义注解
 
@@ -23,8 +23,8 @@ Java 中内置了三个注解：
 @Target(ElementType.TYPE)  
 @Retention(RetentionPolicy.RUNTIME)  
 @interface Test {  
-	public int id() default 12;  
-	public String name() default "chang";
+    public int id() default 12;  
+    public String name() default "chang";
 }
 ```
 
@@ -90,4 +90,3 @@ public class Main {
     }  
 }
 ```
-

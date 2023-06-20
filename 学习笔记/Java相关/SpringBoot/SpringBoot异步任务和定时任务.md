@@ -21,8 +21,8 @@ public class CflieApplication {
 ```java
 @Async
 public void test() throws InterruptedException {
-	Thread.sleep(1000);
-	System.out.println(Thread.currentThread() + "+++++++++++++");
+    Thread.sleep(1000);
+    System.out.println(Thread.currentThread() + "+++++++++++++");
 }
 ```
 
@@ -43,7 +43,7 @@ public class CflieApplication {
 ```java
 @Scheduled(cron = "*/5 * * * * ?")
 public void test() throws InterruptedException {
-	System.out.println(Thread.currentThread() + "+++++++++++++");
+    System.out.println(Thread.currentThread() + "+++++++++++++");
 }
 ```
 
@@ -54,24 +54,24 @@ public void test() throws InterruptedException {
 ```java
 @Bean
 public SchedulingConfigurer schedulingConfigurer() {
-	return new SchedulingConfigurer() {
-		@Override
-		public void configureTasks(ScheduledTaskRegistrar taskRegistrar) {
-			taskRegistrar.addTriggerTask(new Runnable() {
-				@Override
-				public void run() {
-					// 需要执行的任务
-				}
-			}, new Trigger() {
-				@Override
-				public Date nextExecutionTime(TriggerContext triggerContext) {
+    return new SchedulingConfigurer() {
+        @Override
+        public void configureTasks(ScheduledTaskRegistrar taskRegistrar) {
+            taskRegistrar.addTriggerTask(new Runnable() {
+                @Override
+                public void run() {
+                    // 需要执行的任务
+                }
+            }, new Trigger() {
+                @Override
+                public Date nextExecutionTime(TriggerContext triggerContext) {
 
-					// 返回下次执行的时间
-					// 可以动态的获取cron,比如放在数据库中
-					return new CronTrigger("cron").nextExecutionTime(triggerContext);
-				}
-			});
-		}
-	};
+                    // 返回下次执行的时间
+                    // 可以动态的获取cron,比如放在数据库中
+                    return new CronTrigger("cron").nextExecutionTime(triggerContext);
+                }
+            });
+        }
+    };
 }
 ```

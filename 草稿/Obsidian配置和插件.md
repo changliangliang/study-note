@@ -1,5 +1,5 @@
-
-
+---
+---
 ## 插件
 
 ### Attachment Name Formatting
@@ -12,10 +12,6 @@
 
 自动定位到当前打开的文件。
 
-
-
 ![](附件/image/Obsidian配置和插件_image_2.png)
 
 ### Better Command Palette #todo
-
-

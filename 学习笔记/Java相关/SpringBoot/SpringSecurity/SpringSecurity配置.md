@@ -312,21 +312,20 @@ http.sessionManagement()
 http.rememberMe().rememberMeServices()
 ```
 
-
 ## 注销
 
 注销的配置与登陆配置类似,，就不在作过多的赘述。
 
 ```java
 http
-	.logout()                                            
-		.logoutUrl("/my/logout")                                            
-		.logoutSuccessUrl("/my/index")                                      
-		.logoutSuccessHandler(logoutSuccessHandler)                         
-		.invalidateHttpSession(true)                                        
-		.addLogoutHandler(logoutHandler)                                    
-		.deleteCookies(cookieNamesToClear)                                  
-	)
+    .logout()                                            
+        .logoutUrl("/my/logout")                                            
+        .logoutSuccessUrl("/my/index")                                      
+        .logoutSuccessHandler(logoutSuccessHandler)                         
+        .invalidateHttpSession(true)                                        
+        .addLogoutHandler(logoutHandler)                                    
+        .deleteCookies(cookieNamesToClear)                                  
+    )
 ```
 
 ## 授权

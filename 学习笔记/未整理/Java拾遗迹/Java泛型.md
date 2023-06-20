@@ -1,5 +1,4 @@
 ---
-{}
 ---
 
 ## 什么是泛型
@@ -145,7 +144,7 @@ data = (String) stringHolder.getData();
 
 ```bash
 Exception in thread "main" java.lang.ClassCastException: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
-	at com.liang.Main.main(Main.java:30)
+    at com.liang.Main.main(Main.java:30)
 ```
 
 经过以上的铺垫，到这里终于要引出类本文的主题了，Java 中泛型的出现主要目的之一就是告诉编译器容器中应该存放什么样的类型，将上述类型转化的问题在编译期间就暴露出来。接下来我们看一下使用泛型改造后的 `DataHolder` 是什么样子，其中 `<T>` 叫做类型，它表示我们在使用这个类时传递的类型。
@@ -199,7 +198,6 @@ DataHolder.java:29: 错误: 不兼容的类型: int无法转换为String
 在一些现代的 IDE 中，甚至不用等到编译代码，当我们向容器中加入不正确的数据类型后 IDE 立马就会提示我们出现了错误。
 
 ![](附件/image/Java泛型_image_1.png)
-
 
 像 `DataHolder` 这样在定义的时候使用了泛型通配符的类，就叫做泛型类。在 Java 中存在大量的类似的泛型类，如 `ArrayList` 和 `HashMap` 这样的容器，查看它们的源码可以看到使用到了泛型。
 
@@ -275,13 +273,13 @@ class IntegerProducer implements Producer<Integer> {
 ```java
 class Main {
 
-	public static <T>  T staticMethod(T o) {  
-	    return o;  
-	}  
-	  
-	public <T>  T method(T o) {  
-	    return o;  
-	}
+    public static <T>  T staticMethod(T o) {  
+        return o;  
+    }  
+      
+    public <T>  T method(T o) {  
+        return o;  
+    }
 }
 
 ```
@@ -429,38 +427,39 @@ System.out.println(strArray.getClass() == intArray.getClass());
 ```
 
 因为 Java 是通过擦除的方式实现的泛型，所以在泛型内部无货获取任何类型相关的信息，它带来的影响主要有：
+
 1. 无法创建实例，如下面的代码是无法编译通过的，应为在编译后类型信息 `T` 会被替换为 `Object`，如果允许创建实例那么创建出的也为 `Object` 实例，失去了泛型存在的意义。
 
-	```java
-	public class DataHolder<T> {  
-	  
-	    private T data;  
-	  
-	    public T creat() {  
-	        return new T();  // 等用于 new Object();
-	    }  
-	  
-	}
-	```
-	
+    ```java
+    public class DataHolder<T> {  
+      
+        private T data;  
+      
+        public T creat() {  
+            return new T();  // 等用于 new Object();
+        }  
+      
+    }
+    ```
+
 2. 无法调用除了 `Object` 类之外的方法，如下面的 `method1` 方法可以编译通过，`method2` 方法无法编译通过，因为类型擦除的时候 `T` 被替换成了 `Object`。
 
-	```java
-	public static <T> void method1(T t) {  
-	    t.toString();  
-	}  
-	public static <T> void method2(T t) {  
-	    t.substring(0);  
-	}
-	```
+    ```java
+    public static <T> void method1(T t) {  
+        t.toString();  
+    }  
+    public static <T> void method2(T t) {  
+        t.substring(0);  
+    }
+    ```
 
-###  边界
+### 边界
 
 泛型在编译过程中类型参数会被擦除替换成 `Object`，导致只能使用 `Object` 的方法，根本原因在于编译期间编译器无法知道使用者会传入什么样的类型，只能将其擦除为 `Object`。边界的出现就是为了解决这样的问题，明确的告诉编译器将来会传入类型的边界，如下面的例子中，`<T extends Animal>` 明确了 `T` 可以为 `Animal` 极其子类，那么在擦除的时候 `T` 会被替换为 `Animal` 而不是 `Object`。
 
 ```java
 public static <T extends Animal> void method(T t) {  
-	//可以使用Animal中所有的方法 
+    //可以使用Animal中所有的方法 
 }  
 ```
 
@@ -563,20 +562,20 @@ class com/liang/chapter15/test1/Holder {
 
 ```java
 public class Producer<T> {  
-	
-	// 类型信息
-	private final Class<T> clazz;  
+    
+    // 类型信息
+    private final Class<T> clazz;  
   
-	public Producer(Class<T> clazz) {  
-		this.clazz = clazz;  
-	}  
+    public Producer(Class<T> clazz) {  
+        this.clazz = clazz;  
+    }  
   
-	// 利用反射获取类型实例  
-	public T creat()   
-			throws NoSuchMethodException, InvocationTargetException,   
-					InstantiationException, IllegalAccessException {  
-		return this.clazz.getDeclaredConstructor().newInstance();  
-	}  
+    // 利用反射获取类型实例  
+    public T creat()   
+            throws NoSuchMethodException, InvocationTargetException,   
+                    InstantiationException, IllegalAccessException {  
+        return this.clazz.getDeclaredConstructor().newInstance();  
+    }  
 }
 ```
 
@@ -595,7 +594,6 @@ T[] datas = new T[10];
 ![](附件/image/Java泛型_image_3.png)
 
 ![](附件/image/Java泛型_image_4.png)
-
 
 ## 通配符
 
@@ -642,7 +640,6 @@ ArrayList<? super Dog> list = new ArrayList<Dog>();
 ## 泛型存在的问题
 
 - 无法使用基础类型
-	泛型中的类型无法使用基础数据类型，即 `ArrayList<int>` 这样的形式是不允许的，好在 Java 中针对每种类型提供对应的包装类，在使用基础类型的时候可以使用对应的包装类代替，而且由于自动装箱开箱的机制，基础类型可以和包装类型之间自动转化。
+    泛型中的类型无法使用基础数据类型，即 `ArrayList<int>` 这样的形式是不允许的，好在 Java 中针对每种类型提供对应的包装类，在使用基础类型的时候可以使用对应的包装类代替，而且由于自动装箱开箱的机制，基础类型可以和包装类型之间自动转化。
 - 一个类无法实现同一个泛型接口的不同变体
 - 同一个泛型类的不同变体不能作为区分重载方法的依据，因为在 Jvm 看来它们和原始类是一样的
-

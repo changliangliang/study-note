@@ -5,7 +5,8 @@ updated: 2023-03-13 21:19:41
 tags: [Spring]
 categories: [Spring学习笔记]
 ---
-    
+
+
 ## XML 开启注解支持
 
 Spring 用 xml 配置是比较繁琐的，所以 Spring 由提供了另一种配置方法：注解配置。
@@ -507,6 +508,8 @@ age=12
       @Value("${age}")
       private int age;
   }
+
+
 
 
 

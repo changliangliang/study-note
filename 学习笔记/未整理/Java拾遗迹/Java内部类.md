@@ -1,7 +1,5 @@
 ---
-{}
 ---
-
 
 ## 内部类
 
@@ -31,7 +29,6 @@ Outer.Inner  i = o.nwe Inner();
 内部类拥有外部类中所有属性和方法的访问权限，所以通过内部类可以很轻松的修改外部类中的数据，如在 Java 中的 `ArrayList`，它的迭代器就是一个内部类，通过这个迭代器我们能修改 `ArrayList` 中的数据。
 
 ![](附件/image/Java内部类_image_1.png)
-
 
 《Java 编程思想》给出了内部类可以修改外部类实例数据的原因，通过外部类实例创建内部类实例的时候，会为内部类实例自动的创建一个指向外部类实例的应用。
 
@@ -71,7 +68,6 @@ public class Outer {
 }
 ```
 
-
 ### 获取外部实例
 
 在普通类中通过 `this` 关键字表示的是当前实例，在内部类中也是如此，那么如果想要获取外部实例怎么办，比如内部实例的某个方式返回值为外部实例，只需要使用这样的符号 `外部类名称.this` 即可：
@@ -80,9 +76,9 @@ public class Outer {
 public class Outer {  
 
     public class Inner {   
-		public Outer getOuter() {
-			return Outer.this;
-		}
+        public Outer getOuter() {
+            return Outer.this;
+        }
     }  
 }
 ```
@@ -93,7 +89,7 @@ public class Outer {
 
 ![](附件/image/Java内部类_image_3.png)
 
-通过 `ArrayList` 提供的 `iterator` 方法可以获得这个迭代器的实例，但是却将它向上转型为了 `Iterator` 。这和符合要求，用户只要知道 `Iterator` 可以用于遍历数据即可，具体内部是怎样实现的它不需要关心。
+通过 `ArrayList` 提供的 `iterator` 方法可以获得这个迭代器的实例，但是却将它向上转型为了 `Iterator`。这和符合要求，用户只要知道 `Iterator` 可以用于遍历数据即可，具体内部是怎样实现的它不需要关心。
 
 ![](附件/image/Java内部类_image_4.png)
 
@@ -216,15 +212,15 @@ public class Main {
 public class Main {  
   
     public static void main(String[] args) {  
-		
-		class Dog extends Animal {  
-			public void name() {  
-				System.out.println("狗");  
-			}  
-		}  
-		
-		Animal dog = new Dog();  
-		dog.name(); 
+        
+        class Dog extends Animal {  
+            public void name() {  
+                System.out.println("狗");  
+            }  
+        }  
+        
+        Animal dog = new Dog();  
+        dog.name(); 
     }  
 }
 
@@ -235,7 +231,7 @@ public class Main {
 ```java
 Animal dog = new Animal() {  
    public void name() {  
-	   System.out.println("狗");  
+       System.out.println("狗");  
    }  
 };  
 ```
@@ -255,7 +251,7 @@ class Animal {
 
 Animal dog = new Animal(10) {  
    public void name() {  
-	   System.out.println("狗");  
+       System.out.println("狗");  
    }  
 };  
 ```
@@ -268,14 +264,13 @@ Animal dog = new Animal(10) {
 
 ```java
 class Outer {
-	public static class Inner {
-	
-	}
+    public static class Inner {
+    
+    }
 }
 ```
 
 和普通的静态成员一样，静态内部类可以通过外部类的类名来访问，并且嵌套类实例无法访问到外部类的实例属性和方法, 但是可以访问静态属性和方法。
-
 
 ```java
 class Outer {  
@@ -291,4 +286,3 @@ public class Main {
     }  
 }
 ```
-

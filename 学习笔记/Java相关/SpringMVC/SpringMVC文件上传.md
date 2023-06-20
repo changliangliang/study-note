@@ -1,10 +1,10 @@
 ---
 type: note
-status: 0
 created: 2023-04-30 15:05:58
 updated: 2023-04-30 15:05:58
 tags: []
 categories: []
+status: 0
 ---
 
 ## MultipartResolver
@@ -33,10 +33,10 @@ categories: []
 ```java
 @Bean
 public CommonsMultipartResolver multipartResolver() {
-	CommonsMultipartResolver commonsMultipartResolver = new CommonsMultipartResolver();
-	commonsMultipartResolver.setDefaultEncoding("utf-8");
-	commonsMultipartResolver.setMaxUploadSize(500);
-	return commonsMultipartResolver;
+    CommonsMultipartResolver commonsMultipartResolver = new CommonsMultipartResolver();
+    commonsMultipartResolver.setDefaultEncoding("utf-8");
+    commonsMultipartResolver.setMaxUploadSize(500);
+    return commonsMultipartResolver;
 }
 ```
 
@@ -49,10 +49,10 @@ public CommonsMultipartResolver multipartResolver() {
 ```java
 @Bean
 public MultipartConfigElement multipartConfigElement() {
-	MultipartConfigFactory multipartConfigFactory = new MultipartConfigFactory();
-	multipartConfigFactory.setLocation("d:/");
-	multipartConfigFactory.setMaxFileSize(DataSize.of(10, DataUnit.GIGABYTES));
-	return multipartConfigFactory.createMultipartConfig();
+    MultipartConfigFactory multipartConfigFactory = new MultipartConfigFactory();
+    multipartConfigFactory.setLocation("d:/");
+    multipartConfigFactory.setMaxFileSize(DataSize.of(10, DataUnit.GIGABYTES));
+    return multipartConfigFactory.createMultipartConfig();
 }
 ```
 
@@ -94,25 +94,25 @@ public class FileUploadController {
 @GetMapping(value = "/download/{id}")
 public void downloadFile(@PathVariable("id") int id, HttpServletResponse response) throws Exception {
 
-	File file = fileService.getById(id);
+    File file = fileService.getById(id);
 
-	if (null == file) {
-		// todo 文件不存在处理
-		throw new Exception();
-	}
+    if (null == file) {
+        // todo 文件不存在处理
+        throw new Exception();
+    }
 
-	//文件所在路径
-	String filepath = String.join("/", fileLocation, file.getUuid());
+    //文件所在路径
+    String filepath = String.join("/", fileLocation, file.getUuid());
 
-	java.io.File downloadFile = new java.io.File(filepath);
-	response.reset();
-	response.setContentType("application/octet-stream");
-	response.setContentLength((int) downloadFile.length());
-	response.setHeader("Content-Disposition", "attachment;filename=" + file.getName());
+    java.io.File downloadFile = new java.io.File(filepath);
+    response.reset();
+    response.setContentType("application/octet-stream");
+    response.setContentLength((int) downloadFile.length());
+    response.setHeader("Content-Disposition", "attachment;filename=" + file.getName());
 
-	try(BufferedInputStream in = new BufferedInputStream(new FileInputStream(downloadFile))) {
-		in.transferTo(response.getOutputStream());
-	}
+    try(BufferedInputStream in = new BufferedInputStream(new FileInputStream(downloadFile))) {
+        in.transferTo(response.getOutputStream());
+    }
 }
 
 ```

@@ -1,10 +1,10 @@
 ---
 type: blog
-status: 已发布
 created: 2023-04-18 16:45:41
 updated: 2023-04-18 16:45:41
 tags: [docker]
 categories: []
+status: 已发布
 ---
 
 ## 镜像操作
@@ -60,7 +60,7 @@ REPOSITORY      TAG           IMAGE ID         CREATED          SIZE
 $ docker image ls -a
 ```
 
-### 列出指定镜像 
+### 列出指定镜像
 
 `docker image ls ubuntu`
 

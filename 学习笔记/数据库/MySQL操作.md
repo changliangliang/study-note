@@ -1,10 +1,10 @@
 ---
 type: blog
-status: 未发布
 created: 2023-04-28 00:05:53
 updated: 2023-04-28 00:05:53
 tags: []
 categories: []
+status: 未发布
 ---
 
 #todo
@@ -81,10 +81,10 @@ categories: []
 
 ```sql
 CREATE TABLE table_name (
-	column_name column_type,
-	column_name column_type,
-	column_name column_type,
-	column_name column_type
+    column_name column_type,
+    column_name column_type,
+    column_name column_type,
+    column_name column_type
 );
 ```
 
@@ -116,8 +116,8 @@ CREATE TABLE IF NOT EXISTS table_name (column_name column_type NOT NULL)
 
 ```sql
 CREATE TABLE IF NOT EXISTS table_name (
-    									column_name column_type NOT NULL，
-										PRIMARY KEY (key_1, key_2)
+                                        column_name column_type NOT NULL，
+                                        PRIMARY KEY (key_1, key_2)
                                       );
 
 ```
@@ -142,11 +142,11 @@ CREATE TABLE IF NOT EXISTS table_name (column_name column_type NOT NULL DEFAULT 
 
 ```sql
 CREATE TABLE table_name (
-    					  column_name column_type,
-					      column_name column_type,
-					      column_name column_type,
-					      column_name column_type
-						) ENGINE=InnoDB;
+                          column_name column_type,
+                          column_name column_type,
+                          column_name column_type,
+                          column_name column_type
+                        ) ENGINE=InnoDB;
 ```
 
 ![image-20210402222155279](附件/image/MySQL操作_image_8.png)
@@ -853,11 +853,11 @@ SHOW COLLATION;
 
 ```sql
 CREATE TABLE table_name (column_name column_type,
-					     column_name column_type,
-					     column_name column_type,
-					     column_name column_type)
-					     DEFUALT CHARATER SET utf8
-					     COLLATION utf8mb4_0900_ai_ci
+                         column_name column_type,
+                         column_name column_type,
+                         column_name column_type)
+                         DEFUALT CHARATER SET utf8
+                         COLLATION utf8mb4_0900_ai_ci
 ```
 
 ### 指定列的字符集和校对
@@ -865,8 +865,8 @@ CREATE TABLE table_name (column_name column_type,
 ```sql
 CREATE TABLE table_name (column_name column_type
                          DEFUALT CHARATER SET utf8
-					     COLLATION utf8mb4_0900_ai_ci,
-					     column_name column_type)  
+                         COLLATION utf8mb4_0900_ai_ci,
+                         column_name column_type)  
 ```
 
 ### 查找时设置字符集

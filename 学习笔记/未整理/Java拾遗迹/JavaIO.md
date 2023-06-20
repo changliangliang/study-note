@@ -1,5 +1,4 @@
 ---
-{}
 ---
 
 ## File 类
@@ -44,7 +43,6 @@ fileOutputStream.write("sdsd".getBytes());
 因为流这样一个概念是由方向的，所有只能从输入流中读取数据，向输出流写入数据。针对不同的数据源，Java 中提供了不同类型的输入输出流：
 
 ![](附件/image/JavaIO_image_1.png)
-
 
 ![](附件/image/JavaIO_image_2.png)
 
@@ -99,7 +97,7 @@ randomAccessFile.read();
 
 ## 标准 IO
 
-标准 IO 的术语来自 Unxi 中“程序所使用的单一信息流”这个概念。标准 IO 可以分为标准输入、标准输出和标准错误，在 Java 中分别对应 `System.in` 、`System.out` 和 `System.err`，下面是我们常用的输出语句，它使用的就是标准输出。
+标准 IO 的术语来自 Unxi 中“程序所使用的单一信息流”这个概念。标准 IO 可以分为标准输入、标准输出和标准错误，在 Java 中分别对应 `System.in`、`System.out` 和 `System.err`，下面是我们常用的输出语句，它使用的就是标准输出。
 
 ```java
 System.out.println("chang")

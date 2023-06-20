@@ -1,5 +1,4 @@
 ---
-{}
 ---
 
 ## 处理流程
@@ -13,17 +12,16 @@ DispatcherServlet 是 SpringMVC 的入口，当 Tomcat 将请求交给 Dispatche
 3. 前端控制器获得返回的 HandlerExecutionChain​（包括 Handler​ 对象以及 Handler​ 对象对应的拦截器）；
 4. DispatcherServlet​ 根据获得的 HandlerExecutionChain​，选择一个合适的 HandlerAdapter​，如果成功获得 HandlerAdapter​ 后，将开始执行拦截器的 preHandler(...)​ 方法；
 5. ​HandlerAdapter​ 提取 Request​ 中的模型数据，填充 Handler​ 入参，开始执行 Handler，在填充 Handler​ 的入参过程中，根据配置，Spring​ 将做一些额外的工作：
-	1. HttpMessageConveter​：将请求消息（如 Json​、xml​ 等数据）转换成一个对象，将对象转换为指定的响应信息；
-	2. 数据转换：对请求消息进行数据转换。如 String​ 转换成 Integer​、Double​ 等；
-	3. 数据格式化：如将字符串转换成格式化数字或格式化日期等；
-	4. 数据验证： 验证数据的有效性（长度、格式等），验证结果存储到 BindingResult​ 或 Error​ 中）；
+    1. HttpMessageConveter​：将请求消息（如 Json​、xml​ 等数据）转换成一个对象，将对象转换为指定的响应信息；
+    2. 数据转换：对请求消息进行数据转换。如 String​ 转换成 Integer​、Double​ 等；
+    3. 数据格式化：如将字符串转换成格式化数字或格式化日期等；
+    4. 数据验证：验证数据的有效性（长度、格式等），验证结果存储到 BindingResult​ 或 Error​ 中）；
 6. Handler​ 执行完毕，返回一个 ModelAndView ​（即模型和视图）给 HandlerAdaptor​;
 7. HandlerAdaptor​ 适配器将执行结果 ModelAndView​ 返回给前端控制器；
 8. 前端控制器接收到 ModelAndView​ 后，请求对应的视图解析器；
 9. 视图解析器解析 ModelAndView​ 后返回对应 View​；
 10. 渲染视图并返回渲染后的视图给前端控制器；
 11. 最终前端控制器将渲染后的页面响应给用户或客户端。
-
 
 ## 视图解析器和视图
 
@@ -34,24 +32,23 @@ DispatcherServlet 是 SpringMVC 的入口，当 Tomcat 将请求交给 Dispatche
 ```java
 @Controller
 public class Home {
-	@GetMapping("/home")
-	public String home() {
-		return "home";
-	}
+    @GetMapping("/home")
+    public String home() {
+        return "home";
+    }
 }
 ```
 
 SpirngMVC 内置了许多视图解析器，通常可以满足我们的大部分需求。
-
 
 | 视图解析器                     | 描述                                                                                                                                   |
 | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
 | BeanNameViewResolver           | 将视图解析为 Spring 应用上下文中的 bean，其中 bean 的 ID 与视图的名字相同                                                              |
 | ContentNegotiatingViewResolver | 通过考虑客户端需要的内容类型来解析视图，委托给另外一个能够产生对应内容类型的视图解析器                                                 |
 | FreeMarkerViewResolver         | 将视图解析为 FreeMarker 模板                                                                                                           |
-| InternalResourceViewResolver   | 将视图解析为 Web 应用的内部资源（一般为 JSP）                                                                                          |
+| InternalResourceViewResolver   | 将视图解析为 Web 应用的内部资源（一般为 JSP）|
 | JasperReportsViewResolver      | 将视图解析为 JasperReports 定义                                                                                                        |
-| ResourceBundleViewResolver     | 将视图解析为资源 bundle（一般为属性文件）                                                                                              |
+| ResourceBundleViewResolver     | 将视图解析为资源 bundle（一般为属性文件）|
 | TilesViewResolver              | 将视图解析为 Apache Tile 定义，其中 tile ID 与视图名称相同。注意有两个不同的 TilesViewResolver 实现，分别对应于 Tiles 2.0 和 Tiles 3.0 |
 | UrlBasedViewResolver           | 直接根据视图的名称解析视图，视图的名称会匹配一个物理视图的定义                                                                         |
 | VelocityLayoutViewResolver     | 将视图解析为 Velocity 布局，从不同的 Velocity 模板中组合页面                                                                           |
@@ -59,13 +56,11 @@ SpirngMVC 内置了许多视图解析器，通常可以满足我们的大部分�
 | XmlViewResolver                | 将视图解析为特定 XML 文件中的 bean 定义。类似于 BeanNameViewResolver                                                                   |
 | XsltViewResolver               | 将视图解析为 XSLT 转换后的结果                                                                                                         |
 
-
 ```java
 public interface ViewResolver {
-	View resolverViewName(String viewName, Locale locale) throws Exception;
+    View resolverViewName(String viewName, Locale locale) throws Exception;
 }
 ```
-
 
 ### 视图
 
@@ -73,7 +68,7 @@ public interface ViewResolver {
 
 ```java
 public interface View {  
-	void render(@Nullable Map<String, ?> model, HttpServletRequest request, HttpServletResponse response)  
+    void render(@Nullable Map<String, ?> model, HttpServletRequest request, HttpServletResponse response)  
          throws Exception;  
   
 }
@@ -99,9 +94,9 @@ HandlerAdapter 接口方法如下:
 
 ```java
 Public interface HandlerAdapter {
-	Boolean supports (Object handler);
-	ModelAndView handle (HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception;
-	Long getLastModified (HttpServletRequest request, Object handler);
+    Boolean supports (Object handler);
+    ModelAndView handle (HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception;
+    Long getLastModified (HttpServletRequest request, Object handler);
 }
 ```
 
@@ -109,13 +104,12 @@ DispatcherServlte 会根据 handlerMapping 传过来的 controller 与已经注�
 
 今天再来看源码，发现处理器根本就不只有 Controller 这一种。还有 HttpRequestHandler，Servlet 等处理器。下面来介绍一下几种适配器对应的处理器以及这些处理器的作用
 
-1.  AnnotationMethodHandlerAdapter 主要是适配注解类处理器，注解类处理器就是我们经常使用的 @Controller 的这类处理器
-2.  HttpRequestHandlerAdapter 主要是适配静态资源处理器，静态资源处理器就是实现了 HttpRequestHandler 接口的处理器，这类处理器的作用是处理通过 SpringMVC 来访问的静态资源的请求
-3.  SimpleControllerHandlerAdapter 是 Controller 处理适配器，适配实现了 Controller 接口或 Controller 接口子类的处理器，比如我们经常自己写的 Controller 来继承 MultiActionController.
-4.  SimpleServletHandlerAdapter 是 Servlet 处理适配器, 适配实现了 Servlet 接口或 Servlet 的子类的处理器，我们不仅可以在 web. Xml 里面配置 Servlet，其实也可以用 SpringMVC 来配置 Servlet，不过这个适配器很少用到，而且 SpringMVC 默认的适配器没有他，默认的是前面的三种。
+1. AnnotationMethodHandlerAdapter 主要是适配注解类处理器，注解类处理器就是我们经常使用的 @Controller 的这类处理器
+2. HttpRequestHandlerAdapter 主要是适配静态资源处理器，静态资源处理器就是实现了 HttpRequestHandler 接口的处理器，这类处理器的作用是处理通过 SpringMVC 来访问的静态资源的请求
+3. SimpleControllerHandlerAdapter 是 Controller 处理适配器，适配实现了 Controller 接口或 Controller 接口子类的处理器，比如我们经常自己写的 Controller 来继承 MultiActionController.
+4. SimpleServletHandlerAdapter 是 Servlet 处理适配器, 适配实现了 Servlet 接口或 Servlet 的子类的处理器，我们不仅可以在 web. Xml 里面配置 Servlet，其实也可以用 SpringMVC 来配置 Servlet，不过这个适配器很少用到，而且 SpringMVC 默认的适配器没有他，默认的是前面的三种。
 
 ## 父子容器
-
 
 ![](附件/image/SpirngMVC进阶知识_image_2.png)
 

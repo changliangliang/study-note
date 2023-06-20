@@ -39,14 +39,14 @@ public class User implements Serializable {
 
 ```json
 {
-	"id": 1,
-	"username": "chang",
-	"password": "chang",
-	"email": "changliangliang1996@fomxail.com",
-	"created": "2023-04-29T11:05:58",
-	"updated": "2023-04-29T11:06:00",
-	"deleted": 0,
-	"role": 0
+    "id": 1,
+    "username": "chang",
+    "password": "chang",
+    "email": "changliangliang1996@fomxail.com",
+    "created": "2023-04-29T11:05:58",
+    "updated": "2023-04-29T11:06:00",
+    "deleted": 0,
+    "role": 0
 }
 ```
 

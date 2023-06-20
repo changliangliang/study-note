@@ -1,7 +1,5 @@
 ---
-{}
 ---
-
 
 ## 类的初始化方法执行顺序
 
@@ -112,7 +110,7 @@ class A {
   
 class B extends A {  
     public B() {  
-	    super(12);
+        super(12);
         System.out.println("B构造方法");  
     }  
 }
@@ -175,8 +173,6 @@ Son 代码块
 Son构造方法
 ```
 
-
-
 ## 方法的重载与重写
 
 在 Java 中子类会继承父类的方法，也就是说子类可以调用父类中的方法，假设有下面的继承系统：
@@ -221,6 +217,7 @@ Son f(int,int)方法
 ```
 
 通过执行上面的代码片段，可以发现如下规律：
+
 - 子类方法如果和父类同名，并且参数列表一样，那么此时会执行子类的方法，如 `f()` 方法，此时称子类对父类的 `f()` 方法进行了**重写**；
 - 子类中没有该方法，那么就调用父类的方法，如 `f(int)` 方法；
 - 只有子类中有该方法，则直接执行该方法，如果方法与其他子类或父类中的方法同名但参数列表不同，此时属于普通的方法**重载**。
@@ -234,7 +231,6 @@ Son f(int,int)方法
 通常情况下能有组合解决问题的时候就使用组合来解决问题，因为继承会增加类之间的耦合性，有时候如果对父类进行了修改，子类也必须做出相应的修改。只有在明确要表示 `is-a` 这样的场景下，才会选择使用继承来解决问题。
 
 ![](附件/image/Java继承_image_1.png)
-
 
 ## `protected` 关键字的使用
 
@@ -268,6 +264,7 @@ class Son extends Father {
 ## 转型
 
 转型可以分为向上转型和向下转型：
+
 - 向上转型：将子类型转化为父类型；
 - 向下转型：将父类型转化为子类型。
 
@@ -317,32 +314,32 @@ Father castFather = son;
 ```java
 class Main {
 
-	public static final int a = 1;  
-	  
-	public static final int b;  
-	  
-	static {  
-	    b = 2;  
-	}
+    public static final int a = 1;  
+      
+    public static final int b;  
+      
+    static {  
+        b = 2;  
+    }
 }
 ```
 
 ```java
 class Main {
 
-	public int c  = 1;  
-	  
-	public int d;  
-	  
-	{  
-	    d = 2;  
-	}  
-	  
-	public int e;
+    public int c  = 1;  
+      
+    public int d;  
+      
+    {  
+        d = 2;  
+    }  
+      
+    public int e;
 
-	public Main() {
-		e = 3;
-	}
+    public Main() {
+        e = 3;
+    }
 }
 ```
 

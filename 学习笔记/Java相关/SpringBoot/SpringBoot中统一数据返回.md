@@ -62,7 +62,7 @@ public enum CodeEnum {
 
     private int value;
 
-	private String message;
+    private String message;
 
     CodeEnum(int value, String message) {
         this.value = value;
@@ -73,9 +73,9 @@ public enum CodeEnum {
         return value;
     }
 
-	public Strign getMessage() {
-		return message;
-	}
+    public Strign getMessage() {
+        return message;
+    }
 }
 ```
 
@@ -107,7 +107,7 @@ public class Result<T> {
         return new Result<>(CodeEnum.FAIL.getValue(), message, null);
     }
 
-	public static <E> Result<E> fail() {
+    public static <E> Result<E> fail() {
         return new Result<>(CodeEnum.FAIL.getValue(), CodeEnum.FAIL.getMessage(), null);
     }
 }
@@ -119,7 +119,7 @@ public class Result<T> {
 @Operation(summary = "获取用户信息")
 @GetMapping("/{id}")
 public Result<User> getUser( @PathVariable("id") int id) {
-	User user = userService.getById(id);
-	return Result.ok(null, user);
+    User user = userService.getById(id);
+    return Result.ok(null, user);
 }
 ```

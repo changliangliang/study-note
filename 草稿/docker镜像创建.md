@@ -1,3 +1,5 @@
+---
+---
 ### 创建镜像
 
 `docker` 中创建镜像是通过 `Dockerfile` 文件进行的，它是一个文本文件，其内包含了一条条的 **指令 (Instruction)**，每一条指令构建一层，因此每一条指令的内容，就是描述该层应当如何构建，下面显示的就是一个具有两条指令的 `Dockerfile` 文件。
@@ -118,7 +120,7 @@ ARG DOCKER_USERNAME=library
 RUN set -x ; echo ${DOCKER_USERNAME}
 ```
 
-#### VOLUME 
+#### VOLUME
 
 定义容器匿名卷。
 
@@ -182,8 +184,6 @@ HEALTHCHECK --interval=5s --timeout=3s \
 ```dockerfile
 LABEL <key>=<value> <key>=<value> <key>=<value> ...
 ```
-
-
 
 #### 构建镜像
 
