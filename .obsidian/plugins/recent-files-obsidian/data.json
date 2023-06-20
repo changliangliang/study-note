@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "MySQL操作",
+      "path": "学习笔记/数据库/MySQL操作.md"
+    },
+    {
       "basename": "常用软件配置",
       "path": "草稿/常用软件配置.md"
     },
@@ -135,10 +139,6 @@
     {
       "basename": "SpringBoot整合Springdoc",
       "path": "学习笔记/Java相关/SpringBoot/SpringBoot整合Springdoc.md"
-    },
-    {
-      "basename": "MySQL操作",
-      "path": "学习笔记/数据库/MySQL操作.md"
     },
     {
       "basename": "MySQL相关知识",
