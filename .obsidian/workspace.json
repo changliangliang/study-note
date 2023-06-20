@@ -38,7 +38,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "学习笔记/前端开发/Eslint的使用.md",
+                "file": "学习笔记/linux学习/常用命令.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习笔记/前端开发/Eslint的使用.md"
+                "file": "学习笔记/linux学习/常用命令.md"
               }
             }
           },
@@ -173,7 +173,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "学习笔记/前端开发/Eslint的使用.md",
+                "file": "学习笔记/linux学习/常用命令.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +185,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "学习笔记/前端开发/Eslint的使用.md",
+                "file": "学习笔记/linux学习/常用命令.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -213,12 +213,11 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
-    "width": 459.5,
-    "collapsed": true
+    "width": 459.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -247,9 +246,14 @@
   },
   "active": "42d2b6cc65e91410",
   "lastOpenFiles": [
+    "学习笔记/前端开发/Eslint的使用.md",
+    "WuCai/wucai-基于token的登陆验证机制  程序员自由之路  博客园-H837H29.md",
+    "WuCai/wucai-实模式与保护模式  seineos blog-H83F65C.md",
+    "WuCai/wucai-五彩插件  Google 搜索-H835E9H.md",
+    "WuCai/wucai-快速上手  Vue.js-H83DDCH.md",
+    "WuCai",
     "看板/草稿管理.md",
     "草稿/常用软件配置.md",
-    "学习笔记/前端开发/Eslint的使用.md",
     "附件/image/docker 常用操作_image_5.png",
     "附件/image/docker 常用操作_image_1.png",
     "附件/image/docker 常用操作_image_3.png",
@@ -280,10 +284,6 @@
     "学习笔记/开发工具/vscode插件之Eslint.md",
     "学习笔记/开发工具/docker 常用操作.md",
     "学习笔记/chatgpt学习笔记",
-    "草稿/函数堆栈.md",
-    "常用/锻炼记录.md",
-    "学习笔记/ucore操作系统实验/ucore操作系统实验-lab1-练习6.md",
-    "学习笔记/ucore操作系统实验/ucore操作系统实验-lab1-练习5.md",
     "草稿/toPF3D2.html",
     "学习笔记/golang相关",
     "学习笔记/前端开发/Vue相关",
@@ -292,7 +292,6 @@
     "学习笔记/Java相关/SpringBoot/SpringSecurity",
     "学习笔记/Java相关/未命名",
     "Code/java/Spring/Main.java",
-    "Code/java/Spring",
     "未命名.canvas"
   ]
 }

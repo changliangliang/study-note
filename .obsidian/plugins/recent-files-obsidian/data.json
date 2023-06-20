@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "常用命令",
+      "path": "学习笔记/linux学习/常用命令.md"
+    },
+    {
       "basename": "Eslint的使用",
       "path": "学习笔记/前端开发/Eslint的使用.md"
     },
@@ -87,10 +91,6 @@
     {
       "basename": "MBR 主引导记录",
       "path": "学习笔记/计算机知识/MBR 主引导记录.md"
-    },
-    {
-      "basename": "常用命令",
-      "path": "学习笔记/linux学习/常用命令.md"
     },
     {
       "basename": "springboot 3 自动装配方式更改",
