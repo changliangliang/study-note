@@ -36,12 +36,9 @@
             "id": "42d2b6cc65e91410",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "学习笔记/未整理/Java拾遗迹/零碎记录.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
+                "file": "附件/image/docker 常用操作_image_5.png"
               }
             }
           }
@@ -139,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习笔记/未整理/Java拾遗迹/零碎记录.md"
+                "file": "附件/image/docker 常用操作_image_5.png"
               }
             }
           },
@@ -173,7 +170,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "学习笔记/未整理/Java拾遗迹/零碎记录.md",
+                "file": "附件/image/docker 常用操作_image_5.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "学习笔记/未整理/Java拾遗迹/零碎记录.md",
+                "file": "附件/image/docker 常用操作_image_5.png",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -213,7 +210,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -246,6 +243,20 @@
   },
   "active": "42d2b6cc65e91410",
   "lastOpenFiles": [
+    "附件/image/docker 常用操作_image_1.png",
+    "附件/image/docker 常用操作_image_3.png",
+    "附件/image/vscode中的task.json和launch.json文件_image_5.png",
+    "附件/image/vscode中的task.json和launch.json文件_image_4.png",
+    "日记/2023-05-24.md",
+    "附件/image/2023-05-24_image_1.png",
+    "学习笔记/数据库/MySQL操作.md",
+    "附件/image/MySQL操作_image_65.png",
+    "附件/image/MySQL操作_image_66.png",
+    "附件/image/MySQL操作_image_64.png",
+    "附件/image/MySQL操作_image_63.png",
+    "附件/image/MySQL操作_image_62.png",
+    "附件/image/MySQL操作_image_61.png",
+    "学习笔记/未整理/Java拾遗迹/零碎记录.md",
     "学习笔记/未整理/Java拾遗迹/Java泛型.md",
     "学习笔记/操作系统/计算机的启动.md",
     "学习笔记/前端开发/Vue相关/Vue路由传参.md",
@@ -258,7 +269,6 @@
     "草稿/init函数注意事项.md",
     "草稿/docker常用容器创建.md",
     "草稿/如何使用java.md",
-    "学习笔记/数据库/MySQL操作.md",
     "草稿/常用软件配置.md",
     "学习笔记/开发工具/vscode中的task.json和launch.json文件.md",
     "学习笔记/开发工具/npm源管理.md",
@@ -270,20 +280,7 @@
     "常用/锻炼记录.md",
     "学习笔记/ucore操作系统实验/ucore操作系统实验-lab1-练习6.md",
     "学习笔记/ucore操作系统实验/ucore操作系统实验-lab1-练习5.md",
-    "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md",
-    "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md",
-    "学习笔记/ucore操作系统实验/ucore实验：bootasm.S源码.md",
-    "附件/image/常用软件配置_image_1.png",
     "草稿/toPF3D2.html",
-    "附件/image/常用软件配置_image_4.png",
-    "附件/image/常用软件配置_image_2.png",
-    "附件/image/常用软件配置_image_9.png",
-    "附件/image/常用软件配置_image_8.png",
-    "附件/image/常用软件配置_image_6.png",
-    "附件/image/常用软件配置_image_7.png",
-    "附件/image/常用软件配置_image_5.png",
-    "附件/image/常用软件配置_image_3.png",
-    "附件/image/linxu 设置笔记本合盖子不挂起_image_1.png",
     "学习笔记/golang相关",
     "学习笔记/前端开发/Vue相关",
     "学习笔记/C++学习笔记",

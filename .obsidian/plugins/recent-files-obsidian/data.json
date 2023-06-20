@@ -1,6 +1,62 @@
 {
   "recentFiles": [
     {
+      "basename": "docker 常用操作_image_5",
+      "path": "附件/image/docker 常用操作_image_5.png"
+    },
+    {
+      "basename": "docker 常用操作_image_1",
+      "path": "附件/image/docker 常用操作_image_1.png"
+    },
+    {
+      "basename": "docker 常用操作_image_3",
+      "path": "附件/image/docker 常用操作_image_3.png"
+    },
+    {
+      "basename": "vscode中的task.json和launch.json文件_image_5",
+      "path": "附件/image/vscode中的task.json和launch.json文件_image_5.png"
+    },
+    {
+      "basename": "vscode中的task.json和launch.json文件_image_4",
+      "path": "附件/image/vscode中的task.json和launch.json文件_image_4.png"
+    },
+    {
+      "basename": "2023-05-24",
+      "path": "日记/2023-05-24.md"
+    },
+    {
+      "basename": "2023-05-24_image_1",
+      "path": "附件/image/2023-05-24_image_1.png"
+    },
+    {
+      "basename": "MySQL操作",
+      "path": "学习笔记/数据库/MySQL操作.md"
+    },
+    {
+      "basename": "MySQL操作_image_65",
+      "path": "附件/image/MySQL操作_image_65.png"
+    },
+    {
+      "basename": "MySQL操作_image_66",
+      "path": "附件/image/MySQL操作_image_66.png"
+    },
+    {
+      "basename": "MySQL操作_image_64",
+      "path": "附件/image/MySQL操作_image_64.png"
+    },
+    {
+      "basename": "MySQL操作_image_63",
+      "path": "附件/image/MySQL操作_image_63.png"
+    },
+    {
+      "basename": "MySQL操作_image_62",
+      "path": "附件/image/MySQL操作_image_62.png"
+    },
+    {
+      "basename": "MySQL操作_image_61",
+      "path": "附件/image/MySQL操作_image_61.png"
+    },
+    {
       "basename": "零碎记录",
       "path": "学习笔记/未整理/Java拾遗迹/零碎记录.md"
     },
@@ -51,10 +107,6 @@
     {
       "basename": "如何使用java",
       "path": "草稿/如何使用java.md"
-    },
-    {
-      "basename": "MySQL操作",
-      "path": "学习笔记/数据库/MySQL操作.md"
     },
     {
       "basename": "常用软件配置",
@@ -147,58 +199,6 @@
     {
       "basename": "ref 和 reactive",
       "path": "学习笔记/前端开发/Vue相关/ref 和 reactive.md"
-    },
-    {
-      "basename": "实践：SpringSeucrity从数据库中读取数据",
-      "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：SpringSeucrity从数据库中读取数据.md"
-    },
-    {
-      "basename": "ubuntu启动时等待网络时间过长",
-      "path": "学习笔记/linux学习/ubuntu启动时等待网络时间过长.md"
-    },
-    {
-      "basename": "硬盘自动挂载",
-      "path": "学习笔记/linux学习/硬盘自动挂载.md"
-    },
-    {
-      "basename": "软件安装",
-      "path": "学习笔记/linux学习/软件安装.md"
-    },
-    {
-      "basename": "Mybatis学习笔记",
-      "path": "学习笔记/Java相关/Mybatis学习笔记.md"
-    },
-    {
-      "basename": "SpringSecurtiy相关问题",
-      "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurtiy相关问题.md"
-    },
-    {
-      "basename": "实践：基于token的认证",
-      "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/实践：基于token的认证.md"
-    },
-    {
-      "basename": "doDispatch执行流程",
-      "path": "草稿/doDispatch执行流程.md"
-    },
-    {
-      "basename": "SpringBoot统一异常处理",
-      "path": "学习笔记/Java相关/SpringBoot/SpringBoot统一异常处理.md"
-    },
-    {
-      "basename": "SpringBoot整合Springdoc",
-      "path": "学习笔记/Java相关/SpringBoot/SpringBoot整合Springdoc.md"
-    },
-    {
-      "basename": "MySQL相关知识",
-      "path": "学习笔记/数据库/MySQL相关知识.md"
-    },
-    {
-      "basename": "SpringMVC文件上传",
-      "path": "学习笔记/Java相关/SpringMVC/SpringMVC文件上传.md"
-    },
-    {
-      "basename": "linxu 设置笔记本合盖子不挂起",
-      "path": "学习笔记/linux学习/linxu 设置笔记本合盖子不挂起.md"
     }
   ],
   "omittedPaths": [],
