@@ -204,8 +204,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 459.5,
-    "collapsed": true
+    "width": 459.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -232,7 +231,7 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "8c322346a6a2a412",
+  "active": "2e6886b3461627b5",
   "lastOpenFiles": [
     "学习笔记/开发工具/vscode中的task.json和launch.json文件.md",
     "学习笔记/开发工具/npm源管理.md",
