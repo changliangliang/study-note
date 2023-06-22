@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "计算机中的路由表",
+      "path": "学习笔记/计算机知识/计算机中的路由表.md"
+    },
+    {
+      "basename": "MBR 主引导记录",
+      "path": "学习笔记/计算机知识/MBR 主引导记录.md"
+    },
+    {
       "basename": "常用命令",
       "path": "学习笔记/linux学习/常用命令.md"
     },
@@ -87,10 +95,6 @@
     {
       "basename": "Vue路由传参",
       "path": "学习笔记/前端开发/Vue相关/Vue路由传参.md"
-    },
-    {
-      "basename": "MBR 主引导记录",
-      "path": "学习笔记/计算机知识/MBR 主引导记录.md"
     },
     {
       "basename": "springboot 3 自动装配方式更改",
@@ -195,10 +199,6 @@
     {
       "basename": "SpringBoot整合redis",
       "path": "学习笔记/Java相关/SpringBoot/SpringBoot整合/SpringBoot整合redis.md"
-    },
-    {
-      "basename": "Jackson中LocalDateTime序列化与反序列化",
-      "path": "草稿/Jackson中LocalDateTime序列化与反序列化.md"
     }
   ],
   "omittedPaths": [],
