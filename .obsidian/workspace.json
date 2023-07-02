@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习笔记/计算机知识/计算机中的路由表.md"
+                "file": "看板/草稿管理.md"
               }
             }
           },
@@ -173,7 +173,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "学习笔记/计算机知识/计算机中的路由表.md",
+                "file": "看板/草稿管理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +185,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "学习笔记/计算机知识/计算机中的路由表.md",
+                "file": "看板/草稿管理.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
