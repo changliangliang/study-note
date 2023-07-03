@@ -38,7 +38,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "草稿/常用软件配置.md",
+                "file": "学习笔记/linux学习/ubuntu中的网络配置.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "草稿/常用软件配置.md"
+                "file": "学习笔记/linux学习/ubuntu中的网络配置.md"
               }
             }
           },
@@ -173,7 +173,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "草稿/常用软件配置.md",
+                "file": "学习笔记/linux学习/ubuntu中的网络配置.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +185,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "草稿/常用软件配置.md",
+                "file": "学习笔记/linux学习/ubuntu中的网络配置.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -246,6 +246,9 @@
   },
   "active": "42d2b6cc65e91410",
   "lastOpenFiles": [
+    "学习笔记/linux学习/ubuntu启动时等待网络时间过长.md",
+    "学习笔记/linux学习/linxu 设置笔记本合盖子不挂起.md",
+    "草稿/常用软件配置.md",
     "草稿/函数堆栈.md",
     "看板/C++学习进度.md",
     "看板/草稿管理.md",
@@ -258,7 +261,6 @@
     "WuCai/wucai-五彩插件  Google 搜索-H835E9H.md",
     "WuCai/wucai-快速上手  Vue.js-H83DDCH.md",
     "WuCai",
-    "草稿/常用软件配置.md",
     "附件/image/docker 常用操作_image_5.png",
     "附件/image/docker 常用操作_image_1.png",
     "附件/image/docker 常用操作_image_3.png",
@@ -281,8 +283,6 @@
     "常用/博客列表.md",
     "草稿/init函数注意事项.md",
     "草稿/docker常用容器创建.md",
-    "草稿/如何使用java.md",
-    "学习笔记/开发工具/vscode中的task.json和launch.json文件.md",
     "学习笔记/chatgpt学习笔记",
     "草稿/toPF3D2.html",
     "学习笔记/golang相关",

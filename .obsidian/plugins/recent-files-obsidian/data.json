@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "ubuntu中的网络配置",
+      "path": "学习笔记/linux学习/ubuntu中的网络配置.md"
+    },
+    {
+      "basename": "ubuntu启动时等待网络时间过长",
+      "path": "学习笔记/linux学习/ubuntu启动时等待网络时间过长.md"
+    },
+    {
+      "basename": "linxu 设置笔记本合盖子不挂起",
+      "path": "学习笔记/linux学习/linxu 设置笔记本合盖子不挂起.md"
+    },
+    {
       "basename": "常用软件配置",
       "path": "草稿/常用软件配置.md"
     },
@@ -187,18 +199,6 @@
     {
       "basename": "SpringBoot中默认的异常处理",
       "path": "学习笔记/Java相关/SpringBoot/SpringBoot中默认的异常处理.md"
-    },
-    {
-      "basename": "SpringSecurity原理",
-      "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity原理.md"
-    },
-    {
-      "basename": "SpringSecurity配置",
-      "path": "学习笔记/Java相关/SpringBoot/SpringSecurity/SpringSecurity配置.md"
-    },
-    {
-      "basename": "SpringBoot异步任务和定时任务",
-      "path": "学习笔记/Java相关/SpringBoot/SpringBoot异步任务和定时任务.md"
     }
   ],
   "omittedPaths": [],
