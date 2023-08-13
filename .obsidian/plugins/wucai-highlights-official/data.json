@@ -8,7 +8,7 @@
   "refreshNotes": false,
   "notesToRefresh": [],
   "reimportShowConfirmation": true,
-  "lastCursor": "eyJsYXN0SGlnaGxpZ2h0UEtJRCI6NTA2NTA2LCJja1BLSUQiOjAsImNrTklEIjowLCJja1hOSUQiOjAsImNrVCI6MTY4ODM4NzM4MH0=",
+  "lastCursor": "eyJsYXN0SGlnaGxpZ2h0UEtJRCI6NTA2NTA2LCJja1BLSUQiOjAsImNrTklEIjowLCJja1hOSUQiOjAsImNrVCI6MTY5MTkyMTE0N30=",
   "dataVersion": 0,
   "notePaths": {
     "H83DDCH": "WuCai/wucai-快速上手  Vue.js-H83DDCH.md",
@@ -26,10 +26,6 @@
     "tagStyle": 1,
     "haveWuCaiTag": 1,
     "obTemplate": "---\n标题: \"{{title}}\"\n创建时间: {{createat}}\n笔记ID: {{noteid}}\n---\n\n## {{title}} \n{{tags}} #五彩插件 {{createat}} [原文]({{url}})\n\n## 页面笔记\n{% block pagenote %}\n{{pagenote}}\n{% endblock %}\n\n## 划线列表\n{% block highlights %}\n{% for item in highlights %}\n{% if item.imageUrl%}\n> ![]({{ item.imageUrl }})\n{% else %}\n> <font color=\"{{item.color}}\">█</font> {{item.note}}\n{% endif %}\n{%if item.annonation%} > 想法: {{item.annonation}} {% endif%}\n{% endfor %}\n{% endblock %}\n\n## 其他\n\n",
-    "obTemplateVer": 0,
-    "logseqSplitTemplate": "quarter",
-    "logseqPageAddToJournals": 1,
-    "logseqPageNoteAsAttr": 2,
-    "logseqAnnoAsAttr": 2
+    "obTemplateVer": 0
   }
 }
