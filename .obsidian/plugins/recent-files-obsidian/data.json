@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "npm源管理",
+      "path": "学习笔记/开发工具/npm源管理.md"
+    },
+    {
       "basename": "MBR 主引导记录",
       "path": "学习笔记/计算机知识/MBR 主引导记录.md"
     },
@@ -147,10 +151,6 @@
     {
       "basename": "vscode中的task.json和launch.json文件",
       "path": "学习笔记/开发工具/vscode中的task.json和launch.json文件.md"
-    },
-    {
-      "basename": "npm源管理",
-      "path": "学习笔记/开发工具/npm源管理.md"
     },
     {
       "basename": "vscode插件之Eslint",
