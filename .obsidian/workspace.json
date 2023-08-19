@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "常用/卡片目录.md",
+                "file": "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "常用/卡片目录.md"
+                "file": "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md"
               }
             }
           },
@@ -160,7 +160,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "常用/卡片目录.md",
+                "file": "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,7 +172,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "常用/卡片目录.md",
+                "file": "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -233,6 +233,12 @@
   },
   "active": "b58921577b2cf640",
   "lastOpenFiles": [
+    "学习笔记/ucore操作系统实验/ucore操作系统实验-lab1-练习6.md",
+    "学习笔记/ucore操作系统实验/ucore操作系统实验-lab1-练习5.md",
+    "学习笔记/Java相关/Mybatis学习笔记.md",
+    "学习笔记/Java相关/Spring/Spring基于XML的配置.md",
+    "学习笔记/Java相关/Spring/Spirng基于Java和注解的配置.md",
+    "常用/卡片目录.md",
     "常用/列表.md",
     "草稿/Jackson中LocalDateTime序列化与反序列化.md",
     "常用/笔记目录.md",
@@ -253,23 +259,17 @@
     "学习笔记/linux学习/常用命令.md",
     "学习笔记/前端开发/Eslint的使用.md",
     "WuCai/wucai-基于token的登陆验证机制  程序员自由之路  博客园-H837H29.md",
-    "WuCai/wucai-实模式与保护模式  seineos blog-H83F65C.md",
-    "WuCai/wucai-五彩插件  Google 搜索-H835E9H.md",
-    "WuCai/wucai-快速上手  Vue.js-H83DDCH.md",
     "WuCai",
     "附件/image/docker 常用操作_image_5.png",
     "附件/image/docker 常用操作_image_1.png",
     "附件/image/docker 常用操作_image_3.png",
     "附件/image/vscode中的task.json和launch.json文件_image_5.png",
     "附件/image/vscode中的task.json和launch.json文件_image_4.png",
-    "日记/2023-05-24.md",
     "附件/image/2023-05-24_image_1.png",
-    "学习笔记/数据库/MySQL操作.md",
     "附件/image/MySQL操作_image_65.png",
     "附件/image/MySQL操作_image_66.png",
     "附件/image/MySQL操作_image_64.png",
     "附件/image/MySQL操作_image_63.png",
-    "学习笔记/未整理/Java拾遗迹/零碎记录.md",
     "学习笔记/chatgpt学习笔记",
     "草稿/toPF3D2.html",
     "学习笔记/golang相关",

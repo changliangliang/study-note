@@ -2,10 +2,12 @@
   "items": [
     {
       "name": "Markdown",
-      "customArguments": "--resource-path=\"${vaultDir}\\${attachmentFolderPath}\" "
+      "customArguments": "",
+      "arguments": "-f markdown --resource-path=\"${currentDir}\" --resource-path=\"${vaultDir}\" --lua-filter=\"${luaDir}/markdown.lua\" -s -o \"${outputPath}\" -t commonmark_x-attributes"
     },
     {
-      "name": "Markdown (Hugo)"
+      "name": "Markdown (Hugo)",
+      "arguments": "-f markdown --resource-path=\"${currentDir}\" --resource-path=\"${vaultDir}\" --lua-filter=\"${luaDir}/markdown+hugo.lua\" -s -o \"${outputPath}\" -t commonmark_x-attributes"
     },
     {
       "name": "Html"
@@ -14,7 +16,8 @@
       "name": "TextBundle"
     },
     {
-      "name": "PDF"
+      "name": "PDF",
+      "arguments": "-f markdown --resource-path=\"${currentDir}\" --resource-path=\"${vaultDir}\" --lua-filter=\"${luaDir}/pdf.lua\" ${ options.textemplate ? `--resource-path=\"${pluginDir}/textemplate\" --template=\"${options.textemplate}\"` : ` ` } --embed-resources --standalone -s -o \"${outputPath}\" -t pdf"
     },
     {
       "name": "Word (.docx)"
@@ -53,11 +56,15 @@
   "pandocPath": {
     "win32": "D:\\scoop\\apps\\pandoc\\current\\pandoc"
   },
-  "defaultExportDirectoryMode": "Auto",
+  "defaultExportDirectoryMode": "Custom",
   "openExportedFile": true,
+  "env": {},
   "lastExportDirectory": {
-    "win32": "C:\\Users\\chang\\Desktop\\笔记"
+    "win32": "C:\\Users\\chang\\Desktop\\2023"
   },
   "lastEditName": "Markdown",
-  "lastExportType": "Markdown"
+  "lastExportType": "Markdown",
+  "customDefaultExportDirectory": {
+    "win32": "D:\\备份\\新建文件夹"
+  }
 }

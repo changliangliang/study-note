@@ -2,8 +2,10 @@
 type: blog
 created: 2023-04-20 23:56:13
 updated: 2023-04-20 23:56:58
-tags: [操作系统]
-categories: [ucore操作系统实验]
+tags:
+  - 操作系统
+categories:
+  - ucore操作系统实验
 date: 2023-04-20 23:56:13
 ---
 
