@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "学习笔记/计算机知识/计算机中的路由表.md",
+                "file": "学习笔记/计算机知识/MBR 主引导记录.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习笔记/计算机知识/计算机中的路由表.md"
+                "file": "学习笔记/计算机知识/MBR 主引导记录.md"
               }
             }
           },
@@ -160,7 +160,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "学习笔记/计算机知识/计算机中的路由表.md",
+                "file": "学习笔记/计算机知识/MBR 主引导记录.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,7 +172,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "学习笔记/计算机知识/计算机中的路由表.md",
+                "file": "学习笔记/计算机知识/MBR 主引导记录.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -231,12 +231,12 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "2e6886b3461627b5",
+  "active": "b58921577b2cf640",
   "lastOpenFiles": [
+    "学习笔记/计算机知识/计算机中的路由表.md",
     "看板/草稿管理.md",
     "学习笔记/linux学习/ubuntu中的网络配置.md",
     "学习笔记/计算机知识/MBR 主引导记录.md",
-    "学习笔记/计算机知识/计算机中的路由表.md",
     "看板/C++学习进度.md",
     "学习笔记/操作系统/计算机的启动.md",
     "学习笔记/linux学习/ubuntu启动时等待网络时间过长.md",

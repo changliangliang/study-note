@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "MBR 主引导记录",
+      "path": "学习笔记/计算机知识/MBR 主引导记录.md"
+    },
+    {
       "basename": "计算机中的路由表",
       "path": "学习笔记/计算机知识/计算机中的路由表.md"
     },
@@ -11,10 +15,6 @@
     {
       "basename": "ubuntu中的网络配置",
       "path": "学习笔记/linux学习/ubuntu中的网络配置.md"
-    },
-    {
-      "basename": "MBR 主引导记录",
-      "path": "学习笔记/计算机知识/MBR 主引导记录.md"
     },
     {
       "basename": "C++学习进度",
