@@ -1,8 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "npm源管理",
-      "path": "学习笔记/开发工具/npm源管理.md"
+      "basename": "卡片目录",
+      "path": "常用/卡片目录.md"
+    },
+    {
+      "basename": "列表",
+      "path": "常用/列表.md"
+    },
+    {
+      "basename": "Jackson中LocalDateTime序列化与反序列化",
+      "path": "草稿/Jackson中LocalDateTime序列化与反序列化.md"
+    },
+    {
+      "basename": "笔记目录",
+      "path": "常用/笔记目录.md"
+    },
+    {
+      "basename": "博客列表",
+      "path": "常用/博客列表.md"
     },
     {
       "basename": "MBR 主引导记录",
@@ -11,6 +27,22 @@
     {
       "basename": "计算机中的路由表",
       "path": "学习笔记/计算机知识/计算机中的路由表.md"
+    },
+    {
+      "basename": "docker 常用操作",
+      "path": "学习笔记/开发工具/docker 常用操作.md"
+    },
+    {
+      "basename": "npm源管理",
+      "path": "学习笔记/开发工具/npm源管理.md"
+    },
+    {
+      "basename": "linxu 设置笔记本合盖子不挂起",
+      "path": "学习笔记/linux学习/linxu 设置笔记本合盖子不挂起.md"
+    },
+    {
+      "basename": "MySQL相关知识",
+      "path": "学习笔记/数据库/MySQL相关知识.md"
     },
     {
       "basename": "草稿管理",
@@ -31,10 +63,6 @@
     {
       "basename": "ubuntu启动时等待网络时间过长",
       "path": "学习笔记/linux学习/ubuntu启动时等待网络时间过长.md"
-    },
-    {
-      "basename": "linxu 设置笔记本合盖子不挂起",
-      "path": "学习笔记/linux学习/linxu 设置笔记本合盖子不挂起.md"
     },
     {
       "basename": "常用软件配置",
@@ -133,10 +161,6 @@
       "path": "常用/草稿目录.md"
     },
     {
-      "basename": "博客列表",
-      "path": "常用/博客列表.md"
-    },
-    {
       "basename": "init函数注意事项",
       "path": "草稿/init函数注意事项.md"
     },
@@ -157,10 +181,6 @@
       "path": "学习笔记/开发工具/vscode插件之Eslint.md"
     },
     {
-      "basename": "docker 常用操作",
-      "path": "学习笔记/开发工具/docker 常用操作.md"
-    },
-    {
       "basename": "锻炼记录",
       "path": "常用/锻炼记录.md"
     },
@@ -179,26 +199,6 @@
     {
       "basename": "ucore操作系统实验：lab1",
       "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md"
-    },
-    {
-      "basename": "ucore实验：bootasm.S源码",
-      "path": "学习笔记/ucore操作系统实验/ucore实验：bootasm.S源码.md"
-    },
-    {
-      "basename": "Java 中的 char 类型能否存储中文",
-      "path": "学习笔记/Java相关/Java 中的 char 类型能否存储中文.md"
-    },
-    {
-      "basename": "常用软件配置_image_1",
-      "path": "附件/image/常用软件配置_image_1.png"
-    },
-    {
-      "basename": "SpringBoot中统一数据返回",
-      "path": "学习笔记/Java相关/SpringBoot/SpringBoot中统一数据返回.md"
-    },
-    {
-      "basename": "SpringBoot中默认的异常处理",
-      "path": "学习笔记/Java相关/SpringBoot/SpringBoot中默认的异常处理.md"
     }
   ],
   "omittedPaths": [],
