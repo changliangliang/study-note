@@ -233,6 +233,9 @@
   },
   "active": "b58921577b2cf640",
   "lastOpenFiles": [
+    "test/aaa.md",
+    "test",
+    "新建文件夹",
     "学习笔记/ucore操作系统实验/ucore操作系统实验-lab1-练习6.md",
     "学习笔记/ucore操作系统实验/ucore操作系统实验-lab1-练习5.md",
     "学习笔记/Java相关/Mybatis学习笔记.md",
@@ -258,7 +261,6 @@
     "草稿/函数堆栈.md",
     "学习笔记/linux学习/常用命令.md",
     "学习笔记/前端开发/Eslint的使用.md",
-    "WuCai/wucai-基于token的登陆验证机制  程序员自由之路  博客园-H837H29.md",
     "WuCai",
     "附件/image/docker 常用操作_image_5.png",
     "附件/image/docker 常用操作_image_1.png",
@@ -277,8 +279,6 @@
     "学习笔记/C++学习笔记",
     "学习笔记/Java相关/SpringBoot/SpringBoot整合",
     "学习笔记/Java相关/SpringBoot/SpringSecurity",
-    "学习笔记/Java相关/未命名",
-    "Code/java/Spring/Main.java",
     "未命名.canvas"
   ]
 }
