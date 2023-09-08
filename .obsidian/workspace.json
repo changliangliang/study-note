@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md"
+                "file": "看板/草稿管理.md"
               }
             }
           },
@@ -160,7 +160,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md",
+                "file": "看板/草稿管理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,7 +172,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md",
+                "file": "看板/草稿管理.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -231,7 +231,7 @@
       "obsidian-memos:Memos": false
     }
   },
-  "active": "b58921577b2cf640",
+  "active": "2e6886b3461627b5",
   "lastOpenFiles": [
     "test/aaa.md",
     "test",
