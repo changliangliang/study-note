@@ -31,9 +31,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "5de158fcc122a8cd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "日记/2023-04-20.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -126,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "看板/草稿管理.md"
+                "file": "日记/2023-04-20.md"
               }
             }
           },
@@ -160,7 +173,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "看板/草稿管理.md",
+                "file": "日记/2023-04-20.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,7 +185,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "看板/草稿管理.md",
+                "file": "日记/2023-04-20.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -233,6 +246,12 @@
   },
   "active": "2e6886b3461627b5",
   "lastOpenFiles": [
+    "日记/2023-05-20.md",
+    "日记/2023-05-05.md",
+    "日记/2023-04-20.md",
+    "看板/C++学习进度.md",
+    "卡片/Java类/org.springframework.web.context.ContextLoaderListener.md",
+    "看板/草稿管理.md",
     "test/aaa.md",
     "test",
     "新建文件夹",
@@ -252,15 +271,9 @@
     "学习笔记/开发工具/npm源管理.md",
     "学习笔记/linux学习/linxu 设置笔记本合盖子不挂起.md",
     "学习笔记/数据库/MySQL相关知识.md",
-    "看板/草稿管理.md",
     "学习笔记/linux学习/ubuntu中的网络配置.md",
-    "看板/C++学习进度.md",
     "学习笔记/操作系统/计算机的启动.md",
     "学习笔记/linux学习/ubuntu启动时等待网络时间过长.md",
-    "草稿/常用软件配置.md",
-    "草稿/函数堆栈.md",
-    "学习笔记/linux学习/常用命令.md",
-    "学习笔记/前端开发/Eslint的使用.md",
     "WuCai",
     "附件/image/docker 常用操作_image_5.png",
     "附件/image/docker 常用操作_image_1.png",

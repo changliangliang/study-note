@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "2023-04-20",
+      "path": "日记/2023-04-20.md"
+    },
+    {
+      "basename": "2023-05-20",
+      "path": "日记/2023-05-20.md"
+    },
+    {
+      "basename": "2023-05-05",
+      "path": "日记/2023-05-05.md"
+    },
+    {
+      "basename": "C++学习进度",
+      "path": "看板/C++学习进度.md"
+    },
+    {
+      "basename": "org.springframework.web.context.ContextLoaderListener",
+      "path": "卡片/Java类/org.springframework.web.context.ContextLoaderListener.md"
+    },
+    {
       "basename": "草稿管理",
       "path": "看板/草稿管理.md"
     },
@@ -75,10 +95,6 @@
     {
       "basename": "ubuntu中的网络配置",
       "path": "学习笔记/linux学习/ubuntu中的网络配置.md"
-    },
-    {
-      "basename": "C++学习进度",
-      "path": "看板/C++学习进度.md"
     },
     {
       "basename": "计算机的启动",
@@ -183,22 +199,6 @@
     {
       "basename": "草稿目录",
       "path": "常用/草稿目录.md"
-    },
-    {
-      "basename": "init函数注意事项",
-      "path": "草稿/init函数注意事项.md"
-    },
-    {
-      "basename": "docker常用容器创建",
-      "path": "草稿/docker常用容器创建.md"
-    },
-    {
-      "basename": "如何使用java",
-      "path": "草稿/如何使用java.md"
-    },
-    {
-      "basename": "vscode中的task.json和launch.json文件",
-      "path": "学习笔记/开发工具/vscode中的task.json和launch.json文件.md"
     }
   ],
   "omittedPaths": [],
