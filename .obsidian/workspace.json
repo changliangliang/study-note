@@ -12,9 +12,12 @@
             "type": "leaf",
             "pinned": true,
             "state": {
-              "type": "kanban",
+              "type": "markdown",
               "state": {
-                "file": "看板/草稿管理.md"
+                "file": "看板/草稿管理.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               },
               "pinned": true
             }
@@ -139,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "日记/2023-04-20.md"
+                "file": "看板/草稿管理.md"
               }
             }
           },
@@ -173,7 +176,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "日记/2023-04-20.md",
+                "file": "看板/草稿管理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +188,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "日记/2023-04-20.md",
+                "file": "看板/草稿管理.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -230,25 +233,20 @@
       "command-palette:打开命令面板": false,
       "templater-obsidian:Templater": false,
       "oz-clear-unused-images:Clear Unused Images": false,
-      "obsidian42-brat:BRAT": false,
       "dbfolder:创建一个新数据库表": false,
       "workspaces:管理工作区布局": false,
-      "meld-encrypt:Create new encrypted note": false,
       "cmdr:Obsidian Git: Create backup": false,
       "obsidian-advanced-slides:Show Slide Preview": false,
-      "omnisearch:Omnisearch": false,
       "markdown-importer:打开 Markdown 格式转换器": false,
       "homepage:Open homepage": false,
-      "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
-      "obsidian-projects:Open projects": false,
-      "obsidian-memos:Memos": false
+      "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false
     }
   },
-  "active": "2e6886b3461627b5",
+  "active": "bb0739e0b7bc1426",
   "lastOpenFiles": [
+    "日记/2023-04-20.md",
     "日记/2023-05-20.md",
     "日记/2023-05-05.md",
-    "日记/2023-04-20.md",
     "看板/C++学习进度.md",
     "卡片/Java类/org.springframework.web.context.ContextLoaderListener.md",
     "看板/草稿管理.md",
