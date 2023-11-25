@@ -41,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "学习笔记/操作系统/计算机的启动.md",
+                "file": "学习笔记/linux学习/ubuntu中的网络配置.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -142,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习笔记/操作系统/计算机的启动.md"
+                "file": "学习笔记/linux学习/ubuntu中的网络配置.md"
               }
             }
           },
@@ -176,7 +176,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "学习笔记/操作系统/计算机的启动.md",
+                "file": "学习笔记/linux学习/ubuntu中的网络配置.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -188,7 +188,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "学习笔记/操作系统/计算机的启动.md",
+                "file": "学习笔记/linux学习/ubuntu中的网络配置.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -242,11 +242,13 @@
       "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false
     }
   },
-  "active": "5de158fcc122a8cd",
+  "active": "2e6886b3461627b5",
   "lastOpenFiles": [
+    "学习笔记/linux学习/常用命令.md",
+    "学习笔记/linux学习/linxu 设置笔记本合盖子不挂起.md",
+    "学习笔记/操作系统/计算机的启动.md",
     "学习笔记/计算机知识/MBR 主引导记录.md",
     "学习笔记/计算机网络/长连接的若干问题.md",
-    "学习笔记/操作系统/计算机的启动.md",
     "日记/2023-04-20.md",
     "日记/2023-05-20.md",
     "日记/2023-05-05.md",
@@ -269,9 +271,7 @@
     "学习笔记/计算机知识/计算机中的路由表.md",
     "学习笔记/开发工具/docker 常用操作.md",
     "学习笔记/开发工具/npm源管理.md",
-    "学习笔记/linux学习/linxu 设置笔记本合盖子不挂起.md",
     "学习笔记/数据库/MySQL相关知识.md",
-    "学习笔记/linux学习/ubuntu中的网络配置.md",
     "WuCai",
     "附件/image/docker 常用操作_image_5.png",
     "附件/image/docker 常用操作_image_1.png",
