@@ -1,8 +1,32 @@
 {
   "recentFiles": [
     {
-      "basename": "ucore操作系统实验：环境搭建",
-      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md"
+      "basename": "socket连接不安全的原因",
+      "path": "学习笔记/操作系统/socket连接不安全的原因.md"
+    },
+    {
+      "basename": "实模式、保护模式、A20 Gate概念解析",
+      "path": "学习笔记/操作系统/实模式、保护模式、A20 Gate概念解析.md"
+    },
+    {
+      "basename": "全局描述符表（GDT）",
+      "path": "学习笔记/操作系统/全局描述符表（GDT）.md"
+    },
+    {
+      "basename": "计算机的启动",
+      "path": "学习笔记/操作系统/计算机的启动.md"
+    },
+    {
+      "basename": "npm源管理",
+      "path": "学习笔记/开发工具/npm源管理.md"
+    },
+    {
+      "basename": "docker 常用操作",
+      "path": "学习笔记/开发工具/docker 常用操作.md"
+    },
+    {
+      "basename": "ucore实验：bootasm.S源码",
+      "path": "学习笔记/ucore操作系统实验/ucore实验：bootasm.S源码.md"
     },
     {
       "basename": "ucore操作系统实验-lab1-练习5",
@@ -15,10 +39,6 @@
     {
       "basename": "常用命令",
       "path": "学习笔记/linux学习/常用命令.md"
-    },
-    {
-      "basename": "计算机的启动",
-      "path": "学习笔记/操作系统/计算机的启动.md"
     },
     {
       "basename": "MBR 主引导记录",
@@ -91,14 +111,6 @@
     {
       "basename": "计算机中的路由表",
       "path": "学习笔记/计算机知识/计算机中的路由表.md"
-    },
-    {
-      "basename": "docker 常用操作",
-      "path": "学习笔记/开发工具/docker 常用操作.md"
-    },
-    {
-      "basename": "npm源管理",
-      "path": "学习笔记/开发工具/npm源管理.md"
     },
     {
       "basename": "MySQL相关知识",
@@ -187,14 +199,6 @@
     {
       "basename": "Vue路由传参",
       "path": "学习笔记/前端开发/Vue相关/Vue路由传参.md"
-    },
-    {
-      "basename": "springboot 3 自动装配方式更改",
-      "path": "学习笔记/问题记录/springboot 3 自动装配方式更改.md"
-    },
-    {
-      "basename": "草稿目录",
-      "path": "常用/草稿目录.md"
     }
   ],
   "omittedPaths": [],

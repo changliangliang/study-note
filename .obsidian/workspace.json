@@ -23,25 +23,12 @@
             }
           },
           {
-            "id": "b58921577b2cf640",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "5de158fcc122a8cd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md",
+                "file": "学习笔记/操作系统/socket连接不安全的原因.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -49,7 +36,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -141,7 +128,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "学习笔记/操作系统/socket连接不安全的原因.md"
+              }
             }
           },
           {
@@ -174,6 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "学习笔记/操作系统/socket连接不安全的原因.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,6 +175,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "学习笔记/操作系统/socket连接不安全的原因.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -238,14 +229,19 @@
       "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false
     }
   },
-  "active": "bb0739e0b7bc1426",
+  "active": "2e6886b3461627b5",
   "lastOpenFiles": [
-    "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md",
+    "学习笔记/操作系统/实模式、保护模式、A20 Gate概念解析.md",
+    "学习笔记/操作系统/全局描述符表（GDT）.md",
+    "学习笔记/操作系统/计算机的启动.md",
+    "学习笔记/开发工具/npm源管理.md",
+    "学习笔记/开发工具/docker 常用操作.md",
+    "学习笔记/ucore操作系统实验/ucore实验：bootasm.S源码.md",
     "学习笔记/ucore操作系统实验/ucore操作系统实验-lab1-练习5.md",
+    "学习笔记/ucore操作系统实验/ucore操作系统实验：环境搭建.md",
     "学习笔记/linux学习/ubuntu中的网络配置.md",
     "学习笔记/linux学习/常用命令.md",
     "学习笔记/linux学习/linxu 设置笔记本合盖子不挂起.md",
-    "学习笔记/操作系统/计算机的启动.md",
     "学习笔记/计算机知识/MBR 主引导记录.md",
     "学习笔记/计算机网络/长连接的若干问题.md",
     "日记/2023-04-20.md",
@@ -263,11 +259,6 @@
     "学习笔记/Java相关/Spring/Spirng基于Java和注解的配置.md",
     "常用/卡片目录.md",
     "常用/列表.md",
-    "草稿/Jackson中LocalDateTime序列化与反序列化.md",
-    "常用/笔记目录.md",
-    "常用/博客列表.md",
-    "学习笔记/计算机知识/计算机中的路由表.md",
-    "学习笔记/开发工具/docker 常用操作.md",
     "WuCai",
     "附件/image/docker 常用操作_image_5.png",
     "附件/image/docker 常用操作_image_1.png",
