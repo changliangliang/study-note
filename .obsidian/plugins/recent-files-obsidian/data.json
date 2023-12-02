@@ -1,12 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "ucore操作系统实验：lab1",
-      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md"
+      "basename": "vscode中的task.json和launch.json文件",
+      "path": "学习笔记/开发工具/vscode中的task.json和launch.json文件.md"
+    },
+    {
+      "basename": "vscode插件之Eslint",
+      "path": "学习笔记/开发工具/vscode插件之Eslint.md"
     },
     {
       "basename": "草稿管理",
       "path": "看板/草稿管理.md"
+    },
+    {
+      "basename": "ucore操作系统实验：lab1",
+      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md"
     },
     {
       "basename": "socket连接不安全的原因",
@@ -191,14 +199,6 @@
     {
       "basename": "MySQL操作_image_61",
       "path": "附件/image/MySQL操作_image_61.png"
-    },
-    {
-      "basename": "零碎记录",
-      "path": "学习笔记/未整理/Java拾遗迹/零碎记录.md"
-    },
-    {
-      "basename": "Java泛型",
-      "path": "学习笔记/未整理/Java拾遗迹/Java泛型.md"
     }
   ],
   "omittedPaths": [],
