@@ -223,7 +223,7 @@ buf[511] = 0xAA;
 在项目目录下执行 `make gdb` 命令，可以看到启动了一个 `QEMU`
 虚拟机，此时它正等待着 `gdb` 远程连接。
 
-![](附件/image/ucore操作系统实验：lab1_image_1.png)
+![](附件/image/tmp1701518925693_ucore操作系统实验：lab1_image_1.png)
 
 接下来使用 `gdb` 命令进行调试，输入 `set architecture i8086`
 设置当前调试的机器为 `i8086`，输入 `target remote : 1234` 连接到
@@ -367,7 +367,7 @@ lgdt gdtdesc
 
 ### 问题 3：如何使能和进入保护模式
 
-![](附件/image/ucore操作系统实验：lab1_image_12.png)
+![](附件/image/ucore操作系统实验：lab1_image_1.png)
 
 在 CPU 中有一个 `CR0` 寄存器，包含了 6 个预定义标志，第 0 位是保护允许位
 PE ( Protedted Enable )，用于启动保护模式，如果 PE 位置
