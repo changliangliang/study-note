@@ -129,7 +129,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习笔记/操作系统/socket连接不安全的原因.md"
+                "file": "看板/草稿管理.md"
               }
             }
           },
@@ -163,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "学习笔记/操作系统/socket连接不安全的原因.md",
+                "file": "看板/草稿管理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +175,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "学习笔记/操作系统/socket连接不安全的原因.md",
+                "file": "看板/草稿管理.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",

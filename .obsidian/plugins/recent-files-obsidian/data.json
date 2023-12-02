@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "草稿管理",
+      "path": "看板/草稿管理.md"
+    },
+    {
       "basename": "socket连接不安全的原因",
       "path": "学习笔记/操作系统/socket连接不安全的原因.md"
     },
@@ -67,10 +71,6 @@
     {
       "basename": "org.springframework.web.context.ContextLoaderListener",
       "path": "卡片/Java类/org.springframework.web.context.ContextLoaderListener.md"
-    },
-    {
-      "basename": "草稿管理",
-      "path": "看板/草稿管理.md"
     },
     {
       "basename": "ucore操作系统实验-lab1-练习6",
