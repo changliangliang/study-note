@@ -29,9 +29,9 @@
 `ucore_lab/labcodes_answer/lab1_result` 目录下执行两条命令，`make clean`
 清除掉上一次生成的文件，`make V=` 编译文件生成镜像。
 
-![](附件/image/ucore操作系统实验：lab1_image_1.png)
+![](附件/image/tmp1701512075142_ucore操作系统实验：lab1_image_1.png)
 
-![](附件/image/ucore操作系统实验：lab1_image_2.png)
+![](附件/image/tmp1701512075235_ucore操作系统实验：lab1_image_2.png)
 
 执行 `make V=` 的全部输出如下，它会现实整个过程中执行的所有命令：
 
@@ -140,12 +140,12 @@ dd if=bin/kernel of=bin/ucore.img seek=1 conv=notrunc
 字节，位于磁盘的第一个扇区，但是不是所有的磁盘都装有操作系统，所以统一规定将这
 512 个字节的最后两个字节设置为标志位，取固定值 `0x55` 和 `0xAA`。
 
-![](附件/image/ucore操作系统实验：lab1_image_3.png)
+![](附件/image/tmp1701512075327_ucore操作系统实验：lab1_image_3.png)
 
 从实验文档中可以得知，`bin/sign` 是用来生硬盘主引导扇区的程序,
 它的源码位于 `tools/sigh.c` ,内容如下：
 
-![](附件/image/ucore操作系统实验：lab1_image_4.png)
+![](附件/image/tmp1701512075418_ucore操作系统实验：lab1_image_4.png)
 
 ``` c
 #include <stdio.h>
@@ -223,17 +223,17 @@ buf[511] = 0xAA;
 在项目目录下执行 `make gdb` 命令，可以看到启动了一个 `QEMU`
 虚拟机，此时它正等待着 `gdb` 远程连接。
 
-![](附件/image/ucore操作系统实验：lab1_image_5.png)
+![](附件/image/ucore操作系统实验：lab1_image_1.png)
 
 接下来使用 `gdb` 命令进行调试，输入 `set architecture i8086`
 设置当前调试的机器为 `i8086`，输入 `target remote : 1234` 连接到
 `QEMU`。
 
-![](附件/image/ucore操作系统实验：lab1_image_6.png)
+![](附件/image/ucore操作系统实验：lab1_image_2.png)
 
 此时输入 `si` 则会开始执行一条命令。
 
-![](附件/image/ucore操作系统实验：lab1_image_7.png)
+![](附件/image/ucore操作系统实验：lab1_image_3.png)
 
 ### 问题 2：在初始化位置 0x7c00 设置实地址断点, 测试断点正常
 
@@ -241,9 +241,9 @@ buf[511] = 0xAA;
 `gdbinit`，每次使用 `gdb -x gdbinit` 命令启动 `gdb`，那么文件 `gdbinit`
 中所用的命令都会被执行，之后都通过这种方式来执行。
 
-![](附件/image/ucore操作系统实验：lab1_image_8.png)
+![](附件/image/ucore操作系统实验：lab1_image_4.png)
 
-![](附件/image/ucore操作系统实验：lab1_image_9.png)
+![](附件/image/ucore操作系统实验：lab1_image_5.png)
 
 在 `gdbinit` 文件中输入如下内容，再次进行调试：
 
@@ -255,22 +255,22 @@ c
 x/10i $pc #显示汇编指令
 ```
 
-![](附件/image/ucore操作系统实验：lab1_image_10.png)
+![](附件/image/ucore操作系统实验：lab1_image_6.png)
 
 ### 问题 3：从 0x7c00 开始跟踪代码运行，将单步跟踪反汇编得到的代码与 bootasm.S 和 bootblock.asm 进行比较
 
 `bootasm.S` 和 `bootblock.asm` 中的内容如下，比较可知两者与 `0x7c00`
 处的指令基本一致。
 
-![](附件/image/ucore操作系统实验：lab1_image_11.png)
+![](附件/image/ucore操作系统实验：lab1_image_7.png)
 
-![](附件/image/ucore操作系统实验：lab1_image_12.png)
+![](附件/image/ucore操作系统实验：lab1_image_8.png)
 
 ### 问题 4：自己找一个 bootloader 或内核中的代码位置，设置断点并进行测试
 
 这里选择使用 `kern/init/init.c` 中的 `kern_init` 函数作为断点：
 
-![](附件/image/ucore操作系统实验：lab1_image_13.png)
+![](附件/image/ucore操作系统实验：lab1_image_9.png)
 
 将 `gdbinit` 文件修改为：
 
@@ -285,12 +285,12 @@ x/10i $pc #显示汇编指令
 
 获得断点处的指令如下：
 
-![](附件/image/ucore操作系统实验：lab1_image_14.png)
+![](附件/image/ucore操作系统实验：lab1_image_10.png)
 
 如果执行命令的时候使用 `gdb -x gdbinit -tui`，甚至可以打开一个 `gdb`
 的命令行界面，直接现实断点处的源码文件。
 
-![](附件/image/ucore操作系统实验：lab1_image_15.png)
+![](附件/image/ucore操作系统实验：lab1_image_11.png)
 
 ## 练习 3
 
@@ -367,7 +367,7 @@ lgdt gdtdesc
 
 ### 问题 3：如何使能和进入保护模式
 
-![](附件/image/ucore操作系统实验：lab1_image_16.png)
+![](附件/image/ucore操作系统实验：lab1_image_12.png)
 
 在 CPU 中有一个 `CR0` 寄存器，包含了 6 个预定义标志，第 0 位是保护允许位
 PE ( Protedted Enable )，用于启动保护模式，如果 PE 位置
