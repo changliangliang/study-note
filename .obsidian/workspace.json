@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "学习笔记/linux学习/ubuntu中的网络配置.md",
+                "file": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习笔记/linux学习/ubuntu中的网络配置.md"
+                "file": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md"
               }
             }
           },
@@ -160,7 +160,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "学习笔记/linux学习/ubuntu中的网络配置.md",
+                "file": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,7 +172,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "学习笔记/linux学习/ubuntu中的网络配置.md",
+                "file": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -229,9 +229,9 @@
   },
   "active": "5de158fcc122a8cd",
   "lastOpenFiles": [
+    "学习笔记/linux学习/ubuntu中的网络配置.md",
     "学习笔记/ucore操作系统实验/ucore操作系统实验-lab1-练习6.md",
     "学习笔记/ucore操作系统实验/ucore操作系统实验-lab1-练习5.md",
-    "学习笔记/linux学习/ubuntu中的网络配置.md",
     "学习笔记/linux学习/硬盘自动挂载.md",
     "学习笔记/linux学习/常用命令.md",
     "学习笔记/linux学习/软件安装.md",
