@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "ucore操作系统实验：lab1",
+      "path": "学习笔记/ucore操作系统实验/ucore操作系统实验：lab1.md"
+    },
+    {
       "basename": "草稿管理",
       "path": "看板/草稿管理.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Java泛型",
       "path": "学习笔记/未整理/Java拾遗迹/Java泛型.md"
-    },
-    {
-      "basename": "Vue路由传参",
-      "path": "学习笔记/前端开发/Vue相关/Vue路由传参.md"
     }
   ],
   "omittedPaths": [],

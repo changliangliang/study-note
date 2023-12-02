@@ -26,7 +26,6 @@ categories: [ucore操作系统实验]
 >
 > $ make "V="
 > 要获取更多有关 make 的信息，可上网查询，并请执行
-> sdf
 > $ man make
 
 ### 问题 1：操作系统镜像文件 ucore. img 是如何一步一步生成的？
