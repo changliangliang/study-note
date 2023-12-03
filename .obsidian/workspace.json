@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "草稿/函数堆栈.md",
+                "file": "学习笔记/未整理/中断、异常和系统调用.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -62,7 +62,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "函数",
+                "query": "中断",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "草稿/函数堆栈.md"
+                "file": "学习笔记/未整理/中断、异常和系统调用.md"
               }
             }
           },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "草稿/函数堆栈.md",
+                "file": "学习笔记/未整理/中断、异常和系统调用.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,7 +173,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "草稿/函数堆栈.md",
+                "file": "学习笔记/未整理/中断、异常和系统调用.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -230,6 +230,7 @@
   },
   "active": "5de158fcc122a8cd",
   "lastOpenFiles": [
+    "草稿/函数堆栈.md",
     "学习笔记/计算机知识/MBR 主引导记录.md",
     "学习笔记/计算机网络/长连接的若干问题.md",
     "学习笔记/操作系统/计算机的启动.md",
@@ -255,7 +256,6 @@
     "日记/2023-04-20.md",
     "日记/2023-05-20.md",
     "日记/2023-05-05.md",
-    "卡片/Java类/org.springframework.web.context.ContextLoaderListener.md",
     "test",
     "新建文件夹",
     "WuCai",
