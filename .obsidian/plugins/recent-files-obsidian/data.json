@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Spring基于XML的配置",
+      "path": "学习笔记/Java相关/Spring/Spring基于XML的配置.md"
+    },
+    {
       "basename": "ucore实验：bootasm.S源码",
       "path": "学习笔记/ucore操作系统实验/ucore实验：bootasm.S源码.md"
     },
@@ -95,10 +99,6 @@
     {
       "basename": "org.springframework.web.context.ContextLoaderListener",
       "path": "卡片/Java类/org.springframework.web.context.ContextLoaderListener.md"
-    },
-    {
-      "basename": "Spring基于XML的配置",
-      "path": "学习笔记/Java相关/Spring/Spring基于XML的配置.md"
     },
     {
       "basename": "Spirng基于Java和注解的配置",
